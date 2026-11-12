@@ -24,9 +24,9 @@ from pydantic import BaseModel
 
 
 DATA_PATH = Path(__file__).resolve().with_name("data.json")
-MODEL = "gemini-3.8-flash"
+MODELS = ("gemini-3.8-flash", "gemini-3.5-flash-lite", "gemini-3.5-flash")
 RSS_TIMEOUT_SECONDS = 15
-GEMINI_TIMEOUT_MS = 120_000
+GEMINI_TIMEOUT_MS = 45_000
 BETWEEN_CATEGORIES_SECONDS = 15
 FEEDS = {
     # http://bbci.co.uk is a site address, not a category RSS feed.
@@ -216,21 +216,52 @@ def validate_lesson(lesson: LessonContent) -> None:
             raise ValueError("Part 6/7 locator must identify a paragraph")
 
 
+def thinking_config_for(model: str) -> types.ThinkingConfig:
+    # Gemini 3 does not support thinking_budget=0. Use its lowest supported level.
+    level = "low" if model == "gemini-3.8-flash" else "minimal"
+    return types.ThinkingConfig(thinking_level=level)
+
+
+def error_code(error: Exception) -> int | None:
+    try:
+        return int(getattr(error, "code", None))
+    except (TypeError, ValueError):
+        return None
+
+
+def should_switch_model(error: Exception) -> bool:
+    if error_code(error) in {404, 429, 503, 504}:
+        return True
+    return isinstance(error, TimeoutError) or "timeout" in type(error).__name__.lower()
+
+
+def request_lesson(client: genai.Client, model: str, prompt: str, category: str):
+    config = types.GenerateContentConfig(
+        response_mime_type="application/json",
+        response_schema=LessonContent,
+        thinking_config=thinking_config_for(model),
+    )
+    try:
+        return client.models.generate_content(model=model, contents=prompt, config=config)
+    except Exception as error:
+        if error_code(error) != 400 or "think" not in str(error).lower():
+            raise
+        print(f"[{CATEGORY_NAMES[category]}] {model} rejected thinking settings; retrying without them.", flush=True)
+        plain_config = types.GenerateContentConfig(
+            response_mime_type="application/json",
+            response_schema=LessonContent,
+        )
+        return client.models.generate_content(model=model, contents=prompt, config=plain_config)
+
+
 def generate_lesson(client: genai.Client, category: str, story: dict[str, str | int], today: str) -> dict:
     prompt = make_prompt(category, story, today)
     last_error: Exception | None = None
-    for attempt in range(1, 4):
+    for index, model in enumerate(MODELS):
         started = time.monotonic()
-        print(f"[{CATEGORY_NAMES[category]}] Gemini attempt {attempt}/3 started ({MODEL}).", flush=True)
+        print(f"[{CATEGORY_NAMES[category]}] Trying {model} ({index + 1}/{len(MODELS)}).", flush=True)
         try:
-            response = client.models.generate_content(
-                model=MODEL,
-                contents=prompt,
-                config=types.GenerateContentConfig(
-                    response_mime_type="application/json",
-                    response_schema=LessonContent,
-                ),
-            )
+            response = request_lesson(client, model, prompt, category)
             if response.parsed is not None:
                 lesson = LessonContent.model_validate(response.parsed)
             elif response.text:
@@ -242,23 +273,22 @@ def generate_lesson(client: genai.Client, category: str, story: dict[str, str | 
             result["sourceUrl"] = story["url"]
             result["sourceLabel"] = "閱讀 BBC 原文報導"
             print(
-                f"[{CATEGORY_NAMES[category]}] Lesson validated in {time.monotonic() - started:.1f}s.",
+                f"[{CATEGORY_NAMES[category]}] {model} lesson validated in {time.monotonic() - started:.1f}s.",
                 flush=True,
             )
             return result
         except Exception as error:
             last_error = error
             print(
-                f"[{CATEGORY_NAMES[category]}] Attempt {attempt}/3 failed after "
+                f"[{CATEGORY_NAMES[category]}] {model} failed after "
                 f"{time.monotonic() - started:.1f}s: {error}",
                 flush=True,
             )
-            if attempt == 3:
-                break
-            delay = 60 if getattr(error, "code", None) == 429 else 3 * attempt
-            print(f"[{CATEGORY_NAMES[category]}] Retrying in {delay}s.", flush=True)
-            time.sleep(delay)
-    raise RuntimeError(f"Could not generate a valid {CATEGORY_NAMES[category]} lesson") from last_error
+            if index + 1 < len(MODELS) and (should_switch_model(error) or isinstance(error, ValueError)):
+                print(f"[{CATEGORY_NAMES[category]}] Switching immediately to {MODELS[index + 1]}.", flush=True)
+                continue
+            break
+    raise RuntimeError(f"Could not generate a valid {CATEGORY_NAMES[category]} lesson with available models") from last_error
 
 
 def load_history() -> dict:
@@ -310,7 +340,13 @@ def main() -> None:
         print(f"{today} already has all three complete lessons; data.json is unchanged.", flush=True)
         return
     used = used_source_urls(history)
-    client = genai.Client(api_key=api_key, http_options=types.HttpOptions(timeout=GEMINI_TIMEOUT_MS))
+    client = genai.Client(
+        api_key=api_key,
+        http_options=types.HttpOptions(
+            timeout=GEMINI_TIMEOUT_MS,
+            retry_options=types.HttpRetryOptions(attempts=1),
+        ),
+    )
     categories = list(pending)
     print(f"Generating {len(categories)} missing categories: {', '.join(CATEGORY_NAMES[key] for key in categories)}.", flush=True)
     for index, category in enumerate(categories):
