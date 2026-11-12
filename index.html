@@ -1,0 +1,803 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>TOEIC News Notes</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.3/html2pdf.bundle.min.js" defer></script>
+  <script>
+    try {
+      const savedTheme = localStorage.getItem("toeic-news-theme");
+      if (["a", "b", "c"].includes(savedTheme)) document.documentElement.dataset.theme = savedTheme;
+    } catch (_) { /* 本機瀏覽器若停用儲存，仍可正常切換主題。 */ }
+  </script>
+  <style>
+    :root{--canvas:#D0CED0;--paper:#F3F2D1;--ink:#5F3E36;--vocab-head:#9DB19D;--mask:#9E6563;--navy:#5F3E36;--teal:#9E6563;--muted:#765b52;--line:#c9c5ad;--panel:#e9e8cb;--nav-control:#76564e;--nav-text:#f3f2d1}
+    html[data-theme="b"]{--canvas:#786C66;--paper:#E7E3D8;--ink:#544A54;--vocab-head:#D5998D;--mask:#856652;--navy:#544A54;--teal:#856652;--muted:#71646b;--line:#c8beb9;--panel:#ded9cf;--nav-control:#695d67;--nav-text:#f4eee8}
+    html[data-theme="c"]{--canvas:#978865;--paper:#E2E8D8;--ink:#735F54;--vocab-head:#ACC2C9;--mask:#6C968E;--navy:#735F54;--teal:#6C968E;--muted:#756b5e;--line:#bccabc;--panel:#d6e0d3;--nav-control:#88756a;--nav-text:#f3f4e9}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--canvas);color:var(--ink);font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;line-height:1.7}
+    button,select{font:inherit}
+    button{cursor:pointer}
+    :focus-visible{outline:3px solid #d9a54d;outline-offset:2px}
+    .topbar{height:56px;max-height:56px;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:0 max(16px,calc((100vw - 1120px)/2));background:var(--navy);color:var(--nav-text)}
+    .nav-left,.nav-right,.tabs{display:flex;align-items:center;gap:8px}
+    .nav-left{min-width:0;overflow-x:auto;scrollbar-width:none}
+    .nav-left::-webkit-scrollbar{display:none}
+    .date-select{flex:none;width:126px;height:34px;padding:0 8px;border:1px solid #b6a69a;border-radius:7px;background:var(--nav-control);color:var(--nav-text);font-size:.82rem;font-weight:700}
+    .tabs{flex:none;gap:3px}
+    .tab{height:34px;padding:0 12px;border:1px solid transparent;border-radius:6px;background:transparent;color:var(--nav-text);font-size:.83rem;font-weight:750;white-space:nowrap}
+    .tab:hover{background:var(--nav-control)}
+    .tab[aria-selected="true"]{background:var(--mask);color:var(--nav-text)}
+    .nav-right{flex:none;gap:5px}
+    .icon-button{display:grid;place-items:center;width:34px;height:34px;padding:0;border:1px solid #b6a69a;border-radius:7px;background:var(--nav-control);color:var(--nav-text);transition:background .16s,border-color .16s,transform .1s}
+    .icon-button:hover{background:var(--mask);border-color:var(--nav-text)}
+    .icon-button:active,.mask:active,.vocab-page-button:active{transform:scale(.95)}
+    #toggle-all[aria-pressed="true"]{background:var(--mask);border-color:var(--nav-text);box-shadow:inset 0 0 0 1px var(--nav-text)}
+    #toggle-all[aria-pressed="true"]:hover{filter:brightness(.92)}
+    .eye-open{display:none}#toggle-all[aria-pressed="true"] .eye-open{display:block}#toggle-all[aria-pressed="true"] .eye-closed{display:none}
+    .icon-button svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+    #print-button.is-exporting{width:auto;padding:0 10px;cursor:wait}
+    #print-button.is-exporting svg{display:none}
+    .export-label{display:none;white-space:nowrap;font-size:.75rem;font-weight:800}
+    #print-button.is-exporting .export-label{display:inline}
+    .theme-switcher{display:flex;align-items:center;gap:4px;margin-right:5px}
+    .theme-swatch{width:22px;height:22px;padding:0;border:2px solid transparent;border-radius:50%;box-shadow:0 0 0 1px #b9b0a7;transition:transform .1s,box-shadow .16s}
+    .theme-swatch:hover{transform:scale(1.12)}
+    .theme-swatch:active{transform:scale(.95)}
+    .theme-swatch[aria-pressed="true"]{box-shadow:0 0 0 2px var(--nav-text)}
+    .theme-swatch[data-theme-choice="a"]{background:linear-gradient(135deg,#F3F2D1 0 50%,#9DB19D 50% 75%,#9E6563 75%)}
+    .theme-swatch[data-theme-choice="b"]{background:linear-gradient(135deg,#E7E3D8 0 50%,#D5998D 50% 75%,#856652 75%)}
+    .theme-swatch[data-theme-choice="c"]{background:linear-gradient(135deg,#E2E8D8 0 50%,#ACC2C9 50% 75%,#6C968E 75%)}
+    .page{max-width:1120px;margin:20px auto 64px;padding:0 22px}
+    .status{min-height:22px;margin:0 0 9px;color:var(--muted);font-size:.79rem}
+    .sheet{overflow:hidden;border:1px solid var(--line);border-radius:20px;background:var(--paper);box-shadow:0 16px 42px #35292716}
+    .sheet.pdf-exporting{width:710px;max-width:710px;margin:0;border-radius:0;overflow:visible;box-shadow:none}
+    .pdf-exporting .table-wrap{overflow:visible}
+    .pdf-exporting .vocab{min-width:0}
+    .pdf-exporting .vocab-pages{display:none}
+    .pdf-exporting .vocab tr.is-offpage{display:table-row}
+    .pdf-exporting .reveal:not(.is-covered) .mask{display:none}
+    .pdf-exporting .question,.pdf-exporting .vocab tr,.pdf-exporting .passage{break-inside:avoid;page-break-inside:avoid}
+    .pdf-modal[hidden]{display:none}
+    .pdf-modal{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;padding:16px;background:#1d1b1bcc}
+    .pdf-dialog{display:flex;flex-direction:column;width:min(100%,960px);height:min(92vh,1100px);overflow:hidden;border:1px solid var(--line);border-radius:12px;background:var(--paper);box-shadow:0 24px 60px #0005}
+    .pdf-dialog-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:12px 16px;background:var(--paper)}
+    .pdf-dialog-title{margin:0;color:var(--ink);font-size:1rem;font-weight:800}
+    .pdf-dialog-actions{display:flex;gap:8px;flex-wrap:wrap}
+    .pdf-dialog-button{padding:7px 12px;border:1px solid var(--mask);border-radius:6px;background:var(--mask);color:var(--nav-text);font-size:.84rem;font-weight:750;transition:filter .16s,transform .1s}
+    .pdf-dialog-button:hover{filter:brightness(.9)}
+    .pdf-dialog-button:active{transform:scale(.95)}
+    .pdf-dialog-button:disabled{opacity:.55;cursor:wait}
+    .pdf-dialog-button.secondary{background:transparent;color:var(--ink)}
+    .pdf-dialog-body{display:grid;place-items:center;flex:1;min-height:0;background:var(--panel)}
+    .pdf-preview-status{padding:16px;color:var(--ink);text-align:center}
+    .pdf-preview-frame{width:100%;height:100%;border:0;background:#fff}
+    .pdf-preview-frame[hidden],.pdf-preview-status[hidden]{display:none}
+    .sheet-head{padding:30px 38px 26px;border-bottom:1px solid var(--line);background:var(--paper)}
+    .meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px;color:var(--muted);font-size:.78rem;font-weight:750}
+    .badge{padding:3px 9px;border-radius:5px;background:var(--vocab-head);color:var(--ink)}
+    .dot{color:#aeb8b9}
+    h1{margin:12px 0 8px;font-size:clamp(1.45rem,2.6vw,2.05rem);line-height:1.35}
+    .summary{max-width:780px;margin:0;color:var(--muted);font-size:.95rem}
+    .overview{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px}
+    .overview span{padding:4px 9px;border:1px solid var(--line);border-radius:5px;background:var(--panel);color:var(--ink);font-size:.74rem;font-weight:750}
+    .section{padding:30px 38px 34px;border-bottom:1px solid var(--line)}
+    .section:last-child{border:0}
+    .section-heading{display:flex;align-items:baseline;gap:12px;margin-bottom:17px}
+    .section-number{color:var(--teal);font-family:Georgia,serif;font-size:1.35rem;font-weight:700}
+    h2{margin:0;font-size:1.2rem;line-height:1.35}
+    .section-en{margin-left:auto;color:#8a989b;font-family:Georgia,serif;font-size:.85rem;font-style:italic}
+    .article-copy{max-width:78ch;color:var(--ink);font-family:Georgia,"Times New Roman",serif;font-size:1.1rem;line-height:1.88}
+    .article-copy p{margin:0 0 15px}
+    .article-copy p:last-child{margin:0}
+    .small-heading{margin:20px 0 8px;color:var(--ink);font-size:.86rem;font-weight:800}
+    .reveal{position:relative;min-height:58px;border:1px solid var(--line);border-radius:9px;background:var(--panel)}
+    .reveal-content{padding:12px 15px}
+    .reveal-content p{margin:0 0 8px}
+    .reveal-content p:last-child{margin:0}
+    .reveal.is-covered .reveal-content{visibility:hidden}
+    .mask{position:absolute;inset:0;display:grid;place-items:center;width:100%;min-height:100%;padding:5px;border:0;border-radius:8px;background:var(--mask);color:var(--nav-text);font-size:.8rem;font-weight:800;text-align:center;transition:background .16s,transform .1s}
+    .mask:hover{filter:brightness(.9)}
+    .reveal:not(.is-covered) .mask{position:static;display:block;min-height:0;padding:5px 12px;border-top:1px solid var(--line);border-radius:0 0 8px 8px;background:transparent;color:var(--ink);text-align:right;font-size:.72rem}
+    .reveal:not(.is-covered) .mask:hover{background:var(--vocab-head)}
+    .source-row{margin-top:14px}
+    .source-link{display:inline-flex;align-items:center;gap:5px;padding:5px 10px;border:1px solid var(--teal);border-radius:6px;color:var(--teal);font-size:.78rem;font-weight:800;text-decoration:none}
+    .source-link:hover{background:var(--panel)}
+    .vocab-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}
+    .vocab-toolbar .section-heading{margin:0}
+    .vocab-pages{display:flex;flex:none;gap:4px}
+    .vocab-page-button{padding:4px 10px;border:1px solid var(--line);border-radius:6px;background:var(--panel);color:var(--ink);font-size:.75rem;font-weight:800;transition:background .16s,transform .1s}
+    .vocab-page-button:hover{background:var(--vocab-head)}
+    .vocab-page-button[aria-pressed="true"]{border-color:var(--mask);background:var(--mask);color:var(--nav-text)}
+    .vocab tr.is-offpage{display:none}
+    .table-wrap{overflow-x:auto}
+    .vocab{width:100%;border:none;border-collapse:separate;border-spacing:0;table-layout:fixed;font-size:.84rem}
+    .vocab thead{background:var(--vocab-head);border-radius:8px}
+    .vocab th{padding:12px;border:none;background:var(--vocab-head);color:var(--ink);font-size:.74rem;line-height:1.4}
+    .vocab th:first-child{border-radius:8px 0 0 8px}
+    .vocab th:last-child{border-radius:0 8px 8px 0}
+    .vocab td{padding:14px 12px;border:none;overflow-wrap:anywhere}
+    .vocab th,.vocab td{text-align:left;vertical-align:middle}
+    .vocab tbody tr:hover{background:var(--panel)}
+    .vocab th:nth-child(1){width:22%}.vocab th:nth-child(2){width:16%}.vocab th:nth-child(3){width:17%}.vocab th:nth-child(4){width:18%}.vocab th:nth-child(5){width:27%}
+    .term{color:var(--ink);font-weight:850}.pos{color:var(--muted);font-size:.77rem}
+    .collocation{margin-top:4px;color:var(--muted);font-size:.8rem}
+    .vocab .reveal{min-height:52px}.vocab .reveal-content{padding:8px}.vocab .mask{font-size:.7rem}
+    .vocab .reveal:not(.is-covered){min-height:0;border:none;border-radius:0;background:transparent;padding:0}
+    .vocab .reveal:not(.is-covered) .reveal-content{padding:0}
+    .vocab .reveal:not(.is-covered) .mask{display:inline;width:auto;min-height:0;margin-top:3px;padding:0;border:none;border-radius:0;background:transparent;color:var(--teal);text-align:left;font-size:.66rem}
+    .vocab .reveal:not(.is-covered) .mask:hover{background:transparent;color:var(--mask);text-decoration:underline}
+    .example{color:var(--ink);font-family:Georgia,serif;line-height:1.58}
+    .question-list{display:grid;gap:13px}
+    .question{padding:18px 19px;border:1px solid var(--line);border-radius:11px;background:var(--panel)}
+    .question-top{display:flex;gap:11px;align-items:baseline}
+    .q-number{flex:none;color:var(--teal);font-family:Georgia,serif;font-size:1rem;font-weight:700}
+    .prompt{margin:0;font-size:1rem;font-weight:650}
+    .options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px 16px;margin:11px 0 13px 26px;padding:0;list-style:none}
+    .options li{color:var(--ink);font-size:.9rem}
+    .option-letter{display:inline-block;min-width:25px;color:var(--teal);font-weight:800}
+    .answer-reveal{min-height:104px}
+    .answer-reveal .reveal-content{display:grid;gap:8px;font-size:.86rem}
+    .detail-row{display:grid;grid-template-columns:125px 1fr;gap:8px}
+    .detail-label{color:var(--ink);font-weight:850}
+    .passage{padding:18px 22px;border-left:4px solid var(--vocab-head);border-radius:0 9px 9px 0;background:var(--panel);font-family:Georgia,"Times New Roman",serif;font-size:1rem;line-height:1.8;white-space:pre-line}
+    .passage-title{margin:0 0 9px;color:var(--ink);font-family:system-ui,sans-serif;font-size:.8rem;font-weight:800}
+    .passage p{margin:0}
+    .reading-note{margin:0 0 13px;color:var(--muted);font-size:.84rem}
+    @media(max-width:760px){
+      .topbar{padding:0 10px}.date-select{width:113px}.tab{padding:0 8px;font-size:.77rem}
+      .page{padding:0 10px}.sheet-head,.section{padding:24px 18px}
+      .vocab-toolbar{align-items:flex-start}.vocab-toolbar .section-heading{min-width:0}
+      .section-en{display:none}.options{grid-template-columns:1fr}
+      .vocab{min-width:780px}.detail-row{grid-template-columns:1fr;gap:0}
+    }
+    @page{size:A4;margin:14mm 13mm 15mm}
+    @media print{
+      :root,html[data-theme]{--canvas:#fff;--paper:#fff;--ink:#111;--muted:#444;--line:#bbb;--panel:#fff;--vocab-head:#fff;--teal:#111}
+      html,body{width:auto;background:#fff!important;color:#111;font-size:9.5pt;print-color-adjust:economy;-webkit-print-color-adjust:economy}
+      .topbar,.status,.pdf-modal{display:none!important}
+      .page{width:100%;max-width:100%;margin:0 auto;padding:0}
+      .sheet{width:100%;max-width:100%;margin:0 auto;overflow:visible;border:0;border-radius:0;box-shadow:none;background:#fff}
+      .sheet-head{padding:0 0 5mm;border-bottom:1px solid #777;background:#fff!important}
+      .meta{color:#333}.badge,.overview span{border:1px solid #aaa;background:#fff;color:#111}
+      h1{margin:2mm 0 1mm;font-size:15pt}.summary{font-size:9pt}.overview{margin-top:3mm}
+      .section{padding:6mm 0;border-bottom:1px solid #bbb}
+      .section-heading{margin-bottom:4mm}.section-number{color:#111}h2{font-size:11.5pt}.section-en{color:#555}
+      .article-copy{max-width:none;font-size:10pt;line-height:1.55}.article-copy p{margin-bottom:3mm}
+      .small-heading{margin-top:4mm}.reveal,.question,.passage{border-color:#aaa;background:#fff!important;box-shadow:none}
+      .reveal{min-height:18mm}.reveal-content{padding:2mm 3mm}
+      .reveal.is-covered{background:repeating-linear-gradient(to bottom,#fff 0 8mm,#ddd 8.1mm 8.3mm)!important}
+      .reveal.is-covered .reveal-content{visibility:hidden}.mask{display:none!important}
+      .source-row{margin-top:3mm}.source-link{border:0;padding:0;color:#111}
+      .source-link::after{content:" " attr(href);font-weight:400;overflow-wrap:anywhere}
+      .vocab-pages{display:none!important}.vocab tr.is-offpage{display:table-row!important}
+      .table-wrap{width:100%;overflow:visible}.vocab{width:100%;min-width:0;border:0.5pt solid #aaa;border-collapse:collapse;font-size:8pt}
+      .vocab thead,.vocab tbody tr:hover{background:#fff!important;border-radius:0}
+      .vocab th,.vocab td{padding:2mm 1.5mm;border:0.5pt solid #aaa;background:#fff!important;text-align:left;vertical-align:top}
+      .vocab th{color:#111;border-radius:0!important}
+      .vocab tr:last-child td{border:0.5pt solid #aaa}
+      .vocab tr,.question,.passage{break-inside:avoid-page;page-break-inside:avoid}
+      .vocab .reveal{min-height:13mm}.vocab .reveal-content{padding:1mm}
+      .vocab .reveal:not(.is-covered){min-height:0;border:none;background:transparent;padding:0}
+      .vocab .reveal:not(.is-covered) .reveal-content{padding:0}
+      .question-list{gap:3mm}.question{padding:3mm;border-radius:0}
+      .options{gap:1mm 4mm;margin:2mm 0 2mm 6mm}.answer-reveal{min-height:24mm}
+      .detail-row{grid-template-columns:26mm 1fr;gap:2mm}
+      .passage{padding:3mm;border-left:2px solid #888;border-radius:0;font-size:9.5pt}
+      a{text-decoration:none}
+    }
+  </style>
+</head>
+<body>
+  <nav class="topbar" aria-label="日期、分類與講義工具">
+    <div class="nav-left">
+      <select id="date-select" class="date-select" aria-label="選擇新聞日期"></select>
+      <div class="tabs" role="tablist" aria-label="新聞分類">
+        <button type="button" class="tab" role="tab" id="tab-finance" data-category="finance" aria-controls="lesson" aria-selected="true">Finance</button>
+        <button type="button" class="tab" role="tab" id="tab-politics" data-category="politics" aria-controls="lesson" aria-selected="false">Politics</button>
+        <button type="button" class="tab" role="tab" id="tab-techLife" data-category="techLife" aria-controls="lesson" aria-selected="false">Tech &amp; Life</button>
+      </div>
+    </div>
+    <div class="nav-right">
+      <div class="theme-switcher" role="group" aria-label="護眼配色主題">
+        <button type="button" class="theme-swatch" data-theme-choice="a" title="燕麥可可" aria-label="燕麥可可主題" aria-pressed="false"></button>
+        <button type="button" class="theme-swatch" data-theme-choice="b" title="亞麻玫瑰" aria-label="亞麻玫瑰主題" aria-pressed="false"></button>
+        <button type="button" class="theme-swatch" data-theme-choice="c" title="霧青湖水" aria-label="霧青湖水主題" aria-pressed="false"></button>
+      </div>
+      <button type="button" class="icon-button" id="toggle-all" title="全部顯示" aria-label="全部顯示" aria-pressed="false">
+        <svg class="eye-closed" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3 21 21M10.6 6.1A11.6 11.6 0 0 1 12 6c6.5 0 10 6 10 6a13.8 13.8 0 0 1-3.1 3.6M6.2 6.8C3.5 8.6 2 12 2 12s3.5 6 10 6c1.4 0 2.7-.3 3.8-.8"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg>
+        <svg class="eye-open" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg>
+      </button>
+      <button type="button" class="icon-button" id="print-button" title="一鍵匯出彩色 PDF 筆記" aria-label="一鍵匯出彩色 PDF 筆記">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3"/></svg>
+        <span class="export-label">匯出中...</span>
+      </button>
+    </div>
+  </nav>
+  <main class="page">
+    <p id="data-status" class="status" role="status" aria-live="polite">正在讀取 data.json…</p>
+    <div id="lesson" role="tabpanel" aria-labelledby="tab-finance"></div>
+  </main>
+  <div id="pdf-modal" class="pdf-modal" hidden>
+    <div class="pdf-dialog" role="dialog" aria-modal="true" aria-labelledby="pdf-dialog-title">
+      <div class="pdf-dialog-head">
+        <h2 id="pdf-dialog-title" class="pdf-dialog-title">PDF 預覽</h2>
+        <div class="pdf-dialog-actions">
+          <button type="button" id="pdf-confirm" class="pdf-dialog-button" disabled>確認下載 PDF</button>
+          <button type="button" id="pdf-close" class="pdf-dialog-button secondary">關閉預覽</button>
+        </div>
+      </div>
+      <div class="pdf-dialog-body">
+        <p id="pdf-preview-status" class="pdf-preview-status" role="status">正在產生 PDF 預覽…</p>
+        <iframe id="pdf-preview-frame" class="pdf-preview-frame" title="PDF 講義預覽" src="about:blank" hidden></iframe>
+      </div>
+    </div>
+  </div>
+  <script>
+    "use strict";
+    /*
+      data.json 格式：
+      { "2026-11-11": { "finance": lesson, "politics": lesson, "techLife": lesson }, ... }
+      lesson = { title, summary, sourceUrl, sourceLabel, english:[段落], translation:[段落],
+        vocabulary:[{term,pos,collocations,meaning,synonyms:[2項],family,sentence}]（固定 10 項）,
+        part5:[question×3], part6:{title,passage,questions:[question×4]},
+        part7:{intro,questions:[question×3]} }
+      question = {prompt, options:[A,B,C,D], answer:"A"~"D", locator, explanation}
+      有效的外部日期／分類會覆蓋同日期／分類的內建範例；缺少的部分保留範例。
+    */
+    const Q = (prompt,options,answer,locator,explanation) => ({prompt,options,answer,locator,explanation});
+    const V = (term,pos,collocations,meaning,synonyms,family,sentence) => ({term,pos,collocations,meaning,synonyms,family,sentence});
+    const bbc = {
+      finance:"https://www.bbc.com/news/business",
+      politics:"https://www.bbc.com/news/politics",
+      techLife:"https://www.bbc.com/news/technology"
+    };
+    const fallbackData = {
+      "2026-11-11": {
+        finance: {
+          title:"A Local Bank Expands Its Digital Payment Service",
+          summary:"虛構銀行推出小型商家付款方案；練習費用、試用期與客戶通知相關英文。",
+          sourceUrl:bbc.finance,sourceLabel:"閱讀 BBC 相關報導",
+          english:[
+            "Harbor Bank announced a new digital payment service for small businesses on Tuesday. The service allows shop owners to send invoices, accept card payments, and review daily sales in one online dashboard. The bank developed the platform after clients requested a simpler way to manage transactions.",
+            "Eligible businesses can use the service without a monthly fee for the first three months. After the trial period, a standard subscription fee will apply. The bank will hold free online workshops to help customers set up their accounts.",
+            "The bank expects the service to reduce administrative work for store managers. However, it advised customers to compare the new plan with their current payment arrangements before enrolling. A detailed fee schedule will be published next week."
+          ],
+          translation:[
+            "海港銀行週二宣布為小型企業推出新的數位付款服務。店主可透過同一個線上儀表板寄送發票、接受刷卡付款並查看每日銷售額。銀行在客戶要求更簡便的交易管理方式後開發此平台。",
+            "符合資格的企業前三個月可免月費使用。試用期後將收取標準訂閱費。銀行會舉辦免費線上工作坊，協助客戶設定帳戶。",
+            "銀行預期服務可減少店長的行政工作，但建議客戶申請前比較新方案與現有付款安排。詳細費用表將於下週公布。"
+          ],
+          vocabulary:[
+            V("transaction","n.","process a transaction; manage transactions","交易；業務往來",["deal","exchange"],"transact (v.); transactional (adj.)","The bank developed the platform after clients requested a simpler way to manage transactions."),
+            V("eligible","adj.","eligible business; be eligible for","符合資格的",["qualified","entitled"],"eligibility (n.)","Eligible businesses can use the service without a monthly fee for the first three months."),
+            V("subscription","n.","subscription fee; renew a subscription","訂閱；訂閱費",["membership","enrollment"],"subscribe (v.); subscriber (n.)","After the trial period, a standard subscription fee will apply."),
+            V("fee schedule","n. phr.","publish a fee schedule; review a fee schedule","費用表；收費一覽",["price list","rate sheet"],"fee (n.); scheduled (adj.)","A detailed fee schedule will be published next week."),
+            V("before enrolling","phr.","compare plans before enrolling; enroll in a plan","申請加入之前",["before signing up","prior to registration"],"enroll (v.); enrollment (n.)","However, it advised customers to compare the new plan with their current payment arrangements before enrolling."),
+            V("digital payment service","n. phr.","launch a payment service; use digital payments","數位付款服務",["electronic payment system","online payment service"],"digital (adj.); digitize (v.)","Harbor Bank announced a new digital payment service for small businesses on Tuesday."),
+            V("send invoices","v. phr.","send invoices; issue an invoice","寄送發票",["bill customers","issue bills"],"invoice (n./v.); invoicing (n.)","The service allows shop owners to send invoices, accept card payments, and review daily sales in one online dashboard."),
+            V("online dashboard","n. phr.","review an online dashboard; view sales data","線上資訊儀表板",["web portal","control panel"],"online (adj./adv.); dashboard (n.)","The service allows shop owners to send invoices, accept card payments, and review daily sales in one online dashboard."),
+            V("set up accounts","v. phr.","set up accounts; complete account setup","設定帳戶",["create accounts","establish accounts"],"setup (n.); account (n.)","The bank will hold free online workshops to help customers set up their accounts."),
+            V("payment arrangements","n. phr.","compare payment arrangements; revise payment terms","付款安排",["payment plans","billing terms"],"pay (v.); payment (n.)","However, it advised customers to compare the new plan with their current payment arrangements before enrolling.")
+          ],
+          part5:[
+            Q("The platform allows merchants to review daily sales ______.",["convenient","convenience","conveniently","convene"],"C","文法結構：review 是動詞，空格要用副詞修飾動作。","conveniently 為副詞，意為「方便地」；A 是形容詞，B 是名詞。"),
+            Q("Businesses must apply ______ they can begin the free trial.",["before","despite","during","unless"],"A","文法結構：空格連接兩個完整子句，表達先後順序。","before 是連接詞，表示「在開始免費試用之前」。despite 與 during 是介系詞，不能直接接完整子句。"),
+            Q("A detailed fee schedule will be ______ next week.",["availability","available","avail","availably"],"B","文法結構：be 動詞後需接形容詞作主詞補語。","available 是形容詞，表示「可取得的」；其他選項詞性不符。")
+          ],
+          part6:{
+            title:"Customer announcement｜客戶公告",
+            passage:"Dear Business Customer,\n\nWe are pleased to introduce a digital payment platform. It will help you process transactions more 【1】. Online registration opens on November 18. 【2】.\n\nThere is no monthly charge during the first three months. After that, a standard fee will 【3】. Please contact our support team 【4】 you have any questions.\n\nSincerely,\nHarbor Bank",
+            questions:[
+              Q("【1】",["efficient","efficiency","efficiently","efficiencies"],"C","公告第 1 段：\"It will help you process transactions more 【1】.\"","process 是動詞，more efficiently 用副詞說明處理交易的方式。"),
+              Q("【2】請選擇最適合的完整句子。",["Our branches were closed last year.","An account setup guide will be sent after registration.","The workshop was canceled yesterday.","Please return rented equipment."],"B","公告第 1 段：\"Online registration opens on November 18.\"","前句談線上註冊，後句接續「註冊後寄送設定指南」最合語意與流程。"),
+              Q("【3】",["apply","applying","applied","application"],"A","公告第 2 段：\"After that, a standard fee will 【3】.\"","情態助動詞 will 後接原形動詞；a fee will apply 表示「將收取費用」。"),
+              Q("【4】",["if","although","because of","whereas"],"A","公告第 2 段：\"Please contact our support team 【4】 you have any questions.\"","這是條件句，表示「若有任何問題」，故用 if。")
+            ]
+          },
+          part7:{intro:"根據上方新聞文章作答。",questions:[
+            Q("Why did Harbor Bank develop the platform?",["To close its branches","To respond to clients' requests","To stop card payments","To increase paper invoices"],"B","新聞第 1 段：\"The bank developed the platform after clients requested a simpler way to manage transactions.\"","客戶希望更簡便地管理交易，銀行因此開發平台。"),
+            Q("What happens after the three-month trial?",["The service closes","Workshops become mandatory","A standard subscription fee applies","Daily reports are removed"],"C","新聞第 2 段：\"After the trial period, a standard subscription fee will apply.\"","trial period 指前三個月免費試用期；之後開始收取標準訂閱費。"),
+            Q("What should customers do before enrolling?",["Compare payment plans","Visit every branch","Cancel all invoices","Buy a new computer"],"A","新聞第 3 段：\"It advised customers to compare the new plan with their current payment arrangements before enrolling.\"","關鍵動詞 compare 指比較方案；其他選項文中未提。")
+          ]}
+        },
+        politics: {
+          title:"City Council Opens a Public Transit Consultation",
+          summary:"虛構城市徵求公車路線調整意見；練習公告、會議與公共服務英文。",
+          sourceUrl:bbc.politics,sourceLabel:"閱讀 BBC 相關報導",
+          english:[
+            "The city council invited residents to comment on a proposed revision to the local bus network. Two routes would run more frequently during the morning rush hour, while another would be extended to a new medical center.",
+            "A public meeting will take place at City Hall on November 24. Residents who cannot attend may submit written feedback online until December 1. The transportation office will publish a summary before the council votes.",
+            "Community groups welcomed the longer route but asked the council to consider weekend service. Council members said they would review operating costs and passenger data before making a final decision."
+          ],
+          translation:[
+            "市議會邀請居民就當地公車網路修訂提案發表意見。兩條路線在上午尖峰時段會增加班次，另一條則會延伸至新的醫療中心。",
+            "公開會議將於 11 月 24 日在市政廳舉行。無法出席的居民可在 12 月 1 日前線上提交書面意見。交通局會在表決前公布摘要。",
+            "社區團體歡迎延長路線，但要求市議會考慮週末服務。議員表示會檢視營運成本與乘客資料後再做決定。"
+          ],
+          vocabulary:[
+            V("revision","n.","proposed revision; make a revision","修訂；修改版本",["amendment","modification"],"revise (v.); revised (adj.)","The city council invited residents to comment on a proposed revision to the local bus network."),
+            V("rush hour","n. phr.","morning rush hour; during rush hour","交通尖峰時段",["peak period","commuting hours"],"rush (v./n.); hourly (adj.)","Two routes would run more frequently during the morning rush hour, while another would be extended to a new medical center."),
+            V("submit feedback","v. phr.","submit written feedback; request feedback","提交意見；提供回饋",["provide input","file comments"],"submission (n.); feedback (n.)","Residents who cannot attend may submit written feedback online until December 1."),
+            V("operating costs","n. phr.","review operating costs; reduce operating costs","營運成本",["running expenses","operational expenses"],"operate (v.); operation (n.)","Council members said they would review operating costs and passenger data before making a final decision."),
+            V("city council","n. phr.","city council; council vote","市議會",["municipal council","local assembly"],"council (n.); councilor (n.)","The city council invited residents to comment on a proposed revision to the local bus network."),
+            V("bus network","n. phr.","revise a bus network; local bus network","公車路線網",["transit system","bus system"],"network (n.); networked (adj.)","The city council invited residents to comment on a proposed revision to the local bus network."),
+            V("be extended to","v. phr.","be extended to a location; extend a route","延伸至",["be lengthened to","reach farther to"],"extend (v.); extension (n.)","Two routes would run more frequently during the morning rush hour, while another would be extended to a new medical center."),
+            V("public meeting","n. phr.","hold a public meeting; attend a meeting","公開會議",["open forum","community meeting"],"public (adj.); publicly (adv.)","A public meeting will take place at City Hall on November 24."),
+            V("publish a summary","v. phr.","publish a summary; summarize feedback","公布摘要",["release a brief","issue a synopsis"],"publish (v.); publication (n.)","The transportation office will publish a summary before the council votes."),
+            V("final decision","n. phr.","make a final decision; reach a decision","最終決定",["definitive choice","conclusion"],"decide (v.); decisive (adj.)","Council members said they would review operating costs and passenger data before making a final decision.")
+          ],
+          part5:[
+            Q("Residents may submit comments ______ December 1.",["by","among","during","across"],"A","文法結構：介系詞加日期表示截止期限。","by December 1 意為「不晚於 12 月 1 日」；during 表期間，不能表明截止日。"),
+            Q("The council will review data before ______ a decision.",["make","made","making","makes"],"C","文法結構：介系詞 before 後接動名詞。","making 是動名詞；before making a decision 表「做決定之前」。"),
+            Q("The route extension will improve ______ to the medical center.",["access","accessible","accessibly","accessed"],"A","文法結構：improve 後需名詞作受詞。","access 是名詞，表示「可及性／前往的便利性」。")
+          ],
+          part6:{title:"Public notice｜公開公告",passage:"Notice to Residents\n\nThe city will hold a meeting about bus route changes on November 24. All residents are 【1】 to attend. The meeting begins at 6:30 p.m. in the main hall. 【2】.\n\nIf you cannot attend, complete the online form by December 1. Your comments will be carefully 【3】 before the vote. For accessible seating, contact our office 【4】 November 20.\n\nCity Transportation Office",questions:[
+            Q("【1】",["invite","invited","inviting","invitation"],"B","公告第 1 段：\"All residents are 【1】 to attend.\"","be invited to 為被動語態，表示「受邀」。"),
+            Q("【2】請選擇最適合的完整句子。",["A map of the proposed routes will be available at the entrance.","The library closed last year.","Your refund has been issued.","Please return all rented equipment."],"A","公告第 1 段：\"The meeting begins at 6:30 p.m. in the main hall.\"","會議討論公車路線，入口提供提案路線圖最符合上下文。"),
+            Q("【3】",["consider","considered","considering","consideration"],"B","公告第 2 段：\"Your comments will be carefully 【3】 before the vote.\"","will be 後接過去分詞 considered，形成被動語態。"),
+            Q("【4】",["at","by","into","from"],"B","公告第 2 段：\"contact our office 【4】 November 20.\"","by 加日期表示「不晚於」，符合預約座位的截止日。")
+          ]},
+          part7:{intro:"根據上方新聞文章作答。",questions:[
+            Q("What is one proposed bus network change?",["All routes will close","A route will reach a medical center","Fares will double","The city will buy trains"],"B","新聞第 1 段：\"another would be extended to a new medical center.\"","be extended to 表示「延伸至」，故選 B。"),
+            Q("How can residents respond if they miss the meeting?",["Call the mayor","Submit written feedback online","Vote at the hospital","Write to a private company"],"B","新聞第 2 段：\"Residents who cannot attend may submit written feedback online until December 1.\"","無法出席者仍可在線上提交書面意見。"),
+            Q("What will council members examine before deciding?",["Uniform designs","School grades","Operating costs and passenger data","Restaurant reviews"],"C","新聞第 3 段：\"review operating costs and passenger data before making a final decision.\"","兩項決策依據都在第 3 段直接列出。")
+          ]}
+        },
+        techLife: {
+          title:"Library Introduces a Digital Skills Help Desk",
+          summary:"虛構圖書館新增數位技能服務；練習預約、資料安全與使用者支援英文。",
+          sourceUrl:bbc.techLife,sourceLabel:"閱讀 BBC 相關報導",
+          english:[
+            "The Eastside Library has opened a digital skills help desk for residents who need assistance with everyday online tasks. Staff can explain how to create secure passwords, complete online forms, and use video calling tools.",
+            "Appointments are available on weekday afternoons, and each session lasts 30 minutes. The service is free, but visitors must book a time slot in advance. Library staff will not ask users to share passwords or banking details.",
+            "The library also plans to offer group workshops next month. Its director said the program is designed to make essential digital services more accessible, especially for older residents and people using the internet for the first time."
+          ],
+          translation:[
+            "東區圖書館開設數位技能諮詢台，協助居民處理日常線上事務。館員可說明如何建立安全密碼、填寫線上表單及使用視訊通話工具。",
+            "預約時段安排在平日下午，每次 30 分鐘。服務免費，但訪客須事先預約。館員不會要求使用者提供密碼或銀行資料。",
+            "圖書館下個月也計畫舉辦團體工作坊。館長表示，此計畫旨在讓重要數位服務更容易使用，尤其是對長者與首次上網者。"
+          ],
+          vocabulary:[
+            V("assistance","n.","need assistance with; provide assistance","協助；支援",["help","support"],"assist (v.); assistant (n.)","The Eastside Library has opened a digital skills help desk for residents who need assistance with everyday online tasks."),
+            V("secure password","n. phr.","create a secure password; protect a password","安全密碼",["strong password","protected credential"],"security (n.); securely (adv.)","Staff can explain how to create secure passwords, complete online forms, and use video calling tools."),
+            V("book a time slot","v. phr.","book a time slot in advance; available time slot","預約時段",["reserve a session","schedule an appointment"],"booking (n.); booked (adj.)","The service is free, but visitors must book a time slot in advance."),
+            V("accessible","adj.","make services accessible; accessible to users","易於使用的；可取得的",["available","easy to reach"],"access (n./v.); accessibility (n.)","Its director said the program is designed to make essential digital services more accessible, especially for older residents and people using the internet for the first time."),
+            V("digital skills help desk","n. phr.","visit a help desk; provide digital support","數位技能諮詢台",["support desk","assistance counter"],"help (v./n.); helpful (adj.)","The Eastside Library has opened a digital skills help desk for residents who need assistance with everyday online tasks."),
+            V("online forms","n. phr.","complete online forms; submit a form","線上表單",["web forms","electronic forms"],"form (n./v.); formal (adj.)","Staff can explain how to create secure passwords, complete online forms, and use video calling tools."),
+            V("video calling tools","n. phr.","use video calling tools; join a video call","視訊通話工具",["video chat tools","conferencing apps"],"call (n./v.); caller (n.)","Staff can explain how to create secure passwords, complete online forms, and use video calling tools."),
+            V("weekday afternoons","n. phr.","on weekday afternoons; weekday appointment","平日下午",["workday afternoons","Monday-to-Friday afternoons"],"weekday (n.); weekly (adj.)","Appointments are available on weekday afternoons, and each session lasts 30 minutes."),
+            V("in advance","adv. phr.","book in advance; notify in advance","事先；提前",["beforehand","ahead of time"],"advance (n./v.); advanced (adj.)","The service is free, but visitors must book a time slot in advance."),
+            V("group workshops","n. phr.","offer group workshops; attend a workshop","團體工作坊",["training sessions","group classes"],"workshop (n.); work (v./n.)","The library also plans to offer group workshops next month.")
+          ],
+          part5:[
+            Q("Visitors must book a time slot ______ advance.",["in","at","with","from"],"A","文法結構：in advance 是固定介系詞片語。","in advance 意為「事先」；其他介系詞無法形成此慣用搭配。"),
+            Q("Library staff will not ask users ______ their passwords.",["share","shared","to share","sharing"],"C","文法結構：ask someone to do something。","ask users to share 是「要求使用者分享」的正確句型。"),
+            Q("The workshops will make online services more ______.",["access","accessibility","accessible","accessibly"],"C","文法結構：make + 受詞 + 形容詞。","accessible 為形容詞，表示「更容易使用的」。")
+          ],
+          part6:{title:"Service email｜服務通知",passage:"Dear Library Member,\n\nOur digital help desk is now open. You can receive 【1】 with online forms and video calling tools. Sessions are free and last 30 minutes. 【2】.\n\nPlease arrive five minutes before your appointment. To protect your privacy, staff will never request your passwords. If you need to change a booking, please 【3】 us at least one day in advance. We look forward to 【4】 you.\n\nEastside Library",questions:[
+            Q("【1】",["assist","assistance","assisted","assisting"],"B","郵件第 1 段：\"You can receive 【1】 with online forms.\"","receive 後需名詞受詞，assistance 意為「協助」。"),
+            Q("【2】請選擇最適合的完整句子。",["Please book a time slot online before visiting.","The library sold all its books.","Your invoice is overdue.","The printer was repaired last year."],"A","郵件第 1 段：\"Sessions are free and last 30 minutes.\"","服務採預約制；提醒讀者先線上預約與內容銜接。"),
+            Q("【3】",["notify","notification","notifying","notified"],"A","郵件第 2 段：\"please 【3】 us at least one day in advance.\"","please 後用原形動詞 notify，表示「通知我們」。"),
+            Q("【4】",["help","helped","helping","helps"],"C","郵件第 2 段：\"We look forward to 【4】 you.\"","look forward to 的 to 是介系詞，後面接動名詞 helping。")
+          ]},
+          part7:{intro:"根據上方新聞文章作答。",questions:[
+            Q("Which task can library staff explain?",["Filing taxes for visitors","Creating secure passwords","Approving bank loans","Repairing mobile phones"],"B","新聞第 1 段：\"Staff can explain how to create secure passwords.\"","文章列出密碼、表單與視訊工具；B 為明確提及的項目。"),
+            Q("What must visitors do before using the service?",["Pay a membership fee","Share banking details","Book a time slot","Attend a group workshop"],"C","新聞第 2 段：\"visitors must book a time slot in advance.\"","in advance 表「事先」，所以必須先預約。"),
+            Q("Who may especially benefit from the program?",["Only professional programmers","Older residents and first-time internet users","Only library employees","Bank managers"],"B","新聞第 3 段：\"especially for older residents and people using the internet for the first time.\"","especially 後直接指出主要受益者。")
+          ]}
+        }
+      },
+      "2026-11-10": {
+        finance: {
+          title:"Manufacturer Revises Its Delivery Schedule",
+          summary:"虛構製造商更新出貨時程；練習供應鏈、客戶通知與訂單處理英文。",
+          sourceUrl:bbc.finance,sourceLabel:"閱讀 BBC 相關報導",
+          english:[
+            "Northline Manufacturing has revised the delivery schedule for several office furniture products. A supplier delay has reduced the number of desks available for shipment this month. The company said it has already notified affected customers.",
+            "Orders placed before October 30 will receive priority. Customers whose deliveries move to December may request a full refund or keep their orders with a 10 percent discount. The customer service team will confirm each revised delivery date by email.",
+            "Northline is working with an additional supplier to restore normal inventory levels. Managers expect production to return to its usual pace in early January, although they will review the forecast each week."
+          ],
+          translation:[
+            "北線製造公司修訂了數款辦公家具的交貨時程。供應商延誤使本月可出貨的桌子數量減少。公司表示已通知受影響客戶。",
+            "10 月 30 日前下的訂單可優先處理。交貨延至 12 月的客戶可要求全額退款，或保留訂單並獲得九折優惠。客服會以電子郵件確認新的交貨日期。",
+            "北線正與另一家供應商合作，以恢復正常庫存量。經理預期生產在 1 月初恢復正常速度，但每週仍會檢視預測。"
+          ],
+          vocabulary:[
+            V("revise","v.","revise a schedule; revised delivery date","修訂；修改",["amend","update"],"revision (n.); revised (adj.)","Northline Manufacturing has revised the delivery schedule for several office furniture products."),
+            V("supplier delay","n. phr.","supplier delay; delay a shipment","供應商延誤",["vendor setback","supply disruption"],"supply (v./n.); supplier (n.)","A supplier delay has reduced the number of desks available for shipment this month."),
+            V("receive priority","v. phr.","receive priority; give priority to","獲得優先處理",["take precedence","be prioritized"],"prioritize (v.); priority (n.)","Orders placed before October 30 will receive priority."),
+            V("full refund","n. phr.","request a full refund; issue a refund","全額退款",["complete reimbursement","total repayment"],"refund (v./n.); refundable (adj.)","Customers whose deliveries move to December may request a full refund or keep their orders with a 10 percent discount."),
+            V("inventory levels","n. phr.","restore inventory levels; monitor inventory","庫存水位；庫存量",["stock levels","available stock"],"inventory (n.); inventoried (adj.)","Northline is working with an additional supplier to restore normal inventory levels."),
+            V("delivery schedule","n. phr.","revise a delivery schedule; confirm a delivery date","交貨時程",["shipping timetable","dispatch plan"],"deliver (v.); delivery (n.)","Northline Manufacturing has revised the delivery schedule for several office furniture products."),
+            V("available for shipment","phr.","available for shipment; prepare a shipment","可供出貨",["ready to ship","in stock for dispatch"],"ship (v.); shipment (n.)","A supplier delay has reduced the number of desks available for shipment this month."),
+            V("affected customers","n. phr.","notify affected customers; affected orders","受影響的客戶",["impacted clients","concerned buyers"],"affect (v.); effect (n.)","The company said it has already notified affected customers."),
+            V("customer service team","n. phr.","contact customer service; confirm by email","客服團隊",["support team","client service staff"],"serve (v.); service (n.)","The customer service team will confirm each revised delivery date by email."),
+            V("usual pace","n. phr.","return to the usual pace; production pace","正常速度",["normal rate","regular speed"],"usual (adj.); usually (adv.)","Managers expect production to return to its usual pace in early January, although they will review the forecast each week.")
+          ],
+          part5:[
+            Q("Affected customers have already been ______ of the delay.",["notify","notified","notification","notifying"],"B","文法結構：have been + 過去分詞，形成現在完成被動式。","notified 是過去分詞，表示「已被通知」。"),
+            Q("Orders placed before October 30 will receive ______.",["priority","prioritize","prior","priorly"],"A","文法結構：receive 後需名詞作受詞。","priority 是名詞；receive priority 表「獲得優先處理」。"),
+            Q("The team will confirm each delivery date ______ email.",["by","under","among","toward"],"A","文法結構：by email 為表示傳達方式的固定搭配。","by email 表「以電子郵件」，符合確認日期的方式。")
+          ],
+          part6:{title:"Delivery update｜交貨通知",passage:"Dear Customer,\n\nWe are writing to inform you of a change to your delivery date. A supplier delay has 【1】 our schedule. Your order is now expected in December. 【2】.\n\nYou may keep your order and receive a 10 percent discount, or request a full refund. Please reply by November 18 to tell us which option you 【3】. Our team will send a confirmation email 【4】 we receive your response.\n\nNorthline Customer Service",questions:[
+            Q("【1】",["affect","affected","affecting","effect"],"B","通知第 1 段：\"A supplier delay has 【1】 our schedule.\"","has 後接過去分詞 affected，構成現在完成式。"),
+            Q("【2】請選擇最適合的完整句子。",["We apologize for the inconvenience.","The showroom has a new café.","Our employees received an award.","Please update your password."],"A","通知第 1 段：\"Your order is now expected in December.\"","交貨延期後表達歉意，符合客戶通知語境。"),
+            Q("【3】",["prefer","preference","preferred","preferably"],"A","通知第 2 段：\"tell us which option you 【3】.\"","you 後需動詞 prefer，表示「你偏好哪個選項」。"),
+            Q("【4】",["once","despite","unless","whereas"],"A","通知第 2 段：\"send a confirmation email 【4】 we receive your response.\"","once 引導時間子句，表示「一收到回覆就寄確認信」。")
+          ]},
+          part7:{intro:"根據上方新聞文章作答。",questions:[
+            Q("What caused the schedule revision?",["A supplier delay","A labor strike","A software upgrade","A change in office hours"],"A","新聞第 1 段：\"A supplier delay has reduced the number of desks available for shipment this month.\"","供應商延誤造成可出貨量下降，故修訂時程。"),
+            Q("What can customers with December deliveries request?",["Free installation","A full refund","A second desk","A longer warranty"],"B","新聞第 2 段：\"Customers whose deliveries move to December may request a full refund.\"","符合條件的客戶可要求全額退款。"),
+            Q("When is normal production expected to resume?",["Late October","Mid-November","Early January","Next summer"],"C","新聞第 3 段：\"Managers expect production to return to its usual pace in early January.\"","usual pace 指正常生產速度，時間是 1 月初。")
+          ]}
+        },
+        politics: {
+          title:"Town Announces a Public Budget Hearing",
+          summary:"虛構城鎮舉行預算聽證會；練習財政提案、居民參與及會議通知英文。",
+          sourceUrl:bbc.politics,sourceLabel:"閱讀 BBC 相關報導",
+          english:[
+            "The town administration has scheduled a public hearing on next year's budget for November 21. The proposal includes additional funding for road repairs and an expansion of after-school programs. Officials said the draft budget is available on the town website.",
+            "Residents may speak at the hearing if they register by November 17. Those who prefer to submit written comments can use an online form until November 25. The finance committee will review all comments before issuing its final recommendation.",
+            "The town council is expected to vote in December. The mayor said no final allocation has been approved and encouraged residents to examine the figures before the hearing."
+          ],
+          translation:[
+            "鎮公所安排於 11 月 21 日舉行明年度預算公開聽證會。提案包括增加道路維修經費及擴充課後計畫。官員表示預算草案可在鎮公所網站查看。",
+            "居民若在 11 月 17 日前登記，即可在聽證會發言。偏好書面意見者可在 11 月 25 日前使用線上表單。財政委員會會在提出最終建議前檢視所有意見。",
+            "鎮議會預計於 12 月表決。鎮長表示目前尚未核准最終預算分配，並鼓勵居民在聽證會前查看數據。"
+          ],
+          vocabulary:[
+            V("public hearing","n. phr.","hold a public hearing; attend a hearing","公開聽證會",["open meeting","public session"],"hear (v.); hearing (n.)","The town administration has scheduled a public hearing on next year's budget for November 21."),
+            V("draft budget","n. phr.","review a draft budget; publish a budget","預算草案",["proposed budget","preliminary plan"],"budget (n./v.); budgeting (n.)","Officials said the draft budget is available on the town website."),
+            V("submit written comments","v. phr.","submit written comments; comment on a proposal","提交書面意見",["file feedback","provide written input"],"submission (n.); commenter (n.)","Those who prefer to submit written comments can use an online form until November 25."),
+            V("final allocation","n. phr.","approve an allocation; final allocation of funds","最終經費分配",["fund distribution","resource assignment"],"allocate (v.); allocation (n.)","The mayor said no final allocation has been approved and encouraged residents to examine the figures before the hearing."),
+            V("town administration","n. phr.","contact town administration; local administration","鎮公所；鎮行政機關",["municipal office","local government"],"administer (v.); administration (n.)","The town administration has scheduled a public hearing on next year's budget for November 21."),
+            V("additional funding","n. phr.","request additional funding; allocate funding","額外經費",["extra financing","supplemental funds"],"fund (v./n.); funding (n.)","The proposal includes additional funding for road repairs and an expansion of after-school programs."),
+            V("road repairs","n. phr.","fund road repairs; complete repairs","道路維修",["street maintenance","roadwork"],"repair (n./v.); repairable (adj.)","The proposal includes additional funding for road repairs and an expansion of after-school programs."),
+            V("after-school programs","n. phr.","expand after-school programs; join a program","課後計畫",["extracurricular programs","after-class activities"],"program (n./v.); programming (n.)","The proposal includes additional funding for road repairs and an expansion of after-school programs."),
+            V("finance committee","n. phr.","finance committee; committee recommendation","財政委員會",["budget committee","financial panel"],"finance (n./v.); financial (adj.)","The finance committee will review all comments before issuing its final recommendation."),
+            V("final recommendation","n. phr.","issue a recommendation; review a recommendation","最終建議",["concluding proposal","formal advice"],"recommend (v.); recommendation (n.)","The finance committee will review all comments before issuing its final recommendation.")
+          ],
+          part5:[
+            Q("Residents must register ______ November 17 to speak.",["by","from","among","during"],"A","文法結構：by + 日期表示截止時間。","by November 17 表「最晚 11 月 17 日」。"),
+            Q("The committee will review all ______ comments.",["submit","submitted","submission","submitting"],"B","文法結構：過去分詞 submitted 作形容詞修飾 comments。","submitted comments 指「已提交的意見」。"),
+            Q("The council is expected ______ in December.",["vote","voting","to vote","voted"],"C","文法結構：be expected to + 原形動詞。","be expected to vote 表「預計表決」。")
+          ],
+          part6:{title:"Meeting notice｜會議通知",passage:"Dear Resident,\n\nA public budget hearing will be held on November 21. The draft budget is 【1】 on our website. Residents who wish to speak must register by November 17. 【2】.\n\nWritten comments will be accepted until November 25. The finance committee will review them before 【3】 its recommendation. Please contact the clerk's office if you require 【4】 information.\n\nTown Administration",questions:[
+            Q("【1】",["availability","available","availably","avail"],"B","通知第 1 段：\"The draft budget is 【1】 on our website.\"","is 後用形容詞 available，表示「可在網站取得」。"),
+            Q("【2】請選擇最適合的完整句子。",["Each speaker will have three minutes to present comments.","The swimming pool opens in summer.","The invoice was mailed yesterday.","All laptops need new batteries."],"A","通知第 1 段：\"Residents who wish to speak must register by November 17.\"","接續說明每位發言者的時間限制，與登記發言的主題一致。"),
+            Q("【3】",["issue","issued","issuing","issuance"],"C","通知第 2 段：\"before 【3】 its recommendation.\"","介系詞 before 後接動名詞 issuing。"),
+            Q("【4】",["addition","additional","additionally","add"],"B","通知第 2 段：\"if you require 【4】 information.\"","information 是名詞，前面用形容詞 additional 修飾。")
+          ]},
+          part7:{intro:"根據上方新聞文章作答。",questions:[
+            Q("What is included in the proposed budget?",["A new airport","Road repairs and after-school programs","Free airline tickets","A theater renovation"],"B","新聞第 1 段：\"The proposal includes additional funding for road repairs and an expansion of after-school programs.\"","提案涵蓋道路維修及課後計畫兩項。"),
+            Q("What is required to speak at the hearing?",["Register by November 17","Pay an entrance fee","Join the finance committee","Send a letter to the mayor"],"A","新聞第 2 段：\"Residents may speak at the hearing if they register by November 17.\"","if 引導條件，發言者須在期限前登記。"),
+            Q("Has the final allocation been approved?",["Yes, in October","Yes, at the hearing","No, it has not","The article does not mention a budget"],"C","新聞第 3 段：\"no final allocation has been approved.\"","no 與 has been approved 直接表明尚未核准。")
+          ]}
+        },
+        techLife: {
+          title:"Shared Bicycle App Adds a Safety Check Feature",
+          summary:"虛構共享單車平台新增安全檢查；練習應用程式更新、回報與維護英文。",
+          sourceUrl:bbc.techLife,sourceLabel:"閱讀 BBC 相關報導",
+          english:[
+            "A shared bicycle company has added a safety check feature to its mobile app. Before starting a ride, users can review a short checklist for brakes, tires, and lights. They can report a problem directly from the rental screen.",
+            "Reported bicycles will be temporarily removed from the booking system until a technician inspects them. The company said the change will help its maintenance team respond more quickly and reduce unnecessary trips to repair stations.",
+            "The new feature is available to all app users after the latest update. Riders are still advised to follow local traffic rules and wear a helmet. The company will measure whether the number of safety reports changes over the next three months."
+          ],
+          translation:[
+            "一家共享單車公司在手機應用程式加入安全檢查功能。騎乘前，使用者可查看煞車、輪胎及車燈的簡短檢查表，並可直接在租借畫面回報問題。",
+            "被回報的單車會暫時從預約系統移除，直到技師檢查完成。公司表示，此變更有助維修團隊更快回應，並減少不必要的維修站往返。",
+            "所有應用程式使用者更新至最新版後即可使用新功能。騎士仍應遵守當地交通規則並戴安全帽。公司將評估未來三個月安全回報數量是否改變。"
+          ],
+          vocabulary:[
+            V("safety check","n. phr.","perform a safety check; safety checklist","安全檢查",["inspection","precautionary review"],"safe (adj.); safety (n.)","A shared bicycle company has added a safety check feature to its mobile app."),
+            V("report a problem","v. phr.","report a problem directly; file a report","回報問題",["flag an issue","notify support"],"report (n./v.); reporter (n.)","They can report a problem directly from the rental screen."),
+            V("temporarily removed","phr.","temporarily remove a listing; remove from service","暫時移除",["briefly withdrawn","taken out of service"],"temporary (adj.); removal (n.)","Reported bicycles will be temporarily removed from the booking system until a technician inspects them."),
+            V("maintenance team","n. phr.","contact the maintenance team; routine maintenance","維修團隊",["service crew","repair staff"],"maintain (v.); maintenance (n.)","The company said the change will help its maintenance team respond more quickly and reduce unnecessary trips to repair stations."),
+            V("latest update","n. phr.","install the latest update; release an update","最新版本更新",["newest release","recent upgrade"],"update (v./n.); updated (adj.)","The new feature is available to all app users after the latest update."),
+            V("mobile app","n. phr.","use a mobile app; update an app","手機應用程式",["smartphone application","mobile software"],"apply (v.); application (n.)","A shared bicycle company has added a safety check feature to its mobile app."),
+            V("short checklist","n. phr.","review a checklist; complete a safety checklist","簡短檢查表",["brief list","quick inspection list"],"check (v.); checklist (n.)","Before starting a ride, users can review a short checklist for brakes, tires, and lights."),
+            V("rental screen","n. phr.","open the rental screen; report from the screen","租借畫面",["booking page","rental interface"],"rent (v.); rental (n./adj.)","They can report a problem directly from the rental screen."),
+            V("booking system","n. phr.","remove from the booking system; update a booking","預約系統",["reservation platform","scheduling system"],"book (v.); booking (n.)","Reported bicycles will be temporarily removed from the booking system until a technician inspects them."),
+            V("local traffic rules","n. phr.","follow traffic rules; comply with rules","當地交通規則",["road regulations","traffic laws"],"traffic (n.); regulate (v.)","Riders are still advised to follow local traffic rules and wear a helmet.")
+          ],
+          part5:[
+            Q("A technician will inspect bikes that have been ______.",["report","reported","reporting","reports"],"B","文法結構：have been + 過去分詞，形成現在完成被動式。","reported 是過去分詞，表示「已被回報的」。"),
+            Q("Users can report a problem ______ from the rental screen.",["direct","direction","directly","directness"],"C","文法結構：修飾動詞 report 需用副詞。","directly 表「直接地」，說明回報方式。"),
+            Q("The feature is available ______ all app users.",["to","from","under","among"],"A","文法結構：be available to + 人，表示「供某人使用」。","available to all app users 是固定搭配。")
+          ],
+          part6:{title:"App update notice｜更新公告",passage:"Dear Rider,\n\nA new safety checklist is now available in our app. Please review the brakes, tires, and lights 【1】 starting a ride. If you notice a problem, report it from the rental screen. 【2】.\n\nThe bicycle will then be removed from the booking system until it is 【3】 by a technician. To use this feature, install the latest app update. Thank you for helping us keep rides 【4】.\n\nRideNow Team",questions:[
+            Q("【1】",["before","although","because of","unless"],"A","公告第 1 段：\"review the brakes, tires, and lights 【1】 starting a ride.\"","before + 動名詞表示「開始騎乘前」。"),
+            Q("【2】請選擇最適合的完整句子。",["Do not ride a bicycle that appears unsafe.","Our office furniture is on sale.","The library will close early.","Your receipt is attached."],"A","公告第 1 段：\"If you notice a problem, report it from the rental screen.\"","發現安全問題時不應騎乘該車，符合安全公告。"),
+            Q("【3】",["inspect","inspected","inspecting","inspection"],"B","公告第 2 段：\"until it is 【3】 by a technician.\"","is + 過去分詞 inspected 構成被動語態。"),
+            Q("【4】",["safe","safely","safety","safeness"],"A","公告第 2 段：\"keep rides 【4】.\"","keep + 受詞 + 形容詞；safe 作受詞補語。")
+          ]},
+          part7:{intro:"根據上方新聞文章作答。",questions:[
+            Q("Where can users report a bicycle problem?",["At a repair station only","From the rental screen","By postal mail","At the library"],"B","新聞第 1 段：\"They can report a problem directly from the rental screen.\"","報告問題的入口是應用程式的租借畫面。"),
+            Q("What happens to a reported bicycle?",["It is sold immediately","It is removed until inspected","It is always free to rent","It is sent to a museum"],"B","新聞第 2 段：\"Reported bicycles will be temporarily removed from the booking system until a technician inspects them.\"","temporarily 與 until 說明是檢查前暫時下架。"),
+            Q("How can users access the new feature?",["Install the latest app update","Buy a new bicycle","Visit a company office","Wait three years"],"A","新聞第 3 段：\"The new feature is available to all app users after the latest update.\"","after the latest update 表更新應用程式後即可使用。")
+          ]}
+        }
+      }
+    };
+
+    const categoryKeys=["finance","politics","techLife"];
+    const categoryLabels={finance:"Finance",politics:"Politics",techLife:"Tech & Life"};
+    const visibleAnswers=new Set();
+    const externalLessonIds=new Set();
+    let dataByDate=fallbackData;
+    let activeDate=Object.keys(fallbackData).sort().reverse()[0];
+    let activeCategory="finance";
+    let vocabPage=0;
+    const themeKeys=["a","b","c"];
+    function applyTheme(theme){
+      const selected=themeKeys.includes(theme)?theme:"a";
+      document.documentElement.dataset.theme=selected;
+      document.querySelectorAll(".theme-swatch").forEach(button=>button.setAttribute("aria-pressed",String(button.dataset.themeChoice===selected)));
+      try{localStorage.setItem("toeic-news-theme",selected)}catch(_){/* 本機儲存受限時仍可即時切換 */}
+    }
+    document.querySelectorAll(".theme-swatch").forEach(button=>button.addEventListener("click",()=>applyTheme(button.dataset.themeChoice)));
+    applyTheme(document.documentElement.dataset.theme||"a");
+
+    const esc=value=>String(value??"").replace(/[&<>"']/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char]));
+    const semicolonBreaks=value=>String(value??"").replace(/([;；])\s*/g,'$1<br>').split("<br>").map(esc).join("<br>");
+    const safeUrl=value=>{try{const url=new URL(String(value));return ["http:","https:"].includes(url.protocol)?url.href:null}catch{return null}};
+    const answerId=(section,index="")=>[activeDate,activeCategory,section,index].join(":");
+    function revealBox(id,html,kind="答案／詳解",extraClass=""){
+      const open=visibleAnswers.has(id);
+      return `<div class="reveal ${extraClass} ${open?"":"is-covered"}" data-answer-id="${esc(id)}">
+        <div class="reveal-content">${html}</div>
+        <button type="button" class="mask" aria-expanded="${open}" aria-label="${open?"重新遮罩":"點擊顯示"+kind}">${open?"重新遮罩":"點擊顯示"+kind}</button>
+      </div>`;
+    }
+    const sectionHeading=(number,zh,en)=>`<div class="section-heading"><span class="section-number">${number}</span><h2>${zh}</h2><span class="section-en">${en}</span></div>`;
+    const optionsHtml=options=>`<ol class="options">${options.map((option,i)=>`<li><span class="option-letter">${"ABCD"[i]}.</span>${esc(option)}</li>`).join("")}</ol>`;
+    function questionHtml(q,section,index){
+      const details=`<div class="detail-row"><span class="detail-label">[答案]</span><span>${esc(q.answer)}. ${esc(q.options["ABCD".indexOf(q.answer)])}</span></div>
+        <div class="detail-row"><span class="detail-label">[原文定位與指引]</span><span>${esc(q.locator)}</span></div>
+        <div class="detail-row"><span class="detail-label">[詳細解析]</span><span>${esc(q.explanation)}</span></div>`;
+      return `<div class="question"><div class="question-top"><span class="q-number">${String(index+1).padStart(2,"0")}</span><p class="prompt">${esc(q.prompt)}</p></div>
+        ${optionsHtml(q.options)}${revealBox(answerId(section,index),details,"答案／詳解","answer-reveal")}</div>`;
+    }
+    function render(){
+      const data=dataByDate[activeDate][activeCategory];
+      document.getElementById("date-select").value=activeDate;
+      document.querySelectorAll(".tab").forEach(tab=>{const selected=tab.dataset.category===activeCategory;tab.setAttribute("aria-selected",String(selected));tab.tabIndex=selected?0:-1});
+      const lesson=document.getElementById("lesson");
+      lesson.setAttribute("aria-labelledby",`tab-${activeCategory}`);
+      const source=safeUrl(data.sourceUrl);
+      lesson.innerHTML=`<article class="sheet">
+        <header class="sheet-head">
+          <div class="meta"><span class="badge">${esc(categoryLabels[activeCategory])}</span><span class="dot">•</span><time datetime="${esc(activeDate)}">${esc(activeDate)}</time><span class="dot">•</span><span>${externalLessonIds.has(activeDate+":"+activeCategory)?"今日講義":"示範情境／非真實新聞"}</span></div>
+          <h1>${esc(data.title)}</h1><p class="summary">${esc(data.summary)}</p>
+          <div class="overview"><span>News Reading</span><span>Vocabulary × ${data.vocabulary.length}</span><span>Part 5 × 3</span><span>Part 6 × 4</span><span>Part 7 × 3</span></div>
+        </header>
+        <section class="section" aria-label="新聞文章">
+          ${sectionHeading("01","多益風格英文新聞文章","News Reading")}
+          <div class="article-copy" lang="en">${data.english.map(p=>`<p>${esc(p)}</p>`).join("")}</div>
+          <p class="small-heading">中文翻譯</p>
+          ${revealBox(answerId("translation"),data.translation.map(p=>`<p>${esc(p)}</p>`).join(""),"翻譯")}
+          <div class="source-row">${source?`<a class="source-link" href="${esc(source)}" target="_blank" rel="noopener noreferrer" title="${esc(data.sourceLabel||"閱讀原文報導")}">${esc(data.sourceLabel||"閱讀原文報導")} ↗</a>`:""}</div>
+        </section>
+        <section class="section" aria-label="高含金量單字與常用片語">
+          <div class="vocab-toolbar">
+            ${sectionHeading("02","高含金量單字與常用片語","Vocabulary & Collocations")}
+            <div class="vocab-pages" role="group" aria-label="單字表分頁">
+              <button type="button" class="vocab-page-button" data-page="0" aria-pressed="${vocabPage===0}">1–5</button>
+              <button type="button" class="vocab-page-button" data-page="1" aria-pressed="${vocabPage===1}">6–10</button>
+            </div>
+          </div>
+          <div class="table-wrap"><table class="vocab"><thead><tr><th scope="col">單字／常用片語與固定搭配<br>Collocations</th><th scope="col">中文解釋</th><th scope="col">多益同義替換字</th><th scope="col">同字根詞性家族</th><th scope="col">文章原句</th></tr></thead>
+          <tbody>${data.vocabulary.map((v,i)=>`<tr class="${Math.floor(i/5)===vocabPage?"":"is-offpage"}" data-vocab-page="${Math.floor(i/5)}"><td><span class="term">${semicolonBreaks(v.term)}</span> <span class="pos">${semicolonBreaks(v.pos)}</span><div class="collocation">${semicolonBreaks(v.collocations)}</div></td>
+            <td>${revealBox(answerId("vocab",i),semicolonBreaks(v.meaning),"中文解釋")}</td><td>${v.synonyms.map(semicolonBreaks).join("<br>")}</td><td>${semicolonBreaks(v.family)}</td><td class="example" lang="en">${semicolonBreaks(v.sentence)}</td></tr>`).join("")}</tbody></table></div>
+        </section>
+        <section class="section" aria-label="Part 5 單句填空">
+          ${sectionHeading("03","Part 5 單句填空","Incomplete Sentences")}
+          <div class="question-list">${data.part5.map((q,i)=>questionHtml(q,"part5",i)).join("")}</div>
+        </section>
+        <section class="section" aria-label="Part 6 段落填空">
+          ${sectionHeading("04","Part 6 段落填空","Text Completion")}
+          <div class="passage" lang="en"><p class="passage-title">${esc(data.part6.title)}</p><p>${esc(data.part6.passage)}</p></div>
+          <p class="small-heading">根據上方信件／公告，選出最適合的答案。</p>
+          <div class="question-list">${data.part6.questions.map((q,i)=>questionHtml(q,"part6",i)).join("")}</div>
+        </section>
+        <section class="section" aria-label="Part 7 閱讀測驗">
+          ${sectionHeading("05","Part 7 閱讀測驗","Reading Comprehension")}
+          <p class="reading-note">${esc(data.part7.intro)}</p>
+          <div class="question-list">${data.part7.questions.map((q,i)=>questionHtml(q,"part7",i)).join("")}</div>
+        </section>
+      </article>`;
+      updateToggle();
+    }
+    function currentIds(){return [...document.querySelectorAll("#lesson .reveal")].map(el=>el.dataset.answerId)}
+    function updateToggle(){
+      const ids=currentIds(),allOpen=ids.length>0&&ids.every(id=>visibleAnswers.has(id));
+      const button=document.getElementById("toggle-all");
+      const label=allOpen?"全部遮罩":"全部顯示";
+      button.title=label;button.setAttribute("aria-label",label);button.setAttribute("aria-pressed",String(allOpen));
+    }
+    function showVocabPage(page){
+      vocabPage=page;
+      document.querySelectorAll(".vocab tbody tr").forEach(row=>row.classList.toggle("is-offpage",Number(row.dataset.vocabPage)!==page));
+      document.querySelectorAll(".vocab-page-button").forEach(button=>button.setAttribute("aria-pressed",String(Number(button.dataset.page)===page)));
+    }
+    document.getElementById("lesson").addEventListener("click",event=>{
+      const pageButton=event.target.closest(".vocab-page-button");
+      if(pageButton){showVocabPage(Number(pageButton.dataset.page));return}
+      const button=event.target.closest(".mask");if(!button)return;
+      const box=button.closest(".reveal"),id=box.dataset.answerId;
+      if(visibleAnswers.has(id))visibleAnswers.delete(id);else visibleAnswers.add(id);
+      const open=visibleAnswers.has(id),kind=id.includes(":translation:")?"翻譯":id.includes(":vocab:")?"中文解釋":"答案／詳解";
+      box.classList.toggle("is-covered",!open);
+      button.textContent=open?"重新遮罩":"點擊顯示"+kind;
+      button.setAttribute("aria-label",button.textContent);button.setAttribute("aria-expanded",String(open));
+      updateToggle();
+    });
+    document.getElementById("toggle-all").addEventListener("click",()=>{
+      const ids=currentIds(),allOpen=ids.every(id=>visibleAnswers.has(id));
+      ids.forEach(id=>allOpen?visibleAnswers.delete(id):visibleAnswers.add(id));render();
+    });
+    const pdfModal=document.getElementById("pdf-modal");
+    const pdfFrame=document.getElementById("pdf-preview-frame");
+    const pdfStatus=document.getElementById("pdf-preview-status");
+    const pdfConfirm=document.getElementById("pdf-confirm");
+    let previewPdfUrl="";
+    let previewFilename="";
+    let previewGeneration=0;
+    function closePdfPreview(){
+      previewGeneration++;
+      pdfModal.hidden=true;
+      pdfFrame.src="about:blank";
+      pdfFrame.hidden=true;
+      pdfConfirm.disabled=true;
+      if(previewPdfUrl)URL.revokeObjectURL(previewPdfUrl);
+      previewPdfUrl="";
+      previewFilename="";
+      document.getElementById("print-button").focus();
+    }
+    document.getElementById("pdf-close").addEventListener("click",closePdfPreview);
+    pdfModal.addEventListener("click",event=>{if(event.target===pdfModal)closePdfPreview()});
+    document.addEventListener("keydown",event=>{if(event.key==="Escape"&&!pdfModal.hidden)closePdfPreview()});
+    pdfConfirm.addEventListener("click",()=>{
+      if(!previewPdfUrl)return;
+      const link=document.createElement("a");
+      link.href=previewPdfUrl;
+      link.download=previewFilename;
+      document.body.append(link);
+      link.click();
+      link.remove();
+    });
+    async function downloadColorPdf(){
+      const button=document.getElementById("print-button");
+      if(button.disabled||!pdfModal.hidden)return;
+      const card=document.querySelector("#lesson > .sheet");
+      if(!card)return;
+      const generation=++previewGeneration;
+      const exportDate=activeDate;
+      const exportCategory=categoryLabels[activeCategory];
+      const rows=[...card.querySelectorAll(".vocab tbody tr")];
+      const hiddenRows=rows.map(row=>row.classList.contains("is-offpage"));
+      const originalTitle=button.title;
+      const originalLabel=button.getAttribute("aria-label");
+      const originalExportLabel=button.querySelector(".export-label").textContent;
+      const originalCardStyle={margin:card.style.margin,width:card.style.width,maxWidth:card.style.maxWidth,borderRadius:card.style.borderRadius,boxShadow:card.style.boxShadow};
+      pdfModal.hidden=false;
+      pdfStatus.textContent="正在產生 PDF 預覽…";
+      pdfStatus.hidden=false;
+      pdfFrame.hidden=true;
+      pdfConfirm.disabled=true;
+      document.getElementById("pdf-close").focus();
+      button.disabled=true;
+      button.classList.add("is-exporting");
+      button.querySelector(".export-label").textContent="預覽中...";
+      button.title="預覽中...";
+      button.setAttribute("aria-label","預覽中...");
+      button.setAttribute("aria-busy","true");
+      card.classList.add("pdf-exporting");
+      card.style.margin="0";
+      card.style.width="710px";
+      card.style.maxWidth="710px";
+      card.style.borderRadius="0";
+      card.style.boxShadow="none";
+      rows.forEach(row=>row.classList.remove("is-offpage"));
+      try{
+        if(typeof window.html2pdf!=="function")throw new Error("html2pdf.js 尚未載入，請確認網路連線。");
+        if(document.fonts?.ready)await document.fonts.ready;
+        await new Promise(resolve=>requestAnimationFrame(resolve));
+        const categoryName=exportCategory.replace(/\s*&\s*/g,"_and_").replace(/\s+/g,"_");
+        const options={
+          margin:[10,10,10,10],
+          filename:`TOEIC_${exportDate}_${categoryName}.pdf`,
+          image:{type:"jpeg",quality:0.98},
+          html2canvas:{scale:2,x:0,y:0,scrollX:0,scrollY:0,windowWidth:710,useCORS:true,backgroundColor:getComputedStyle(card).backgroundColor},
+          jsPDF:{unit:"mm",format:"a4",orientation:"portrait"},
+          pagebreak:{mode:["avoid-all","css","legacy"]}
+        };
+        const url=await window.html2pdf().from(card).set(options).outputPdf("bloburl");
+        if(generation!==previewGeneration){URL.revokeObjectURL(url);return}
+        previewPdfUrl=url;
+        previewFilename=options.filename;
+        pdfFrame.src=url;
+        pdfFrame.hidden=false;
+        pdfStatus.hidden=true;
+        pdfConfirm.disabled=false;
+      }catch(error){
+        console.error("PDF 匯出失敗：",error);
+        if(generation===previewGeneration){
+          pdfStatus.textContent=`PDF 預覽失敗：${error.message||"請稍後再試。"}`;
+          pdfStatus.hidden=false;
+        }
+      }finally{
+        rows.forEach((row,index)=>row.classList.toggle("is-offpage",hiddenRows[index]));
+        card.style.margin=originalCardStyle.margin;
+        card.style.width=originalCardStyle.width;
+        card.style.maxWidth=originalCardStyle.maxWidth;
+        card.style.borderRadius=originalCardStyle.borderRadius;
+        card.style.boxShadow=originalCardStyle.boxShadow;
+        card.classList.remove("pdf-exporting");
+        button.disabled=false;
+        button.classList.remove("is-exporting");
+        button.querySelector(".export-label").textContent=originalExportLabel;
+        button.title=originalTitle;
+        button.setAttribute("aria-label",originalLabel);
+        button.removeAttribute("aria-busy");
+      }
+    }
+    document.getElementById("print-button").addEventListener("click",downloadColorPdf);
+    document.querySelectorAll(".tab").forEach(tab=>tab.addEventListener("click",()=>{activeCategory=tab.dataset.category;vocabPage=0;render()}));
+    document.querySelector(".tabs").addEventListener("keydown",event=>{
+      if(!["ArrowLeft","ArrowRight","Home","End"].includes(event.key))return;
+      event.preventDefault();const current=categoryKeys.indexOf(activeCategory);
+      const next=event.key==="Home"?0:event.key==="End"?categoryKeys.length-1:(current+(event.key==="ArrowRight"?1:-1)+categoryKeys.length)%categoryKeys.length;
+      activeCategory=categoryKeys[next];vocabPage=0;render();document.getElementById(`tab-${activeCategory}`).focus();
+    });
+    document.getElementById("date-select").addEventListener("change",event=>{activeDate=event.target.value;vocabPage=0;render()});
+
+    const isText=value=>typeof value==="string";
+    const validQuestion=q=>q&&isText(q.prompt)&&Array.isArray(q.options)&&q.options.length===4&&q.options.every(isText)&&/^[A-D]$/.test(q.answer)&&isText(q.locator)&&isText(q.explanation);
+    const validLesson=d=>d&&isText(d.title)&&isText(d.summary)&&Array.isArray(d.english)&&d.english.length>0&&d.english.every(isText)
+      &&Array.isArray(d.translation)&&d.translation.length>0&&d.translation.every(isText)
+      &&Array.isArray(d.vocabulary)&&d.vocabulary.length===10&&d.vocabulary.every(v=>v&&isText(v.term)&&isText(v.pos)&&isText(v.collocations)&&isText(v.meaning)&&Array.isArray(v.synonyms)&&v.synonyms.length===2&&v.synonyms.every(isText)&&isText(v.family)&&isText(v.sentence))
+      &&Array.isArray(d.part5)&&d.part5.length===3&&d.part5.every(validQuestion)
+      &&d.part6&&isText(d.part6.title)&&isText(d.part6.passage)&&Array.isArray(d.part6.questions)&&d.part6.questions.length===4&&d.part6.questions.every(validQuestion)
+      &&d.part7&&isText(d.part7.intro)&&Array.isArray(d.part7.questions)&&d.part7.questions.length===3&&d.part7.questions.every(validQuestion);
+    function fillDateSelect(){
+      const dates=Object.keys(dataByDate).sort().reverse();
+      const select=document.getElementById("date-select");
+      select.innerHTML=dates.map(date=>`<option value="${esc(date)}">${esc(date)}</option>`).join("");
+      if(!dates.includes(activeDate))activeDate=dates[0];
+      select.value=activeDate;
+    }
+    async function loadData(){
+      try{
+        const response=await fetch("./data.json",{cache:"no-store"});
+        if(!response.ok)throw new Error("HTTP "+response.status);
+        const external=await response.json();
+        if(!external||typeof external!=="object"||Array.isArray(external))throw new Error("資料格式不正確");
+        const merged=JSON.parse(JSON.stringify(fallbackData));let count=0;
+        for(const [date,group] of Object.entries(external)){
+          if(!/^\d{4}-\d{2}-\d{2}$/.test(date)||!group||typeof group!=="object")continue;
+          for(const key of categoryKeys){
+            if(validLesson(group[key])){if(!merged[date])merged[date]={};merged[date][key]=group[key];externalLessonIds.add(date+":"+key);count++}
+          }
+        }
+        if(!count)throw new Error("沒有可用講義");
+        for(const date of Object.keys(merged)){
+          if(!categoryKeys.every(key=>validLesson(merged[date][key]))){delete merged[date];categoryKeys.forEach(key=>externalLessonIds.delete(date+":"+key))}
+        }
+        dataByDate=merged;
+        activeDate=Object.keys(dataByDate).sort().reverse()[0];
+        document.getElementById("data-status").textContent=`已載入 data.json 的 ${count} 篇講義；缺少的日期或分類使用內建範例。`;
+      }catch{
+        dataByDate=fallbackData;
+        externalLessonIds.clear();
+        document.getElementById("data-status").textContent="目前顯示兩天的完整範例講義。直接開啟本機 HTML 時，瀏覽器可能限制讀取 data.json。";
+      }
+      fillDateSelect();render();
+    }
+    fillDateSelect();render();loadData();
+  </script>
+</body>
+</html>
