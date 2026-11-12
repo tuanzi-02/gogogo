@@ -1,0 +1,817 @@
+{
+  "2026-11-12": {
+    "finance": {
+      "title": "Nvidia CEO Faces Increased Scrutiny Amid Leadership Reports",
+      "summary": "知名科技企業輝達執行長黃仁勳在媒體報導第二起婚外情後，正面臨升級的輿論壓力，其個人領導地位與未來動向引發市場高度關注。",
+      "english": [
+        "Mounting public and investor pressure is currently building on Jensen Huang, the billionaire chief executive officer of the technology giant Nvidia. Recent news reports indicate that the executive is involved in a second extramarital affair. This development has raised major concerns among market analysts about corporate governance and leadership stability at the firm.",
+        "The emerging reports have placed the future of the high-profile tech leader in question as stakeholder scrutiny intensifies. Investors are closely observing how the board of directors will address these allegations. Concerns are growing regarding whether the ongoing controversy could potentially distract management or impact the corporate reputation of the company.",
+        "As uncertainty surrounds the executive suite, market participants are carefully evaluating potential operational risks. Analysts note that executive reputation plays a vital role in maintaining investor confidence, particularly in the rapidly competitive technology sector. Further official statements from the firm are expected as stakeholders monitor the situation."
+      ],
+      "translation": [
+        "科技巨頭輝達的億萬富豪執行長黃仁勳，目前正面臨日益增加的公眾與投資者壓力。最新的新聞報導指出，該名高階主管捲入了第二起婚外情。這項發展引發了市場分析師對該公司企業治理與領導層穩定性的重大疑慮。",
+        "隨著利害關係人的審視力道加強，這些新出現的報導使這位高調的科技領袖的未來陷入不確定狀態。投資人正在密切觀察董事會將如何處理這些指控。人們對於持續發酵的爭議是否可能分散管理層注意力或影響公司聲譽的擔憂日益增加。",
+        "由於高階管理層籠罩著不確定性，市場參與者正在仔細評估潛在的營運風險。分析師指出，高階主管的聲譽在維持投資人信心方面扮演著至關重要的角色，特別是在競爭激烈的科技領域。隨著利害關係人持續關注局勢發展，預計該公司將做出進一步的官方說明。"
+      ],
+      "vocabulary": [
+        {
+          "term": "billionaire",
+          "pos": "noun",
+          "collocations": "billionaire executive; self-made billionaire",
+          "meaning": "億萬富豪",
+          "synonyms": [
+            "wealthy magnate; tycoon",
+            "ultra-wealthy individual; multi-billionaire"
+          ],
+          "family": "billion; billions",
+          "sentence": "Mounting public and investor pressure is currently building on Jensen Huang, the billionaire chief executive officer of the technology giant Nvidia."
+        },
+        {
+          "term": "extramarital",
+          "pos": "adjective",
+          "collocations": "extramarital affair; extramarital relationship",
+          "meaning": "婚外的",
+          "synonyms": [
+            "adulterous; unfaithful",
+            "outside marriage; non-marital"
+          ],
+          "family": "marriage; marital",
+          "sentence": "Recent news reports indicate that the executive is involved in a second extramarital affair."
+        },
+        {
+          "term": "governance",
+          "pos": "noun",
+          "collocations": "corporate governance; governance structure",
+          "meaning": "治理；管理",
+          "synonyms": [
+            "administration; oversight",
+            "leadership; management"
+          ],
+          "family": "govern; governor; governmental",
+          "sentence": "This development has raised major concerns among market analysts about corporate governance and leadership stability at the firm."
+        },
+        {
+          "term": "scrutiny",
+          "pos": "noun",
+          "collocations": "stakeholder scrutiny; intense scrutiny",
+          "meaning": "詳細審查；監視",
+          "synonyms": [
+            "examination; inspection",
+            "surveillance; investigation"
+          ],
+          "family": "scrutinize; scrutinizer",
+          "sentence": "The emerging reports have placed the future of the high-profile tech leader in question as stakeholder scrutiny intensifies."
+        },
+        {
+          "term": "allegations",
+          "pos": "noun",
+          "collocations": "address allegations; deny allegations",
+          "meaning": "指控；主張",
+          "synonyms": [
+            "claims; accusations",
+            "assertions; charges"
+          ],
+          "family": "allege; alleged; allegedly",
+          "sentence": "Investors are closely observing how the board of directors will address these allegations."
+        },
+        {
+          "term": "controversy",
+          "pos": "noun",
+          "collocations": "ongoing controversy; spark controversy",
+          "meaning": "爭議",
+          "synonyms": [
+            "dispute; debate",
+            "scandal; disagreement"
+          ],
+          "family": "controversial; controversially",
+          "sentence": "Concerns are growing regarding whether the ongoing controversy could potentially distract management or impact the corporate reputation of the company."
+        },
+        {
+          "term": "reputation",
+          "pos": "noun",
+          "collocations": "corporate reputation; executive reputation",
+          "meaning": "聲譽；名聲",
+          "synonyms": [
+            "standing; status",
+            "image; prestige"
+          ],
+          "family": "reputable; disrepute; reputably",
+          "sentence": "Concerns are growing regarding whether the ongoing controversy could potentially distract management or impact the corporate reputation of the company."
+        },
+        {
+          "term": "uncertainty",
+          "pos": "noun",
+          "collocations": "uncertainty surrounds; economic uncertainty",
+          "meaning": "不確定性",
+          "synonyms": [
+            "ambiguity; doubt",
+            "instability; unpredictability"
+          ],
+          "family": "uncertain; certainly; certainty",
+          "sentence": "As uncertainty surrounds the executive suite, market participants are carefully evaluating potential operational risks."
+        },
+        {
+          "term": "evaluating",
+          "pos": "verb",
+          "collocations": "evaluating risks; evaluating performance",
+          "meaning": "評估",
+          "synonyms": [
+            "assessing; analyzing",
+            "appraising; reviewing"
+          ],
+          "family": "evaluate; evaluation; evaluative",
+          "sentence": "As uncertainty surrounds the executive suite, market participants are carefully evaluating potential operational risks."
+        },
+        {
+          "term": "confidence",
+          "pos": "noun",
+          "collocations": "investor confidence; boost confidence",
+          "meaning": "信心",
+          "synonyms": [
+            "trust; faith",
+            "assurance; certainty"
+          ],
+          "family": "confident; confidently; confide",
+          "sentence": "Analysts note that executive reputation plays a vital role in maintaining investor confidence, particularly in the rapidly competitive technology sector."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "Market analysts are closely watching how the board of directors intends to _______ the recent personal misconduct allegations.",
+          "options": [
+            "address",
+            "addressing",
+            "addressed",
+            "addressable"
+          ],
+          "answer": "A",
+          "locator": "to + base verb (infinitive structure following 'intends')",
+          "explanation": "動詞 intend 後面習慣接不定詞結構（to + 原形動詞），因此應選擇原形動詞 address（處理）。"
+        },
+        {
+          "prompt": "The corporate governance committee will submit its official report _______ the investigation is completed next week.",
+          "options": [
+            "once",
+            "during",
+            "despite",
+            "whereas"
+          ],
+          "answer": "A",
+          "locator": "subordinate conjunction introducing a time clause",
+          "explanation": "此處需要一個能引導時間副詞子句的連詞。once（一旦……就……）符合句意與文法。during 和 despite 是介系詞，後接名詞；whereas 表對比。"
+        },
+        {
+          "prompt": "Investors expressed deep concern that executive misconduct could _______ affect the firm's long-term stock value.",
+          "options": [
+            "adversely",
+            "adverse",
+            "adversity",
+            "adverseness"
+          ],
+          "answer": "A",
+          "locator": "adverb modifying the verb 'affect'",
+          "explanation": "空格位於助動詞 could 與一般動詞 affect 之間，需填入副詞修飾動詞 affect。選項 (A) adversely（不利地）為副詞，最為合適。"
+        }
+      ],
+      "part6": {
+        "title": "Corporate Governance Advisory to Shareholders",
+        "passage": "To All Valued Shareholders,\n\nWe are writing to address recent media reports concerning executive leadership at our organization. The board of directors is taking these matters very seriously and has 【1】 initiated an independent internal review. Our primary goal remains protecting shareholder value and maintaining strict ethical standards across all corporate operations.\n\nDuring this period of elevated scrutiny, operational oversight will be 【2】 by senior committee members. 【3】 We remain fully dedicated to transparency and accountability. A comprehensive report will be shared once the official assessment is 【4】 finalized.\n\nSincerely,\nThe Board of Directors",
+        "questions": [
+          {
+            "prompt": "Choose the best option to fill in blank 【1】.",
+            "options": [
+              "promptly",
+              "prompt",
+              "promptness",
+              "prompted"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"has 【1】 initiated an independent internal review\"",
+            "explanation": "空格位於助動詞 has 與過去分詞 initiated 之間，需要使用副詞修飾動詞 initiated。選項 (A) promptly（迅速地）為副詞，符合文法與句意。"
+          },
+          {
+            "prompt": "Choose the best option to fill in blank 【2】.",
+            "options": [
+              "strengthened",
+              "strengthens",
+              "strengthening",
+              "strengthen"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"operational oversight will be 【2】 by senior committee members\"",
+            "explanation": "句中使用被動語態 structure (will be + p.p.)，主詞 operational oversight 是被加強的對象，因此需選擇過去分詞 (A) strengthened。"
+          },
+          {
+            "prompt": "Choose the best option to fill in blank 【3】.",
+            "options": [
+              "We remain fully dedicated to transparency and accountability.",
+              "We have canceled all scheduled annual general meetings.",
+              "Our revenue for the third quarter exceeded all market predictions.",
+              "The executive team has resigned effective immediately without notice."
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"During this period of elevated scrutiny... We remain fully dedicated to transparency and accountability.\"",
+            "explanation": "第2段內容強調在受審視期間，董事會會強化監管並維持透明度與問責精神。選項 (A)「我們仍完全致力於透明度與問責制」符合前置與後續語境。"
+          },
+          {
+            "prompt": "Choose the best option to fill in blank 【4】.",
+            "options": [
+              "fully",
+              "fullness",
+              "fulfilling",
+              "full"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"once the official assessment is 【4】 finalized\"",
+            "explanation": "空格位於 be 動詞 is 與過去分詞 finalized 之間，需填入副詞 (A) fully（完整地/完全地）來修飾動詞 finalized。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Refer to the following news report about leadership developments at Nvidia.",
+        "questions": [
+          {
+            "prompt": "Why has Jensen Huang come under increased scrutiny from investors and the public?",
+            "options": [
+              "Media reports have surfaced regarding a second extramarital affair.",
+              "The company experienced a sharp decline in quarter-one revenue.",
+              "He announced an immediate plan to retire from executive duties.",
+              "The board of directors removed him following a financial audit."
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"Recent news reports indicate that the executive is involved in a second extramarital affair.\"",
+            "explanation": "第1段明確提到，新聞報導指出該執行長捲入了第二起婚外情，因而面臨公眾與投資人的壓力。"
+          },
+          {
+            "prompt": "What primary concern do market analysts have regarding the current situation?",
+            "options": [
+              "Corporate governance and the stability of company leadership.",
+              "A complete supply chain disruption in the technology sector.",
+              "The failure to launch new artificial intelligence products.",
+              "Legal penalties imposed by international trade regulators."
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"This development has raised major concerns among market analysts about corporate governance and leadership stability at the firm.\"",
+            "explanation": "第一段尾句指出，分析師的主要疑慮集中於公司的「企業治理與領導層穩定性」（corporate governance and leadership stability）。"
+          },
+          {
+            "prompt": "According to analysts in the third paragraph, what plays a crucial role in maintaining investor confidence?",
+            "options": [
+              "Executive reputation",
+              "Quarterly dividend payouts",
+              "Overseas factory expansion",
+              "Short-term price reductions"
+            ],
+            "answer": "A",
+            "locator": "第 3 段 \"Analysts note that executive reputation plays a vital role in maintaining investor confidence\"",
+            "explanation": "第3段第2句指出，分析師特別提到「高階主管聲譽」（executive reputation）在維繫投資人信心方面扮演關鍵角色。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/ckgel338xql3o",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    },
+    "politics": {
+      "title": "Proposed Welfare Overhaul Targets Benefits for Young People",
+      "summary": "米爾本（Milburn）的審查報告建議對福利制度進行大幅改革，提議將 25 歲以下的年輕人移出主要疾病津貼之列。",
+      "english": [
+        "A major review led by Milburn recommends a radical overhaul of the welfare system. The proposal suggests moving individuals under twenty-five off main sickness benefits. Policymakers aim to restructure support to encourage younger citizens toward work or training instead of long-term reliance on financial aid.",
+        "The upcoming report highlights concerns over the growing number of young adults claiming health-related assistance. Under the proposed changes, young claimants would be redirected to alternative support programs designed to foster employment skills. Supporters argue that early intervention will help prevent long-term dependency on government funds.",
+        "Opponents, however, express caution regarding the potential impact on vulnerable youth who face genuine health challenges. As government officials review the recommendations, debates continue over how to balance fiscal responsibility with social protection. Further details regarding the official implementation timeline are expected to be announced soon."
+      ],
+      "translation": [
+        "一項由米爾本（Milburn）主導的重大審查報告建議對福利制度進行大幅度的改革。該提議建議將 25 歲以下的個人移出主要的疾病津貼名單。政策制定者的目標是重組支援機制，以鼓勵年輕國民走向工作或培訓，而非長期依賴經濟援助。",
+        "即將公布的報告強調了人們對申請健康相關補助的年輕成年人數量增加的關注。在擬議的變更下，年輕申請者將被轉向旨在培養就業技能的替代支援計畫。支持者認為，早期干預將有助於防止對政府資金的長期依賴。",
+        "然而，反對者對這項政策可能對面臨真實健康挑戰的弱勢青年造成的影響表示審慎擔憂。隨著政府官員審查這些建議，關於如何在財政責任與社會保障之間取得平衡的辯論仍將持續。預計不久後將公布有關官方實施時程表的更多細節。"
+      ],
+      "vocabulary": [
+        {
+          "term": "overhaul",
+          "pos": "n.",
+          "collocations": "radical overhaul; system overhaul",
+          "meaning": "全面改革",
+          "synonyms": [
+            "restructuring; reorganization",
+            "revamp; transformation"
+          ],
+          "family": "overhaul; overhauls; overhauled",
+          "sentence": "A major review led by Milburn recommends a radical overhaul of the welfare system."
+        },
+        {
+          "term": "proposal",
+          "pos": "n.",
+          "collocations": "policy proposal; submit a proposal",
+          "meaning": "提議；建議",
+          "synonyms": [
+            "suggestion; recommendation",
+            "scheme; plan"
+          ],
+          "family": "propose; proposals; proposed",
+          "sentence": "The proposal suggests moving individuals under twenty-five off main sickness benefits."
+        },
+        {
+          "term": "restructure",
+          "pos": "v.",
+          "collocations": "restructure support; restructure an organization",
+          "meaning": "重組；改組",
+          "synonyms": [
+            "reorganize; reform",
+            "rearrange; reshape"
+          ],
+          "family": "restructure; restructuring; restructured",
+          "sentence": "Policymakers aim to restructure support to encourage younger citizens toward work or training instead of long-term reliance on financial aid."
+        },
+        {
+          "term": "reliance",
+          "pos": "n.",
+          "collocations": "long-term reliance; heavy reliance",
+          "meaning": "依賴；依靠",
+          "synonyms": [
+            "dependence; reliance on",
+            "trust; confidence"
+          ],
+          "family": "rely; reliant; reliance",
+          "sentence": "Policymakers aim to restructure support to encourage younger citizens toward work or training instead of long-term reliance on financial aid."
+        },
+        {
+          "term": "intervention",
+          "pos": "n.",
+          "collocations": "early intervention; government intervention",
+          "meaning": "干預；介人",
+          "synonyms": [
+            "involvement; action",
+            "intercession; mediation"
+          ],
+          "family": "intervene; interventions; intervening",
+          "sentence": "Supporters argue that early intervention will help prevent long-term dependency on government funds."
+        },
+        {
+          "term": "dependency",
+          "pos": "n.",
+          "collocations": "long-term dependency; financial dependency",
+          "meaning": "依賴性；依附",
+          "synonyms": [
+            "dependence; reliance",
+            "helplessness; attachment"
+          ],
+          "family": "depend; dependent; dependency",
+          "sentence": "Supporters argue that early intervention will help prevent long-term dependency on government funds."
+        },
+        {
+          "term": "vulnerable",
+          "pos": "adj.",
+          "collocations": "vulnerable youth; highly vulnerable",
+          "meaning": "弱勢的；易受傷害的",
+          "synonyms": [
+            "at-risk; exposed",
+            "susceptible; unprotected"
+          ],
+          "family": "vulnerability; vulnerably",
+          "sentence": "Opponents, however, express caution regarding the potential impact on vulnerable youth who face genuine health challenges."
+        },
+        {
+          "term": "recommendations",
+          "pos": "n.",
+          "collocations": "review recommendations; policy recommendations",
+          "meaning": "建議；推薦",
+          "synonyms": [
+            "suggestions; proposals",
+            "advice; guidance"
+          ],
+          "family": "recommend; recommendation; recommended",
+          "sentence": "As government officials review the recommendations, debates continue over how to balance fiscal responsibility with social protection."
+        },
+        {
+          "term": "responsibility",
+          "pos": "n.",
+          "collocations": "fiscal responsibility; take responsibility",
+          "meaning": "責任；義務",
+          "synonyms": [
+            "duty; obligation",
+            "accountability; liability"
+          ],
+          "family": "responsible; responsibly; responsibility",
+          "sentence": "As government officials review the recommendations, debates continue over how to balance fiscal responsibility with social protection."
+        },
+        {
+          "term": "implementation",
+          "pos": "n.",
+          "collocations": "implementation timeline; policy implementation",
+          "meaning": "實施；執行",
+          "synonyms": [
+            "execution; enforcement",
+            "application; fulfillment"
+          ],
+          "family": "implement; implemented; implementation",
+          "sentence": "Further details regarding the official implementation timeline are expected to be announced soon."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "The board of directors is reviewing a proposal to ______ the department in order to improve overall efficiency.",
+          "options": [
+            "restructure",
+            "restructures",
+            "restructuring",
+            "restructured"
+          ],
+          "answer": "A",
+          "locator": "不定詞片語「to + 原形動詞」結構",
+          "explanation": "動詞「is reviewing」後面的介系詞/動名詞片語中包含「to + 動詞原形」的不定詞結構，用來表示目的。因此空缺處應填入原形動詞「restructure」。"
+        },
+        {
+          "prompt": "Government policy analysts have stressed the importance of early ______ to reduce financial dependency.",
+          "options": [
+            "intervene",
+            "intervened",
+            "intervention",
+            "intervening"
+          ],
+          "answer": "C",
+          "locator": "形容詞修飾名詞（early + Noun）結構",
+          "explanation": "形容詞「early」後面需要修飾一個名詞。選項 (C)「intervention」（干預）為名詞，符合「early intervention」（早期干預）的語意與語法。"
+        },
+        {
+          "prompt": "Details concerning the project's execution ______ to be released to the public by next Friday.",
+          "options": [
+            "is expected",
+            "are expected",
+            "expecting",
+            "expects"
+          ],
+          "answer": "B",
+          "locator": "主動詞一致性與被動語態（Plural Subject + are expected）",
+          "explanation": "句子的主詞是複數名詞「Details」（細節），因此需要搭配複數動詞；且細節是被期待公布，應使用被動語態「are expected」。"
+        }
+      ],
+      "part6": {
+        "title": "Policy Briefing Announcement",
+        "passage": "MEMORANDUM\nTo: All Department Heads\nFrom: Policy Research Unit\nSubject: Upcoming Briefing on Public Welfare Reforms\n\nNext week, our committee will host a seminar to analyze proposed changes to public welfare policy. A recent review recommends a comprehensive 【1】 of the existing support frameworks for young citizens. The objective of this briefing is to evaluate how these changes might influence national labor participation rates.\n\nDuring the session, specialists will present data regarding young claimants and discuss alternative strategy models. Attendees will 【2】 to review policy documents prior to the meeting. 【3】.\n\nWe encourage all managerial staff to participate. Please confirm your attendance with the administrative assistant by Thursday afternoon. Timely preparation will ensure a 【4】 discussion during the event.",
+        "questions": [
+          {
+            "prompt": "Choose the best word to fill in blank 【1】.",
+            "options": [
+              "overhaul",
+              "overhauled",
+              "overhauling",
+              "overhauls"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"a comprehensive 【1】 of the existing support frameworks\"",
+            "explanation": "不定冠詞「a」與形容詞「comprehensive」之後需要填入單數可數名詞「overhaul」（大修/全面改革）。"
+          },
+          {
+            "prompt": "Choose the best verb form to fill in blank 【2】.",
+            "options": [
+              "be required",
+              "requiring",
+              "require",
+              "requires"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"Attendees will 【2】 to review policy documents\"",
+            "explanation": "助動詞「will」之後接原形動詞，且與主詞「Attendees」（與會者）搭配時需使用被動語態「be required」（被要求）。"
+          },
+          {
+            "prompt": "Choose the best sentence to fill in blank 【3】.",
+            "options": [
+              "The venue has not been decided yet.",
+              "This information will help us assess potential economic impacts.",
+              "All funding for the project has been cancelled.",
+              "Our team recently hired ten new junior researchers."
+            ],
+            "answer": "B",
+            "locator": "第 2 段 \"Attendees will be required to review policy documents prior to the meeting. 【3】.\"",
+            "explanation": "前句提及與會者需要預先審閱政策文件，選項 (B)「這項資訊將有助於我們評估潛在的經濟影響」最符合上下文邏輯連貫性。"
+          },
+          {
+            "prompt": "Choose the best word to fill in blank 【4】.",
+            "options": [
+              "productive",
+              "productively",
+              "produce",
+              "production"
+            ],
+            "answer": "A",
+            "locator": "第 3 段 \"will ensure a 【4】 discussion during the event.\"",
+            "explanation": "冠詞「a」與名詞「discussion」之間需要填入形容詞「productive」（富有成效的）來修飾名詞。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Questions 1-3 refer to the following news report.",
+        "questions": [
+          {
+            "prompt": "What does the Milburn review suggest regarding under-25s?",
+            "options": [
+              "Increasing their monthly sickness benefits",
+              "Moving them off primary sickness benefits",
+              "Mandating free university education for them",
+              "Requiring them to pay higher tax rates"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"The proposal suggests moving individuals under twenty-five off main sickness benefits.\"",
+            "explanation": "文章第一段明確指出，提議建議將 25 歲以下的個人移出主要疾病津貼名單，故選 (B)。"
+          },
+          {
+            "prompt": "What is stated as a goal of the proposed policy changes?",
+            "options": [
+              "To reduce overall government expenditure on medical equipment",
+              "To direct young claimants toward training and skills development",
+              "To restrict freedom of movement for young workers",
+              "To eliminate all welfare assistance for older citizens"
+            ],
+            "answer": "B",
+            "locator": "第 2 段 \"young claimants would be redirected to alternative support programs designed to foster employment skills.\"",
+            "explanation": "文章第二段提到，變更將引導年輕申請者參加旨在培養就業技能的替代支援計畫，因此選項 (B) 符合文章內容。"
+          },
+          {
+            "prompt": "Why do some opponents express caution about the proposals?",
+            "options": [
+              "They believe the implementation timeline is too slow.",
+              "They are concerned about the impact on vulnerable youth with real health issues.",
+              "They worry that companies will face higher taxes.",
+              "They think the policy will cost too much to manage."
+            ],
+            "answer": "B",
+            "locator": "第 3 段 \"Opponents, however, express caution regarding the potential impact on vulnerable youth who face genuine health challenges.\"",
+            "explanation": "文章第三段說明反對者表示審慎的原因是擔心這項改變會影響到面臨真實健康挑戰的弱勢青年，故選 (B)。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/cwn70l1628l0o",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    },
+    "techLife": {
+      "title": "New Indian Mega Library Faces Audit Over AI Book Controversy",
+      "summary": "泰晤士報或相關報導指出，印度坦米爾納德邦政府已下令對全邦的圖書館館藏進行內部稽查，起因是一座大型圖書館因涉嫌收藏人工智慧生成的書籍而引發爭議。",
+      "english": [
+        "A newly established mega library in India has recently encountered a major scandal regarding books created by artificial intelligence. This unexpected controversy has prompted immediate administrative action across the region.",
+        "In response to the growing concerns about these machine-made publications, the government of Tamil Nadu has formally ordered an internal audit. Officials will now carefully review library collections throughout the entire state.",
+        "The ongoing investigation aims to ensure the quality and authenticity of all materials available to the public. Authorities intend to clarify how such titles entered the official catalog during this administrative review."
+      ],
+      "translation": [
+        "印度一座新建立的大型圖書館最近遭遇了一起關於人工智慧創作書籍的重大醜聞。這起意料之外的爭議促使該地區採取了立即的行政行動。",
+        "針對對這些機器製造出版品日益增長的擔憂，坦米爾納德邦政府已正式下令進行內部稽查。官員們現在將仔細審查全邦各地的圖書館館藏。",
+        "正在進行的調查旨在確保公眾可獲得的所有資料之品質與真實性。當局打算在此次行政審查期間釐清此類書名是如何進入官方目錄的。"
+      ],
+      "vocabulary": [
+        {
+          "term": "establish",
+          "pos": "verb",
+          "collocations": "newly established;establish a library",
+          "meaning": "建立；創立",
+          "synonyms": [
+            "create;found",
+            "set up;build"
+          ],
+          "family": "establishment;established",
+          "sentence": "A newly established mega library in India has recently encountered a major scandal regarding books created by artificial intelligence."
+        },
+        {
+          "term": "scandal",
+          "pos": "noun",
+          "collocations": "major scandal;scandal regarding",
+          "meaning": "醜聞",
+          "synonyms": [
+            "controversy;disgrace",
+            "affair;outrage"
+          ],
+          "family": "scandalous;scandalously",
+          "sentence": "A newly established mega library in India has recently encountered a major scandal regarding books created by artificial intelligence."
+        },
+        {
+          "term": "encounter",
+          "pos": "verb",
+          "collocations": "encounter a scandal;encounter difficulties",
+          "meaning": "遭遇；遇到",
+          "synonyms": [
+            "face;experience",
+            "meet;confront"
+          ],
+          "family": "encountered;encountering",
+          "sentence": "A newly established mega library in India has recently encountered a major scandal regarding books created by artificial intelligence."
+        },
+        {
+          "term": "controversy",
+          "pos": "noun",
+          "collocations": "unexpected controversy;growing controversy",
+          "meaning": "爭議",
+          "synonyms": [
+            "dispute;debate",
+            "argument;quarrel"
+          ],
+          "family": "controversial;controversially",
+          "sentence": "This unexpected controversy has prompted immediate administrative action across the region."
+        },
+        {
+          "term": "prompt",
+          "pos": "verb",
+          "collocations": "prompt action;prompt a response",
+          "meaning": "促使；激發",
+          "synonyms": [
+            "cause;trigger",
+            "encourage;stimulate"
+          ],
+          "family": "promptly;promptness",
+          "sentence": "This unexpected controversy has prompted immediate administrative action across the region."
+        },
+        {
+          "term": "audit",
+          "pos": "noun",
+          "collocations": "internal audit;order an audit",
+          "meaning": "稽查；審計",
+          "synonyms": [
+            "inspection;examination",
+            "review;check"
+          ],
+          "family": "auditor;auditing",
+          "sentence": "In response to the growing concerns about these machine-made publications, the government of Tamil Nadu has formally ordered an internal audit."
+        },
+        {
+          "term": "official",
+          "pos": "noun",
+          "collocations": "government official;library official",
+          "meaning": "官方人員；官員",
+          "synonyms": [
+            "representative;administrator",
+            "agent;officer"
+          ],
+          "family": "officially;office",
+          "sentence": "Officials will now carefully review library collections throughout the entire state."
+        },
+        {
+          "term": "review",
+          "pos": "verb",
+          "collocations": "carefully review;review collections",
+          "meaning": "審查；復查",
+          "synonyms": [
+            "examine;evaluate",
+            "assess;inspect"
+          ],
+          "family": "reviewer;reviewing",
+          "sentence": "Officials will now carefully review library collections throughout the entire state."
+        },
+        {
+          "term": "investigation",
+          "pos": "noun",
+          "collocations": "ongoing investigation;conduct an investigation",
+          "meaning": "調查",
+          "synonyms": [
+            "inquiry;probe",
+            "examination;search"
+          ],
+          "family": "investigate;investigative",
+          "sentence": "The ongoing investigation aims to ensure the quality and authenticity of all materials available to the public."
+        },
+        {
+          "term": "authenticity",
+          "pos": "noun",
+          "collocations": "ensure authenticity;check authenticity",
+          "meaning": "真實性；正統性",
+          "synonyms": [
+            "genuineness;validity",
+            "veracity;legitimacy"
+          ],
+          "family": "authentic;authentically",
+          "sentence": "The ongoing investigation aims to ensure the quality and authenticity of all materials available to the public."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "The Tamil Nadu government has formally ordered an internal audit to ensure that all library collections ________ high standards.",
+          "options": [
+            "meet",
+            "meets",
+            "meeting",
+            "to meet"
+          ],
+          "answer": "A",
+          "locator": "Infinitive and verb agreement after auxiliary verbs or modal structures",
+          "explanation": "句中主詞為所有格與複數名詞「all library collections」，為複數概念，且「to ensure that...」子句中需要原形動詞來配合句型，因此選擇原形動詞「meet」作為正確答案。"
+        },
+        {
+          "prompt": "Officials will carefully review library books throughout the state ________ evaluate their authenticity and overall quality.",
+          "options": [
+            "so",
+            "in order to",
+            "because",
+            "although"
+          ],
+          "answer": "B",
+          "locator": "Purpose clause using 'in order to + verb'",
+          "explanation": "空格後接原形動詞「evaluate」，表示目的（為了評估其真實性與整體品質），選項中只有「in order to」可接原形動詞並表達目的。"
+        },
+        {
+          "prompt": "The newly established mega library ________ a major scandal regarding artificial intelligence publications last week.",
+          "options": [
+            "encounter",
+            "encounters",
+            "encountered",
+            "encountering"
+          ],
+          "answer": "C",
+          "locator": "Simple past tense indicator 'last week'",
+          "explanation": "句尾明確的時間副詞「last week」（上週）指出此動作發生在過去，因此必須使用過去式動詞「encountered」。"
+        }
+      ],
+      "part6": {
+        "title": "Internal Memo on Library Collection Review",
+        "passage": "To all staff members, \n\nFollowing recent news reports regarding book controversies, our department has decided to implement new screening policies. All employees must review incoming materials 【1】 carefully. \n\nFurthermore, any titles produced by artificial intelligence should be reported to management immediately. This step is necessary 【2】 maintain public trust. \n\nPlease ensure that your department follows these guidelines starting tomorrow. We appreciate your cooperation in this 【3】 matter. \n\nSincerely, \nLibrary Administration 【4】.",
+        "questions": [
+          {
+            "prompt": "Choose the best word for blank 【1】.",
+            "options": [
+              "more",
+              "most",
+              "much",
+              "very"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"All employees must review incoming materials 【1】 carefully.\"",
+            "explanation": "句意表示員工必須「更加」仔細地審查進來的資料，這裡需要副詞比較級「more」來修飾副詞「carefully」。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【2】.",
+            "options": [
+              "in",
+              "to",
+              "for",
+              "at"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"This step is necessary 【2】 maintain public trust.\"",
+            "explanation": "片語「necessary to + 原形動詞」用來表達「對於做某事是必要的」，因此介詞或不定詞粒子應選「to」。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【3】.",
+            "options": [
+              "importance",
+              "important",
+              "importantly",
+              "import"
+            ],
+            "answer": "B",
+            "locator": "第 2 段 \"We appreciate your cooperation in this 【3】 matter.\"",
+            "explanation": "空格處需要形容詞來修飾名詞「matter」，選項中「important」為形容詞，意為「重要的事項」。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【4】.",
+            "options": [
+              "Team",
+              "Office",
+              "Branch",
+              "Building"
+            ],
+            "answer": "B",
+            "locator": "第 2 段 \"Sincerely, Library Administration 【4】.\"",
+            "explanation": "信件結尾署名處常搭配「Library Administration Office」（圖書館行政辦公室），故「Office」為最合適的單字。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Read the news article and answer the reading comprehension questions.",
+        "questions": [
+          {
+            "prompt": "What did the government of Tamil Nadu order?",
+            "options": [
+              "An internal audit of library collections",
+              "The closure of all mega libraries",
+              "A ban on all foreign publications",
+              "The creation of new AI software"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"the government of Tamil Nadu has formally ordered an internal audit.\"",
+            "explanation": "根據文章第二段所述，坦米爾納德邦政府已正式下令對圖書館館藏進行內部稽查（internal audit）。"
+          },
+          {
+            "prompt": "What is the main subject of the controversy surrounding the library?",
+            "options": [
+              "Books created by artificial intelligence",
+              "High subscription fees",
+              "Extended opening hours",
+              "Damaged historical manuscripts"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"regarding books created by artificial intelligence.\"",
+            "explanation": "根據文章第一段指出，這起醜聞與人工智慧（AI）所創造的書籍有關。"
+          },
+          {
+            "prompt": "What is the goal of the ongoing investigation mentioned in the article?",
+            "options": [
+              "To ensure quality and authenticity of materials",
+              "To increase book sales",
+              "To hire more library staff",
+              "To update computer systems"
+            ],
+            "answer": "A",
+            "locator": "第 3 段 \"aims to ensure the quality and authenticity of all materials available to the public.\"",
+            "explanation": "根據文章第三段所述，調查的目的是為了確保提供給公眾的所有資料之品質與真實性。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/c54gne3plvrxo",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    }
+  }
+}
