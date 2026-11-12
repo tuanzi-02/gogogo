@@ -25,6 +25,9 @@ from pydantic import BaseModel
 
 DATA_PATH = Path(__file__).resolve().with_name("data.json")
 MODEL = "gemini-3.8-flash"
+RSS_TIMEOUT_SECONDS = 15
+GEMINI_TIMEOUT_MS = 120_000
+BETWEEN_CATEGORIES_SECONDS = 15
 FEEDS = {
     # http://bbci.co.uk is a site address, not a category RSS feed.
     "finance": "https://feeds.bbci.co.uk/news/business/rss.xml",
@@ -107,8 +110,9 @@ def bbc_article_url(value: str) -> str | None:
 
 def read_feed(category: str) -> list[dict[str, str | int]]:
     url = FEEDS[category]
+    print(f"[{CATEGORY_NAMES[category]}] Fetching BBC RSS: {url}", flush=True)
     request = Request(url, headers={"User-Agent": "TOEIC-News-Notes/1.0 (RSS reader)"})
-    with urlopen(request, timeout=25) as response:
+    with urlopen(request, timeout=RSS_TIMEOUT_SECONDS) as response:
         body = response.read(2_000_001)
     if len(body) > 2_000_000:
         raise RuntimeError(f"RSS feed is unexpectedly large: {url}")
@@ -126,6 +130,7 @@ def read_feed(category: str) -> list[dict[str, str | int]]:
     stories.sort(key=lambda story: int(story["timestamp"]), reverse=True)
     if not stories:
         raise RuntimeError(f"No usable news stories in {url}")
+    print(f"[{CATEGORY_NAMES[category]}] Found {len(stories)} usable RSS stories.", flush=True)
     return stories
 
 
@@ -146,7 +151,7 @@ def choose_story(category: str, used: set[str]) -> dict[str, str | int]:
         if story["url"] not in used:
             return story
     # A quiet feed may contain only previously used links; keep the daily run usable.
-    print(f"Warning: all {CATEGORY_NAMES[category]} RSS links were used before; reusing the newest one.")
+    print(f"Warning: all {CATEGORY_NAMES[category]} RSS links were used before; reusing the newest one.", flush=True)
     return stories[0]
 
 
@@ -215,6 +220,8 @@ def generate_lesson(client: genai.Client, category: str, story: dict[str, str | 
     prompt = make_prompt(category, story, today)
     last_error: Exception | None = None
     for attempt in range(1, 4):
+        started = time.monotonic()
+        print(f"[{CATEGORY_NAMES[category]}] Gemini attempt {attempt}/3 started ({MODEL}).", flush=True)
         try:
             response = client.models.generate_content(
                 model=MODEL,
@@ -222,7 +229,6 @@ def generate_lesson(client: genai.Client, category: str, story: dict[str, str | 
                 config=types.GenerateContentConfig(
                     response_mime_type="application/json",
                     response_schema=LessonContent,
-                    temperature=0.3,
                 ),
             )
             if response.parsed is not None:
@@ -235,13 +241,23 @@ def generate_lesson(client: genai.Client, category: str, story: dict[str, str | 
             result = lesson.model_dump(mode="json")
             result["sourceUrl"] = story["url"]
             result["sourceLabel"] = "閱讀 BBC 原文報導"
+            print(
+                f"[{CATEGORY_NAMES[category]}] Lesson validated in {time.monotonic() - started:.1f}s.",
+                flush=True,
+            )
             return result
         except Exception as error:
             last_error = error
+            print(
+                f"[{CATEGORY_NAMES[category]}] Attempt {attempt}/3 failed after "
+                f"{time.monotonic() - started:.1f}s: {error}",
+                flush=True,
+            )
             if attempt == 3:
                 break
-            print(f"{CATEGORY_NAMES[category]} attempt {attempt} failed: {error}; retrying.")
-            time.sleep(3 * attempt)
+            delay = 60 if getattr(error, "code", None) == 429 else 3 * attempt
+            print(f"[{CATEGORY_NAMES[category]}] Retrying in {delay}s.", flush=True)
+            time.sleep(delay)
     raise RuntimeError(f"Could not generate a valid {CATEGORY_NAMES[category]} lesson") from last_error
 
 
@@ -270,10 +286,12 @@ def save_history(history: dict) -> None:
 
 
 def main() -> None:
+    print("Starting daily TOEIC news update.", flush=True)
     api_key = os.environ.get("GEMINI_API_KEY", "").strip()
     if not api_key:
         raise RuntimeError("GEMINI_API_KEY is missing. Add it as a GitHub Actions repository secret.")
     today = datetime.now(ZoneInfo("Asia/Taipei")).date().isoformat()
+    print(f"Taiwan date: {today}. Loading {DATA_PATH.name}.", flush=True)
     history = load_history()
     current = history.get(today, {})
     if not isinstance(current, dict):
@@ -286,21 +304,27 @@ def main() -> None:
                 validate_lesson(LessonContent.model_validate(existing))
                 continue
             except (ValueError, TypeError):
-                print(f"Replacing incomplete {category} lesson for {today}.")
+                print(f"Replacing incomplete {category} lesson for {today}.", flush=True)
         pending[category] = {}
     if not pending:
-        print(f"{today} already has all three complete lessons; data.json is unchanged.")
+        print(f"{today} already has all three complete lessons; data.json is unchanged.", flush=True)
         return
     used = used_source_urls(history)
-    client = genai.Client(api_key=api_key)
-    for category in pending:
+    client = genai.Client(api_key=api_key, http_options=types.HttpOptions(timeout=GEMINI_TIMEOUT_MS))
+    categories = list(pending)
+    print(f"Generating {len(categories)} missing categories: {', '.join(CATEGORY_NAMES[key] for key in categories)}.", flush=True)
+    for index, category in enumerate(categories):
         story = choose_story(category, used)
-        print(f"Generating {CATEGORY_NAMES[category]} from: {story['title']}")
+        print(f"[{CATEGORY_NAMES[category]}] Selected story: {story['title']}", flush=True)
         pending[category] = generate_lesson(client, category, story, today)
         used.add(str(story["url"]))
+        if index < len(categories) - 1:
+            print(f"Pausing {BETWEEN_CATEGORIES_SECONDS}s before the next category.", flush=True)
+            time.sleep(BETWEEN_CATEGORIES_SECONDS)
     history[today] = {**current, **pending}
+    print(f"All categories are ready. Saving {DATA_PATH.name}.", flush=True)
     save_history(history)
-    print(f"Updated {DATA_PATH.name}: {today} has Finance, Politics, and Tech & Life.")
+    print(f"Updated {DATA_PATH.name}: {today} has Finance, Politics, and Tech & Life.", flush=True)
 
 
 if __name__ == "__main__":
