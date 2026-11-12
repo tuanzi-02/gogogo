@@ -24,7 +24,7 @@ from pydantic import BaseModel
 
 
 DATA_PATH = Path(__file__).resolve().with_name("data.json")
-MODEL = "gemini-2.5-flash"
+MODEL = "gemini-3.8-flash"
 FEEDS = {
     # http://bbci.co.uk is a site address, not a category RSS feed.
     "finance": "https://feeds.bbci.co.uk/news/business/rss.xml",
