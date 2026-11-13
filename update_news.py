@@ -26,7 +26,9 @@ from pydantic import BaseModel
 DATA_PATH = Path(__file__).resolve().with_name("data.json")
 MODELS = ("gemini-3.8-flash", "gemini-3.5-flash-lite", "gemini-3.5-flash")
 RSS_TIMEOUT_SECONDS = 15
-GEMINI_TIMEOUT_MS = 45_000
+GEMINI_TIMEOUT_MS = 90_000
+MAX_MODEL_ROUNDS = 3
+BETWEEN_ROUNDS_SECONDS = 45
 BETWEEN_CATEGORIES_SECONDS = 15
 FEEDS = {
     # http://bbci.co.uk is a site address, not a category RSS feed.
@@ -151,7 +153,11 @@ def choose_story(category: str, used: set[str]) -> dict[str, str | int]:
         if story["url"] not in used:
             return story
     # A quiet feed may contain only previously used links; keep the daily run usable.
-    print(f"Warning: all {CATEGORY_NAMES[category]} RSS links were used before; reusing the newest one.", flush=True)
+    print(
+        f"Warning: all {CATEGORY_NAMES[category]} RSS links were used before; "
+        "reusing the newest one.",
+        flush=True,
+    )
     return stories[0]
 
 
@@ -193,9 +199,13 @@ def validate_lesson(lesson: LessonContent) -> None:
     for row in lesson.vocabulary:
         if len(row.synonyms) != 2 or not all(value.strip() for value in row.synonyms):
             raise ValueError("Every vocabulary row needs two synonym groups")
-        if not all(value.strip() for value in [row.term, row.pos, row.collocations, row.meaning, row.family, row.sentence]):
+        if not all(value.strip() for value in [
+            row.term, row.pos, row.collocations, row.meaning, row.family, row.sentence
+        ]):
             raise ValueError("Vocabulary row has an empty field")
-        if ";" not in row.collocations or ";" not in row.family or any(";" not in value for value in row.synonyms):
+        if ";" not in row.collocations or ";" not in row.family or any(
+            ";" not in value for value in row.synonyms
+        ):
             raise ValueError("Collocations, synonym groups, and word family need ASCII semicolons")
         if "；" in row.collocations + row.family + "".join(row.synonyms):
             raise ValueError("Use ASCII semicolons, not full-width semicolons")
@@ -209,7 +219,9 @@ def validate_lesson(lesson: LessonContent) -> None:
         for question in questions:
             if len(question.options) != 4 or not all(option.strip() for option in question.options):
                 raise ValueError("Every question needs four nonempty options")
-            if not all(value.strip() for value in [question.prompt, question.locator, question.explanation]):
+            if not all(value.strip() for value in [
+                question.prompt, question.locator, question.explanation
+            ]):
                 raise ValueError("Question prompt, locator, or explanation is empty")
     for question in lesson.part6.questions + lesson.part7.questions:
         if not re.search(r"第\s*[1-9一二三四五]\s*段", question.locator):
@@ -230,9 +242,18 @@ def error_code(error: Exception) -> int | None:
 
 
 def should_switch_model(error: Exception) -> bool:
-    if error_code(error) in {404, 429, 503, 504}:
+    return error_code(error) == 404 or is_congestion_error(error)
+
+
+def is_congestion_error(error: Exception) -> bool:
+    if error_code(error) in {429, 503, 504}:
         return True
-    return isinstance(error, TimeoutError) or "timeout" in type(error).__name__.lower()
+    name = type(error).__name__.lower()
+    return (
+        isinstance(error, TimeoutError)
+        or "timeout" in name
+        or "deadline_exceeded" in str(error).lower()
+    )
 
 
 def request_lesson(client: genai.Client, model: str, prompt: str, category: str):
@@ -246,7 +267,11 @@ def request_lesson(client: genai.Client, model: str, prompt: str, category: str)
     except Exception as error:
         if error_code(error) != 400 or "think" not in str(error).lower():
             raise
-        print(f"[{CATEGORY_NAMES[category]}] {model} rejected thinking settings; retrying without them.", flush=True)
+        print(
+            f"[{CATEGORY_NAMES[category]}] {model} rejected thinking settings; "
+            "retrying without them.",
+            flush=True,
+        )
         plain_config = types.GenerateContentConfig(
             response_mime_type="application/json",
             response_schema=LessonContent,
@@ -254,41 +279,80 @@ def request_lesson(client: genai.Client, model: str, prompt: str, category: str)
         return client.models.generate_content(model=model, contents=prompt, config=plain_config)
 
 
-def generate_lesson(client: genai.Client, category: str, story: dict[str, str | int], today: str) -> dict:
+def generate_lesson(
+    client: genai.Client,
+    category: str,
+    story: dict[str, str | int],
+    today: str,
+) -> dict:
     prompt = make_prompt(category, story, today)
     last_error: Exception | None = None
-    for index, model in enumerate(MODELS):
-        started = time.monotonic()
-        print(f"[{CATEGORY_NAMES[category]}] Trying {model} ({index + 1}/{len(MODELS)}).", flush=True)
-        try:
-            response = request_lesson(client, model, prompt, category)
-            if response.parsed is not None:
-                lesson = LessonContent.model_validate(response.parsed)
-            elif response.text:
-                lesson = LessonContent.model_validate_json(response.text)
-            else:
-                raise ValueError("Gemini returned no structured lesson")
-            validate_lesson(lesson)
-            result = lesson.model_dump(mode="json")
-            result["sourceUrl"] = story["url"]
-            result["sourceLabel"] = "閱讀 BBC 原文報導"
+    for round_number in range(1, MAX_MODEL_ROUNDS + 1):
+        print(
+            f"[{CATEGORY_NAMES[category]}] Model round "
+            f"{round_number}/{MAX_MODEL_ROUNDS}.",
+            flush=True,
+        )
+        all_congested = True
+        attempted = 0
+        for index, model in enumerate(MODELS):
+            attempted += 1
+            started = time.monotonic()
             print(
-                f"[{CATEGORY_NAMES[category]}] {model} lesson validated in {time.monotonic() - started:.1f}s.",
+                f"[{CATEGORY_NAMES[category]}] Round {round_number}/{MAX_MODEL_ROUNDS}: "
+                f"trying {model} ({index + 1}/{len(MODELS)}).",
                 flush=True,
             )
-            return result
-        except Exception as error:
-            last_error = error
+            try:
+                response = request_lesson(client, model, prompt, category)
+                if response.parsed is not None:
+                    lesson = LessonContent.model_validate(response.parsed)
+                elif response.text:
+                    lesson = LessonContent.model_validate_json(response.text)
+                else:
+                    raise ValueError("Gemini returned no structured lesson")
+                validate_lesson(lesson)
+                result = lesson.model_dump(mode="json")
+                result["sourceUrl"] = story["url"]
+                result["sourceLabel"] = "閱讀 BBC 原文報導"
+                print(
+                    f"[{CATEGORY_NAMES[category]}] {model} lesson validated in "
+                    f"{time.monotonic() - started:.1f}s (round {round_number}).",
+                    flush=True,
+                )
+                return result
+            except Exception as error:
+                last_error = error
+                all_congested = all_congested and is_congestion_error(error)
+                print(
+                    f"[{CATEGORY_NAMES[category]}] {model} failed after "
+                    f"{time.monotonic() - started:.1f}s: {error}",
+                    flush=True,
+                )
+                if index + 1 < len(MODELS) and (
+                    should_switch_model(error) or isinstance(error, ValueError)
+                ):
+                    print(
+                        f"[{CATEGORY_NAMES[category]}] Switching immediately "
+                        f"to {MODELS[index + 1]}.",
+                        flush=True,
+                    )
+                    continue
+                break
+        if round_number < MAX_MODEL_ROUNDS and attempted == len(MODELS) and all_congested:
             print(
-                f"[{CATEGORY_NAMES[category]}] {model} failed after "
-                f"{time.monotonic() - started:.1f}s: {error}",
+                f"[{CATEGORY_NAMES[category]}] All models were busy or timed out "
+                f"in round {round_number}; waiting {BETWEEN_ROUNDS_SECONDS}s "
+                "before retrying.",
                 flush=True,
             )
-            if index + 1 < len(MODELS) and (should_switch_model(error) or isinstance(error, ValueError)):
-                print(f"[{CATEGORY_NAMES[category]}] Switching immediately to {MODELS[index + 1]}.", flush=True)
-                continue
-            break
-    raise RuntimeError(f"Could not generate a valid {CATEGORY_NAMES[category]} lesson with available models") from last_error
+            time.sleep(BETWEEN_ROUNDS_SECONDS)
+            continue
+        break
+    raise RuntimeError(
+        f"Could not generate a valid {CATEGORY_NAMES[category]} lesson "
+        f"after {round_number} model round(s)"
+    ) from last_error
 
 
 def load_history() -> dict:
@@ -319,7 +383,9 @@ def main() -> None:
     print("Starting daily TOEIC news update.", flush=True)
     api_key = os.environ.get("GEMINI_API_KEY", "").strip()
     if not api_key:
-        raise RuntimeError("GEMINI_API_KEY is missing. Add it as a GitHub Actions repository secret.")
+        raise RuntimeError(
+            "GEMINI_API_KEY is missing. Add it as a GitHub Actions repository secret."
+        )
     today = datetime.now(ZoneInfo("Asia/Taipei")).date().isoformat()
     print(f"Taiwan date: {today}. Loading {DATA_PATH.name}.", flush=True)
     history = load_history()
@@ -337,7 +403,11 @@ def main() -> None:
                 print(f"Replacing incomplete {category} lesson for {today}.", flush=True)
         pending[category] = {}
     if not pending:
-        print(f"{today} already has all three complete lessons; data.json is unchanged.", flush=True)
+        print(
+            f"{today} already has all three complete lessons; "
+            "data.json is unchanged.",
+            flush=True,
+        )
         return
     used = used_source_urls(history)
     client = genai.Client(
@@ -348,19 +418,33 @@ def main() -> None:
         ),
     )
     categories = list(pending)
-    print(f"Generating {len(categories)} missing categories: {', '.join(CATEGORY_NAMES[key] for key in categories)}.", flush=True)
+    print(
+        f"Generating {len(categories)} missing categories: "
+        f"{', '.join(CATEGORY_NAMES[key] for key in categories)}.",
+        flush=True,
+    )
     for index, category in enumerate(categories):
         story = choose_story(category, used)
-        print(f"[{CATEGORY_NAMES[category]}] Selected story: {story['title']}", flush=True)
+        print(
+            f"[{CATEGORY_NAMES[category]}] Selected story: {story['title']}",
+            flush=True,
+        )
         pending[category] = generate_lesson(client, category, story, today)
         used.add(str(story["url"]))
         if index < len(categories) - 1:
-            print(f"Pausing {BETWEEN_CATEGORIES_SECONDS}s before the next category.", flush=True)
+            print(
+                f"Pausing {BETWEEN_CATEGORIES_SECONDS}s before the next category.",
+                flush=True,
+            )
             time.sleep(BETWEEN_CATEGORIES_SECONDS)
     history[today] = {**current, **pending}
     print(f"All categories are ready. Saving {DATA_PATH.name}.", flush=True)
     save_history(history)
-    print(f"Updated {DATA_PATH.name}: {today} has Finance, Politics, and Tech & Life.", flush=True)
+    print(
+        f"Updated {DATA_PATH.name}: {today} has Finance, Politics, "
+        "and Tech & Life.",
+        flush=True,
+    )
 
 
 if __name__ == "__main__":
