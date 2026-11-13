@@ -1,4 +1,819 @@
 {
+  "2026-11-14": {
+    "finance": {
+      "title": "Global Tech Outage Highlights Risks of Relying on Small Tech Provider Groups",
+      "summary": "微軟針對長達近24小時的全球大當機深表歉意。專家指出，這次事件再次提醒人們，全球社會過度依賴少數大型科技提供商所帶來的潛在風險。",
+      "english": [
+        "Microsoft issued an apology and said it was deeply sorry after a major global outage caused disruption for almost 24 hours. The widespread system failure created significant challenges for various organizations, highlighting how modern business operations can be disrupted when essential digital services fail unexpectedly.",
+        "Experts commented on the severe event, stating that it serves as a stark reminder of the risks involved when critical infrastructure depends heavily on a small group of big tech providers. They noted that an outage of this scale demonstrates how vulnerable international systems are when relying on a limited number of service vendors.",
+        "Following the resolution of the disruption, industry analysts urged firms to review their technical contingency plans and assess their exposure to major suppliers. Companies are now evaluating how to strengthen their operational resilience to prevent future financial and administrative difficulties if similar technical outages occur again."
+      ],
+      "translation": [
+        "在一次長達近24小時並造成混亂的全球重大當機事件後，微軟表達了歉意並表示深感抱歉。這次廣泛的系統故障對各大機構造成了重大挑戰，凸顯出當關鍵數位服務意外失效時，現代商業運作可能會受到嚴重干擾。",
+        "專家對此嚴重事件發表看法，指出這是一個殘酷的提醒，警示人們當關鍵基礎設施高度依賴少數大型科技提供商時所涉及的風險。他們提到，這種規模的當機顯示出國際系統在依賴有限數量的服務供應商時是多麼脆弱。",
+        "在混亂情況解決之後，業界分析師呼籲企業檢視其技術應變計劃，並評估對主要供應商的依賴程度。各大公司目前正在評估如何強化其營運韌性，以防止未來再次發生類似技術當機時產生財務和行政困境。"
+      ],
+      "vocabulary": [
+        {
+          "term": "apology",
+          "pos": "n.",
+          "collocations": "issue an apology; formal apology",
+          "meaning": "道歉",
+          "synonyms": [
+            "expression of regret; statement of regret",
+            "amends; plea"
+          ],
+          "family": "apologize; apologetic; apologetically",
+          "sentence": "Microsoft issued an apology and said it was deeply sorry after a major global outage caused disruption for almost 24 hours."
+        },
+        {
+          "term": "disruption",
+          "pos": "n.",
+          "collocations": "cause disruption; severe disruption",
+          "meaning": "中斷；混亂",
+          "synonyms": [
+            "interruption; disturbance",
+            "disorder; breakdown"
+          ],
+          "family": "disrupt; disruptive; disruptively",
+          "sentence": "Microsoft issued an apology and said it was deeply sorry after a major global outage caused disruption for almost 24 hours."
+        },
+        {
+          "term": "stark",
+          "pos": "adj.",
+          "collocations": "stark reminder; stark contrast",
+          "meaning": "鮮明的；嚴酷的",
+          "synonyms": [
+            "blatant; obvious",
+            "severe; harsh"
+          ],
+          "family": "starkly; starkness",
+          "sentence": "Experts commented on the severe event, stating that it serves as a stark reminder of the risks involved when critical infrastructure depends heavily on a small group of big tech providers."
+        },
+        {
+          "term": "reminder",
+          "pos": "n.",
+          "collocations": "gentle reminder; serve as a reminder",
+          "meaning": "提醒物；提示",
+          "synonyms": [
+            "prompt; cue",
+            "memorandum; token"
+          ],
+          "family": "remind; reminded; reminding",
+          "sentence": "Experts commented on the severe event, stating that it serves as a stark reminder of the risks involved when critical infrastructure depends heavily on a small group of big tech providers."
+        },
+        {
+          "term": "vulnerable",
+          "pos": "adj.",
+          "collocations": "highly vulnerable; remain vulnerable",
+          "meaning": "易受影響的；脆弱的",
+          "synonyms": [
+            "susceptible; exposed",
+            "defenseless; fragile"
+          ],
+          "family": "vulnerability; vulnerably",
+          "sentence": "They noted that an outage of this scale demonstrates how vulnerable international systems are when relying on a limited number of service vendors."
+        },
+        {
+          "term": "resolution",
+          "pos": "n.",
+          "collocations": "speedy resolution; dispute resolution",
+          "meaning": "解決；決議",
+          "synonyms": [
+            "settlement; solution",
+            "determination; resolve"
+          ],
+          "family": "resolve; resolutely; unresolved",
+          "sentence": "Following the resolution of the disruption, industry analysts urged firms to review their technical contingency plans and assess their exposure to major suppliers."
+        },
+        {
+          "term": "contingency",
+          "pos": "n.",
+          "collocations": "contingency plan; contingency fund",
+          "meaning": "意外事故；應變措施",
+          "synonyms": [
+            "emergency plan; backup option",
+            "possibility; eventuality"
+          ],
+          "family": "contingent; contingently",
+          "sentence": "Following the resolution of the disruption, industry analysts urged firms to review their technical contingency plans and assess their exposure to major suppliers."
+        },
+        {
+          "term": "exposure",
+          "pos": "n.",
+          "collocations": "financial exposure; assess exposure",
+          "meaning": "暴露；風險承擔",
+          "synonyms": [
+            "vulnerability; risk",
+            "disclosure; publicity"
+          ],
+          "family": "expose; exposed; exposing",
+          "sentence": "Following the resolution of the disruption, industry analysts urged firms to review their technical contingency plans and assess their exposure to major suppliers."
+        },
+        {
+          "term": "resilience",
+          "pos": "n.",
+          "collocations": "operational resilience; financial resilience",
+          "meaning": "韌性；恢復力",
+          "synonyms": [
+            "durability; toughness",
+            "flexibility; adaptability"
+          ],
+          "family": "resilient; resiliently",
+          "sentence": "Companies are now evaluating how to strengthen their operational resilience to prevent future financial and administrative difficulties if similar technical outages occur again."
+        },
+        {
+          "term": "administrative",
+          "pos": "adj.",
+          "collocations": "administrative task; administrative support",
+          "meaning": "行政的；管理的",
+          "synonyms": [
+            "managerial; executive",
+            "operational; organizational"
+          ],
+          "family": "administer; administration; administratively",
+          "sentence": "Companies are now evaluating how to strengthen their operational resilience to prevent future financial and administrative difficulties if similar technical outages occur again."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "The IT management team decided to review their digital architecture _______ the major network disruption was successfully resolved.",
+          "options": [
+            "after",
+            "despite",
+            "during",
+            "whereas"
+          ],
+          "answer": "A",
+          "locator": "Subordinate conjunction introducing a time clause following a completed event",
+          "explanation": "句意為「在重大網路中斷成功解決之後，資訊管理團隊決定檢視他們的數位架構。」此處需要一個時間連接詞來引導附屬子句，後接已完成的事件，故選表示「在……之後」的 (A) after。(B) despite 為介系詞；(C) during 為介系詞；(D) whereas 為對比連接詞，皆不符合文法與句意。"
+        },
+        {
+          "prompt": "Recent technical failures show that corporations must not depend _______ on a single technology provider for all their critical services.",
+          "options": [
+            "excessive",
+            "excessively",
+            "excess",
+            "exceeded"
+          ],
+          "answer": "B",
+          "locator": "Adverb modifying the verb 'depend'",
+          "explanation": "句意為「近期的技術故障顯示，企業絕不能過度依賴單一科技提供商來獲得所有關鍵服務。」此處需要副詞來修飾動詞 depend，故選副詞 (B) excessively（過度地）。(A) 為形容詞；(C) 為名詞；(D) 為動詞過去式，均不符合文法修飾需求。"
+        },
+        {
+          "prompt": "Financial analysts suggest _______ contingency reserves to cushion the firm against unexpected technological failures.",
+          "options": [
+            "maintain",
+            "maintaining",
+            "maintained",
+            "to maintain"
+          ],
+          "answer": "B",
+          "locator": "Verb pattern requiring a gerund after 'suggest'",
+          "explanation": "句意為「財務分析師建議維持應變準備金，以緩衝公司面臨意外技術故障時的衝擊。」動詞 suggest 後面若接動詞作為受詞，需使用動名詞形式（V-ing），故正確答案為 (B) maintaining。"
+        }
+      ],
+      "part6": {
+        "title": "Internal Announcement: IT Infrastructure Review",
+        "passage": "To All Department Heads,\n\nFollowing the recent system disturbance, our company is conducting a thorough evaluation of our operational dependence on third-party service providers. The executive board wants to ensure that our critical data remains secure and accessible. 【1】.\n\nWe request that all department managers submit a detailed report listing every external software tool currently used by their teams. It is essential to identify any potential vulnerability in our current workflows 【2】 financial or administrative operations are further interrupted. Please make sure to include backup protocols in your report.\n\nOur goal is to increase overall resilience 【3】 diversifying our technology vendors and refining our response procedures. Additional training sessions regarding emergency technical measures will be scheduled next month. 【4】 for your prompt cooperation in this important initiative.",
+        "questions": [
+          {
+            "prompt": "Choose the best sentence to fill in blank 【1】.",
+            "options": [
+              "Our primary cloud service experienced an unexpected system failure yesterday.",
+              "We have decided to cancel all upcoming internal training seminars.",
+              "Marketing budgets will be increased significantly next quarter.",
+              "The company recently celebrated its twentieth anniversary with a banquet."
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"Following the recent system disturbance, our company is conducting a thorough evaluation of our operational dependence on third-party service providers.\"",
+            "explanation": "第一段前文提到「在近期發生系統干擾之後，我們公司正對第三方服務提供商的營運依賴進行徹底評估」，選項 (A)「我們的核心雲端服務昨天經歷了意外的系統故障」最契合前文關於系統干擾的背景說明。"
+          },
+          {
+            "prompt": "Choose the best option to fill in blank 【2】.",
+            "options": [
+              "before",
+              "instead",
+              "unless",
+              "despite"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"It is essential to identify any potential vulnerability in our current workflows 【2】 financial or administrative operations are further interrupted.\"",
+            "explanation": "此處需填入連詞以連結「找出工作流程中的潛在漏洞」與「財務或行政運作遭到進一步干擾」。選 (A) before（在……之前）最符合邏輯，表示「在財務或行政運作進一步中斷之前，找出潛在漏洞至關重要」。"
+          },
+          {
+            "prompt": "Choose the best option to fill in blank 【3】.",
+            "options": [
+              "by",
+              "with",
+              "for",
+              "to"
+            ],
+            "answer": "A",
+            "locator": "第 3 段 \"Our goal is to increase overall resilience 【3】 diversifying our technology vendors and refining our response procedures.\"",
+            "explanation": "空格後面跟著動名詞短語 \"diversifying... and refining...\"，表達「透過」這些手段來達到提升整體韌性的目標。介系詞 by + V-ing 表示方法或手段，故選 (A) by。"
+          },
+          {
+            "prompt": "Choose the best option to fill in blank 【4】.",
+            "options": [
+              "Thank you",
+              "Thanks to",
+              "In addition",
+              "As a result"
+            ],
+            "answer": "A",
+            "locator": "第 3 段 \"【4】 for your prompt cooperation in this important initiative.\"",
+            "explanation": "公告結尾通常會對員工的配合表達感謝。\"Thank you for...\" 為標準的商業公文用語，故選 (A) Thank you。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Based on the news article provided above, choose the best answer for each question.",
+        "questions": [
+          {
+            "prompt": "What caused the widespread global disruption mentioned in the text?",
+            "options": [
+              "A major technological outage involving Microsoft",
+              "An administrative decision to cut operational budgets",
+              "A financial crisis among big technology providers",
+              "A delayed policy response from international regulators"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"Microsoft issued an apology and said it was deeply sorry after a major global outage caused disruption for almost 24 hours.\"",
+            "explanation": "根據第一段，這起持續近24小時的全球混亂是由於微軟引發的重大系統當機（major global outage）所造成，因此選項 (A) 為正確答案。"
+          },
+          {
+            "prompt": "What do experts say the recent event serves as?",
+            "options": [
+              "A clear sign that digital technology is becoming obsolete",
+              "A stark reminder of the risks of depending on a small group of big tech providers",
+              "A guarantee that operational problems can be solved in a few minutes",
+              "A reason to reduce investment in future contingency plans"
+            ],
+            "answer": "B",
+            "locator": "第 2 段 \"Experts commented on the severe event, stating that it serves as a stark reminder of the risks involved when critical infrastructure depends heavily on a small group of big tech providers.\"",
+            "explanation": "文章第二段明確提到，專家指出該事件是一個殘酷的提醒（stark reminder），警告關鍵基礎設施過度依賴少數大型科技提供商所帶來的風險，故選 (B)。"
+          },
+          {
+            "prompt": "What are companies encouraged to do following the resolution of the disruption?",
+            "options": [
+              "Discontinue all contractual relationships with international suppliers",
+              "Review their contingency plans and evaluate their reliance on major providers",
+              "Stop using automated digital systems for administrative tasks",
+              "Focus exclusively on short-term financial investments"
+            ],
+            "answer": "B",
+            "locator": "第 3 段 \"Following the resolution of the disruption, industry analysts urged firms to review their technical contingency plans and assess their exposure to major suppliers.\"",
+            "explanation": "第三段指出，分析師呼籲企業檢視其技術應變計劃（contingency plans）並評估對主要供應商的風險承擔（exposure），因此選項 (B) 符合文章內容。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/c6rrg51rkz09o",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    },
+    "politics": {
+      "title": "Labour Reviews Election Defeat in Wales",
+      "summary": "英國工黨將於週六公佈今年五月威爾斯議會歷史性敗選的檢討報告，威爾斯領袖指出工黨與選民失去了聯繫。",
+      "english": [
+        "On Saturday, the Labour Party will officially release a comprehensive review examining its historic defeat during the Senedd elections held in May. This evaluation aims to understand the root causes behind the disappointing electoral outcome.",
+        "According to the regional leader, the party unfortunately lost its vital connection with local voters over time. This growing detachment ultimately created a significant barrier between the political leadership and the everyday public.",
+        "Party officials hope that publishing this honest assessment will help them regain public trust. The upcoming review serves as a crucial first step toward rebuilding their political foundation ahead of future campaigns."
+      ],
+      "translation": [
+        "週六，工黨將正式發布一份全面的檢討報告，審視其在五月舉行的威爾斯議會選舉中所遭受的歷史性敗選。這項評估旨在了解令人失望的選舉結果背后的根本原因。",
+        "據該地區領袖表示，該黨不幸地隨著時間推移失去了與當地選民的至關重要的聯繫。這種日益增長的疏離感最終在政治領導層與普通公眾之間造成了巨大的障礙。",
+        "黨內官員希望發表這項誠實的評估能有助於他們重新獲得公眾信任。即將到來的檢討報告是邁向在未來競選之前重建其政治基礎的關鍵第一步。"
+      ],
+      "vocabulary": [
+        {
+          "term": "review",
+          "pos": "noun",
+          "collocations": "comprehensive review; publish a review",
+          "meaning": "檢討報告；審查",
+          "synonyms": [
+            "assessment; evaluation",
+            "analysis; critique"
+          ],
+          "family": "review; reviewer; reviewing",
+          "sentence": "On Saturday, the Labour Party will officially release a comprehensive review examining its historic defeat during the Senedd elections held in May."
+        },
+        {
+          "term": "historic",
+          "pos": "adjective",
+          "collocations": "historic defeat; historic election",
+          "meaning": "歷史性的",
+          "synonyms": [
+            "momentous; notable",
+            "significant; landmark"
+          ],
+          "family": "history; historical; historically",
+          "sentence": "On Saturday, the Labour Party will officially release a comprehensive review examining its historic defeat during the Senedd elections held in May."
+        },
+        {
+          "term": "evaluation",
+          "pos": "noun",
+          "collocations": "thorough evaluation; careful evaluation",
+          "meaning": "評估；評價",
+          "synonyms": [
+            "assessment; appraisal",
+            "review; estimation"
+          ],
+          "family": "evaluate; evaluated; evaluating",
+          "sentence": "This evaluation aims to understand the root causes behind the disappointing electoral outcome."
+        },
+        {
+          "term": "outcome",
+          "pos": "noun",
+          "collocations": "electoral outcome; positive outcome",
+          "meaning": "結果；成果",
+          "synonyms": [
+            "result; consequence",
+            "effect; conclusion"
+          ],
+          "family": "outcome",
+          "sentence": "This evaluation aims to understand the root causes behind the disappointing electoral outcome."
+        },
+        {
+          "term": "connection",
+          "pos": "noun",
+          "collocations": "vital connection; lose connection",
+          "meaning": "聯繫；連結",
+          "synonyms": [
+            "link; bond",
+            "relation; association"
+          ],
+          "family": "connect; connected; connecting",
+          "sentence": "According to the regional leader, the party unfortunately lost its vital connection with local voters over time."
+        },
+        {
+          "term": "leadership",
+          "pos": "noun",
+          "collocations": "political leadership; strong leadership",
+          "meaning": "領導層；領導地位",
+          "synonyms": [
+            "management; direction",
+            "guidance; governance"
+          ],
+          "family": "lead; leader; leading",
+          "sentence": "This growing detachment ultimately created a significant barrier between the political leadership and the everyday public."
+        },
+        {
+          "term": "assessment",
+          "pos": "noun",
+          "collocations": "honest assessment; risk assessment",
+          "meaning": "評估；評價",
+          "synonyms": [
+            "evaluation; appraisal",
+            "estimation; analysis"
+          ],
+          "family": "assess; assessed; assessing",
+          "sentence": "Party officials hope that publishing this honest assessment will help them regain public trust."
+        },
+        {
+          "term": "trust",
+          "pos": "noun",
+          "collocations": "public trust; regain trust",
+          "meaning": "信任；信賴",
+          "synonyms": [
+            "confidence; faith",
+            "reliance; credence"
+          ],
+          "family": "trust; trusted; trusting",
+          "sentence": "Party officials hope that publishing this honest assessment will help them regain public trust."
+        },
+        {
+          "term": "foundation",
+          "pos": "noun",
+          "collocations": "political foundation; solid foundation",
+          "meaning": "基礎；基底",
+          "synonyms": [
+            "basis; groundwork",
+            "infrastructure; footing"
+          ],
+          "family": "found; founder; foundational",
+          "sentence": "The upcoming review serves as a crucial first step toward rebuilding their political foundation ahead of future campaigns."
+        },
+        {
+          "term": "campaign",
+          "pos": "noun",
+          "collocations": "future campaign; political campaign",
+          "meaning": "競選活動；運動",
+          "synonyms": [
+            "drive; movement",
+            "operation; crusade"
+          ],
+          "family": "campaign; campaigner; campaigning",
+          "sentence": "The upcoming review serves as a crucial first step toward rebuilding their political foundation ahead of future campaigns."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "On Saturday, the Labour Party will officially release a comprehensive review examining its historic defeat ________ the Senedd elections.",
+          "options": [
+            "during",
+            "while",
+            "when",
+            "for"
+          ],
+          "answer": "A",
+          "locator": "介系詞與名詞片語搭配",
+          "explanation": "空格後面接的是名詞片語「the Senedd elections」，表示在某個時期或事件期間發生，因此應使用介系詞「during」。「while」是連接詞，後面需接子句；「when」也是連接詞或副詞；「for」表持續時間，語意不合。"
+        },
+        {
+          "prompt": "This evaluation aims ________ understand the root causes behind the disappointing electoral outcome.",
+          "options": [
+            "for",
+            "to",
+            "at",
+            "in"
+          ],
+          "answer": "B",
+          "locator": "動詞不定詞片語",
+          "explanation": "英文中動詞「aim」後方若接另一個動詞表示目的，習慣搭配不定詞「to + 原形動詞」（aim to do sth.）。因此正確答案為「to」。"
+        },
+        {
+          "prompt": "According to the regional leader, the party unfortunately lost ________ vital connection with local voters.",
+          "options": [
+            "it",
+            "itself",
+            "its",
+            "it's"
+          ],
+          "answer": "C",
+          "locator": "所有格形容詞",
+          "explanation": "空格後面接名詞「vital connection」，需要一個所有格形容詞來修飾。選項「its」是所有格，用來修飾「the party」的連接。「it」為主格或受格，「itself」為反身代名詞，「it's」為「it is」或「it has」的縮寫。"
+        }
+      ],
+      "part6": {
+        "title": "Internal Announcement on Campaign Review",
+        "passage": "To all party members, We are writing to remind you that a special regional committee meeting will be held next week. During this session, officials will discuss the upcoming report 【1】 the recent election defeat in May. As you know, the regional leader stated that the party lost its connection with voters. Therefore, we must review our past strategies 【2】 order to reconnect with the public. Please ensure that you read the published document thoroughly 【3】 your arrival at the meeting. Your feedback and active participation are vital 【4】 our future political campaigns. Thank you for your continued dedication.",
+        "questions": [
+          {
+            "prompt": "Choose the best word for blank 【1】.",
+            "options": [
+              "regarding",
+              "regard",
+              "regarded",
+              "regards"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"discuss the upcoming report\"",
+            "explanation": "空格處需要一個介系詞來連接「report」與「the recent election defeat」，「regarding」意指「關於」，符合文意。其他選項詞性不符。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【2】.",
+            "options": [
+              "on",
+              "in",
+              "at",
+              "by"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"review our past strategies\"",
+            "explanation": "片語「in order to」意為「為了……」，是用來表目的的固定搭配，故選「in」。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【3】.",
+            "options": [
+              "prior",
+              "before",
+              "previous",
+              "ahead"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"thoroughly 【3】 your arrival\"",
+            "explanation": "空格後接名詞片語「your arrival」，需要一個介系詞性質的連接詞或介系詞。選項中「before」可作介系詞使用，意指「在……之前」。「prior」需搭配「to」，「previous」為形容詞，「ahead」需搭配「of」。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【4】.",
+            "options": [
+              "to",
+              "for",
+              "with",
+              "at"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"active participation are vital\"",
+            "explanation": "形容詞「vital」通常搭配介系詞「to」，構成「be vital to...」（對……至關重要）的固定用法。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Read the news article about the Labour Party review and answer the following questions.",
+        "questions": [
+          {
+            "prompt": "When will the Labour Party publish its review?",
+            "options": [
+              "On Saturday",
+              "On Sunday",
+              "In May",
+              "Next month"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"On Saturday, the Labour Party will officially release\"",
+            "explanation": "文章第一段明確指出「On Saturday, the Labour Party will officially release a comprehensive review...」，因此正確答案為星期六。"
+          },
+          {
+            "prompt": "What event is being examined in the review?",
+            "options": [
+              "A local council election",
+              "The Senedd elections held in May",
+              "A national leadership contest",
+              "An emergency budget meeting"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"historic defeat during the Senedd elections held in May\"",
+            "explanation": "根據文章第一段所述，該檢討報告是為了審視「五月份舉行的威爾斯議會（Senedd）選舉中的歷史性敗選」，故選B。"
+          },
+          {
+            "prompt": "According to the regional leader, what caused the disappointing electoral outcome?",
+            "options": [
+              "The party spent too much money on advertising.",
+              "The party lost its vital connection with local voters.",
+              "Voters moved away from the region.",
+              "New policies were implemented too quickly."
+            ],
+            "answer": "B",
+            "locator": "第 2 段 \"lost its vital connection with local voters\"",
+            "explanation": "文章第二段指出，地區領袖表示該黨不幸地「失去了與當地選民至關重要的聯繫」，這導致了選民的疏離與敗選。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/c6jre3q9jjwro",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    },
+    "techLife": {
+      "title": "Illicit Trade Allegations Challenge Singapore's Semiconductor Reputation",
+      "summary": "報導指出黃仁勳相關爭議引發關注，使新加坡在展現晶片產業成功之餘，也面臨涉嫌非法貿易活動帶來的管治挑戰與商譽壓力。",
+      "english": [
+        "A recent scandal involving Nvidia chief executive Jensen Huang has raised serious concerns for business-friendly Singapore. The situation has highlighted the nation's growing prominence as a major global chip hub, demonstrating its ability to attract high-tech enterprise investment. However, it has simultaneously exposed operational vulnerabilities regarding commercial oversight within the technology sector.",
+        "The controversy has cast a strong spotlight on alleged illicit trade activities operating through local channels. Singapore has long cultivated an environment designed to streamline corporate expansion and foster international investment. As a result, news of unauthorized transactions has created a significant administrative headache for government officials attempting to maintain economic openness alongside strict regulatory compliance.",
+        "Moving forward, industry experts suggest that regulatory authorities may increase monitoring to prevent illegal commercial practices. Maintaining Singapore's reputation as a secure and reliable trade center remains vital for its ongoing success in the global semiconductor market. Consequently, policymakers face the delicate task of addressing compliance risks without undermining the hub's competitive business ecosystem."
+      ],
+      "translation": [
+        "近期涉及輝達執行長黃仁勳的爭議引發了親商的新加坡高度關注。此情況凸顯了該國作為全球主要晶片樞紐日益重要的地位，展現出其吸引高科技企業投資的能力。然而，這同時也暴露了科技領域在商業監管方面的營運漏洞。",
+        "這場爭議使透過在地管道進行的涉嫌非法貿易活動成為各界焦點。新加坡長期以來打造致力於簡化企業擴展並促進國際投資的環境。因此，未經授權交易的消息為試圖在維持經濟開放與嚴格法規遵循之間取得平衡的政府官員帶來了嚴重的行政難題。",
+        "展望未來，產業專家建議主管機關可能會加強監測，以防止非法商業行為。維護新加坡作為安全可靠貿易中心的聲譽，對於其在全球半導體市場的持續成功至關重要。因此，政策制定者面臨著在不破壞該樞紐具競爭力商業生態系統的前提下，處理合規風險的微妙任務。"
+      ],
+      "vocabulary": [
+        {
+          "term": "scandal",
+          "pos": "n.",
+          "collocations": "recent scandal; political scandal",
+          "meaning": "醜聞；爭議事件",
+          "synonyms": [
+            "controversy; wrongdoing",
+            "disgrace; embarrassment"
+          ],
+          "family": "scandalous; scandalously; scandalize",
+          "sentence": "A recent scandal involving Nvidia chief executive Jensen Huang has raised serious concerns for business-friendly Singapore."
+        },
+        {
+          "term": "prominence",
+          "pos": "n.",
+          "collocations": "growing prominence; gain prominence",
+          "meaning": "重要性；顯赫；突出",
+          "synonyms": [
+            "fame; distinction",
+            "reputation; importance"
+          ],
+          "family": "prominent; prominently",
+          "sentence": "The situation has highlighted the nation's growing prominence as a major global chip hub, demonstrating its ability to attract high-tech enterprise investment."
+        },
+        {
+          "term": "vulnerabilities",
+          "pos": "n.",
+          "collocations": "operational vulnerabilities; security vulnerabilities",
+          "meaning": "漏洞；弱點",
+          "synonyms": [
+            "weaknesses; shortcomings",
+            "flaws; gaps"
+          ],
+          "family": "vulnerable; vulnerably; vulnerability",
+          "sentence": "However, it has simultaneously exposed operational vulnerabilities regarding commercial oversight within the technology sector."
+        },
+        {
+          "term": "spotlight",
+          "pos": "n.",
+          "collocations": "cast a spotlight; under the spotlight",
+          "meaning": "聚光燈；大眾關注的焦點",
+          "synonyms": [
+            "focus; attention",
+            "emphasis; awareness"
+          ],
+          "family": "spotlight",
+          "sentence": "The controversy has cast a strong spotlight on alleged illicit trade activities operating through local channels."
+        },
+        {
+          "term": "illicit",
+          "pos": "adj.",
+          "collocations": "illicit trade; illicit activities",
+          "meaning": "非法的；違禁的",
+          "synonyms": [
+            "illegal; unlawful",
+            "prohibited; unauthorized"
+          ],
+          "family": "illicitly; illicitness",
+          "sentence": "The controversy has cast a strong spotlight on alleged illicit trade activities operating through local channels."
+        },
+        {
+          "term": "headache",
+          "pos": "n.",
+          "collocations": "administrative headache; cause a headache",
+          "meaning": "令人頭痛的事；麻煩",
+          "synonyms": [
+            "problem; trouble",
+            "nuisance; burden"
+          ],
+          "family": "headache",
+          "sentence": "As a result, news of unauthorized transactions has created a significant administrative headache for government officials attempting to maintain economic openness alongside strict regulatory compliance."
+        },
+        {
+          "term": "compliance",
+          "pos": "n.",
+          "collocations": "regulatory compliance; compliance risks",
+          "meaning": "順從；合規；遵守",
+          "synonyms": [
+            "adherence; conformity",
+            "observance; obedience"
+          ],
+          "family": "comply; compliant; compliantly",
+          "sentence": "As a result, news of unauthorized transactions has created a significant administrative headache for government officials attempting to maintain economic openness alongside strict regulatory compliance."
+        },
+        {
+          "term": "monitoring",
+          "pos": "n.",
+          "collocations": "increase monitoring; continuous monitoring",
+          "meaning": "監測；監控",
+          "synonyms": [
+            "surveillance; inspection",
+            "supervision; tracking"
+          ],
+          "family": "monitor; monitored",
+          "sentence": "Moving forward, industry experts suggest that regulatory authorities may increase monitoring to prevent illegal commercial practices."
+        },
+        {
+          "term": "vital",
+          "pos": "adj.",
+          "collocations": "remain vital; vital role",
+          "meaning": "極其重要的；維持生命所必需的",
+          "synonyms": [
+            "essential; crucial",
+            "critical; imperative"
+          ],
+          "family": "vitally; vitality",
+          "sentence": "Maintaining Singapore's reputation as a secure and reliable trade center remains vital for its ongoing success in the global semiconductor market."
+        },
+        {
+          "term": "delicate",
+          "pos": "adj.",
+          "collocations": "delicate task; delicate balance",
+          "meaning": "微妙的；需要審慎處理的",
+          "synonyms": [
+            "sensitive; subtle",
+            "fragile; tricky"
+          ],
+          "family": "delicately; delicacy",
+          "sentence": "Consequently, policymakers face the delicate task of addressing compliance risks without undermining the hub's competitive business ecosystem."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "The recent investigation into high-tech shipping channels _______ several vulnerabilities in export oversight.",
+          "options": [
+            "has exposed",
+            "was exposing",
+            "expose",
+            "will have been exposed"
+          ],
+          "answer": "A",
+          "locator": "現在完成式的主詞與動詞一致性 (Present Perfect tense for a recent completed action with present impact)",
+          "explanation": "句子主詞為單數名詞「The recent investigation」，且帶有副詞「recent」，表示近期已完成並對現在造成影響的動作，因此應選單數現在完成式動詞「has exposed」。"
+        },
+        {
+          "prompt": "Regulatory officers are working diligently to prevent _______ trade activities within the region.",
+          "options": [
+            "illicit",
+            "illicitly",
+            "illicitness",
+            "illicitated"
+          ],
+          "answer": "A",
+          "locator": "形容詞修飾名詞 (Adjective modifier preceding a noun phrase)",
+          "explanation": "空頭後方為名詞組「trade activities」，前面需要一個形容詞來修飾名詞，選項中「illicit」（非法的）為符合語意與文法的形容詞。"
+        },
+        {
+          "prompt": "Policymakers must address security concerns _______ disrupting the existing commercial ecosystem.",
+          "options": [
+            "without",
+            "unless",
+            "despite",
+            "whereas"
+          ],
+          "answer": "A",
+          "locator": "介系詞搭配動名詞 (Preposition followed by a gerund verb form)",
+          "explanation": "空格後面接動名詞「disrupting」，且根據句意「政策制定者必須在『不破壞』現有商業生態系的情況下解決安全疑慮」，應選擇介系詞「without」。"
+        }
+      ],
+      "part6": {
+        "title": "Corporate Compliance Advisory",
+        "passage": "To All Semiconductor Trade Partners,\n\nIn light of recent developments regarding international supply chain integrity, our trade monitoring division is introducing revised compliance procedures. Recent industry events have drawn global attention to potential risks in electronics distribution. 【1】\n\nStarting next month, all registered export firms must submit additional verification documents prior to completing overseas transactions. The goal is to strengthen commercial oversight and ensure that local channels remain completely free of 【2】 activities. While we recognize that these added requirements may present a temporary administrative 【3】, they are essential to protecting our trading ecosystem.\n\n【4】 We appreciate your prompt cooperation in maintaining our position as a trusted global business center.\n\nSincerely,\nGlobal Compliance Directorate",
+        "questions": [
+          {
+            "prompt": "Choose the best option for blank 【1】.",
+            "options": [
+              "Singapore's reputation as a key technology hub depends on strict legal adherence.",
+              "We plan to relocate our primary corporate headquarters to another continent next year.",
+              "Engineers have completed the construction of three new chip manufacturing facilities.",
+              "The company will offer significant discounts on consumer electronics this weekend."
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"Recent industry events have drawn global attention to potential risks in electronics distribution.\"",
+            "explanation": "第一段提及近期產業事件引發了對電子分銷風險的關注。選項 A 銜接此語意，強調新加坡作為重要科技樞紐的聲譽取決於嚴格合規，符合上下文脈絡。"
+          },
+          {
+            "prompt": "Choose the best option for blank 【2】.",
+            "options": [
+              "illicit",
+              "creative",
+              "profitable",
+              "obsolete"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"ensure that local channels remain completely free of 【2】 activities.\"",
+            "explanation": "此處文意為「確保在地管道完全遠離非法活動」，「illicit」（非法的）符合文章談及防止非法貿易的宗旨。"
+          },
+          {
+            "prompt": "Choose the best option for blank 【3】.",
+            "options": [
+              "headache",
+              "promotion",
+              "award",
+              "expansion"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"these added requirements may present a temporary administrative 【3】\"",
+            "explanation": "前文提到增加了額外的核驗文件負擔，因此會帶來暫時的行政「麻煩/負擔」（headache），符合上下文對繁瑣流程的描述。"
+          },
+          {
+            "prompt": "Choose the best option for blank 【4】.",
+            "options": [
+              "Detailed guidelines regarding document submission will be sent in a separate email.",
+              "All regional semiconductor factories will cease production immediately.",
+              "Employees are invited to attend the annual company dinner next Tuesday.",
+              "Retail stores have announced extended business hours during the holiday season."
+            ],
+            "answer": "A",
+            "locator": "第 3 段 \"【4】 We appreciate your prompt cooperation in maintaining our position as a trusted global business center.\"",
+            "explanation": "第二段提到了提交額外核驗文件的要求，選項 A 指出「有關文件提交的詳細指南將在另一封電子郵件中發送」，邏輯順暢地承接前文要求並導向結尾的感謝致詞。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Read the news article based on recent semiconductor industry developments and answer the following questions.",
+        "questions": [
+          {
+            "prompt": "What negative issue did the recent scandal involving Jensen Huang highlight in Singapore?",
+            "options": [
+              "Alleged illicit trade activities operating through local channels.",
+              "A complete lack of international corporate investment.",
+              "A sudden decline in the overall production of microchips.",
+              "The immediate closure of all high-tech business hubs."
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"The controversy has cast a strong spotlight on alleged illicit trade activities operating through local channels.\"",
+            "explanation": "根據文章第二段，該爭議使透過在地管道進行的涉嫌非法貿易活動（alleged illicit trade activities）成為關注焦點。"
+          },
+          {
+            "prompt": "According to paragraph 2, what difficulty do government officials in Singapore face?",
+            "options": [
+              "Balancing economic openness with strict regulatory compliance.",
+              "Convincing international technology firms to relocate their offices.",
+              "Stopping all foreign investments in the semiconductor sector.",
+              "Increasing tax rates for local small and medium businesses."
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"created a significant administrative headache for government officials attempting to maintain economic openness alongside strict regulatory compliance.\"",
+            "explanation": "文章第二段指出，官員面臨的行政難題是在維持「經濟開放」的同時落實「嚴格的法規遵循」（maintain economic openness alongside strict regulatory compliance）。"
+          },
+          {
+            "prompt": "What measure might regulatory authorities take to protect Singapore's market reputation?",
+            "options": [
+              "Increase monitoring to prevent illegal commercial practices.",
+              "Prohibit all high-tech enterprise investment permanently.",
+              "Reduce compliance standards to lower corporate costs.",
+              "Limit commercial exports strictly to consumer electronics."
+            ],
+            "answer": "A",
+            "locator": "第 3 段 \"industry experts suggest that regulatory authorities may increase monitoring to prevent illegal commercial practices.\"",
+            "explanation": "文章第三段明確提及，產業專家建議主管機關可能會「加強監測以防止非法商業行為」（increase monitoring to prevent illegal commercial practices）。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/ck1exevgql4qo",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    }
+  },
   "2026-11-13": {
     "finance": {
       "title": "Nvidia CEO Jensen Huang Resigns Amid Scandal",
