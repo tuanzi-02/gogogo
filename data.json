@@ -1,4 +1,819 @@
 {
+  "2026-11-13": {
+    "finance": {
+      "title": "Nvidia CEO Jensen Huang Resigns Amid Scandal",
+      "summary": "晶片製造巨頭輝達的執行長黃仁勳在醜聞爆發後辭職，使該公司陷入混亂，美國國會議員並要求就其是否涉及中國間諜進行質問。",
+      "english": [
+        "Scandal-hit Nvidia CEO Jensen Huang has decided to quit his position, plunging the major AI chipmaking giant into sudden turmoil. The shocking departure of the top executive creates significant uncertainty for the future of the technology corporation. Market observers note that this unexpected development severely impacts investor confidence across the global semiconductor industry.",
+        "Following this dramatic announcement, US lawmakers have expressed intense concern regarding the leadership crisis. Reports indicate that these government officials now want to question the former chief executive directly. Lawmakers specifically intend to investigate whether one of his alleged relationships involved a Chinese spy.",
+        "The unfolding situation leaves the prominent artificial intelligence enterprise facing severe regulatory scrutiny and public attention. Corporate governance experts emphasize that resolving these leadership and security questions quickly is vital for restoring stability. Meanwhile, stakeholders wait anxiously for further official statements from the board of directors regarding the ongoing investigation."
+      ],
+      "translation": [
+        "陷入醜聞的輝達執行長黃仁勳已決定辭職，使這家大型人工智慧晶片製造巨頭陷入突然的混亂。這位高階主管的震驚離職，為這家科技公司的未來創造了巨大的不確定性。市場觀察家指出，這項未預期的發展嚴重影響了全球半導體產業的投資人信心。",
+        "在此戲劇性宣布之後，美國國會議員對領導危機表達了強烈的關注。報導指出，這些政府官員現在希望直接質問這位前執行長。國會議員特別打算調查他其中一段據稱的關係是否涉及中國間諜。",
+        "局勢的發展使這家知名的人工智慧企業面臨嚴格的監管審查與大眾關注。企業治理專家強調，迅速解決這些領導與安全問題對於恢復穩定至關重要。同時，利害關係人焦慮地等待董事會就正在進行的調查發表進一步的官方聲明。"
+      ],
+      "vocabulary": [
+        {
+          "term": "scandal",
+          "pos": "noun",
+          "collocations": "scandal-hit; financial scandal",
+          "meaning": "醜聞",
+          "synonyms": [
+            "controversy; disgrace",
+            "affair; disrepute"
+          ],
+          "family": "scandalous; scandalously",
+          "sentence": "Scandal-hit Nvidia CEO Jensen Huang has decided to quit his position, plunging the major AI chipmaking giant into sudden turmoil."
+        },
+        {
+          "term": "turmoil",
+          "pos": "noun",
+          "collocations": "sudden turmoil; political turmoil",
+          "meaning": "動亂；混亂",
+          "synonyms": [
+            "chaos; confusion",
+            "disorder; upheaval"
+          ],
+          "family": "turmoils",
+          "sentence": "Scandal-hit Nvidia CEO Jensen Huang has decided to quit his position, plunging the major AI chipmaking giant into sudden turmoil."
+        },
+        {
+          "term": "departure",
+          "pos": "noun",
+          "collocations": "shocking departure; sudden departure",
+          "meaning": "離開；辭職",
+          "synonyms": [
+            "exit; leaving",
+            "withdrawal; retirement"
+          ],
+          "family": "depart",
+          "sentence": "The shocking departure of the top executive creates significant uncertainty for the future of the technology corporation."
+        },
+        {
+          "term": "uncertainty",
+          "pos": "noun",
+          "collocations": "significant uncertainty; economic uncertainty",
+          "meaning": "不確定性",
+          "synonyms": [
+            "unpredictability; doubt",
+            "insecurity; instability"
+          ],
+          "family": "uncertain; uncertainly",
+          "sentence": "The shocking departure of the top executive creates significant uncertainty for the future of the technology corporation."
+        },
+        {
+          "term": "investor",
+          "pos": "noun",
+          "collocations": "investor confidence; institutional investor",
+          "meaning": "投資人",
+          "synonyms": [
+            "shareholder; backer",
+            "financier; stakeholder"
+          ],
+          "family": "invest; investment",
+          "sentence": "Market observers note that this unexpected development severely impacts investor confidence across the global semiconductor industry."
+        },
+        {
+          "term": "crisis",
+          "pos": "noun",
+          "collocations": "leadership crisis; financial crisis",
+          "meaning": "危機",
+          "synonyms": [
+            "emergency; critical situation",
+            "turning point; dilemma"
+          ],
+          "family": "crises",
+          "sentence": "Following this dramatic announcement, US lawmakers have expressed intense concern regarding the leadership crisis."
+        },
+        {
+          "term": "investigate",
+          "pos": "verb",
+          "collocations": "investigate whether; thoroughly investigate",
+          "meaning": "調查",
+          "synonyms": [
+            "examine; look into",
+            "explore; probe"
+          ],
+          "family": "investigation; investigator",
+          "sentence": "Lawmakers specifically intend to investigate whether one of his alleged relationships involved a Chinese spy."
+        },
+        {
+          "term": "regulatory",
+          "pos": "adjective",
+          "collocations": "regulatory scrutiny; regulatory body",
+          "meaning": "監管的；規則的",
+          "synonyms": [
+            "governmental; supervisory",
+            "official; administrative"
+          ],
+          "family": "regulate; regulation",
+          "sentence": "The unfolding situation leaves the prominent artificial intelligence enterprise facing severe regulatory scrutiny and public attention."
+        },
+        {
+          "term": "stability",
+          "pos": "noun",
+          "collocations": "restoring stability; financial stability",
+          "meaning": "穩定性",
+          "synonyms": [
+            "steadiness; balance",
+            "secureness; firmness"
+          ],
+          "family": "stable; stably",
+          "sentence": "Corporate governance experts emphasize that resolving these leadership and security questions quickly is vital for restoring stability."
+        },
+        {
+          "term": "investigation",
+          "pos": "noun",
+          "collocations": "ongoing investigation; criminal investigation",
+          "meaning": "調查",
+          "synonyms": [
+            "inquiry; probe",
+            "examination; analysis"
+          ],
+          "family": "investigate; investigator",
+          "sentence": "Meanwhile, stakeholders wait anxiously for further official statements from the board of directors regarding the ongoing investigation."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "Scandal-hit Nvidia CEO Jensen Huang has decided to quit his position, ------ the major AI chipmaking giant into sudden turmoil.",
+          "options": [
+            "plunge",
+            "plunged",
+            "plunging",
+            "to plunge"
+          ],
+          "answer": "C",
+          "locator": "分詞構句 (Participle clause)",
+          "explanation": "空格處為分詞構句，用以表達主句動作所產生的結果。「主詞 + 動詞...，現在分詞...」表示伴隨或結果，因此需使用現在分詞 plunging。"
+        },
+        {
+          "prompt": "Following this dramatic announcement, US lawmakers have expressed intense concern ------ the leadership crisis.",
+          "options": [
+            "in",
+            "regarding",
+            "at",
+            "on"
+          ],
+          "answer": "B",
+          "locator": "介系詞搭配 (Preposition collocation)",
+          "explanation": "表達「關於；對於」某事時，regarding 為常見的介系詞用法，用以連接 concern 與後方的 the leadership crisis。"
+        },
+        {
+          "prompt": "Corporate governance experts emphasize that resolving these leadership and security questions quickly ------ vital for restoring stability.",
+          "options": [
+            "is",
+            "are",
+            "be",
+            "were"
+          ],
+          "answer": "A",
+          "locator": "主謂一致 (Subject-verb agreement)",
+          "explanation": "句子的主詞是動名詞片語 resolving these leadership and security questions quickly，視為單數主詞，因此動詞需使用單數形的 is。"
+        }
+      ],
+      "part6": {
+        "title": "Corporate Announcement on Executive Leadership",
+        "passage": "To all staff members, we are writing to inform you of recent corporate developments. As you may know, executive changes can create temporary uncertainty within our organization. 【1】 our current transition period, the board of directors is fully committed to maintaining normal operations. We appreciate your continued dedication and professionalism. 【2】 staff members must adhere to company policies regarding external communications. Please direct all media inquiries to the public relations department. We will provide further updates 【3】 new information becomes available. Thank you for your cooperation during 【4】 challenging time.",
+        "questions": [
+          {
+            "prompt": "Select the best word for blank 【1】.",
+            "options": [
+              "During",
+              "While",
+              "When",
+              "Until"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"【1】 our current transition period\"",
+            "explanation": "空格後方接名詞片語 our current transition period，需使用介系詞 During 來表示「在……期間」辦公事宜。"
+          },
+          {
+            "prompt": "Select the best word for blank 【2】.",
+            "options": [
+              "All",
+              "Much",
+              "Every",
+              "Another"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"【2】 staff members must adhere\"",
+            "explanation": "後方名詞 staff members 為複數可數名詞，故需使用 All（所有）來修飾複數名詞。"
+          },
+          {
+            "prompt": "Select the best word for blank 【3】.",
+            "options": [
+              "as",
+              "despite",
+              "unless",
+              "before"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"updates 【4】 new information\"",
+            "explanation": "此處需要連接詞來引導子句表示「隨著」新資訊變得可用，as 表示同時發生或隨著，最符合語意。"
+          },
+          {
+            "prompt": "Select the best word for blank 【4】.",
+            "options": [
+              "this",
+              "these",
+              "that",
+              "those"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"during 【4】 challenging time\"",
+            "explanation": "後方名詞 time 為單數名詞，且指代當前這個具挑戰性的時期，因此需使用單數指示代名詞 this。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Read the news article and answer the reading comprehension questions.",
+        "questions": [
+          {
+            "prompt": "What did Nvidia CEO Jensen Huang decide to do according to the report?",
+            "options": [
+              "To expand operations in China",
+              "To quit his position",
+              "To invest in semiconductor manufacturing",
+              "To lead a new government agency"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"Scandal-hit Nvidia CEO Jensen Huang has decided to quit his position\"",
+            "explanation": "文章第一段明確指出黃仁勳已決定辭去其職務。"
+          },
+          {
+            "prompt": "Why do US lawmakers want to question the former chief executive?",
+            "options": [
+              "To discuss semiconductor supply chains",
+              "To review financial reports",
+              "To check whether an alleged relationship involved a Chinese spy",
+              "To plan artificial intelligence regulations"
+            ],
+            "answer": "C",
+            "locator": "第 2 段 \"whether one of his alleged relationships involved a Chinese spy\"",
+            "explanation": "文章第二段指出，國會議員想要質疑他是否其中一段據稱的關係涉及中國間諜。"
+          },
+          {
+            "prompt": "What do corporate governance experts emphasize is vital for restoring stability?",
+            "options": [
+              "Revising company pricing strategies",
+              "Hiring external public relations consultants",
+              "Quickly resolving leadership and security questions",
+              "Launching new artificial intelligence products"
+            ],
+            "answer": "C",
+            "locator": "第 3 段 \"resolving these leadership and security questions quickly is vital for restoring stability\"",
+            "explanation": "文章第三段提到，企業治理專家強調快速解決這些領導與安全問題對於恢復穩定至關重要。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/cmq5vd1wdgz6o",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    },
+    "politics": {
+      "title": "Military Base Asylum Plans Granted Approval",
+      "summary": "內政部關於在比切斯特附近基地收容多達1256名男子的申請已獲得快速審批通過。",
+      "english": [
+        "The Home Office recently submitted an application to house asylum seekers at a military base near Bicester. This project aims to provide shelter for up to 1256 men on the site.",
+        "Local authorities and officials reviewed the proposal carefully. Due to the nature of the request, the administrative process for the site was fast-tracked by the government.",
+        "Following the review period, the official planning approval was granted. The decision allows the department to move forward with utilizing the location for housing purposes."
+      ],
+      "translation": [
+        "內政部最近提交了一份申請，旨在比切斯特附近的軍事基地收容庇護申請者。該專案旨在為該場地的多達1256名男子提供庇護所。",
+        "地方當局和官員仔細審查了該提案。由於請求的性質，該場地的行政程序被政府快速推進。",
+        "經過審查期後，官方的規劃批准獲得了授權。該決定允許該部門推進利用該地點進行住宅用途的工作。"
+      ],
+      "vocabulary": [
+        {
+          "term": "application",
+          "pos": "noun",
+          "collocations": "submit an application; planning application",
+          "meaning": "申請",
+          "synonyms": [
+            "request; form",
+            "petition; submission"
+          ],
+          "family": "apply; applicant; applied",
+          "sentence": "The Home Office recently submitted an application to house asylum seekers at a military base near Bicester."
+        },
+        {
+          "term": "project",
+          "pos": "noun",
+          "collocations": "housing project; new project",
+          "meaning": "專案",
+          "synonyms": [
+            "undertaking; enterprise",
+            "plan; scheme"
+          ],
+          "family": "projected; projection; projector",
+          "sentence": "This project aims to provide shelter for up to 1256 men on the site."
+        },
+        {
+          "term": "proposal",
+          "pos": "noun",
+          "collocations": "review a proposal; policy proposal",
+          "meaning": "提案",
+          "synonyms": [
+            "suggestion; bid",
+            "offer; motion"
+          ],
+          "family": "propose; proposer",
+          "sentence": "Local authorities and officials reviewed the proposal carefully."
+        },
+        {
+          "term": "administrative",
+          "pos": "adjective",
+          "collocations": "administrative process; administrative cost",
+          "meaning": "行政的",
+          "synonyms": [
+            "managerial; executive",
+            "bureaucratic; official"
+          ],
+          "family": "administration; administer; administrator",
+          "sentence": "Due to the nature of the request, the administrative process for the site was fast-tracked by the government."
+        },
+        {
+          "term": "approval",
+          "pos": "noun",
+          "collocations": "planning approval; official approval",
+          "meaning": "批准",
+          "synonyms": [
+            "consent; permission",
+            "sanction; endorsement"
+          ],
+          "family": "approve; approved; approving",
+          "sentence": "Following the review period, the official planning approval was granted."
+        },
+        {
+          "term": "department",
+          "pos": "noun",
+          "collocations": "government department; department head",
+          "meaning": "部門",
+          "synonyms": [
+            "division; section",
+            "branch; agency"
+          ],
+          "family": "departmental",
+          "sentence": "The decision allows the department to move forward with utilizing the location for housing purposes."
+        },
+        {
+          "term": "official",
+          "pos": "adjective",
+          "collocations": "official approval; official website",
+          "meaning": "官方的",
+          "synonyms": [
+            "authorized; certified",
+            "formal; legitimate"
+          ],
+          "family": "officially; officative",
+          "sentence": "Following the review period, the official planning approval was granted."
+        },
+        {
+          "term": "decision",
+          "pos": "noun",
+          "collocations": "make a decision; final decision",
+          "meaning": "決定",
+          "synonyms": [
+            "resolution; conclusion",
+            "judgment; choice"
+          ],
+          "family": "decide; decisive; decisively",
+          "sentence": "The decision allows the department to move forward with utilizing the location for housing purposes."
+        },
+        {
+          "term": "location",
+          "pos": "noun",
+          "collocations": "ideal location; site location",
+          "meaning": "地點",
+          "synonyms": [
+            "site; place",
+            "position; spot"
+          ],
+          "family": "locate; located; locational",
+          "sentence": "The decision allows the department to move forward with utilizing the location for housing purposes."
+        },
+        {
+          "term": "government",
+          "pos": "noun",
+          "collocations": "local government; government official",
+          "meaning": "政府",
+          "synonyms": [
+            "administration; state",
+            "regime; authorities"
+          ],
+          "family": "govern; governmental; governor",
+          "sentence": "Due to the nature of the request, the administrative process for the site was fast-tracked by the government."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "The Home Office recently submitted an application to house asylum seekers _____ a military base near Bicester.",
+          "options": [
+            "at",
+            "on",
+            "in",
+            "by"
+          ],
+          "answer": "A",
+          "locator": "prepositional phrase of place",
+          "explanation": "在特定的具體地點（如軍事基地）前通常使用介系詞 at。"
+        },
+        {
+          "prompt": "This project aims to provide shelter for _____ to 1256 men on the site.",
+          "options": [
+            "up",
+            "down",
+            "out",
+            "over"
+          ],
+          "answer": "A",
+          "locator": "fixed phrase 'up to'",
+          "explanation": "英文中表示「多達」某個數量時，固定搭配為片語 'up to'。"
+        },
+        {
+          "prompt": "Due to the nature of the request, the administrative process for the site _____ fast-tracked by the government.",
+          "options": [
+            "was",
+            "were",
+            "is being",
+            "has"
+          ],
+          "answer": "A",
+          "locator": "passive voice past tense agreement",
+          "explanation": "主詞 'the administrative process' 為單數，且動作發生在過去，因此被動語態應使用單數過去式 'was'。"
+        }
+      ],
+      "part6": {
+        "title": "Internal Memo on Planning Approval",
+        "passage": "To all staff members, we are pleased to announce that the recent planning application for the Bicester site has been granted approval. 【1】 of this decision will help us move forward with our housing initiatives. The government has confirmed that the process was fast-tracked due to urgent operational needs. 【2】, we must ensure that all administrative steps are properly documented. Please review the attached guidelines and submit your feedback 【3】 Friday afternoon. Thank you for your continued dedication and hard work as we undertake this important project. We will schedule a briefing session 【4】 next week to discuss the next phases.",
+        "questions": [
+          {
+            "prompt": "Choose the best word for blank 【1】.",
+            "options": [
+              "Notification",
+              "Notify",
+              "Notifies",
+              "Notifying"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"【1】 of this decision\"",
+            "explanation": "空格處需要一個名詞作主詞，'Notification'（通知）為名詞，符合句意。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【2】.",
+            "options": [
+              "However",
+              "Therefore",
+              "Moreover",
+              "Instead"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"【2】, we must ensure\"",
+            "explanation": "前句說明專案獲得批准，後句強調因此必須確保所有行政步驟正確記錄，具因果關係，故選 'Therefore'（因此）。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【3】.",
+            "options": [
+              "by",
+              "at",
+              "in",
+              "on"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"feedback 【4】 Friday\"",
+            "explanation": "表示在某個期限之前（週五下午以前），需使用介系詞 'by'。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【4】.",
+            "options": [
+              "for",
+              "during",
+              "at",
+              "in"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"session 【4】 next week\"",
+            "explanation": "安排簡報會議（schedule a briefing session for next week），表示預定在下週舉行，介系詞使用 'for'。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Read the news article and answer the reading comprehension questions based on the text.",
+        "questions": [
+          {
+            "prompt": "What did the Home Office submit an application for?",
+            "options": [
+              "To house asylum seekers at a military base",
+              "To build a new commercial shopping center",
+              "To open a public park for local residents",
+              "To establish a new government headquarters"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"house asylum seekers at a military base\"",
+            "explanation": "根據文章第一段所述，內政部提交申請旨在於比切斯特附近的軍事基地收容庇護申請者。"
+          },
+          {
+            "prompt": "How many men could potentially be housed at the site according to the plan?",
+            "options": [
+              "Up to 1256 men",
+              "Exactly 1000 men",
+              "Around 500 men",
+              "More than 2000 men"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"up to 1256 men on the site\"",
+            "explanation": "文章第一段明確指出該專案旨在為該場地多達1256名男子提供庇護。"
+          },
+          {
+            "prompt": "What happened to the administrative process for the site?",
+            "options": [
+              "It was fast-tracked by the government",
+              "It was delayed for several months",
+              "It was cancelled by local officials",
+              "It was reviewed by a private committee"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"was fast-tracked by the government\"",
+            "explanation": "根據文章第二段，由於請求的性質，該場地的行政程序被政府快速推進。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/c58j4798874go",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    },
+    "techLife": {
+      "title": "Microsoft Global Outage Affects Outlook and Teams",
+      "summary": "微軟目前正在努力恢復服務，因全球性當機影響了Outlook和Teams。微軟表示，此次故障是由於伺服器無預警地無法使用，進而對其他系統造成了壓力。",
+      "english": [
+        "Microsoft is currently struggling to restore service as a recent global outage affects essential tools like Outlook and Teams.",
+        "The company stated that the unexpected incident was caused by servers suddenly becoming unavailable.",
+        "This technical failure is currently straining other connected systems across the network."
+      ],
+      "translation": [
+        "微軟目前正努力恢復服務，因為近期的一場全球性當機影響了Outlook和Teams等重要工具。",
+        "該公司表示，這起意料之外的事件是由於伺服器突然無法使用所引起的。",
+        "這項技術故障目前正對網路中其他相連的系統造成壓力。"
+      ],
+      "vocabulary": [
+        {
+          "term": "restore",
+          "pos": "verb",
+          "collocations": "restore service; restore order",
+          "meaning": "恢復",
+          "synonyms": [
+            "repair; fix",
+            "reinstate; renew"
+          ],
+          "family": "restoration; restorative",
+          "sentence": "Microsoft is currently struggling to restore service as a recent global outage affects essential tools like Outlook and Teams."
+        },
+        {
+          "term": "service",
+          "pos": "noun",
+          "collocations": "service outage; customer service",
+          "meaning": "服務",
+          "synonyms": [
+            "assistance; support",
+            "utility; provision"
+          ],
+          "family": "serve; servant",
+          "sentence": "Microsoft is currently struggling to restore service as a recent global outage affects essential tools like Outlook and Teams."
+        },
+        {
+          "term": "outage",
+          "pos": "noun",
+          "collocations": "power outage; global outage",
+          "meaning": "當機；斷電",
+          "synonyms": [
+            "failure; shutdown",
+            "blackout; breakdown"
+          ],
+          "family": "outage",
+          "sentence": "Microsoft is currently struggling to restore service as a recent global outage affects essential tools like Outlook and Teams."
+        },
+        {
+          "term": "affect",
+          "pos": "verb",
+          "collocations": "affect performance; affect operations",
+          "meaning": "影響",
+          "synonyms": [
+            "influence; impact",
+            "alter; modify"
+          ],
+          "family": "affected; affecting; affection",
+          "sentence": "Microsoft is currently struggling to restore service as a recent global outage affects essential tools like Outlook and Teams."
+        },
+        {
+          "term": "company",
+          "pos": "noun",
+          "collocations": "tech company; parent company",
+          "meaning": "公司",
+          "synonyms": [
+            "corporation; enterprise",
+            "firm; business"
+          ],
+          "family": "companies",
+          "sentence": "The company stated that the unexpected incident was caused by servers suddenly becoming unavailable."
+        },
+        {
+          "term": "state",
+          "pos": "verb",
+          "collocations": "state clearly; state an opinion",
+          "meaning": "聲明；說明",
+          "synonyms": [
+            "declare; announce",
+            "express; mention"
+          ],
+          "family": "statement; stated",
+          "sentence": "The company stated that the unexpected incident was caused by servers suddenly becoming unavailable."
+        },
+        {
+          "term": "incident",
+          "pos": "noun",
+          "collocations": "security incident; unexpected incident",
+          "meaning": "事件",
+          "synonyms": [
+            "event; occurrence",
+            "episode; affair"
+          ],
+          "family": "incidental; incidence",
+          "sentence": "The company stated that the unexpected incident was caused by servers suddenly becoming unavailable."
+        },
+        {
+          "term": "cause",
+          "pos": "verb",
+          "collocations": "cause problems; cause damage",
+          "meaning": "造成；引起",
+          "synonyms": [
+            "produce; generate",
+            "trigger; prompt"
+          ],
+          "family": "causal; causation",
+          "sentence": "The company stated that the unexpected incident was caused by servers suddenly becoming unavailable."
+        },
+        {
+          "term": "server",
+          "pos": "noun",
+          "collocations": "cloud server; server downtime",
+          "meaning": "伺服器",
+          "synonyms": [
+            "host; mainframe",
+            "system; processor"
+          ],
+          "family": "serve; service",
+          "sentence": "The company stated that the unexpected incident was caused by servers suddenly becoming unavailable."
+        },
+        {
+          "term": "system",
+          "pos": "noun",
+          "collocations": "computer system; operating system",
+          "meaning": "系統",
+          "synonyms": [
+            "network; structure",
+            "framework; setup"
+          ],
+          "family": "systematic; systemically",
+          "sentence": "This technical failure is currently straining other connected systems across the network."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "Microsoft is currently working hard to ______ the interrupted network services.",
+          "options": [
+            "restore",
+            "restoration",
+            "restorative",
+            "restored"
+          ],
+          "answer": "A",
+          "locator": "to [verb] (不定詞後接原形動詞)",
+          "explanation": "空格前方為不定詞小品詞 \"to\"，因此需要填入原形動詞做為主動詞。選項 (A) restore 是原形動詞，為正確答案。"
+        },
+        {
+          "prompt": "The recent global outage ______ several important communication tools yesterday.",
+          "options": [
+            "affect",
+            "affected",
+            "affecting",
+            "affection"
+          ],
+          "answer": "B",
+          "locator": "Simple Past Tense (過去式動詞)",
+          "explanation": "句尾有時間副詞 \"yesterday\"，提示本句描述過去發生的動作，需使用過去式動詞。選項 (B) affected 是過去式，符合句意與文法。"
+        },
+        {
+          "prompt": "The company stated that the unexpected incident was ______ by server failures.",
+          "options": [
+            "cause",
+            "causing",
+            "caused",
+            "causes"
+          ],
+          "answer": "C",
+          "locator": "Passive Voice (被動語態 be + p.p.)",
+          "explanation": "本句為被動語態結構 \"was + 過去分詞\"，用以表達事件是被伺服器故障所引起的。選項 (C) caused 為過去分詞（p.p.），故選C。"
+        }
+      ],
+      "part6": {
+        "title": "Internal Memo on IT System Maintenance",
+        "passage": "To all staff members,\n\nPlease be advised that our IT department will perform routine maintenance on the main servers this weekend. This procedure is necessary to prevent any unexpected 【1】 during peak business hours. \n\nDuring the maintenance window, certain cloud tools may temporarily become 【2】.\n\nWe kindly ask you to save your work frequently and log off before leaving the office. If you notice any technical issues, please report them to the helpdesk 【3】.\n\nThank you for your cooperation as we work to improve our internal 【4】.\n\nIT Management Team",
+        "questions": [
+          {
+            "prompt": "Choose the best word for blank 1.",
+            "options": [
+              "outage",
+              "service",
+              "system",
+              "company"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"prevent any unexpected 【1】\"",
+            "explanation": "空格前有 \"unexpected\"（意料之外的），結合IT維護的背景，最適合的名詞為 \"outage\"（當機），用來指預防未預期的系統當機。"
+          },
+          {
+            "prompt": "Choose the best word for blank 2.",
+            "options": [
+              "available",
+              "unavailable",
+              "stable",
+              "secure"
+            ],
+            "answer": "B",
+            "locator": "第 2 段 \"temporarily become 【2】\"",
+            "explanation": "維護期間工具可能會暫時無法使用，配合文章語境，選 (B) unavailable（無法使用的）最為合理。"
+          },
+          {
+            "prompt": "Choose the best word for blank 3.",
+            "options": [
+              "immediately",
+              "slowly",
+              "rarely",
+              "hardly"
+            ],
+            "answer": "A",
+            "locator": "第 3 段 \"report them to the helpdesk 【3】\"",
+            "explanation": "發現技術問題時，通常會要求「立即」向服務台回報，因此副詞 (A) immediately（立即）符合商業公告語氣。"
+          },
+          {
+            "prompt": "Choose the best word for blank 4.",
+            "options": [
+              "systems",
+              "servers",
+              "outages",
+              "incidents"
+            ],
+            "answer": "A",
+            "locator": "第 4 段 \"improve our internal 【4】\"",
+            "explanation": "IT團隊努力的目標是改善內部的系統，選項 (A) systems（系統）最符合邏輯與企業公告用語。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Read the news article and answer the following reading comprehension questions.",
+        "questions": [
+          {
+            "prompt": "What is Microsoft currently trying to do according to the article?",
+            "options": [
+              "Restore service",
+              "Launch a new tool",
+              "Close down servers",
+              "Upgrade hardware"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"Microsoft is currently struggling to restore service\"",
+            "explanation": "文章第一段明確指出微軟目前正努力恢復服務（restore service），因此選項 (A) 為正確答案。"
+          },
+          {
+            "prompt": "What caused the recent global outage?",
+            "options": [
+              "A cyber attack",
+              "Servers unexpectedly becoming unavailable",
+              "Severe weather conditions",
+              "A scheduled software update"
+            ],
+            "answer": "B",
+            "locator": "第 2 段 \"caused by servers suddenly becoming unavailable\"",
+            "explanation": "文章第二段指出，這起意料之外的事件是由於伺服器突然無法使用所引起的，故選 (B)。"
+          },
+          {
+            "prompt": "What effect is the technical failure having on the network?",
+            "options": [
+              "It is speeding up data transfer",
+              "It is straining other connected systems",
+              "It is fixing minor software bugs",
+              "It is expanding cloud storage"
+            ],
+            "answer": "B",
+            "locator": "第 3 段 \"straining other connected systems across the network\"",
+            "explanation": "文章第三段提及，此技術故障正對網路中其他相連的系統造成壓力（straining other connected systems），因此選項 (B) 正確。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/c5gm3g9ldz8xo",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    }
+  },
   "2026-11-12": {
     "finance": {
       "title": "Nvidia CEO Faces Increased Scrutiny Amid Leadership Reports",
