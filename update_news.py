@@ -24,11 +24,11 @@ from pydantic import BaseModel
 
 
 DATA_PATH = Path(__file__).resolve().with_name("data.json")
-MODELS = ("gemini-3.8-flash", "gemini-3.5-flash-lite", "gemini-3.5-flash")
+MODELS = ("gemini-3.5-flash-lite", "gemini-3.8-flash", "gemini-3.5-flash")
 RSS_TIMEOUT_SECONDS = 15
 GEMINI_TIMEOUT_MS = 90_000
 MAX_MODEL_ROUNDS = 3
-BETWEEN_ROUNDS_SECONDS = 45
+BETWEEN_ROUNDS_SECONDS = 30
 BETWEEN_CATEGORIES_SECONDS = 15
 FEEDS = {
     # http://bbci.co.uk is a site address, not a category RSS feed.
@@ -203,12 +203,6 @@ def validate_lesson(lesson: LessonContent) -> None:
             row.term, row.pos, row.collocations, row.meaning, row.family, row.sentence
         ]):
             raise ValueError("Vocabulary row has an empty field")
-        if ";" not in row.collocations or ";" not in row.family or any(
-            ";" not in value for value in row.synonyms
-        ):
-            raise ValueError("Collocations, synonym groups, and word family need ASCII semicolons")
-        if "；" in row.collocations + row.family + "".join(row.synonyms):
-            raise ValueError("Use ASCII semicolons, not full-width semicolons")
         if clean_text(row.sentence) not in article:
             raise ValueError(f"Vocabulary example is not an exact article sentence: {row.term}")
         term = row.term.casefold().strip()
@@ -228,6 +222,33 @@ def validate_lesson(lesson: LessonContent) -> None:
             raise ValueError("Part 6/7 locator must identify a paragraph")
 
 
+def normalize_separators(text: str) -> str:
+    """Use the semicolon format expected by the vocabulary table."""
+    return re.sub(r"\s*[;；,，]\s*", "; ", text).strip()
+
+
+def normalize_vocabulary(lesson: LessonContent) -> None:
+    for row in lesson.vocabulary:
+        row.collocations = normalize_separators(row.collocations)
+        row.synonyms = [normalize_separators(value) for value in row.synonyms]
+        # The browser reads this field as `family` (the word-family column).
+        row.family = normalize_separators(row.family)
+
+
+def parse_lesson_response(response) -> LessonContent:
+    if response.parsed is not None:
+        raw = response.parsed
+    elif response.text:
+        raw = json.loads(response.text)
+    else:
+        raise ValueError("Gemini returned no structured lesson")
+    if isinstance(raw, dict):
+        for row in raw.get("vocabulary", []):
+            if isinstance(row, dict) and "family" not in row and "word_family" in row:
+                row["family"] = row["word_family"]
+    return LessonContent.model_validate(raw)
+
+
 def thinking_config_for(model: str) -> types.ThinkingConfig:
     # Gemini 3 does not support thinking_budget=0. Use its lowest supported level.
     level = "low" if model == "gemini-3.8-flash" else "minimal"
@@ -239,21 +260,6 @@ def error_code(error: Exception) -> int | None:
         return int(getattr(error, "code", None))
     except (TypeError, ValueError):
         return None
-
-
-def should_switch_model(error: Exception) -> bool:
-    return error_code(error) == 404 or is_congestion_error(error)
-
-
-def is_congestion_error(error: Exception) -> bool:
-    if error_code(error) in {429, 503, 504}:
-        return True
-    name = type(error).__name__.lower()
-    return (
-        isinstance(error, TimeoutError)
-        or "timeout" in name
-        or "deadline_exceeded" in str(error).lower()
-    )
 
 
 def request_lesson(client: genai.Client, model: str, prompt: str, category: str):
@@ -293,10 +299,7 @@ def generate_lesson(
             f"{round_number}/{MAX_MODEL_ROUNDS}.",
             flush=True,
         )
-        all_congested = True
-        attempted = 0
         for index, model in enumerate(MODELS):
-            attempted += 1
             started = time.monotonic()
             print(
                 f"[{CATEGORY_NAMES[category]}] Round {round_number}/{MAX_MODEL_ROUNDS}: "
@@ -305,12 +308,8 @@ def generate_lesson(
             )
             try:
                 response = request_lesson(client, model, prompt, category)
-                if response.parsed is not None:
-                    lesson = LessonContent.model_validate(response.parsed)
-                elif response.text:
-                    lesson = LessonContent.model_validate_json(response.text)
-                else:
-                    raise ValueError("Gemini returned no structured lesson")
+                lesson = parse_lesson_response(response)
+                normalize_vocabulary(lesson)
                 validate_lesson(lesson)
                 result = lesson.model_dump(mode="json")
                 result["sourceUrl"] = story["url"]
@@ -323,32 +322,25 @@ def generate_lesson(
                 return result
             except Exception as error:
                 last_error = error
-                all_congested = all_congested and is_congestion_error(error)
                 print(
                     f"[{CATEGORY_NAMES[category]}] {model} failed after "
                     f"{time.monotonic() - started:.1f}s: {error}",
                     flush=True,
                 )
-                if index + 1 < len(MODELS) and (
-                    should_switch_model(error) or isinstance(error, ValueError)
-                ):
+                if index + 1 < len(MODELS):
                     print(
                         f"[{CATEGORY_NAMES[category]}] Switching immediately "
                         f"to {MODELS[index + 1]}.",
                         flush=True,
                     )
-                    continue
-                break
-        if round_number < MAX_MODEL_ROUNDS and attempted == len(MODELS) and all_congested:
+        if round_number < MAX_MODEL_ROUNDS:
             print(
-                f"[{CATEGORY_NAMES[category]}] All models were busy or timed out "
-                f"in round {round_number}; waiting {BETWEEN_ROUNDS_SECONDS}s "
+                f"[{CATEGORY_NAMES[category]}] All models failed in round "
+                f"{round_number}; waiting {BETWEEN_ROUNDS_SECONDS}s "
                 "before retrying.",
                 flush=True,
             )
             time.sleep(BETWEEN_ROUNDS_SECONDS)
-            continue
-        break
     raise RuntimeError(
         f"Could not generate a valid {CATEGORY_NAMES[category]} lesson "
         f"after {round_number} model round(s)"
