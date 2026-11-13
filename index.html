@@ -65,7 +65,17 @@
     .pdf-exporting .vocab-pages{display:none}
     .pdf-exporting .vocab tr.is-offpage{display:table-row}
     .pdf-exporting .reveal:not(.is-covered) .mask{display:none}
-    .pdf-exporting .question,.pdf-exporting .vocab tr,.pdf-exporting .passage{break-inside:avoid;page-break-inside:avoid}
+    .pdf-exporting .q-card,.pdf-exporting .vocab tr,.pdf-exporting .passage{break-inside:avoid;page-break-inside:avoid}
+    .pdf-exporting .question-list{gap:8px}
+    .pdf-exporting .q-card{padding:10px 13px}
+    .pdf-exporting .q-card .options{gap:3px 14px;margin:7px 0 8px 26px}
+    .pdf-exporting .q-card .answer-reveal{min-height:44px}
+    .pdf-exporting .q-card .answer-reveal.is-covered .reveal-content{display:none}
+    .pdf-exporting .q-card .reveal-content{padding:8px 11px}
+    .pdf-exporting .q-card .answer-reveal .reveal-content{gap:5px}
+    .pdf-exporting .part7-section .split-source,.pdf-exporting .part7-section .split-questions>.split-label{display:none!important}
+    .pdf-exporting .part7-section .split-layout{border:0}
+    .pdf-exporting .part7-section .split-questions{padding-top:0}
     .pdf-modal[hidden]{display:none}
     .pdf-modal{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;padding:16px;background:#1d1b1bcc}
     .pdf-dialog{display:flex;flex-direction:column;width:min(100%,960px);height:min(92vh,1100px);overflow:hidden;border:1px solid var(--line);border-radius:12px;background:var(--paper);box-shadow:0 24px 60px #0005}
@@ -398,7 +408,7 @@
       const details=`<div class="detail-row"><span class="detail-label">[答案]</span><span>${esc(q.answer)}. ${esc(q.options["ABCD".indexOf(q.answer)])}</span></div>
         <div class="detail-row"><span class="detail-label">[原文定位與指引]</span><span>${esc(q.locator)}</span></div>
         <div class="detail-row"><span class="detail-label">[詳細解析]</span><span>${esc(q.explanation)}</span></div>`;
-      return `<div class="question"><div class="question-top"><span class="q-number">${String(index+1).padStart(2,"0")}</span><p class="prompt">${esc(q.prompt)}</p></div>
+      return `<div class="question q-card"><div class="question-top"><span class="q-number">${String(index+1).padStart(2,"0")}</span><p class="prompt">${esc(q.prompt)}</p></div>
         ${optionsHtml(q.options)}${revealBox(answerId(section,index),details,"答案／詳解","answer-reveal")}</div>`;
     }
     const speakerSvg='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4Zm12-1a5 5 0 0 1 0 8m2-11a9 9 0 0 1 0 14"/></svg>';
@@ -592,7 +602,7 @@
             </div>
           </div>
         </section>
-        <section class="section" aria-label="Part 7 閱讀測驗">
+        <section class="section part7-section" aria-label="Part 7 閱讀測驗">
           ${sectionHeading("05","Part 7 閱讀測驗","Reading Comprehension")}
           <div class="split-layout" aria-label="Part 7 上文下題">
             <div class="split-pane split-source" tabindex="0"><p class="split-label">上文｜新聞原文</p>
@@ -954,7 +964,7 @@
           image:{type:"jpeg",quality:0.98},
           html2canvas:{scale:2,x:0,y:0,scrollX:0,scrollY:0,windowWidth:710,useCORS:true,backgroundColor:getComputedStyle(card).backgroundColor},
           jsPDF:{unit:"mm",format:"a4",orientation:"portrait"},
-          pagebreak:{mode:["avoid-all","css","legacy"]}
+          pagebreak:{mode:["css","legacy"],avoid:[".q-card","tr"]}
         };
         const url=await window.html2pdf().from(card).set(options).outputPdf("bloburl");
         if(generation!==previewGeneration){URL.revokeObjectURL(url);return}
