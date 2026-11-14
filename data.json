@@ -1,4 +1,819 @@
 {
+  "2026-11-15": {
+    "finance": {
+      "title": "Football Kit Giveaway Aims to Boost Participation",
+      "summary": "米莉·布萊特幫助向年輕女孩分發免費球衣，旨在幫助她們克服成本障礙並繼續踢球。",
+      "english": [
+        "A recent football kit giveaway is designed to boost participation among young players. High expenses often prevent individuals from continuing their athletic activities, making financial support necessary. By providing free gear, organizers hope to encourage girls to remain active in the sport.",
+        "Millie Bright actively helps hand out these essential items to young girls. Her involvement brings significant attention to the initiative, ensuring that more participants benefit from the program. Such community efforts directly address the economic challenges faced by aspiring athletes.",
+        "The ongoing project aims to sustain long-term engagement despite rising costs. Without such assistance, many players might be forced to quit due to budget limitations. Ensuring accessible equipment remains a vital step for maintaining youth sports participation."
+      ],
+      "translation": [
+        "最近的一項足球裝備贈送活動旨在提高年輕球員的參與度。高昂的費用經常阻止個人繼續他們的體育活動，這使得經濟援助變得必要。透過提供免費裝備，組織者希望鼓勵女孩們繼續積極參與這項運動。",
+        "米莉·布萊特積極協助將這些重要物品分發給年輕女孩。她的參與為這項倡議帶來了顯著的關注，確保更多參與者從中受益。此類社區努力直接解決了有抱負的運動員所面臨的經濟挑戰。",
+        "這項進行中的專案旨在克服不斷上漲的成本，維持長期的參與度。如果沒有這種援助，許多球員可能會因為預算限制而被迫放棄。確保裝備易於取得仍然是維持青少年體育參與的重要一步。"
+      ],
+      "vocabulary": [
+        {
+          "term": "giveaway",
+          "pos": "noun",
+          "collocations": "promotional giveaway; kit giveaway",
+          "meaning": "贈品；免費發放活動",
+          "synonyms": [
+            "freebie; handout",
+            "donation; distribution"
+          ],
+          "family": "giveaway",
+          "sentence": "A recent football kit giveaway is designed to boost participation among young players."
+        },
+        {
+          "term": "boost",
+          "pos": "verb",
+          "collocations": "boost participation; boost sales",
+          "meaning": "提高；促進",
+          "synonyms": [
+            "increase; enhance",
+            "raise; elevate"
+          ],
+          "family": "boost; boosted; boosting",
+          "sentence": "A recent football kit giveaway is designed to boost participation among young players."
+        },
+        {
+          "term": "expenses",
+          "pos": "noun",
+          "collocations": "high expenses; operating expenses",
+          "meaning": "費用；支出",
+          "synonyms": [
+            "costs; expenditures",
+            "outlays; spending"
+          ],
+          "family": "expense; expensive",
+          "sentence": "High expenses often prevent individuals from continuing their athletic activities, making financial support necessary."
+        },
+        {
+          "term": "organizers",
+          "pos": "noun",
+          "collocations": "event organizers; community organizers",
+          "meaning": "組織者；主辦方",
+          "synonyms": [
+            "planners; coordinators",
+            "administrators; promoters"
+          ],
+          "family": "organize; organization; organizer",
+          "sentence": "By providing free gear, organizers hope to encourage girls to remain active in the sport."
+        },
+        {
+          "term": "involvement",
+          "pos": "noun",
+          "collocations": "active involvement; community involvement",
+          "meaning": "參與；投入",
+          "synonyms": [
+            "participation; engagement",
+            "contribution; association"
+          ],
+          "family": "involve; involved; involvement",
+          "sentence": "Her involvement brings significant attention to the initiative, ensuring that more participants benefit from the program."
+        },
+        {
+          "term": "initiative",
+          "pos": "noun",
+          "collocations": "new initiative; strategic initiative",
+          "meaning": "新倡議；主動性",
+          "synonyms": [
+            "project; program",
+            "enterprise; scheme"
+          ],
+          "family": "initiate; initiative; initiator",
+          "sentence": "Her involvement brings significant attention to the initiative, ensuring that more participants benefit from the program."
+        },
+        {
+          "term": "economic",
+          "pos": "noun",
+          "collocations": "economic challenges; economic growth",
+          "meaning": "經濟的",
+          "synonyms": [
+            "financial; monetary",
+            "commercial; fiscal"
+          ],
+          "family": "economy; economic; economical",
+          "sentence": "Such community efforts directly address the economic challenges faced by aspiring athletes."
+        },
+        {
+          "term": "assistance",
+          "pos": "noun",
+          "collocations": "financial assistance; technical assistance",
+          "meaning": "援助；協助",
+          "synonyms": [
+            "help; support",
+            "aid; relief"
+          ],
+          "family": "assist; assistant; assistance",
+          "sentence": "Without such assistance, many players might be forced to quit due to budget limitations."
+        },
+        {
+          "term": "limitations",
+          "pos": "noun",
+          "collocations": "budget limitations; severe limitations",
+          "meaning": "限制；局限",
+          "synonyms": [
+            "restrictions; constraints",
+            "boundaries; controls"
+          ],
+          "family": "limit; limitation; limited",
+          "sentence": "Without such assistance, many players might be forced to quit due to budget limitations."
+        },
+        {
+          "term": "equipment",
+          "pos": "noun",
+          "collocations": "sports equipment; office equipment",
+          "meaning": "設備；裝備",
+          "synonyms": [
+            "gear; apparatus",
+            "machinery; hardware"
+          ],
+          "family": "equip; equipment; equipped",
+          "sentence": "Ensuring accessible equipment remains a vital step for maintaining youth sports participation."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "A recent football kit giveaway is designed to _____ participation among young players.",
+          "options": [
+            "boost",
+            "boosting",
+            "boosted",
+            "boosts"
+          ],
+          "answer": "A",
+          "locator": "to-infinitive structure (be designed to + V)",
+          "explanation": "句型 'is designed to' 後方需接原形動詞（V），因此空格處應填入原形動詞 boost。"
+        },
+        {
+          "prompt": "High expenses often prevent individuals from continuing _____ athletic activities.",
+          "options": [
+            "they",
+            "them",
+            "their",
+            "theirs"
+          ],
+          "answer": "C",
+          "locator": "possessive adjective before a noun",
+          "explanation": "空格後方接名詞 athletic activities，前方需要所有格修飾，故選 their（他們的）。"
+        },
+        {
+          "prompt": "Without such assistance, many players might be forced to quit _____ budget limitations.",
+          "options": [
+            "because",
+            "due to",
+            "although",
+            "while"
+          ],
+          "answer": "B",
+          "locator": "prepositional phrase of cause (due to + noun phrase)",
+          "explanation": "空格後方接名詞短語 budget limitations（預算限制），需用表原因的複合介系詞 due to，而非連接詞 because。"
+        }
+      ],
+      "part6": {
+        "title": "Community Sports Announcement",
+        "passage": "We are excited to announce our upcoming sports program. To help local youths overcome financial barriers, we will distribute free gear next week. 【1】 expenses often prevent talented individuals from playing, this event is designed to support them. Millie Bright will join us as a guest speaker to help 【2】 out free kits. Her presence will surely bring great attention to the campaign. We encourage all eligible families to register early. 【3】 participation is crucial for the success of this community effort. Please contact our office if you have any questions. We look forward to seeing you at the venue and hope this initiative will 【4】 sports participation in the region.",
+        "questions": [
+          {
+            "prompt": "Choose the best word for 【1】.",
+            "options": [
+              "Because",
+              "Although",
+              "Since",
+              "If"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"【1】 expenses often\"",
+            "explanation": "空格處引導原因子句，表示「因為高昂的費用經常阻礙……」，故選 Because。"
+          },
+          {
+            "prompt": "Choose the best word for 【2】.",
+            "options": [
+              "hand",
+              "handed",
+              "handing",
+              "hands"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"help 【2】 out free kits\"",
+            "explanation": "片語 help do sth 或 help to do sth 中需接原形動詞，故選 hand。"
+          },
+          {
+            "prompt": "Choose the best word for 【3】.",
+            "options": [
+              "High",
+              "Strong",
+              "Deep",
+              "Heavy"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"【3】 participation is crucial\"",
+            "explanation": "描述參與度高常用強烈的搭配詞 strong participation，故選 Strong。"
+          },
+          {
+            "prompt": "Choose the best word for 【4】.",
+            "options": [
+              "boost",
+              "reduce",
+              "ignore",
+              "cancel"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"will 【4】 sports participation\"",
+            "explanation": "根據上下文，此倡議的目的是為了「提高」體育參與度，故選 boost。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Read the article and answer the reading comprehension questions.",
+        "questions": [
+          {
+            "prompt": "What is the primary purpose of the football kit giveaway?",
+            "options": [
+              "To sell expensive athletic gear to adults",
+              "To boost participation among young players",
+              "To train professional football coaches",
+              "To build new sports stadiums"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"A recent football kit giveaway is designed to boost participation among young players.\"",
+            "explanation": "文章第一段明確指出，免費贈送足球裝備的目的是為了提高年輕球員的參與度。"
+          },
+          {
+            "prompt": "Who helps hand out the essential items to young girls?",
+            "options": [
+              "Millie Bright",
+              "A local business owner",
+              "The regional mayor",
+              "An anonymous donor"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"Millie Bright actively helps hand out these essential items to young girls.\"",
+            "explanation": "根據第二段內容，米莉·布萊特積極協助將這些重要物品分發給年輕女孩。"
+          },
+          {
+            "prompt": "What might happen to many players without financial assistance?",
+            "options": [
+              "They might win a major championship",
+              "They might be forced to quit due to budget limitations",
+              "They might receive higher salaries",
+              "They might travel abroad"
+            ],
+            "answer": "B",
+            "locator": "第 3 段 \"Without such assistance, many players might be forced to quit due to budget limitations.\"",
+            "explanation": "第三段提到，若沒有這樣的援助，許多球員可能會因為預算限制而被迫放棄。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/ck20v651473qo",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    },
+    "politics": {
+      "title": "UK Ethics Watchdog Chief Steps Back",
+      "summary": "英國政府表示，由於2000年代初期的指控浮現，英國道德監督機構負責人斯圖爾特·斯特林已暫時卸任。",
+      "english": [
+        "The government announced that Stuart Sterling has stepped back from his role as the head of the UK ethics watchdog. This decision follows allegations regarding events that reportedly occurred during the early 2000s.",
+        "Officials confirmed that the claims against Sterling recently emerged, prompting his temporary departure from the position. The watchdog plays a crucial role in maintaining standards in public life.",
+        "Further details regarding the nature of the allegations have not been extensively disclosed in the initial reports. The administration stated that it is currently handling the situation appropriately."
+      ],
+      "translation": [
+        "政府宣布，斯圖爾特·斯特林已辭去英國道德監督機構負責人的職務。此決定是在有關據稱發生於2000年代初期事件的指控出現後做出的。",
+        "官方證實針對斯特林的指控最近浮現，促使他暫時離開該職位。該監督機構在維護公職生活標準方面發揮著至關重要的作用。",
+        "有關指控性質的更多細節尚未在初步報導中廣泛披露。行政部門表示目前正在適當處理該情況。"
+      ],
+      "vocabulary": [
+        {
+          "term": "government",
+          "pos": "noun",
+          "collocations": "current government; government official",
+          "meaning": "政府",
+          "synonyms": [
+            "administration; regime",
+            "state; authority"
+          ],
+          "family": "govern; governmental; governor",
+          "sentence": "The government announced that Stuart Sterling has stepped back from his role as the head of the UK ethics watchdog."
+        },
+        {
+          "term": "role",
+          "pos": "noun",
+          "collocations": "play a role; key role",
+          "meaning": "角色；職責",
+          "synonyms": [
+            "function; position",
+            "duty; capacity"
+          ],
+          "family": "roleplay",
+          "sentence": "The government announced that Stuart Sterling has stepped back from his role as the head of the UK ethics watchdog."
+        },
+        {
+          "term": "decision",
+          "pos": "noun",
+          "collocations": "make a decision; final decision",
+          "meaning": "決定；決策",
+          "synonyms": [
+            "choice; resolution",
+            "conclusion; verdict"
+          ],
+          "family": "decide; decisive",
+          "sentence": "This decision follows allegations regarding events that reportedly occurred during the early 2000s."
+        },
+        {
+          "term": "allegations",
+          "pos": "noun",
+          "collocations": "make allegations; false allegations",
+          "meaning": "指控；宣稱",
+          "synonyms": [
+            "accusations; charges",
+            "claims; assertions"
+          ],
+          "family": "allege; allegedly",
+          "sentence": "This decision follows allegations regarding events that reportedly occurred during the early 2000s."
+        },
+        {
+          "term": "officials",
+          "pos": "noun",
+          "collocations": "government officials; senior officials",
+          "meaning": "官員",
+          "synonyms": [
+            "authorities; executives",
+            "administrators; officers"
+          ],
+          "family": "official; officially",
+          "sentence": "Officials confirmed that the claims against Sterling recently emerged, prompting his temporary departure from the position."
+        },
+        {
+          "term": "position",
+          "pos": "noun",
+          "collocations": "hold a position; vacant position",
+          "meaning": "職位；位置",
+          "synonyms": [
+            "post; office",
+            "job; role"
+          ],
+          "family": "positional; reposition",
+          "sentence": "Officials confirmed that the claims against Sterling recently emerged, prompting his temporary departure from the position."
+        },
+        {
+          "term": "standards",
+          "pos": "noun",
+          "collocations": "high standards; ethical standards",
+          "meaning": "標準",
+          "synonyms": [
+            "criteria; benchmarks",
+            "guidelines; rules"
+          ],
+          "family": "standardize; standardized",
+          "sentence": "The watchdog plays a crucial role in maintaining standards in public life."
+        },
+        {
+          "term": "reports",
+          "pos": "noun",
+          "collocations": "news reports; initial reports",
+          "meaning": "報導；報告",
+          "synonyms": [
+            "accounts; articles",
+            "bulletins; coverages"
+          ],
+          "family": "report; reporter",
+          "sentence": "Further details regarding the nature of the allegations have not been extensively disclosed in the initial reports."
+        },
+        {
+          "term": "administration",
+          "pos": "noun",
+          "collocations": "current administration; public administration",
+          "meaning": "行政部門；管理",
+          "synonyms": [
+            "government; management",
+            "leadership; executives"
+          ],
+          "family": "administer; administrative",
+          "sentence": "The administration stated that it is currently handling the situation appropriately."
+        },
+        {
+          "term": "situation",
+          "pos": "noun",
+          "collocations": "handle a situation; difficult situation",
+          "meaning": "情況；處境",
+          "synonyms": [
+            "condition; circumstance",
+            "state; predicament"
+          ],
+          "family": "situational",
+          "sentence": "The administration stated that it is currently handling the situation appropriately."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "The government announced that Stuart Sterling has stepped back from his role ______ the head of the UK ethics watchdog.",
+          "options": [
+            "A) as",
+            "B) for",
+            "C) with",
+            "D) by"
+          ],
+          "answer": "A",
+          "locator": "Preposition usage indicating capacity or role",
+          "explanation": "空格處需要一個介系詞來表達身分或職位，「as」表示「作為……」，符合「as the head of...」的用法。"
+        },
+        {
+          "prompt": "Officials confirmed that the claims against Sterling recently emerged, ______ his temporary departure from the position.",
+          "options": [
+            "A) prompt",
+            "B) prompts",
+            "C) prompting",
+            "D) prompted"
+          ],
+          "answer": "C",
+          "locator": "Participial phrase indicating a resulting action",
+          "explanation": "句中已有主要動詞confirmed，空格處應用分詞構句表示伴隨發生的結果，因此使用現在分詞「prompting」。"
+        },
+        {
+          "prompt": "Further details regarding the nature of the allegations have not been extensively ______ in the initial reports.",
+          "options": [
+            "A) disclose",
+            "B) disclosure",
+            "C) disclosed",
+            "D) disclosing"
+          ],
+          "answer": "C",
+          "locator": "Passive voice construction (have not been + past participle)",
+          "explanation": "句型為現在完成式的被動語態（have not been + p.p.），因此空格處必須填入過去分詞「disclosed」。"
+        }
+      ],
+      "part6": {
+        "title": "Internal Memo on Ethics Policy",
+        "passage": "To all staff members, \n\nWe would like to remind everyone that our organization maintains strict ethical standards. All employees must read and follow the updated guidelines to ensure transparency. Any potential violations should be reported immediately 【1】 the ethics committee. \n\nFailure to comply with these rules may result 【2】 disciplinary action. We appreciate your cooperation in maintaining a safe work environment. \n\nShould you have any questions regarding these policies, please contact HR 【3】 email. \n\nThank you for your attention to this important matter. \n\nSincerely, \nManagement 【4】",
+        "questions": [
+          {
+            "prompt": "Choose the best word for blank 1.",
+            "options": [
+              "A) to",
+              "B) for",
+              "C) with",
+              "D) by"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"reported immediately 【1】 the ethics committee\"",
+            "explanation": "動詞「report」常搭配介系詞「to」表示向某個單位或委員會報告，故選 A。"
+          },
+          {
+            "prompt": "Choose the best word for blank 2.",
+            "options": [
+              "A) in",
+              "B) from",
+              "C) on",
+              "D) at"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"may result 【2】 disciplinary action\"",
+            "explanation": "片語「result in」意為「導致、產生……結果」，符合文意，故選 A。"
+          },
+          {
+            "prompt": "Choose the best word for blank 3.",
+            "options": [
+              "A) by",
+              "B) on",
+              "C) at",
+              "D) in"
+            ],
+            "answer": "A",
+            "locator": "第 3 段 \"contact HR 【3】 email\"",
+            "explanation": "表示利用某種通訊方式（如電子郵件或電話）時，慣用介系詞「by」，故選 A。"
+          },
+          {
+            "prompt": "Choose the best word for blank 4.",
+            "options": [
+              "A) Department",
+              "B) Manager",
+              "C) Office",
+              "D) Team"
+            ],
+            "answer": "A",
+            "locator": "第 4 段 \"Management 【4】\"",
+            "explanation": "在商業書信結尾處，常用「Management Department」（管理部門）作為署名搭配，故選 A。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Read the news article and answer the reading comprehension questions.",
+        "questions": [
+          {
+            "prompt": "According to the article, who stepped back from their role?",
+            "options": [
+              "A) Stuart Sterling",
+              "B) The prime minister",
+              "C) An HR manager",
+              "D) An ethics investigator"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"Stuart Sterling has stepped back from his role as the head of the UK ethics watchdog\"",
+            "explanation": "文章第一段明確指出是 Stuart Sterling 卸下了英國道德監督機構負責人的職務。"
+          },
+          {
+            "prompt": "When did the events related to the allegations reportedly occur?",
+            "options": [
+              "A) During the early 2000s",
+              "B) Last week",
+              "C) In the late 1990s",
+              "D) Yesterday"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"events that reportedly occurred during the early 2000s\"",
+            "explanation": "文章提到指控所涉及的事件據稱發生在 2000 年代初期。"
+          },
+          {
+            "prompt": "What did officials confirm about the claims?",
+            "options": [
+              "A) They recently emerged",
+              "B) They were proven false",
+              "C) They were fully resolved",
+              "D) They were ignored by the administration"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"Officials confirmed that the claims against Sterling recently emerged\"",
+            "explanation": "文章第二段指出，官方證實針對斯特林的指控是最近才浮現的。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/cmewv2kzq2e5o",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    },
+    "techLife": {
+      "title": "Italy Fines Meta over User Photos",
+      "summary": "義大利對Meta公司處以8億5千萬歐元的罰款，原因是該公司被指控未向兩千萬名用戶告知其存取了用戶的照片。",
+      "english": [
+        "Italy has officially issued a massive financial penalty against Meta, fining the social media giant 805 million euros. Regulatory authorities announced this major enforcement action following an investigation into data privacy practices.",
+        "The core accusation centers on the company failing to properly notify twenty million platform users regarding the access to their personal photos. Regulators pointed out that this lack of transparency directly violates local digital protection standards.",
+        "This significant monetary penalty highlights increasing regulatory scrutiny over how global technology corporations handle consumer information. Meta now faces intense pressure to reform its data handling procedures and notification policies across the region."
+      ],
+      "translation": [
+        "義大利正式對Meta公司開出巨額罰單，對這家社群媒體巨頭處以8億5千萬歐元的罰款。監理機關在針對資料隱私實務進行調查後，宣布了這項重大的執法行動。",
+        "核心指控集中於該公司未能妥善通知兩千萬名平台用戶關於其存取個人照片的事宜。監理機關指出，這種缺乏透明度的作法直接違反了當地數位保護標準。",
+        "這筆可觀的金錢罰款凸顯出監理機關對全球科技企業如何處理消費者資訊的審查日益嚴格。Meta現在面臨著改革該地區資料處理程序與通知政策的巨大壓力。"
+      ],
+      "vocabulary": [
+        {
+          "term": "penalty",
+          "pos": "noun",
+          "collocations": "financial penalty; monetary penalty",
+          "meaning": "罰款；處罰",
+          "synonyms": [
+            "fine; punishment",
+            "sanction; amerce"
+          ],
+          "family": "penalize; penal",
+          "sentence": "Italy has officially issued a massive financial penalty against Meta, fining the social media giant 805 million euros."
+        },
+        {
+          "term": "regulatory",
+          "pos": "adjective",
+          "collocations": "regulatory authorities; regulatory scrutiny",
+          "meaning": "監管的；規定的",
+          "synonyms": [
+            "official; governing",
+            "supervisory; administrative"
+          ],
+          "family": "regulate; regulator; regulation",
+          "sentence": "Regulatory authorities announced this major enforcement action following an investigation into data privacy practices."
+        },
+        {
+          "term": "investigation",
+          "pos": "noun",
+          "collocations": "conduct an investigation; launch an investigation",
+          "meaning": "調查；偵查",
+          "synonyms": [
+            "inquiry; probe",
+            "examination; search"
+          ],
+          "family": "investigate; investigative",
+          "sentence": "Regulatory authorities announced this major enforcement action following an investigation into data privacy practices."
+        },
+        {
+          "term": "accusation",
+          "pos": "noun",
+          "collocations": "core accusation; face accusation",
+          "meaning": "指控；控告",
+          "synonyms": [
+            "charge; allegation",
+            "complaint; blame"
+          ],
+          "family": "accuse; accusing",
+          "sentence": "The core accusation centers on the company failing to properly notify twenty million platform users regarding the access to their personal photos."
+        },
+        {
+          "term": "transparency",
+          "pos": "noun",
+          "collocations": "lack of transparency; ensure transparency",
+          "meaning": "透明度",
+          "synonyms": [
+            "clarity; openness",
+            "lucidity; plainness"
+          ],
+          "family": "transparent; transparently",
+          "sentence": "Regulators pointed out that this lack of transparency directly violates local digital protection standards."
+        },
+        {
+          "term": "violates",
+          "pos": "verb",
+          "collocations": "violates standards; violates rules",
+          "meaning": "違反；違背",
+          "synonyms": [
+            "breaches; infringes",
+            "transgresses; disobeys"
+          ],
+          "family": "violation; violator",
+          "sentence": "Regulators pointed out that this lack of transparency directly violates local digital protection standards."
+        },
+        {
+          "term": "significant",
+          "pos": "adjective",
+          "collocations": "significant monetary penalty; significant impact",
+          "meaning": "重大的；顯著的",
+          "synonyms": [
+            "considerable; substantial",
+            "important; meaningful"
+          ],
+          "family": "significance; signify",
+          "sentence": "This significant monetary penalty highlights increasing regulatory scrutiny over how global technology corporations handle consumer information."
+        },
+        {
+          "term": "scrutiny",
+          "pos": "noun",
+          "collocations": "regulatory scrutiny; under scrutiny",
+          "meaning": "詳細審查；監視",
+          "synonyms": [
+            "inspection; examination",
+            "surveillance; review"
+          ],
+          "family": "scrutinize",
+          "sentence": "This significant monetary penalty highlights increasing regulatory scrutiny over how global technology corporations handle consumer information."
+        },
+        {
+          "term": "handle",
+          "pos": "verb",
+          "collocations": "handle information; handle data",
+          "meaning": "處理；應對",
+          "synonyms": [
+            "manage; deal with",
+            "process; control"
+          ],
+          "family": "handler; handling",
+          "sentence": "This significant monetary penalty highlights increasing regulatory scrutiny over how global technology corporations handle consumer information."
+        },
+        {
+          "term": "pressure",
+          "pos": "noun",
+          "collocations": "intense pressure; face pressure",
+          "meaning": "壓力",
+          "synonyms": [
+            "stress; strain",
+            "burden; tension"
+          ],
+          "family": "pressurize; pressured",
+          "sentence": "Meta now faces intense pressure to reform its data handling procedures and notification policies across the region."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "Italy has officially issued a massive financial penalty against Meta, _______ the social media giant 805 million euros.",
+          "options": [
+            "fin",
+            "fined",
+            "fining",
+            "finely"
+          ],
+          "answer": "C",
+          "locator": "分詞構句表結果",
+          "explanation": "空格處需要一個現在分詞來引導結果分句，補充說明懲罰的動作與金額，因此選擇現在分詞「fining」。"
+        },
+        {
+          "prompt": "Regulatory authorities announced this major enforcement action following an investigation _______ data privacy practices.",
+          "options": [
+            "into",
+            "at",
+            "on",
+            "with"
+          ],
+          "answer": "A",
+          "locator": "介系詞搭配",
+          "explanation": "名詞 investigation 通常搭配介系詞 into，表示「針對…的調查」，句意為針對資料隱私實務的調查。"
+        },
+        {
+          "prompt": "Meta now faces intense pressure _______ its data handling procedures across the region.",
+          "options": [
+            "reform",
+            "reforming",
+            "to reform",
+            "reformed"
+          ],
+          "answer": "C",
+          "locator": "不定詞修飾名詞",
+          "explanation": "名詞 pressure 後方常接不定詞（to V）來修飾，表示「進行…的壓力」，故選 to reform。"
+        }
+      ],
+      "part6": {
+        "title": "Internal Memo on Privacy Compliance",
+        "passage": "To all staff members, please be advised that recent regulatory events highlight the importance of data transparency. 【1】 regulatory authorities imposed a massive fine on Meta for failing to notify users about photo access, our company must review our own practices. We must ensure that 【2】 user consent is properly documented in our systems. Please submit your audit reports by Friday. 【3】 failure to comply with these rules will result in disciplinary action. Thank you for your cooperation and dedication to 【4】 privacy standards.",
+        "questions": [
+          {
+            "prompt": "Choose the best word for blank 【1】.",
+            "options": [
+              "Since",
+              "Although",
+              "Unless",
+              "Until"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"【1】 regulatory authorities imposed\"",
+            "explanation": "空格處需要表示「既然／由於」的連接詞來引導原因子句，對應前句提到的監管事件，故選 Since。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【2】.",
+            "options": [
+              "every",
+              "all",
+              "much",
+              "another"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"ensure that 【2】 user consent\"",
+            "explanation": "單數可數名詞 consent 或不可數名詞的概念在此處搭配 every 來強調每一位用戶的同意，故選 every。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【3】.",
+            "options": [
+              "Any",
+              "Some",
+              "Both",
+              "These"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"【3】 failure to comply\"",
+            "explanation": "片語 failure to comply 前方通常搭配形容詞性質的限定詞 Any，表示「任何未能遵守的狀況」，故選 Any。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【4】.",
+            "options": [
+              "strict",
+              "strictly",
+              "stricteness",
+              "stricter"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"dedication to 【4】 privacy standards\"",
+            "explanation": "空格位於名詞片語中修飾 standards，需要形容詞「嚴格的」來作定語，故選 strict。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Read the article about the penalty against Meta and answer the questions.",
+        "questions": [
+          {
+            "prompt": "How much is the financial penalty issued against Meta?",
+            "options": [
+              "20 million euros",
+              "805 million euros",
+              "850 million euros",
+              "2 million euros"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"fining the social media giant 805 million euros\"",
+            "explanation": "根據第一段文字明確指出，義大利對該社群媒體巨頭處以 8 億 5 千萬歐元（805 million euros）的罰款。"
+          },
+          {
+            "prompt": "What is the core accusation made against the company?",
+            "options": [
+              "Deleting user accounts without warning",
+              "Failing to inform users about photo access",
+              "Overcharging for advertisement services",
+              "Sharing data with foreign governments"
+            ],
+            "answer": "B",
+            "locator": "第 2 段 \"failing to properly notify twenty million platform users regarding the access to their personal photos\"",
+            "explanation": "根據第二段內容，核心指控是該公司未能妥善通知兩千萬名平台用戶關於其存取個人照片的事宜。"
+          },
+          {
+            "prompt": "What does this significant penalty highlight according to the text?",
+            "options": [
+              "A decrease in social media usage",
+              "Increasing regulatory scrutiny over consumer information",
+              "The complete shutdown of the platform",
+              "New advertising regulations for businesses"
+            ],
+            "answer": "B",
+            "locator": "第 3 段 \"highlights increasing regulatory scrutiny over how global technology corporations handle consumer information\"",
+            "explanation": "根據第三段指出，這筆重大罰款凸顯出監理機關對全球科技企業如何處理消費者資訊的審查日益嚴格。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/cwn83gxemk35o",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    }
+  },
   "2026-11-14": {
     "finance": {
       "title": "Global Tech Outage Highlights Risks of Relying on Small Tech Provider Groups",
