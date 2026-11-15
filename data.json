@@ -1,4 +1,819 @@
 {
+  "2026-11-16": {
+    "finance": {
+      "title": "Report Recommends National Insurance Cut for Youth to Boost Employment",
+      "summary": "最新提出的 Milburn 報告建議，政府應在五年內逐步降低 25 歲以下年輕人的僱用成本，藉由減免國民保險費來促進青年就業。",
+      "english": [
+        "A new report by Milburn is set to be officially launched this week, offering practical recommendations for economic policy. The document suggests that cutting national insurance contributions for workers under the age of 25 could effectively help business owners create more entry-level jobs. By lowering payroll expenses for younger staff, the proposal aims to encourage firms to expand their hiring activities.",
+        "According to the report, reducing employment costs should be implemented gradually over a five-year period rather than all at once. This measured approach allows companies to adjust their budgets while providing consistent relief on labor costs. Supporters argue that lowering tax burdens on younger employees will make hiring less risky for growing enterprises.",
+        " overall, the initiative seeks to make youth employment more financially viable for businesses across various industries. By addressing initial hiring barriers over five years, policy makers hope to foster stable job growth. Further details regarding the execution of the recommendation will be presented when the report is formally published later this week."
+      ],
+      "translation": [
+        "Milburn 將於本週正式發表一份全新報告，針對經濟政策提出實用建議。該文件指出，調降 25 歲以下勞工的國民保險費，能有效幫助企業主創造更多初階工作機會。透過降低年輕員工的薪資成本支出，該提議旨在鼓勵企業擴大招聘活動。",
+        "根據報告，降低僱用成本應該在五年期間內逐步實施，而非一步到位。這種循序漸進的方法讓公司能在調整預算的同時，獲得持續的勞工成本減免。支持者認為，減輕年輕員工的稅務負擔將降低成長型企業在招聘上的風險。",
+        "整體而言，該倡議旨在讓各個產業的企業在財務上更有能力僱用青年。透過在五年內解決初步的招聘障礙，政策制定者希望促進穩定的就業成長。有關該建議執行的更多細節，將在於本週晚些時候正式公布報告時呈現。"
+      ],
+      "vocabulary": [
+        {
+          "term": "report",
+          "pos": "noun",
+          "collocations": "publish a report; comprehensive report",
+          "meaning": "報告",
+          "synonyms": [
+            "document; document",
+            "study; analysis"
+          ],
+          "family": "report; reporter; reporting",
+          "sentence": "A new report by Milburn is set to be officially launched this week, offering practical recommendations for economic policy."
+        },
+        {
+          "term": "launched",
+          "pos": "verb",
+          "collocations": "officially launched; newly launched",
+          "meaning": "推出；發表",
+          "synonyms": [
+            "introduced; initiated",
+            "released; unveiled"
+          ],
+          "family": "launch; launched; launching",
+          "sentence": "A new report by Milburn is set to be officially launched this week, offering practical recommendations for economic policy."
+        },
+        {
+          "term": "recommendations",
+          "pos": "noun",
+          "collocations": "policy recommendations; make recommendations",
+          "meaning": "建議",
+          "synonyms": [
+            "suggestions; proposals",
+            "advice; guidance"
+          ],
+          "family": "recommend; recommendation; recommended",
+          "sentence": "A new report by Milburn is set to be officially launched this week, offering practical recommendations for economic policy."
+        },
+        {
+          "term": "national insurance",
+          "pos": "noun",
+          "collocations": "national insurance contributions; pay national insurance",
+          "meaning": "國民保險",
+          "synonyms": [
+            "social security tax; state insurance",
+            "payroll tax; social insurance"
+          ],
+          "family": "national insurance",
+          "sentence": "The document suggests that cutting national insurance contributions for workers under the age of 25 could effectively help business owners create more entry-level jobs."
+        },
+        {
+          "term": "employment costs",
+          "pos": "noun",
+          "collocations": "reduce employment costs; total employment costs",
+          "meaning": "僱用成本",
+          "synonyms": [
+            "labor costs; payroll expenses",
+            "staffing expenditures; wage expenses"
+          ],
+          "family": "employ; employment; employer",
+          "sentence": "According to the report, reducing employment costs should be implemented gradually over a five-year period rather than all at once."
+        },
+        {
+          "term": "gradually",
+          "pos": "adverb",
+          "collocations": "implemented gradually; increase gradually",
+          "meaning": "逐步地",
+          "synonyms": [
+            "incrementally; step-by-step",
+            "progressively; steadily"
+          ],
+          "family": "gradual; gradually",
+          "sentence": "According to the report, reducing employment costs should be implemented gradually over a five-year period rather than all at once."
+        },
+        {
+          "term": "budgets",
+          "pos": "noun",
+          "collocations": "adjust budgets; annual budgets",
+          "meaning": "預算",
+          "synonyms": [
+            "financial plans; funds",
+            "allocations; capital plans"
+          ],
+          "family": "budget; budgetary; budgeting",
+          "sentence": "This measured approach allows companies to adjust their budgets while providing consistent relief on labor costs."
+        },
+        {
+          "term": "tax burdens",
+          "pos": "noun",
+          "collocations": "lower tax burdens; heavy tax burdens",
+          "meaning": "稅務負擔",
+          "synonyms": [
+            "tax liabilities; tax duties",
+            "fiscal burdens; financial duties"
+          ],
+          "family": "tax; taxation; taxable",
+          "sentence": "Supporters argue that lowering tax burdens on younger employees will make hiring less risky for growing enterprises."
+        },
+        {
+          "term": "enterprises",
+          "pos": "noun",
+          "collocations": "growing enterprises; commercial enterprises",
+          "meaning": "企業",
+          "synonyms": [
+            "businesses; companies",
+            "firms; corporations"
+          ],
+          "family": "enterprise; enterprising",
+          "sentence": "Supporters argue that lowering tax burdens on younger employees will make hiring less risky for growing enterprises."
+        },
+        {
+          "term": "barriers",
+          "pos": "noun",
+          "collocations": "hiring barriers; overcome barriers",
+          "meaning": "障礙",
+          "synonyms": [
+            "obstacles; hurdles",
+            "impediments; restrictions"
+          ],
+          "family": "barrier",
+          "sentence": "By addressing initial hiring barriers over five years, policy makers hope to foster stable job growth."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "The upcoming economic report is expected to be _______ launched later this week by the policy committee.",
+          "options": [
+            "official",
+            "officially",
+            "officialdom",
+            "officiate"
+          ],
+          "answer": "B",
+          "locator": "修飾動詞分詞 launched 的副詞位置",
+          "explanation": "空格處用來修飾過去分詞 launched，應選擇副詞 officially（正式地）。(A) 為形容詞，(C) 為名詞，(D) 為動詞。"
+        },
+        {
+          "prompt": "The committee proposed reducing labor expenditures _______ over five years to help companies adapt.",
+          "options": [
+            "gradual",
+            "gradually",
+            "graduating",
+            "graduation"
+          ],
+          "answer": "B",
+          "locator": "修飾動詞短語 reducing labor expenditures 的副詞位置",
+          "explanation": "此處需填入副詞修飾動詞短語「reducing labor expenditures」，故選擇 gradually（逐步地）。(A) 為形容詞，(C) 為現在分詞，(D) 為名詞。"
+        },
+        {
+          "prompt": "Policy makers aim to lower initial financial barriers _______ encourage companies to recruit younger staff.",
+          "options": [
+            "in order to",
+            "owing to",
+            "as long as",
+            "in spite of"
+          ],
+          "answer": "A",
+          "locator": "表示目的之不定詞片語介詞",
+          "explanation": "句意表示「政策制定者旨在降低財務障礙，『為了』鼓勵公司招聘年輕員工」，接原形動詞 encourage，應填入表示目的的短語 in order to。(B) 表示由於，(C) 表示只要，(D) 表示儘管。"
+        }
+      ],
+      "part6": {
+        "title": "Internal Memo: Proposed Payroll Tax Changes",
+        "passage": "To All Department Heads,\n\nWe are currently evaluating the implications of a new economic proposal. A report to be published this week suggests cutting national insurance contributions for workers under the age of 25. 【1】.\n\nUnder this policy recommendation, hiring costs would be reduced 【2】 over a five-year timeframe. This step-by-step relief is designed to give expanding businesses sufficient time to modify their annual financial plans. 【3】, managers would be able to expand entry-level recruitment programs without taking on excessive financial liability.\n\nWe will schedule a management meeting to discuss our staffing strategy once the report is formally 【4】.",
+        "questions": [
+          {
+            "prompt": "Which sentence best fits blank 【1】?",
+            "options": [
+              "The proposal aims to encourage companies to create more jobs for young workers.",
+              "We will immediately freeze all recruitment for entry-level positions.",
+              "Employees over age 25 will receive a direct reduction in their base salary.",
+              "The government has canceled all planned changes to tax policy."
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"suggests cutting national insurance contributions for workers under the age of 25.\"",
+            "explanation": "前面提到減免 25 歲以下員工的國民保險費，最符合邏輯銜接的句子是選項 (A)，說明該提案旨在鼓勵企業為年輕求職者創造更多職缺。"
+          },
+          {
+            "prompt": "Choose the best option for blank 【2】.",
+            "options": [
+              "gradually",
+              "gradual",
+              "graduated",
+              "gradualism"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"hiring costs would be reduced 【2】 over a five-year timeframe.\"",
+            "explanation": "修飾被動態動詞短語 would be reduced，需要選用副詞 gradually（逐步地）。"
+          },
+          {
+            "prompt": "Choose the best option for blank 【3】.",
+            "options": [
+              "As a result",
+              "In contrast",
+              "Otherwise",
+              "Nevertheless"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"This step-by-step relief is designed to give expanding businesses sufficient time to modify their annual financial plans.\"",
+            "explanation": "前句說明這項措施能給企業足夠時間調整財務計畫，後句說明經理人因此能在不承擔過多財務責任的情況下擴大初階招聘。兩句為因果關係，故選 As a result（結果是；因此）。"
+          },
+          {
+            "prompt": "Choose the best option for blank 【4】.",
+            "options": [
+              "released",
+              "releasing",
+              "releases",
+              "release"
+            ],
+            "answer": "A",
+            "locator": "第 3 段 \"once the report is formally 【4】.\"",
+            "explanation": "report 與 release 之間是被動關係，在 is formally 後面應填入過去分詞 released。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Refer to the following news report to answer the questions.",
+        "questions": [
+          {
+            "prompt": "What is recommended in the upcoming Milburn report?",
+            "options": [
+              "Cutting national insurance contributions for workers under 25",
+              "Increasing national insurance rates for all corporate employers",
+              "Eliminating entry-level job positions across all industries",
+              "Raising labor costs immediately over a period of five years"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"cutting national insurance contributions for workers under the age of 25 could effectively help business owners create more entry-level jobs.\"",
+            "explanation": "根據第一段，Milburn 報告建議調降 25 歲以下勞工的國民保險費，以幫助企業主創造更多初階職缺。選項 (A) 符合原文描述。"
+          },
+          {
+            "prompt": "How does the report suggest implementing the reduction in employment costs?",
+            "options": [
+              "Incrementally over a period of five years",
+              "All at once within the current calendar month",
+              "Exclusively for staff over twenty-five years old",
+              "By raising corporate taxes on growing businesses"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"reducing employment costs should be implemented gradually over a five-year period rather than all at once.\"",
+            "explanation": "第二段明確提到僱用成本的降低應在「五年期間內逐步（gradually）實施」，漸進式（incrementally）即為其同義表達。故選 (A)。"
+          },
+          {
+            "prompt": "According to supporters, how will lowering tax burdens benefit growing enterprises?",
+            "options": [
+              "By reducing the risk associated with hiring younger workers",
+              "By eliminating all annual budget planning requirements",
+              "By forcing policy makers to delay the formal report launch",
+              "By increasing payroll expenses for initial job applicants"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"Supporters argue that lowering tax burdens on younger employees will make hiring less risky for growing enterprises.\"",
+            "explanation": "第二段結尾提到，支持者認為降低年輕員工的稅務負擔將使得成長型企業在「招聘時的風險降低（make hiring less risky）」，對應選項 (A)。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/c6p9dzmj514ko",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    },
+    "politics": {
+      "title": "Conservative Party Proposes Limits on Digital Assessment in Schools",
+      "summary": "英國保守黨提出針對英格蘭學校的教育改革方案，主張停止使用螢幕進行考試，並減少課堂作業的比例。該黨表示，此舉旨在減少學生使用螢幕的時間，同時降低對人工智慧工具的過度依賴。",
+      "english": [
+        "The Conservative Party has announced a new educational proposal for schools in England aimed at altering how students are assessed. Under the plan, the party pledges to halt screen-based school exams and reduce the reliance on traditional coursework. Officials stated that this initiative is designed to address growing concerns regarding excessive screen time among young learners.",
+        "In addition to limiting digital assessments, the proposal seeks to curb the over-reliance on artificial intelligence in completing academic assignments. Party representatives argued that heavy dependence on digital tools can diminish core learning skills. By shifting back toward conventional examination methods, they hope to ensure that academic evaluations accurately reflect an individual student's actual abilities.",
+        "The policy proposal has sparked widespread debate among educators and parents across the country. While some supporters welcome measures to reduce daily device usage, critics question whether moving away from technology aligns with modern workplace demands. The party maintains that balancing screen use with structured, paper-based testing remains essential for long-term educational outcomes."
+      ],
+      "translation": [
+        "保守黨針對英格蘭的學校提出了一項新的教育建議，旨在改變評量學生的方式。根據該計畫，該黨承諾停止以螢幕為基礎的學校考試，並減少對傳統課堂作業的依賴。官員表示，這項舉措旨在解決年輕學習者螢幕使用時間過長且日益令人擔憂的問題。",
+        "除了限制數位評量外，該建議還試圖遏制在完成學業作業時對人工智慧的過度依賴。黨代表認為，對數位工具的嚴重依賴可能會削弱核心學習技能。透過轉回傳統的考試方式，他們希望確保學術評估能夠準確反映學生個人的真實能力。",
+        "這項政策建議在全國教師和家長之間引發了廣泛的討論。雖然一些支持者對減少日常裝置使用的措施表示歡迎，但批評者質疑脫離科技是否符合現代職場的需求。該黨堅持認為，在螢幕使用與結構化的紙本測試之間取得平衡，對於長期教育成果而言仍然至關重要。"
+      ],
+      "vocabulary": [
+        {
+          "term": "proposal",
+          "pos": "n.",
+          "collocations": "educational proposal; policy proposal",
+          "meaning": "提案；建議",
+          "synonyms": [
+            "plan; scheme",
+            "suggestion; recommendation"
+          ],
+          "family": "propose; proposed",
+          "sentence": "The Conservative Party has announced a new educational proposal for schools in England aimed at altering how students are assessed."
+        },
+        {
+          "term": "halt",
+          "pos": "v.",
+          "collocations": "halt progress; halt operations",
+          "meaning": "停止；終止",
+          "synonyms": [
+            "stop; cease",
+            "discontinue; suspend"
+          ],
+          "family": "halt; halted",
+          "sentence": "Under the plan, the party pledges to halt screen-based school exams and reduce the reliance on traditional coursework."
+        },
+        {
+          "term": "reliance",
+          "pos": "n.",
+          "collocations": "reduce reliance; excessive reliance",
+          "meaning": "依賴；信任",
+          "synonyms": [
+            "dependence; trust",
+            "reliance; reliance"
+          ],
+          "family": "rely; reliable",
+          "sentence": "Under the plan, the party pledges to halt screen-based school exams and reduce the reliance on traditional coursework."
+        },
+        {
+          "term": "initiative",
+          "pos": "n.",
+          "collocations": "new initiative; strategic initiative",
+          "meaning": "倡議；舉措",
+          "synonyms": [
+            "program; campaign",
+            "action; enterprise"
+          ],
+          "family": "initiate; initiator",
+          "sentence": "Officials stated that this initiative is designed to address growing concerns regarding excessive screen time among young learners."
+        },
+        {
+          "term": "excessive",
+          "pos": "adj.",
+          "collocations": "excessive time; excessive use",
+          "meaning": "過度的；過多的",
+          "synonyms": [
+            "extreme; immoderate",
+            "disproportionate; undue"
+          ],
+          "family": "excess; excessively",
+          "sentence": "Officials stated that this initiative is designed to address growing concerns regarding excessive screen time among young learners."
+        },
+        {
+          "term": "assessments",
+          "pos": "n.",
+          "collocations": "digital assessments; academic assessments",
+          "meaning": "評量；評估",
+          "synonyms": [
+            "evaluations; tests",
+            "appraisals; examinations"
+          ],
+          "family": "assess; assessor",
+          "sentence": "In addition to limiting digital assessments, the proposal seeks to curb the over-reliance on artificial intelligence in completing academic assignments."
+        },
+        {
+          "term": "assignments",
+          "pos": "n.",
+          "collocations": "academic assignments; complete assignments",
+          "meaning": "作業；任務",
+          "synonyms": [
+            "tasks; projects",
+            "homework; duties"
+          ],
+          "family": "assign; assignee",
+          "sentence": "In addition to limiting digital assessments, the proposal seeks to curb the over-reliance on artificial intelligence in completing academic assignments."
+        },
+        {
+          "term": "conventional",
+          "pos": "adj.",
+          "collocations": "conventional methods; conventional wisdom",
+          "meaning": "傳統的；習慣的",
+          "synonyms": [
+            "traditional; standard",
+            "established; customary"
+          ],
+          "family": "convention; conventionally",
+          "sentence": "By shifting back toward conventional examination methods, they hope to ensure that academic evaluations accurately reflect an individual student's actual abilities."
+        },
+        {
+          "term": "evaluations",
+          "pos": "n.",
+          "collocations": "academic evaluations; conduct evaluations",
+          "meaning": "評量；評估",
+          "synonyms": [
+            "assessments; reviews",
+            "appraisals; judgments"
+          ],
+          "family": "evaluate; evaluative",
+          "sentence": "By shifting back toward conventional examination methods, they hope to ensure that academic evaluations accurately reflect an individual student's actual abilities."
+        },
+        {
+          "term": "outcomes",
+          "pos": "n.",
+          "collocations": "educational outcomes; positive outcomes",
+          "meaning": "結果；成果",
+          "synonyms": [
+            "results; consequences",
+            "effects; findings"
+          ],
+          "family": "outcome; outcomes",
+          "sentence": "The party maintains that balancing screen use with structured, paper-based testing remains essential for long-term educational outcomes."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "The educational committee decided to _______ all digital test procedures until safety guidelines are updated.",
+          "options": [
+            "halt",
+            "halting",
+            "halted",
+            "halts"
+          ],
+          "answer": "A",
+          "locator": "to-infinitive complement after the verb 'decided' requiring base verb form 'halt'",
+          "explanation": "動詞 decide 後接不定詞（to + 原形動詞），因此應選擇原形動詞 (A) halt。"
+        },
+        {
+          "prompt": "School directors expressed concerns regarding students' _______ reliance on automated software for writing tasks.",
+          "options": [
+            "exceed",
+            "excessive",
+            "excessively",
+            "excess"
+          ],
+          "answer": "B",
+          "locator": "adjective modifying the noun 'reliance'",
+          "explanation": "空格位於名詞 reliance 前，需填入形容詞來修飾名詞，因此正確答案為 (B) excessive（過度的）。"
+        },
+        {
+          "prompt": "The new guidelines ensure that academic evaluations _______ reflect student performance across all subjects.",
+          "options": [
+            "accurate",
+            "accuracy",
+            "accurately",
+            "accuratenesses"
+          ],
+          "answer": "C",
+          "locator": "adverb modifying the main verb 'reflect'",
+          "explanation": "空格用來修飾動詞 reflect，需使用副詞，因此選擇 (C) accurately（準確地）。"
+        }
+      ],
+      "part6": {
+        "title": "Internal Memo regarding Assessment Policy Review",
+        "passage": "To: All Teaching Staff\nFrom: Academic Steering Committee\nDate: November 16, 2026\nSubject: Review of Assessment Methods\n\nIn light of recent policy proposals regarding classroom evaluation, our institute has decided to conduct a comprehensive review of current testing formats. Under the proposed changes, we aim to limit digital screen time during final examinations. 【1】\n\nMany educators have expressed concerns over students' heavy dependence on digital tools during regular studies. 【2】 reducing excessive coursework may allow students to focus more deeply on core subjects. We plan to reintroduce more traditional paper-based testing formats next term. 【3】\n\nPlease submit your feedback regarding these proposed adjustments to the steering committee by Friday afternoon. 【4】 Your input will help us establish a balanced testing framework that supports positive educational outcomes.",
+        "questions": [
+          {
+            "prompt": "Which option best fits blank 【1】?",
+            "options": [
+              "This shift is intended to encourage direct, paper-based assessment techniques.",
+              "Digital screen production will increase significantly next academic year.",
+              "Teachers are required to order new computers for all students immediately.",
+              "Online test platforms have completely replaced all printed textbooks."
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"Under the proposed changes, we aim to limit digital screen time during final examinations.\"",
+            "explanation": "前句提到「旨在限制期末考試期間的數位螢幕時間」，選項 (A)「這項轉變旨在鼓勵直接的紙本評量技巧」承接前句的限制螢幕時間主題，最為符合上下文意。"
+          },
+          {
+            "prompt": "Which option best fits blank 【2】?",
+            "options": [
+              "In addition,",
+              "Otherwise,",
+              "Therefore,",
+              "Consequently,"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"Many educators have expressed concerns over students' heavy dependence...\"",
+            "explanation": "前句提到教育者對數位依賴的擔憂，後句提出「減少過多作業可讓學生更深入專注於核心科目」，兩句為遞進補充關係，故選擇轉接詞 (A) In addition（此外）。"
+          },
+          {
+            "prompt": "Which option best fits blank 【3】?",
+            "options": [
+              "Paper inventory will be completely discontinued by the administration.",
+              "This strategy aims to restore authentic student evaluation standards.",
+              "Artificial intelligence will automatically grade all oral presentations.",
+              "Students must purchase extra computer monitors for homework."
+            ],
+            "answer": "B",
+            "locator": "第 2 段 \"We plan to reintroduce more traditional paper-based testing formats next term.\"",
+            "explanation": "前句說明「我們計畫下學期重新引入傳統的紙本測試形式」，選項 (B)「這項策略旨在恢復真實的學生評估標準」說明了實施紙本測試的目的，前後文意連貫。"
+          },
+          {
+            "prompt": "Which option best fits blank 【4】?",
+            "options": [
+              "Feedback forms can be downloaded from the faculty intranet portal.",
+              "All staff meetings have been permanently canceled for the semester.",
+              "No further comments will be accepted by any department head.",
+              "The committee will dismiss all teaching staff at the end of the day."
+            ],
+            "answer": "A",
+            "locator": "第 3 段 \"Please submit your feedback regarding these proposed adjustments to the steering committee by Friday afternoon.\"",
+            "explanation": "前句請教職員在週五下午前提交回饋意見，選項 (A)「回饋表可從教職員內部網路入口網站下載」提供如何提交回饋的具體說明，最符合語境。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Refer to the following news report.",
+        "questions": [
+          {
+            "prompt": "What is the primary objective of the Conservative Party's educational proposal?",
+            "options": [
+              "To provide free laptops to all elementary students in England.",
+              "To halt screen-based exams and reduce reliance on coursework.",
+              "To eliminate paper-based testing entirely from the curriculum.",
+              "To require mandatory artificial intelligence courses for teachers."
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"Under the plan, the party pledges to halt screen-based school exams and reduce the reliance on traditional coursework.\"",
+            "explanation": "根據文章第 1 段，該計畫承諾「停止以螢幕為基礎的學校考試並減少對課堂作業的依賴」，因此正確答案為 (B)。"
+          },
+          {
+            "prompt": "Why are representatives concerned about the heavy use of digital tools and AI?",
+            "options": [
+              "They believe it can diminish students' core learning skills.",
+              "They argue it causes severe hardware repair expenses for schools.",
+              "They claim it prevents students from communicating with parents.",
+              "They think it speeds up the grading process too drastically."
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"Party representatives argued that heavy dependence on digital tools can diminish core learning skills.\"",
+            "explanation": "根據文章第 2 段，黨代表認為過度依賴數位工具可能會削弱（diminish）核心學習技能，故選 (A)。"
+          },
+          {
+            "prompt": "What argument do critics raise against the proposed policy changes?",
+            "options": [
+              "They feel that paper tests are far too expensive to print.",
+              "They worry that moving away from technology may not align with modern workplace needs.",
+              "They claim that students prefer longer screen-based examinations.",
+              "They state that artificial intelligence should replace all classroom teachers."
+            ],
+            "answer": "B",
+            "locator": "第 3 段 \"critics question whether moving away from technology aligns with modern workplace demands.\"",
+            "explanation": "根據文章第 3 段，批評者質疑脫離科技是否符合現代職場的需求（aligns with modern workplace demands），因此正確選項為 (B)。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/cwr7gnkd7m04o",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    },
+    "techLife": {
+      "title": "Nvidia Scandal and China Spy Concerns",
+      "summary": "Nvidia醜聞引发了人們對先進人工智能芯片是否在美國限制下最终流向中國的質疑，一名與其前老闆有關的涉嫌中國間諜已於2025年離職。",
+      "english": [
+        "A suspected China spy linked to Nvidia's ex-boss left in 2025, according to recent reports. Megaspeed stated that the individual departed last year amid growing scrutiny over security and corporate connections.",
+        "The ongoing Nvidia scandal has raised questions over whether advanced AI chips ended up in China. Observers wonder if these technologies crossed borders despite strict US restrictions designed to control sensitive exports.",
+        "Industry experts continue to examine the situation carefully. They want to ensure that high-tech manufacturing and distribution networks remain compliant with international trade rules and government regulations."
+      ],
+      "translation": [
+        "根據最近的報導，一名與Nvidia前老闆有關的涉嫌中國間諜於2025年離職。Megaspeed表示，在人們對安全和企業聯繫日益嚴格的審查中，該個人已於去年離開。",
+        "持續的Nvidia醜聞引發了人們對先進AI芯片是否最终流向中國的質疑。觀察家們想知道，儘管有旨在控制敏感出口的嚴格美國限制，這些技術是否仍越過邊境。",
+        "行業專家繼續仔細審查情況。他們希望確保高科技製造和分銷網絡符合國際貿易規則和政府法規。"
+      ],
+      "vocabulary": [
+        {
+          "term": "suspected",
+          "pos": "adjective",
+          "collocations": "suspected spy; suspected criminal",
+          "meaning": "涉嫌的；嫌疑的",
+          "synonyms": [
+            "alleged; putative",
+            "doubtful; dubious"
+          ],
+          "family": "suspect; suspicion; suspiciously",
+          "sentence": "A suspected China spy linked to Nvidia's ex-boss left in 2025, according to recent reports."
+        },
+        {
+          "term": "linked",
+          "pos": "adjective",
+          "collocations": "linked to; closely linked",
+          "meaning": "有關聯的；相連的",
+          "synonyms": [
+            "connected; associated",
+            "related; affiliated"
+          ],
+          "family": "link; linkage",
+          "sentence": "A suspected China spy linked to Nvidia's ex-boss left in 2025, according to recent reports."
+        },
+        {
+          "term": "departed",
+          "pos": "verb",
+          "collocations": "departed last year; departed from",
+          "meaning": "離開；啟程",
+          "synonyms": [
+            "left; exited",
+            "withdrew; retired"
+          ],
+          "family": "departure",
+          "sentence": "Megaspeed stated that the individual departed last year amid growing scrutiny over security and corporate connections."
+        },
+        {
+          "term": "scrutiny",
+          "pos": "noun",
+          "collocations": "growing scrutiny; under scrutiny",
+          "meaning": "詳細審查；監視",
+          "synonyms": [
+            "examination; inspection",
+            "investigation; analysis"
+          ],
+          "family": "scrutinize",
+          "sentence": "Megaspeed stated that the individual departed last year amid growing scrutiny over security and corporate connections."
+        },
+        {
+          "term": "scandal",
+          "pos": "noun",
+          "collocations": "Nvidia scandal; major scandal",
+          "meaning": "醜聞；輿論風暴",
+          "synonyms": [
+            "controversy; disgrace",
+            "affair; outrage"
+          ],
+          "family": "scandalous; scandalously",
+          "sentence": "The ongoing Nvidia scandal has raised questions over whether advanced AI chips ended up in China."
+        },
+        {
+          "term": "advanced",
+          "pos": "adjective",
+          "collocations": "advanced AI; advanced technology",
+          "meaning": "先進的；高等的",
+          "synonyms": [
+            "sophisticated; cutting-edge",
+            "state-of-the-art; progressive"
+          ],
+          "family": "advance; advancement",
+          "sentence": "The ongoing Nvidia scandal has raised questions over whether advanced AI chips ended up in China."
+        },
+        {
+          "term": "restrictions",
+          "pos": "noun",
+          "collocations": "US restrictions; trade restrictions",
+          "meaning": "限制；約束",
+          "synonyms": [
+            "limitations; constraints",
+            "controls; regulations"
+          ],
+          "family": "restrict; restrictive",
+          "sentence": "Observers wonder if these technologies crossed borders despite strict US restrictions designed to control sensitive exports."
+        },
+        {
+          "term": "experts",
+          "pos": "noun",
+          "collocations": "Industry experts; expert advice",
+          "meaning": "專家；行家",
+          "synonyms": [
+            "specialists; professionals",
+            "authorities; consultants"
+          ],
+          "family": "expert; expertise",
+          "sentence": "Industry experts continue to examine the situation carefully."
+        },
+        {
+          "term": "examine",
+          "pos": "verb",
+          "collocations": "examine the situation; examine closely",
+          "meaning": "檢查；審查",
+          "synonyms": [
+            "inspect; investigate",
+            "analyze; review"
+          ],
+          "family": "examination; examiner",
+          "sentence": "Industry experts continue to examine the situation carefully."
+        },
+        {
+          "term": "regulations",
+          "pos": "noun",
+          "collocations": "government regulations; strict regulations",
+          "meaning": "規章；條例",
+          "synonyms": [
+            "rules; laws",
+            "guidelines; policies"
+          ],
+          "family": "regulate; regulatory",
+          "sentence": "They want to ensure that high-tech manufacturing and distribution networks remain compliant with international trade rules and government regulations."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "Megaspeed stated that the individual departed last year amid growing scrutiny ________ security.",
+          "options": [
+            "at",
+            "over",
+            "in",
+            "with"
+          ],
+          "answer": "B",
+          "locator": "介系詞搭配 (Preposition collocation)",
+          "explanation": "英文中表達「對……的審查或擔憂」時，通常搭配介系詞 over，故選過 (over)。"
+        },
+        {
+          "prompt": "Observers wonder if these technologies crossed borders despite strict US restrictions ________ to control exports.",
+          "options": [
+            "design",
+            "designing",
+            "designed",
+            "designs"
+          ],
+          "answer": "C",
+          "locator": "分詞構句與被動修飾 (Past participle as modifier)",
+          "explanation": "空格處需要過去分詞 designed 來修飾前面的 restrictions（受到設計用來控制出口的限制），表示被動關係。"
+        },
+        {
+          "prompt": "Industry experts continue to examine the situation ________ to ensure compliance.",
+          "options": [
+            "careful",
+            "carefully",
+            "care",
+            "carefulness"
+          ],
+          "answer": "B",
+          "locator": "副詞修飾動詞 (Adverb modifying a verb)",
+          "explanation": "空格處用來修飾動詞 examine（審查），因此需要副詞 carefully，而非形容詞或名詞。"
+        }
+      ],
+      "part6": {
+        "title": "Memo on Corporate Compliance and Security",
+        "passage": "To all staff, recent events regarding corporate security require our full attention. 【1】 ensure that all protocols are strictly followed. We must 【2】 review our export and supply chain guidelines. Any suspected breaches should be reported 【3】. Thank you for your cooperation in maintaining our 【4】 standards.",
+        "questions": [
+          {
+            "prompt": "Choose the best word for blank 1.",
+            "options": [
+              "Please",
+              "Pleasing",
+              "Pleased",
+              "Pleasant"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"【1】 ensure that\"",
+            "explanation": "此處為祈使句開頭，要求員工採取行動，因此填入動詞原形開頭的 Please。"
+          },
+          {
+            "prompt": "Choose the best word for blank 2.",
+            "options": [
+              "careful",
+              "carefully",
+              "care",
+              "cared"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"We must 【2】 review\"",
+            "explanation": "空格用來修飾動詞 review（審查），必須使用副詞 carefully。"
+          },
+          {
+            "prompt": "Choose the best word for blank 3.",
+            "options": [
+              "immediate",
+              "immediately",
+              "immobility",
+              "immediacy"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"reported 【3】\"",
+            "explanation": "修飾動詞 reported（被通報），應用副詞 immediately（立即地）。"
+          },
+          {
+            "prompt": "Choose the best word for blank 4.",
+            "options": [
+              "high",
+              "higher",
+              "highest",
+              "highly"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"our 【4】 standards\"",
+            "explanation": "修飾名詞 standards（標準），且依語意為「高標準」，因此使用形容詞 high。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Read the news article and answer the reading comprehension questions.",
+        "questions": [
+          {
+            "prompt": "According to the article, when did the suspected spy linked to Nvidia's ex-boss leave?",
+            "options": [
+              "In 2024",
+              "In 2025",
+              "In 2026",
+              "The text does not mention"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"left in 2025\"",
+            "explanation": "文章第一段明確指出該嫌疑人於2025年離職。"
+          },
+          {
+            "prompt": "What scandal has raised questions about advanced AI chips ending up in China?",
+            "options": [
+              "The Megaspeed scandal",
+              "The Nvidia scandal",
+              "The US restriction scandal",
+              "The trade border scandal"
+            ],
+            "answer": "B",
+            "locator": "第 2 段 \"The ongoing Nvidia scandal\"",
+            "explanation": "根據第二段內容，是Nvidia醜聞引發了關於先進AI芯片去向的質疑。"
+          },
+          {
+            "prompt": "What do industry experts want to ensure regarding manufacturing and distribution networks?",
+            "options": [
+              "That they remain compliant with trade rules",
+              "That they increase chip production speed",
+              "That they relocate entirely to the US",
+              "That they stop working with Megaspeed"
+            ],
+            "answer": "A",
+            "locator": "第 3 段 \"remain compliant with international trade rules\"",
+            "explanation": "第三段指出專家希望確保網絡保持符合國際貿易規則和政府法規。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/cmdx1vpprk9vo",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    }
+  },
   "2026-11-15": {
     "finance": {
       "title": "Football Kit Giveaway Aims to Boost Participation",
