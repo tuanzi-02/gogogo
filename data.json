@@ -1,4 +1,819 @@
 {
+  "2026-11-17": {
+    "finance": {
+      "title": "Nvidia Dismisses Campaign Led by Tech Figures",
+      "summary": "輝達拒絕了一項由科技界人士發起、要求讓執行長黃仁勳復職的「帶回詹森」運動，而川普則支持這項努力。",
+      "english": [
+        "A number of prominent tech figures have recently backed a campaign asking the AI chip giant to give Jensen Huang his job back. Supporters of this movement launched the effort hoping to reinstate the former chief executive officer.",
+        "However, company representatives firmly dismissed the outside pressure and rejected the initiative. Nvidia officials stated that they have no intention of changing leadership based on external demands.",
+        "Meanwhile, political figures such as Donald Trump have openly expressed support for the effort to reinstate the former CEO. The unfolding situation continues to draw significant attention from industry observers."
+      ],
+      "translation": [
+        "許多知名的科技界人士最近支持了一項運動，要求這家人工智慧晶片巨頭讓黃仁勳恢復職務。該運動的支持者發起這項努力，希望能讓這位前執行長復職。",
+        "然而，公司代表堅決駁回了來自外部的壓力並拒絕了這項提議。輝達官員表示，他們無意根據外部要求更換領導層。",
+        "與此同時，像唐納·川普這樣的政治人物公開表態支持讓前執行長復職的努力。這一發展局勢持續吸引業界觀察家的高度關注。"
+      ],
+      "vocabulary": [
+        {
+          "term": "campaign",
+          "pos": "noun",
+          "collocations": "launch a campaign; support a campaign",
+          "meaning": "活動；運動",
+          "synonyms": [
+            "movement; drive",
+            "effort; crusade"
+          ],
+          "family": "campaign; campaigning",
+          "sentence": "A number of prominent tech figures have recently backed a campaign asking the AI chip giant to give Jensen Huang his job back."
+        },
+        {
+          "term": "supporter",
+          "pos": "noun",
+          "collocations": "loyal supporter; campaign supporter",
+          "meaning": "支持者",
+          "synonyms": [
+            "follower; advocate",
+            "backer; partisan"
+          ],
+          "family": "support; supporter; supportive",
+          "sentence": "Supporters of this movement launched the effort hoping to reinstate the former chief executive officer."
+        },
+        {
+          "term": "movement",
+          "pos": "noun",
+          "collocations": "start a movement; social movement",
+          "meaning": "運動；活動",
+          "synonyms": [
+            "campaign; crusade",
+            "drive; initiative"
+          ],
+          "family": "move; movement; moveable",
+          "sentence": "Supporters of this movement launched the effort hoping to reinstate the former chief executive officer."
+        },
+        {
+          "term": "effort",
+          "pos": "noun",
+          "collocations": "make an effort; join an effort",
+          "meaning": "努力；嘗試",
+          "synonyms": [
+            "attempt; endeavor",
+            "try; undertaking"
+          ],
+          "family": "effort; effortless",
+          "sentence": "Supporters of this movement launched the effort hoping to reinstate the former chief executive officer."
+        },
+        {
+          "term": "dismiss",
+          "pos": "verb",
+          "collocations": "dismiss a claim; dismiss a request",
+          "meaning": "駁回；解雇",
+          "synonyms": [
+            "reject; discard",
+            "repudiate; set aside"
+          ],
+          "family": "dismiss; dismissal; dismissing",
+          "sentence": "However, company representatives firmly dismissed the outside pressure and rejected the initiative."
+        },
+        {
+          "term": "pressure",
+          "pos": "noun",
+          "collocations": "outside pressure; financial pressure",
+          "meaning": "壓力",
+          "synonyms": [
+            "stress; strain",
+            "tension; burden"
+          ],
+          "family": "press; pressure; pressing",
+          "sentence": "However, company representatives firmly dismissed the outside pressure and rejected the initiative."
+        },
+        {
+          "term": "initiative",
+          "pos": "noun",
+          "collocations": "launch an initiative; new initiative",
+          "meaning": "倡議；新措施",
+          "synonyms": [
+            "plan; scheme",
+            "enterprise; proposal"
+          ],
+          "family": "initiate; initiative; initiator",
+          "sentence": "However, company representatives firmly dismissed the outside pressure and rejected the initiative."
+        },
+        {
+          "term": "leadership",
+          "pos": "noun",
+          "collocations": "change leadership; strong leadership",
+          "meaning": "領導層；領導能力",
+          "synonyms": [
+            "management; direction",
+            "guidance; administration"
+          ],
+          "family": "lead; leader; leadership",
+          "sentence": "Nvidia officials stated that they have no intention of changing leadership based on external demands."
+        },
+        {
+          "term": "demand",
+          "pos": "noun",
+          "collocations": "meet a demand; external demand",
+          "meaning": "要求；需求",
+          "synonyms": [
+            "request; requirement",
+            "claim; order"
+          ],
+          "family": "demand; demanding",
+          "sentence": "Nvidia officials stated that they have no intention of changing leadership based on external demands."
+        },
+        {
+          "term": "attention",
+          "pos": "noun",
+          "collocations": "draw attention; pay attention",
+          "meaning": "注意；關注",
+          "synonyms": [
+            "notice; regard",
+            "heed; focus"
+          ],
+          "family": "attend; attentive; attention",
+          "sentence": "The unfolding situation continues to draw significant attention from industry observers."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "A number of prominent tech figures have recently ______ a campaign asking the AI chip giant to give Jensen Huang his job back.",
+          "options": [
+            "back",
+            "backed",
+            "backing",
+            "to back"
+          ],
+          "answer": "B",
+          "locator": "現在完成時態 (Present Perfect Tense)",
+          "explanation": "句首主詞 \"A number of prominent tech figures\" 為複數，且後方搭配助動詞 \"have recently\"，因此空格處需填入過去分詞 \"backed\" 以形成現在完成時態（have + 過去分詞）。"
+        },
+        {
+          "prompt": "Supporters of this movement launched the effort ______ the former chief executive officer.",
+          "options": [
+            "reinstate",
+            "reinstated",
+            "reinstates",
+            "to reinstate"
+          ],
+          "answer": "D",
+          "locator": "不定詞表示目的 (Infinitive of Purpose)",
+          "explanation": "空格處用來表達發起這項努力的「目的」（希望藉此讓前執行長復職），在英文中習慣使用不定詞片語 \"to reinstate\" 來修飾動詞 \"launched\"。"
+        },
+        {
+          "prompt": "Nvidia officials stated that they have no intention of ______ leadership based on external demands.",
+          "options": [
+            "change",
+            "changed",
+            "changing",
+            "to change"
+          ],
+          "answer": "C",
+          "locator": "介系詞受詞 (Object of Preposition)",
+          "explanation": "空格前方為介系詞 \"of\"（intention of...），在英文中，介系詞後面若接動詞，該動詞必須變化為動名詞（V-ing）型態，因此選 \"changing\"。"
+        }
+      ],
+      "part6": {
+        "title": "Internal Memo: Corporate Leadership and Governance",
+        "passage": "To all staff members,\n\nWe are writing to address recent public discussions regarding Nvidia and our executive team. As you know, our company recently faced external campaigns and outside pressure 【1】 former leadership to return. \n\nHowever, management wants to reassure all employees that our current strategic direction remains stable. We firmly reject any external initiatives 【2】 seek to destabilize our corporate governance. \n\nOur officials have clearly stated that there is no intention of changing our leadership team based on external demands. We appreciate your continued dedication and focus 【3】 your daily responsibilities during this time. \n\nShould you have any questions or concerns, please feel free to reach out to the human resources department. Thank you for your hard work and 【4】.\n\nBest regards,\nCorporate Communications",
+        "questions": [
+          {
+            "prompt": "Choose the best word for blank 【1】.",
+            "options": [
+              "ask",
+              "asking",
+              "asked",
+              "to ask"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"outside pressure 【1】 former leadership\"",
+            "explanation": "空格處需填入現在分詞作為後置修飾語，用來形容 \"outside pressure\"（要求前領導階層回歸的外部壓力），故選 \"asking\"。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【2】.",
+            "options": [
+              "who",
+              "which",
+              "where",
+              "whose"
+            ],
+            "answer": "B",
+            "locator": "第 2 段 \"external initiatives 【2】 seek to\"",
+            "explanation": "先行詞為 \"external initiatives\"（非人事物），且關係子句中缺少主詞，因此應使用關代 \"which\"。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【3】.",
+            "options": [
+              "on",
+              "at",
+              "in",
+              "with"
+            ],
+            "answer": "A",
+            "locator": "第 3 段 \"focus 【3】 your daily responsibilities\"",
+            "explanation": "英文中表達「專注於某事」的固定搭配詞為 \"focus on\"，故選介系詞 \"on\"。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【4】.",
+            "options": [
+              "support",
+              "supporting",
+              "supportive",
+              "supporter"
+            ],
+            "answer": "A",
+            "locator": "第 4 段 \"hard work and 【4】\"",
+            "explanation": "句型結構為 \"hard work and [noun]\"，需與名詞 \"work\" 平行對等，故選名詞 \"support\"（支持）。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Read the news article about Nvidia and answer the following questions.",
+        "questions": [
+          {
+            "prompt": "What do supporters of the campaign want the AI chip giant to do?",
+            "options": [
+              "Change its company name",
+              "Give Jensen Huang his job back",
+              "Move its headquarters overseas",
+              "Stop producing AI chips"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"give Jensen Huang his job back\"",
+            "explanation": "文章第一段明確指出，支持這項運動的人士要求該人工智慧晶片巨頭讓黃仁勳（Jensen Huang）拿回工作、恢復職務。"
+          },
+          {
+            "prompt": "How did Nvidia officials respond to the outside pressure and initiative?",
+            "options": [
+              "They accepted all demands immediately.",
+              "They agreed to hold a public vote.",
+              "They firmly dismissed the outside pressure.",
+              "They decided to resign from office."
+            ],
+            "answer": "C",
+            "locator": "第 2 段 \"firmly dismissed the outside pressure\"",
+            "explanation": "文章第二段提到，公司代表堅決駁回了外部壓力並拒絕了這項提議，表示無意更改領導層。"
+          },
+          {
+            "prompt": "Which political figure has openly expressed support for reinstating the former CEO?",
+            "options": [
+              "Donald Trump",
+              "Jensen Huang",
+              "A tech billionaire",
+              "An industry observer"
+            ],
+            "answer": "A",
+            "locator": "第 3 段 \"Donald Trump have openly expressed support\"",
+            "explanation": "文章第三段指出，像唐納·川普（Donald Trump）這樣的政治人物公開表態支持讓前執行長復職的努力。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/cry49plv8v3go",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    },
+    "politics": {
+      "title": "Major Review Urges Complete System Reset",
+      "summary": "一項重大審查呼籲對教育、工作與福利體系進行全面改革，旨在協助大量年輕人進入就業市場。",
+      "english": [
+        "A major review headed by Alan Milburn suggests that a complete system reset is necessary to help four hundred and forty thousand young individuals secure employment.",
+        "The upcoming report highlights that sweeping reforms across education, work, and welfare frameworks are vital for this demographic.",
+        "Observers note that these suggested adjustments aim to resolve long-standing challenges within the current employment pathways."
+      ],
+      "translation": [
+        "由艾倫·米尔本主導的一項重大審查表明，必須進行徹底的系統重置，以協助四十四萬名年輕人找到工作。",
+        "即將發布的報告強調，跨越教育、工作與福利體系的全面改革對這群人口至關重要。",
+        "觀察人士指出，這些建議的調整旨在解決當前就業途徑中長期存在的挑戰。"
+      ],
+      "vocabulary": [
+        {
+          "term": "review",
+          "pos": "noun",
+          "collocations": "major review; conduct a review",
+          "meaning": "審查；檢討",
+          "synonyms": [
+            "assessment; evaluation",
+            "inspection; analysis"
+          ],
+          "family": "review; reviewer; reviewing",
+          "sentence": "A major review headed by Alan Milburn suggests that a complete system reset is necessary to help four hundred and forty thousand young individuals secure employment."
+        },
+        {
+          "term": "system",
+          "pos": "noun",
+          "collocations": "complete system; welfare system",
+          "meaning": "系統；體系",
+          "synonyms": [
+            "framework; structure",
+            "network; organization"
+          ],
+          "family": "system; systematic; systemically",
+          "sentence": "A major review headed by Alan Milburn suggests that a complete system reset is necessary to help four hundred and forty thousand young individuals secure employment."
+        },
+        {
+          "term": "employment",
+          "pos": "noun",
+          "collocations": "secure employment; full employment",
+          "meaning": "就業；雇用",
+          "synonyms": [
+            "job; work",
+            "occupation; engagement"
+          ],
+          "family": "employ; employee; employer; employment",
+          "sentence": "A major review headed by Alan Milburn suggests that a complete system reset is necessary to help four hundred and forty thousand young individuals secure employment."
+        },
+        {
+          "term": "report",
+          "pos": "noun",
+          "collocations": "upcoming report; annual report",
+          "meaning": "報告",
+          "synonyms": [
+            "document; account",
+            "briefing; record"
+          ],
+          "family": "report; reporter; reportedly",
+          "sentence": "The upcoming report highlights that sweeping reforms across education, work, and welfare frameworks are vital for this demographic."
+        },
+        {
+          "term": "reforms",
+          "pos": "noun",
+          "collocations": "sweeping reforms; policy reforms",
+          "meaning": "改革",
+          "synonyms": [
+            "overhaul; restructuring",
+            "transformation; changes"
+          ],
+          "family": "reform; reformer; reforming",
+          "sentence": "The upcoming report highlights that sweeping reforms across education, work, and welfare frameworks are vital for this demographic."
+        },
+        {
+          "term": "education",
+          "pos": "noun",
+          "collocations": "education system; higher education",
+          "meaning": "教育",
+          "synonyms": [
+            "schooling; training",
+            "instruction; learning"
+          ],
+          "family": "educate; educator; educational; education",
+          "sentence": "The upcoming report highlights that sweeping reforms across education, work, and welfare frameworks are vital for this demographic."
+        },
+        {
+          "term": "frameworks",
+          "pos": "noun",
+          "collocations": "welfare frameworks; legal framework",
+          "meaning": "體制；框架",
+          "synonyms": [
+            "structure; system",
+            "outline; guidelines"
+          ],
+          "family": "framework",
+          "sentence": "The upcoming report highlights that sweeping reforms across education, work, and welfare frameworks are vital for this demographic."
+        },
+        {
+          "term": "challenges",
+          "pos": "noun",
+          "collocations": "current challenges; facing challenges",
+          "meaning": "挑戰",
+          "synonyms": [
+            "difficulties; obstacles",
+            "problems; hurdles"
+          ],
+          "family": "challenge; challenging; challenger",
+          "sentence": "Observers note that these suggested adjustments aim to resolve long-standing challenges within the current employment pathways."
+        },
+        {
+          "term": "adjustments",
+          "pos": "noun",
+          "collocations": "suggested adjustments; salary adjustments",
+          "meaning": "調整",
+          "synonyms": [
+            "modifications; alterations",
+            "changes; adaptations"
+          ],
+          "family": "adjust; adjustable; adjustment",
+          "sentence": "Observers note that these suggested adjustments aim to resolve long-standing challenges within the current employment pathways."
+        },
+        {
+          "term": "pathways",
+          "pos": "noun",
+          "collocations": "employment pathways; career pathways",
+          "meaning": "途徑；通道",
+          "synonyms": [
+            "routes; avenues",
+            "paths; channels"
+          ],
+          "family": "pathway; path",
+          "sentence": "Observers note that these suggested adjustments aim to resolve long-standing challenges within the current employment pathways."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "A major review headed by Alan Milburn suggests that a complete system reset is necessary to help young individuals _____ employment.",
+          "options": [
+            "secure",
+            "securing",
+            "secured",
+            "securely"
+          ],
+          "answer": "A",
+          "locator": "help + object + bare infinitive",
+          "explanation": "英文文法中，help 作為使役動詞或準使役動詞時，其後接受詞（young individuals）可接原形動詞（bare infinitive）作受詞補語。因此應選擇原形動詞 secure。"
+        },
+        {
+          "prompt": "The upcoming report highlights that sweeping reforms across education, work, and welfare frameworks _____ vital for this demographic.",
+          "options": [
+            "is",
+            "are",
+            "was",
+            "be"
+          ],
+          "answer": "B",
+          "locator": "plural subject-verb agreement",
+          "explanation": "句子的主詞為複數名詞組 'sweeping reforms across education, work, and welfare frameworks'，核心主詞為複數的 reforms，因此現在式動詞必須使用複數形 are。"
+        },
+        {
+          "prompt": "Observers note that these suggested adjustments aim to resolve long-standing challenges _____ the current employment pathways.",
+          "options": [
+            "at",
+            "on",
+            "within",
+            "to"
+          ],
+          "answer": "C",
+          "locator": "prepositional phrase of location/scope",
+          "explanation": "空格處需要一個介系詞來表達「在...之內、內部」的範圍。'within the current employment pathways' 表示在目前的就業途徑之內，故選 within 最合適。"
+        }
+      ],
+      "part6": {
+        "title": "Internal Memo on Educational and Employment Reforms",
+        "passage": "Dear Colleagues, As we review our internal policies, we must acknowledge the recent public discussions regarding work and welfare frameworks. Alan Milburn's review calls for sweeping reforms to education, work, and welfare systems. 【1】 getting young people into secure jobs is our primary focus. We believe that 【2】 system reset is necessary to address current challenges. Furthermore, our team will analyze the upcoming report carefully to ensure we align our programs. Please review the attached notes and submit your feedback 【3】 Friday afternoon. Thank you for your continued dedication and support, Management. 【4】",
+        "questions": [
+          {
+            "prompt": "Choose the best word for blank 【1】.",
+            "options": [
+              "Successfully",
+              "Successful",
+              "Success",
+              "Succeed"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"【1】 getting young people into secure jobs\"",
+            "explanation": "空格處用來修飾後方的動名詞片語 'getting young people into secure jobs'，需要副詞形式，故選副詞 Successfully。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【2】.",
+            "options": [
+              "a",
+              "an",
+              "the",
+              "these"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"that 【2】 system reset is necessary\"",
+            "explanation": "句中需要一個表示單數泛指的冠詞。'system reset' 為單數可數名詞片語，字首發音為子音音素，因此填入 indefinite article 'a'。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【3】.",
+            "options": [
+              "in",
+              "on",
+              "by",
+              "at"
+            ],
+            "answer": "C",
+            "locator": "第 1 段 \"submit your feedback 【3】 Friday afternoon\"",
+            "explanation": "表示「在某個期限（如星期五下午）之前」繳交意見，介系詞通常使用 by。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【4】.",
+            "options": [
+              "Sincerely",
+              "Regards",
+              "Best",
+              "Humbly"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"Management. 【4】\"",
+            "explanation": "信件結尾署名前的常用結語，'Regards' 適合出現在由 Management 署名的內部備忘錄結尾。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Read the news article and answer the reading comprehension questions.",
+        "questions": [
+          {
+            "prompt": "Who headed the major review mentioned in the text?",
+            "options": [
+              "Alan Milburn",
+              "An anonymous observer",
+              "A young individual",
+              "A welfare officer"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"A major review headed by Alan Milburn\"",
+            "explanation": "文章第一段明確指出該項重大審查是由 Alan Milburn 所領導（headed by Alan Milburn）。"
+          },
+          {
+            "prompt": "How many young individuals are mentioned as needing help to secure employment?",
+            "options": [
+              "Four hundred thousand",
+              "Four hundred and forty thousand",
+              "Four thousand and forty",
+              "Four hundred and fourteen thousand"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"four hundred and forty thousand young individuals\"",
+            "explanation": "文章第一段提到需要協助進入就業市場的年輕人數目為四十四萬（four hundred and forty thousand）。"
+          },
+          {
+            "prompt": "What do the suggested adjustments aim to resolve?",
+            "options": [
+              "Outdated technology products",
+              "Long-standing challenges within current employment pathways",
+              "International trade tariffs",
+              "Corporate tax disputes"
+            ],
+            "answer": "B",
+            "locator": "第 3 段 \"aim to resolve long-standing challenges within the current employment pathways\"",
+            "explanation": "文章第三段指出，這些建議的調整旨在解決目前就業途徑中長期存在的挑戰。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/c38xzy980924o",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    },
+    "techLife": {
+      "title": "GTA 6 Hacker Pleads Guilty",
+      "summary": "一名21歲的黑客對泄露Grand Theft Auto 6遊戲等黑客行為認罪，這些行為是他青少年時期進行的。",
+      "english": [
+        "A twenty-one-year-old hacker recently pleaded guilty to multiple high-profile cyber attacks. The defendant admitted his involvement in breaching major gaming companies, including Rockstar Games.",
+        "The illegal activities were originally carried out when the individual was still a teenager. Following a period of treatment in a secure hospital, the young man entered his formal guilty plea.",
+        "Authorities noted that the breaches caused significant concern within the tech industry. Legal proceedings will continue to determine the final consequences for the confessed hacker."
+      ],
+      "translation": [
+        "一名二十一歲的黑客最近對多起備受矚目的網絡攻擊表示認罪。被告承認他參與了入侵包括Rockstar Games在內的大型遊戲公司。",
+        "這些非法活動最初是在該個人還是青少年時期的進行的。在安全醫院接受一段時間的治療後，這名年輕男子正式提出了認罪。",
+        "當局指出，這些漏洞在科技界引起了廣泛的關注。法律程序將繼續進行，以確定這名坦白黑客的最終後果。"
+      ],
+      "vocabulary": [
+        {
+          "term": "hacker",
+          "pos": "noun",
+          "collocations": "skilled hacker; computer hacker",
+          "meaning": "黑客",
+          "synonyms": [
+            "cybercriminal; intruder",
+            "cracker; digital attacker"
+          ],
+          "family": "hack; hacked; hacking",
+          "sentence": "A twenty-one-year-old hacker recently pleaded guilty to multiple high-profile cyber attacks."
+        },
+        {
+          "term": "pleaded",
+          "pos": "verb",
+          "collocations": "pleaded guilty; pleaded innocent",
+          "meaning": "辯護；認罪",
+          "synonyms": [
+            "confessed; admitted",
+            "acknowledged; responded"
+          ],
+          "family": "plead; pleading; plea",
+          "sentence": "A twenty-one-year-old hacker recently pleaded guilty to multiple high-profile cyber attacks."
+        },
+        {
+          "term": "defendant",
+          "pos": "noun",
+          "collocations": "accused defendant; criminal defendant",
+          "meaning": "被告",
+          "synonyms": [
+            "accused; suspect",
+            "prisoner; litigant"
+          ],
+          "family": "defend; defense; defensive",
+          "sentence": "The defendant admitted his involvement in breaching major gaming companies, including Rockstar Games."
+        },
+        {
+          "term": "involvement",
+          "pos": "noun",
+          "collocations": "direct involvement; active involvement",
+          "meaning": "參與；牽涉",
+          "synonyms": [
+            "participation; engagement",
+            "association; connection"
+          ],
+          "family": "involve; involved; involving",
+          "sentence": "The defendant admitted his involvement in breaching major gaming companies, including Rockstar Games."
+        },
+        {
+          "term": "breaching",
+          "pos": "verb",
+          "collocations": "breaching security; breaching systems",
+          "meaning": "入侵；違反",
+          "synonyms": [
+            "violating; cracking",
+            "penetrating; bursting"
+          ],
+          "family": "breach; breached",
+          "sentence": "The defendant admitted his involvement in breaching major gaming companies, including Rockstar Games."
+        },
+        {
+          "term": "teenager",
+          "pos": "noun",
+          "collocations": "young teenager; teenage years",
+          "meaning": "青少年",
+          "synonyms": [
+            "adolescent; youth",
+            "minor; youngster"
+          ],
+          "family": "teenage; teens",
+          "sentence": "The illegal activities were originally carried out when the individual was still a teenager."
+        },
+        {
+          "term": "treatment",
+          "pos": "noun",
+          "collocations": "medical treatment; hospital treatment",
+          "meaning": "治療；處理",
+          "synonyms": [
+            "therapy; care",
+            "remedy; healing"
+          ],
+          "family": "treat; treated; treating",
+          "sentence": "Following a period of treatment in a secure hospital, the young man entered his formal guilty plea."
+        },
+        {
+          "term": "authorities",
+          "pos": "noun",
+          "collocations": "local authorities; government authorities",
+          "meaning": "當局；官方",
+          "synonyms": [
+            "officials; administration",
+            "government; management"
+          ],
+          "family": "authority; authorize; authorized",
+          "sentence": "Authorities noted that the breaches caused significant concern within the tech industry."
+        },
+        {
+          "term": "industry",
+          "pos": "noun",
+          "collocations": "tech industry; global industry",
+          "meaning": "產業；工業",
+          "synonyms": [
+            "sector; market",
+            "business; trade"
+          ],
+          "family": "industrial; industrially",
+          "sentence": "Authorities noted that the breaches caused significant concern within the tech industry."
+        },
+        {
+          "term": "consequences",
+          "pos": "noun",
+          "collocations": "serious consequences; legal consequences",
+          "meaning": "後果；結果",
+          "synonyms": [
+            "results; outcomes",
+            "effects; repercussions"
+          ],
+          "family": "consequent; consequently",
+          "sentence": "Legal proceedings will continue to determine the final consequences for the confessed hacker."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "The young man entered his formal guilty plea _______ a period of treatment in a secure hospital.",
+          "options": [
+            "A) during",
+            "B) while",
+            "C) when",
+            "D) because"
+          ],
+          "answer": "A",
+          "locator": "介系詞與連接詞的區分",
+          "explanation": "空格後面接的是名詞片語「a period of treatment」，因此需要使用介系詞「during」（在……期間），而「while」、「when」和「because」在此句法中通常接子句或需要不同的句構。"
+        },
+        {
+          "prompt": "Authorities noted that the security breaches _______ significant concern within the tech industry.",
+          "options": [
+            "A) cause",
+            "B) causing",
+            "C) caused",
+            "D) has caused"
+          ],
+          "answer": "C",
+          "locator": "主動詞與時態的一致性",
+          "explanation": "子句敘述過去發生的事情（noted that the breaches...），因此主要動詞應使用過去式「caused」，以保持句意與時態的一致性。"
+        },
+        {
+          "prompt": "The defendant admitted _______ involved in breaching major gaming companies.",
+          "options": [
+            "A) be",
+            "B) being",
+            "C) to be",
+            "D) been"
+          ],
+          "answer": "B",
+          "locator": "動詞 admit 的受詞型態",
+          "explanation": "英文中動詞「admit」後面通常接動名詞（V-ing）作為受詞，因此選「being」最符合文法規則。"
+        }
+      ],
+      "part6": {
+        "title": "Notice on Cybersecurity Policies",
+        "passage": "Dear Employees,【1】 recent security events in the tech sector, management has decided to update our internal cybersecurity protocols. All staff members are required to review the new guidelines 【2】 Friday afternoon. Any suspicious online activity must be reported immediately to the IT department. We appreciate your cooperation in keeping our company network safe and 【3】. Thank you for your dedication to maintaining a secure workspace. 【4】 best regards, Operations Team.",
+        "questions": [
+          {
+            "prompt": "選擇最適當的選項填入 【1】。",
+            "options": [
+              "A) Because of",
+              "B) Because",
+              "C) Although",
+              "D) Despite of"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"【1】 recent security events\"",
+            "explanation": "空格後方為名詞片語「recent security events」，因此需要使用複合介系詞「Because of」（因為）來表達原因。"
+          },
+          {
+            "prompt": "選擇最適當的選項填入 【2】。",
+            "options": [
+              "A) by",
+              "B) at",
+              "C) on",
+              "D) in"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"guidelines 【2】 Friday afternoon\"",
+            "explanation": "表示在某個時間點之前完成動作，通常使用介系詞「by」（不遲於、在……之前）。"
+          },
+          {
+            "prompt": "選擇最適當的選項填入 【3】。",
+            "options": [
+              "A) secure",
+              "B) security",
+              "C) securely",
+              "D) securities"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"safe and 【3】\"",
+            "explanation": "and 連接兩個對等的形容詞，前面是「safe」，因此後面也需要形容詞「secure」（安全的）。"
+          },
+          {
+            "prompt": "選擇最適當的選項填入 【4】。",
+            "options": [
+              "A) Please",
+              "B) With",
+              "C) Yours",
+              "D) Sincerely"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"【4】 best regards\"",
+            "explanation": "書信結尾常見的搭配詞為「With best regards」（祝好），因此選 B。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "根據以下新聞短文回答問題：",
+        "questions": [
+          {
+            "prompt": "What did the twenty-one-year-old hacker recently do?",
+            "options": [
+              "A) Pleaded guilty to cyber attacks",
+              "B) Started a new gaming company",
+              "C) Graduated from university",
+              "D) Escaped from a hospital"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"A twenty-one-year-old hacker recently pleaded guilty to multiple high-profile cyber attacks.\"",
+            "explanation": "文章第一段明確指出該名21歲的黑客最近對多起高關注度的網絡攻擊表示認罪。"
+          },
+          {
+            "prompt": "When were the original illegal activities carried out?",
+            "options": [
+              "A) When he was a child",
+              "B) When he was still a teenager",
+              "C) Last week",
+              "D) During his employment at Rockstar Games"
+            ],
+            "answer": "B",
+            "locator": "第 2 段 \"The illegal activities were originally carried out when the individual was still a teenager.\"",
+            "explanation": "文章第二段提到，這些非法活動原本是在該個人還是青少年時進行的。"
+          },
+          {
+            "prompt": "What happened to the hacker before his formal guilty plea?",
+            "options": [
+              "A) He worked for Rockstar Games",
+              "B) He received treatment in a secure hospital",
+              "C) He moved to another country",
+              "D) He gave a public speech"
+            ],
+            "answer": "B",
+            "locator": "第 2 段 \"Following a period of treatment in a secure hospital, the young man entered his formal guilty plea.\"",
+            "explanation": "文章第二段指出，在安全醫院接受一段時間的治療後，這名年輕男子才正式提出認罪。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/cq99exy89dngo",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    }
+  },
   "2026-11-16": {
     "finance": {
       "title": "Report Recommends National Insurance Cut for Youth to Boost Employment",
