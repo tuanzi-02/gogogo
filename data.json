@@ -1,4 +1,819 @@
 {
+  "2026-11-18": {
+    "finance": {
+      "title": "Nvidia Posts Strong Financial Results Following Leadership Departure",
+      "summary": "輝達在公布強勁季度財報之際，明確表示不會讓前執行長黃仁勳復職，引起金融市場廣泛關注。",
+      "english": [
+        "Technology company Nvidia delivered strong quarterly earnings on Tuesday, signaling solid performance despite substantial managerial uncertainty. The financial report showed bumper results across its operations, reassuring investors who closely monitor corporate revenue trends.",
+        "The financial announcement occurred amid the dramatic exit of former chief executive officer Jensen Huang. Market participants had questioned whether the enterprise might consider bringing the previous leader back into his former administrative position.",
+        "However, the company confirmed that it will not reinstate Huang following his sudden departure. Management emphasized that Nvidia will continue executing its strategic objectives without reversing the executive decision."
+      ],
+      "translation": [
+        "科技公司輝達於週二公布了強勁的季度收益，顯示在龐大的管理階層不確定性下依然表現穩健。該財務報告展現了全業務的豐碩成果，讓密切關注企業營收趨勢的投資人感到安心。",
+        "此項財務公告發生於前執行長黃仁勳戲劇性離職之際。市場參與者先前曾質疑該企業是否可能會考慮讓這位前領導人重返原有的管理職位。",
+        "然而，該公司證實，在黃仁勳突然離去之後，並不會讓他復職。管理階層強調，輝達將持續執行其策略目標，不會推翻這項高層決策。"
+      ],
+      "vocabulary": [
+        {
+          "term": "quarterly earnings",
+          "pos": "n.",
+          "collocations": "release quarterly earnings; report quarterly earnings",
+          "meaning": "季度收益；季度獲利",
+          "synonyms": [
+            "quarterly profits; three-month revenue",
+            "periodic income; quarterly returns"
+          ],
+          "family": "quarter; quarterly",
+          "sentence": "Technology company Nvidia delivered strong quarterly earnings on Tuesday, signaling solid performance despite substantial managerial uncertainty."
+        },
+        {
+          "term": "bumper",
+          "pos": "adj.",
+          "collocations": "bumper results; bumper harvest",
+          "meaning": "特大的；豐收的",
+          "synonyms": [
+            "exceptional; unusually large",
+            "abundant; record-breaking"
+          ],
+          "family": "bump; bumper",
+          "sentence": "The financial report showed bumper results across its operations, reassuring investors who closely monitor corporate revenue trends."
+        },
+        {
+          "term": "financial report",
+          "pos": "n.",
+          "collocations": "publish a financial report; analyze a financial report",
+          "meaning": "財務報告",
+          "synonyms": [
+            "earnings statement; fiscal summary",
+            "annual statement; financial disclosure"
+          ],
+          "family": "finance; financial; financially",
+          "sentence": "The financial report showed bumper results across its operations, reassuring investors who closely monitor corporate revenue trends."
+        },
+        {
+          "term": "investors",
+          "pos": "n.",
+          "collocations": "institutional investors; attract investors",
+          "meaning": "投資人",
+          "synonyms": [
+            "shareholders; capital providers",
+            "backers; financiers"
+          ],
+          "family": "invest; investment; investor",
+          "sentence": "The financial report showed bumper results across its operations, reassuring investors who closely monitor corporate revenue trends."
+        },
+        {
+          "term": "announcement",
+          "pos": "n.",
+          "collocations": "make an announcement; official announcement",
+          "meaning": "公告；發表",
+          "synonyms": [
+            "formal statement; public notice",
+            "declaration; notification"
+          ],
+          "family": "announce; announcer; unannounced",
+          "sentence": "The financial announcement occurred amid the dramatic exit of former chief executive officer Jensen Huang."
+        },
+        {
+          "term": "dramatic",
+          "pos": "adj.",
+          "collocations": "dramatic exit; dramatic change",
+          "meaning": "引人注目的；劇烈的",
+          "synonyms": [
+            "striking; sensational",
+            "abrupt; sudden"
+          ],
+          "family": "drama; dramatically",
+          "sentence": "The financial announcement occurred amid the dramatic exit of former chief executive officer Jensen Huang."
+        },
+        {
+          "term": "enterprise",
+          "pos": "n.",
+          "collocations": "commercial enterprise; large enterprise",
+          "meaning": "企業；公司",
+          "synonyms": [
+            "corporation; business",
+            "firm; venture"
+          ],
+          "family": "enterprising; enterpriser",
+          "sentence": "Market participants had questioned whether the enterprise might consider bringing the previous leader back into his former administrative position."
+        },
+        {
+          "term": "reinstate",
+          "pos": "v.",
+          "collocations": "reinstate an employee; reinstate a policy",
+          "meaning": "使復職；恢復",
+          "synonyms": [
+            "restore; bring back",
+            "rehire; re-establish"
+          ],
+          "family": "reinstatement; reinstating",
+          "sentence": "However, the company confirmed that it will not reinstate Huang following his sudden departure."
+        },
+        {
+          "term": "departure",
+          "pos": "n.",
+          "collocations": "sudden departure; leadership departure",
+          "meaning": "離開；離職",
+          "synonyms": [
+            "exit; resignation",
+            "leaving; retirement"
+          ],
+          "family": "depart; departing",
+          "sentence": "However, the company confirmed that it will not reinstate Huang following his sudden departure."
+        },
+        {
+          "term": "strategic",
+          "pos": "adj.",
+          "collocations": "strategic objectives; strategic planning",
+          "meaning": "策略性的；關鍵的",
+          "synonyms": [
+            "tactical; calculated",
+            "planned; deliberate"
+          ],
+          "family": "strategy; strategically; strategist",
+          "sentence": "Management emphasized that Nvidia will continue executing its strategic objectives without reversing the executive decision."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "Despite the leadership changes, the company managed to post _______ quarterly earnings than market analysts had initially predicted.",
+          "options": [
+            "strong",
+            "stronger",
+            "strongly",
+            "strength"
+          ],
+          "answer": "B",
+          "locator": "比較級結構 (than 提示使用比較級形容詞)",
+          "explanation": "空格後方出現比較級連接詞「than」，因此需要使用比較級形容詞「stronger」來修飾名詞片語「quarterly earnings」。選項 (A) 為原級，(C) 為副詞，(D) 為名詞，皆不符合語法。"
+        },
+        {
+          "prompt": "The corporate communications officer confirmed that management will not _______ any executive who resigned earlier this week.",
+          "options": [
+            "reinstates",
+            "reinstating",
+            "reinstate",
+            "reinstated"
+          ],
+          "answer": "C",
+          "locator": "助動詞結構 (will not + 原形動詞)",
+          "explanation": "助動詞「will」以及否定詞「not」之後必須接原形動詞。因此正確答案為原形動詞 (C) reinstate。選項 (A) 為第三人稱單數式，(B) 為現在分詞/動名詞，(D) 為過去式或過去分詞。"
+        },
+        {
+          "prompt": "Investors were pleased to learn that Nvidia had achieved bumper results _______ its core business operations.",
+          "options": [
+            "across",
+            "between",
+            "toward",
+            "beside"
+          ],
+          "answer": "A",
+          "locator": "介系詞用法 (across its core business operations 表示在...整體各領域)",
+          "explanation": "介系詞「across」在此處表示「遍及、橫跨整個業務領域」，為商業英文中「across operations」的常見搭配。選項 (B) between 用於兩者之間，(C) toward 表示方向或朝向，(D) beside 表示在旁邊，語意皆不通順。"
+        }
+      ],
+      "part6": {
+        "title": "Corporate Update Memorandum",
+        "passage": "To: All Financial Staff\nFrom: Executive Committee\nDate: November 18, 2026\nSubject: Third-Quarter Performance\n\nWe are pleased to announce that our latest financial evaluation reflects outstanding results. Despite recent organizational adjustments, our team has delivered strong quarterly 【1】 across all divisions. This performance demonstrates our ongoing operational strength.\n\nFollowing the recent exit of our former executive, questions were raised regarding potential administrative restructuring. We want to state clearly that the organization will not 【2】 previous personnel. Our future leadership path remains fully settled.\n\n【3】. Our senior directors are confident in this plan.\n\nWe extend our sincere gratitude to everyone for maintaining high standards. Your dedication ensures that our client relationships remain 【4】 and productive in the quarters ahead.",
+        "questions": [
+          {
+            "prompt": "Choose the best word to fill in blank 【1】.",
+            "options": [
+              "earnings",
+              "earns",
+              "earned",
+              "earning"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"delivered strong quarterly 【1】 across all divisions\"",
+            "explanation": "空格前有形容詞「strong quarterly」，後方需要名詞來作為動詞「delivered」的受詞。「quarterly earnings」（季度收益）是標準商業名詞片語，因此應選 (A) earnings。"
+          },
+          {
+            "prompt": "Choose the best word to fill in blank 【2】.",
+            "options": [
+              "reinstate",
+              "reinstated",
+              "reinstates",
+              "reinstating"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"will not 【2】 previous personnel\"",
+            "explanation": "助動詞「will not」後方必須接原形動詞。選項 (A) reinstate 為原形動詞，符合文法結構。"
+          },
+          {
+            "prompt": "Choose the best sentence to fill in blank 【3】.",
+            "options": [
+              "The company will continue executing its strategic objectives without interruption.",
+              "We have canceled all scheduled production runs for the next fiscal year.",
+              "Most department members requested an immediate reduction in their daily tasks.",
+              "External financial audits revealed numerous errors in our previous filings."
+            ],
+            "answer": "A",
+            "locator": "第 3 段 \"【3】. Our senior directors are confident in this plan.\"",
+            "explanation": "空格後句提到「Our senior directors are confident in this plan.」（我們的高級董事對這項計畫充滿信心），因此前一句必須提到與未來策略或計畫相關的正向陳述。(A)「公司將不中斷地繼續執行其策略目標」最符合上下文語境。"
+          },
+          {
+            "prompt": "Choose the best word to fill in blank 【4】.",
+            "options": [
+              "secure",
+              "securely",
+              "security",
+              "securing"
+            ],
+            "answer": "A",
+            "locator": "第 4 段 \"remain 【4】 and productive\"",
+            "explanation": "連綴動詞「remain」在此處接形容詞作為主詞補語，且與後方的形容詞「productive」由對等連接詞「and」並列，因此空格應填入形容詞 (A) secure。選項 (B) 為副詞，(C) 為名詞，(D) 為動名詞/分詞。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Refer to the following news report to answer the questions.",
+        "questions": [
+          {
+            "prompt": "What did Nvidia report on Tuesday?",
+            "options": [
+              "A major decline in investor interest",
+              "Strong quarterly earnings across operations",
+              "A complete change in primary business sectors",
+              "A permanent cancellation of financial reviews"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"Technology company Nvidia delivered strong quarterly earnings on Tuesday\"",
+            "explanation": "根據第一段第一句「Technology company Nvidia delivered strong quarterly earnings on Tuesday, signaling solid performance」，輝達公布了強勁的季度收益，故選 (B)。"
+          },
+          {
+            "prompt": "What had market participants questioned regarding Nvidia's leadership?",
+            "options": [
+              "Whether the former leader might be brought back",
+              "Whether the headquarters would relocate internationally",
+              "Whether new executive branches would be abolished",
+              "Whether all senior staff would immediately resign"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"Market participants had questioned whether the enterprise might consider bringing the previous leader back\"",
+            "explanation": "第二段指出「Market participants had questioned whether the enterprise might consider bringing the previous leader back into his former administrative position」，顯示市場曾質疑是否會讓前領導人復職，因此正確答案為 (A)。"
+          },
+          {
+            "prompt": "What did the company clarify regarding Jensen Huang?",
+            "options": [
+              "He has been promoted to board chairman.",
+              "He will not be reinstated to the firm.",
+              "He will immediately oversee quarterly accounting.",
+              "He decided to cancel his scheduled departure."
+            ],
+            "answer": "B",
+            "locator": "第 3 段 \"the company confirmed that it will not reinstate Huang following his sudden departure\"",
+            "explanation": "第三段開頭明確說明「the company confirmed that it will not reinstate Huang following his sudden departure」，即公司確認不會使黃仁勳復職，故選 (B)。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/cm2kl50vkwkdo",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    },
+    "politics": {
+      "title": "Home Secretary Plans to Address Policing Perceptions",
+      "summary": "內政大臣Shabana Mahmood將宣布關於警察中立性的更強指引，以處理雙軌執法的觀感問題。",
+      "english": [
+        "The home secretary has announced plans to address the public perception of two-tier policing. This initiative focuses on ensuring that law enforcement agencies maintain strict impartiality during operations. Officials indicate that stronger guidance will be provided soon.",
+        "Shabana Mahmood will deliver the formal announcement regarding these new measures. The upcoming guidance aims to strengthen public trust in the police force. Observers note that maintaining fairness is essential for community relations.",
+        "Law enforcement leaders are expected to review the updated protocols once they are released. The government hopes this strategy will resolve ongoing debates about police neutrality. Further details about the implementation will be shared in the coming days."
+      ],
+      "translation": [
+        "內政大臣已宣布計畫，以處理公眾對雙軌執法的觀感。此舉措聚焦於確保執法機構在行動中維持嚴格的中立性。官員指出，近期將提供更強而有力的指引。",
+        "Shabana Mahmood將發表關於這些新措施的正式宣布。即將出台的指引旨在加強公眾對警察部隊的信任。觀察家指出，維持公平對於社區關係至關重要。",
+        "執法領導階層預計在更新後的協定發布後進行審查。政府希望此策略能解決關於警察中立性的持續爭論。關於實施的進一步細節將在未來幾天內分享。"
+      ],
+      "vocabulary": [
+        {
+          "term": "perception",
+          "pos": "noun",
+          "collocations": "public perception; general perception",
+          "meaning": "觀感；看法",
+          "synonyms": [
+            "view; notion",
+            "impression; understanding"
+          ],
+          "family": "perceive; perceptive",
+          "sentence": "The home secretary has announced plans to address the public perception of two-tier policing."
+        },
+        {
+          "term": "impartiality",
+          "pos": "noun",
+          "collocations": "strict impartiality; maintain impartiality",
+          "meaning": "中立；公正",
+          "synonyms": [
+            "neutrality; fairness",
+            "objectivity; equity"
+          ],
+          "family": "impartial; impartially",
+          "sentence": "This initiative focuses on ensuring that law enforcement agencies maintain strict impartiality during operations."
+        },
+        {
+          "term": "guidance",
+          "pos": "noun",
+          "collocations": "stronger guidance; provide guidance",
+          "meaning": "指引；指導",
+          "synonyms": [
+            "direction; instruction",
+            "advice; counseling"
+          ],
+          "family": "guide; guided",
+          "sentence": "Officials indicate that stronger guidance will be provided soon."
+        },
+        {
+          "term": "announcement",
+          "pos": "noun",
+          "collocations": "formal announcement; make announcement",
+          "meaning": "宣布；公告",
+          "synonyms": [
+            "declaration; statement",
+            "proclamation; release"
+          ],
+          "family": "announce; announcing",
+          "sentence": "Shabana Mahmood will deliver the formal announcement regarding these new measures."
+        },
+        {
+          "term": "measures",
+          "pos": "noun",
+          "collocations": "new measures; policy measures",
+          "meaning": "措施；手段",
+          "synonyms": [
+            "steps; actions",
+            "initiatives; provisions"
+          ],
+          "family": "measure; measured",
+          "sentence": "Shabana Mahmood will deliver the formal announcement regarding these new measures."
+        },
+        {
+          "term": "trust",
+          "pos": "noun",
+          "collocations": "public trust; build trust",
+          "meaning": "信任；信賴",
+          "synonyms": [
+            "confidence; reliance",
+            "faith; belief"
+          ],
+          "family": "trustworthy; trusting",
+          "sentence": "The upcoming guidance aims to strengthen public trust in the police force."
+        },
+        {
+          "term": "relations",
+          "pos": "noun",
+          "collocations": "community relations; public relations",
+          "meaning": "關係；聯絡",
+          "synonyms": [
+            "connections; ties",
+            "affairs; links"
+          ],
+          "family": "relate; related",
+          "sentence": "Observers note that maintaining fairness is essential for community relations."
+        },
+        {
+          "term": "protocols",
+          "pos": "noun",
+          "collocations": "updated protocols; safety protocols",
+          "meaning": "協定；規程",
+          "synonyms": [
+            "procedures; rules",
+            "guidelines; standards"
+          ],
+          "family": "protocol; protocolary",
+          "sentence": "Law enforcement leaders are expected to review the updated protocols once they are released."
+        },
+        {
+          "term": "strategy",
+          "pos": "noun",
+          "collocations": "government strategy; business strategy",
+          "meaning": "策略；戰略",
+          "synonyms": [
+            "plan; approach",
+            "tactic; policy"
+          ],
+          "family": "strategic; strategically",
+          "sentence": "The government hopes this strategy will resolve ongoing debates about police neutrality."
+        },
+        {
+          "term": "implementation",
+          "pos": "noun",
+          "collocations": "full implementation; successful implementation",
+          "meaning": "實施；執行",
+          "synonyms": [
+            "execution; application",
+            "enforcement; fulfillment"
+          ],
+          "family": "implement; implemented",
+          "sentence": "Further details about the implementation will be shared in the coming days."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "The home secretary has announced plans to address the public perception ________ two-tier policing.",
+          "options": [
+            "A) of",
+            "B) at",
+            "C) on",
+            "D) with"
+          ],
+          "answer": "A",
+          "locator": "介系詞搭配 (perception of)",
+          "explanation": "名詞 perception 後方通常搭配介系詞 of，表示「對...的觀感或看法」。因此選項 (A) 為正確答案。"
+        },
+        {
+          "prompt": "This initiative focuses on ensuring that law enforcement agencies maintain strict impartiality ________ operations.",
+          "options": [
+            "A) during",
+            "B) while",
+            "C) when",
+            "D) for"
+          ],
+          "answer": "A",
+          "locator": "介系詞與連接詞區分 (during + 名詞)",
+          "explanation": "空格後方接的是名詞片語 operations（行動期間），而非完整子句，因此需要使用介系詞 during。選項 (B) 和 (C) 雖可表「當...時」，但通常連接子句或分詞構句，故選 (A)。"
+        },
+        {
+          "prompt": "Law enforcement leaders are expected to review the updated protocols once they ________ released.",
+          "options": [
+            "A) are",
+            "B) were",
+            "C) have",
+            "D) will be"
+          ],
+          "answer": "A",
+          "locator": "被動語態與時間子句時態",
+          "explanation": "句中 once引導時間副詞子句，在表示未來發生的動作時，常使用現在式代替未來式。主詞 they 代替 protocols，且為被動語態，因此使用現在式被動 are released。選項 (A) 正確。"
+        }
+      ],
+      "part6": {
+        "title": "Internal Memo on New Police Guidance",
+        "passage": "To all department staff, please be advised that the home secretary will soon release new instructions. This guidance aims to address public concerns and ensure strict impartiality. 【1】 reviewing these updates, supervisors should share them with their teams. 【2】 strict adherence to the new protocols is essential for maintaining community trust. 【3】 we expect all officers to apply these standards uniformly during daily operations. 【4】 further announcements will be provided as more implementation details become available.",
+        "questions": [
+          {
+            "prompt": "Choose the best word for blank 【1】.",
+            "options": [
+              "A) Before",
+              "B) After",
+              "C) Unless",
+              "D) Although"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"【1】 reviewing these updates\"",
+            "explanation": "句意邏輯顯示，主管們應該在「審查」這些更新內容之後，與團隊分享。After 表「在...之後」，最符合上下文邏輯。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【2】.",
+            "options": [
+              "A) Maintaining",
+              "B) Maintain",
+              "C) Maintained",
+              "D) To maintain"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"【2】 strict adherence\"",
+            "explanation": "空格處需要一個動名詞作為句子的主語（严格遵守新協議是至關重要的），故選動名詞 Maintaining。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【3】.",
+            "options": [
+              "A) Therefore",
+              "B) However",
+              "C) Instead",
+              "D) Otherwise"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"【3】 we expect all officers\"",
+            "explanation": "前句提到嚴格遵守協議對於維持社區信任至關重要，因此「所以」我們期望所有警員都能一致適用這些標準。Therefore 表因果關係，故為正確答案。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【4】.",
+            "options": [
+              "A) Further",
+              "B) Farther",
+              "C) Farthest",
+              "D) Farthest"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"【4】 further announcements\"",
+            "explanation": "further 在此作形容詞，意為「更多的、進一步的」，用來修飾 announcements。故選 (A)。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Read the news article and answer the reading comprehension questions.",
+        "questions": [
+          {
+            "prompt": "What is the primary focus of the home secretary's announced plans?",
+            "options": [
+              "A) Addressing the public perception of two-tier policing",
+              "B) Reducing the total number of police officers",
+              "C) Increasing police salaries across the nation",
+              "D) Modifying traffic laws on major highways"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"The home secretary has announced plans to address the public perception of two-tier policing.\"",
+            "explanation": "文章第一段明確指出，內政大臣宣布的計畫是為了處理公眾對雙軌執法的觀感，因此選項 (A) 正確。"
+          },
+          {
+            "prompt": "What do officials indicate will be provided soon?",
+            "options": [
+              "A) Stronger guidance",
+              "B) New police uniforms",
+              "C) Financial reports",
+              "D) Emergency vehicles"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"Officials indicate that stronger guidance will be provided soon.\"",
+            "explanation": "文章第一段提到官員指出很快會提供更強而有力的指引，故選 (A)。"
+          },
+          {
+            "prompt": "What do law enforcement leaders need to do once the updated protocols are released?",
+            "options": [
+              "A) Review them",
+              "B) Reject them",
+              "C) Rewrite them",
+              "D) Translate them"
+            ],
+            "answer": "A",
+            "locator": "第 3 段 \"Law enforcement leaders are expected to review the updated protocols once they are released.\"",
+            "explanation": "文章第三段指出，執法領導階層預計在更新後的協定發布後進行審查 (review)，故選 (A)。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/c3vg24wpg040o",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    },
+    "techLife": {
+      "title": "US Chip Restrictions Impact China",
+      "summary": "美國對東南亞實施的新晶片限制措施將對中國產生重大影響，這些新規則限制了晶片出口以及中國嚴重依賴的計算能力。",
+      "english": [
+        "Recent updates reveal that new United States chip restrictions targeting South East Asia will significantly impact China. These measures are designed to control advanced technology flow in the region.",
+        "The newly established rules strictly limit chip exports to the affected areas. Furthermore, they restrict access to vital computing power that industries in China rely on heavily for various operations.",
+        "Experts are currently evaluating how these policy changes will alter the global technology market. Stakeholders continue to monitor the enforcement of these export controls very closely."
+      ],
+      "translation": [
+        "最新消息顯示，針對東南亞的新美國晶片限制將對中國產生重大影響。這些措施旨在控制該地區的先進技術流向。",
+        "新建立的規則嚴格限制對受影響地區的晶片出口。此外，它們還限制了中國產業在各種營運中嚴重依賴的重要計算能力。",
+        "專家們目前正在評估這些政策變化將如何改變全球科技市場。各利益相關者繼續密切監控這些出口管制的執行情況。"
+      ],
+      "vocabulary": [
+        {
+          "term": "restrictions",
+          "pos": "noun",
+          "collocations": "new restrictions; chip restrictions",
+          "meaning": "限制",
+          "synonyms": [
+            "limitations; constraints",
+            "controls; regulations"
+          ],
+          "family": "restrict; restrictive; restricted",
+          "sentence": "Recent updates reveal that new United States chip restrictions targeting South East Asia will significantly impact China."
+        },
+        {
+          "term": "impact",
+          "pos": "verb",
+          "collocations": "significantly impact; impact China",
+          "meaning": "影響",
+          "synonyms": [
+            "affect; influence",
+            "alter; shape"
+          ],
+          "family": "impactful; unimpacted",
+          "sentence": "Recent updates reveal that new United States chip restrictions targeting South East Asia will significantly impact China."
+        },
+        {
+          "term": "measures",
+          "pos": "noun",
+          "collocations": "designed measures; policy measures",
+          "meaning": "措施",
+          "synonyms": [
+            "steps; actions",
+            "policies; procedures"
+          ],
+          "family": "measure; measured; measurable",
+          "sentence": "These measures are designed to control advanced technology flow in the region."
+        },
+        {
+          "term": "exports",
+          "pos": "noun",
+          "collocations": "chip exports; export controls",
+          "meaning": "出口",
+          "synonyms": [
+            "shipments; foreign sales",
+            "trade; outbound goods"
+          ],
+          "family": "export; exporter; exportable",
+          "sentence": "The newly established rules strictly limit chip exports to the affected areas."
+        },
+        {
+          "term": "computing",
+          "pos": "noun",
+          "collocations": "computing power; computing system",
+          "meaning": "計算",
+          "synonyms": [
+            "data processing; calculation",
+            "digital processing; tech processing"
+          ],
+          "family": "compute; computer; computable",
+          "sentence": "Furthermore, they restrict access to vital computing power that industries in China rely on heavily for various operations."
+        },
+        {
+          "term": "operations",
+          "pos": "noun",
+          "collocations": "various operations; business operations",
+          "meaning": "營運",
+          "synonyms": [
+            "activities; functions",
+            "processes; procedures"
+          ],
+          "family": "operate; operational; operator",
+          "sentence": "Furthermore, they restrict access to vital computing power that industries in China rely on heavily for various operations."
+        },
+        {
+          "term": "market",
+          "pos": "noun",
+          "collocations": "technology market; global market",
+          "meaning": "市場",
+          "synonyms": [
+            "marketplace; exchange",
+            "industry; sector"
+          ],
+          "family": "marketable; marketing; marketer",
+          "sentence": "Experts are currently evaluating how these policy changes will alter the global technology market."
+        },
+        {
+          "term": "enforcement",
+          "pos": "noun",
+          "collocations": "strict enforcement; law enforcement",
+          "meaning": "執行",
+          "synonyms": [
+            "implementation; execution",
+            "application; administration"
+          ],
+          "family": "enforce; enforceable",
+          "sentence": "Stakeholders continue to monitor the enforcement of these export controls very closely."
+        },
+        {
+          "term": "region",
+          "pos": "noun",
+          "collocations": "in the region; affected region",
+          "meaning": "地區",
+          "synonyms": [
+            "area; territory",
+            "zone; district"
+          ],
+          "family": "regional; regionally",
+          "sentence": "These measures are designed to control advanced technology flow in the region."
+        },
+        {
+          "term": "rules",
+          "pos": "noun",
+          "collocations": "new rules; established rules",
+          "meaning": "規則",
+          "synonyms": [
+            "regulations; guidelines",
+            "policies; laws"
+          ],
+          "family": "rule; ruler; ruling",
+          "sentence": "The newly established rules strictly limit chip exports to the affected areas."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "Recent updates reveal that new United States chip restrictions targeting South East Asia will significantly _______ China.",
+          "options": [
+            "A) impact",
+            "B) impactful",
+            "C) impacted",
+            "D) impactfully"
+          ],
+          "answer": "A",
+          "locator": "助動詞 will 後方需接原形動詞",
+          "explanation": "句型結構中，助動詞 will 後面必須接原形動詞，因此選 A) impact。"
+        },
+        {
+          "prompt": "These measures are designed _______ advanced technology flow in the region.",
+          "options": [
+            "A) control",
+            "B) to control",
+            "C) controlling",
+            "D) controlled"
+          ],
+          "answer": "B",
+          "locator": "be designed to do 表目的之不定詞片語",
+          "explanation": "be designed to do sth 是用來表示「被設計來做某事」的固定用法，因此空格應填入 to control。"
+        },
+        {
+          "prompt": "Stakeholders continue to monitor the enforcement of these export controls very _______.",
+          "options": [
+            "A) close",
+            "B) closer",
+            "C) closely",
+            "D) closeness"
+          ],
+          "answer": "C",
+          "locator": "修飾動詞 monitor 需使用副詞",
+          "explanation": "空格是用來修飾動詞 monitor（監督），必須使用副詞 closely（密切地），故選 C。"
+        }
+      ],
+      "part6": {
+        "title": "Notice on Export Control Compliance",
+        "passage": "To all department staff, please be advised that our firm must adjust its logistics procedures due to recent government updates. 【1】 new chip restrictions targeting South East Asia have taken effect, all shipping documents require thorough review. 【2】 ensure full compliance, team leaders must verify every item before dispatch. Any unverified shipments will 【3】 delayed at the border. Thank you for your cooperation in maintaining 【4】 standards.",
+        "questions": [
+          {
+            "prompt": "Choose the best word for blank 【1】.",
+            "options": [
+              "A) Because",
+              "B) Because of",
+              "C) Although",
+              "D) Despite"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"【1】 new chip restrictions\"",
+            "explanation": "空格後方接的是名詞短語 new chip restrictions，因此需使用介係詞片語 Because of 表原因。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【2】.",
+            "options": [
+              "A) For",
+              "B) With",
+              "C) To",
+              "D) By"
+            ],
+            "answer": "C",
+            "locator": "第 1 段 \"【2】 ensure full compliance\"",
+            "explanation": "表目的「為了確保完全合規」，應用不定詞片語 To ensure開頭，故選 C。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【3】.",
+            "options": [
+              "A) be",
+              "B) being",
+              "C) been",
+              "D) to be"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"will 【3】 delayed\"",
+            "explanation": "助動詞 will 後方接被動語態，需用原形 be（will be delayed），故選 A。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【4】.",
+            "options": [
+              "A) high",
+              "B) higher",
+              "C) highest",
+              "D) highly"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"maintaining 【4】 standards\"",
+            "explanation": "修飾名詞 standards 需用形容詞，high standards 表示「高標準」，故選 A。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Read the article and answer the reading comprehension questions.",
+        "questions": [
+          {
+            "prompt": "What do the new United States rules target according to the passage?",
+            "options": [
+              "A) Agricultural trade",
+              "B) Chip restrictions",
+              "C) Energy supplies",
+              "D) Automotive manufacturing"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"new United States chip restrictions targeting South East Asia\"",
+            "explanation": "文章第一段明確指出美國的新限制措施是針對晶片（chip restrictions），故選 B。"
+          },
+          {
+            "prompt": "What do industries in China rely on heavily according to the second paragraph?",
+            "options": [
+              "A) Computing power",
+              "B) Foreign tourism",
+              "C) Agricultural exports",
+              "D) Textile materials"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"vital computing power that industries in China rely on heavily\"",
+            "explanation": "第二段提到中國產業嚴重依賴的是關鍵計算能力（computing power），故選 A。"
+          },
+          {
+            "prompt": "What are experts currently doing regarding the policy changes?",
+            "options": [
+              "A) Canceling trade agreements",
+              "B) Evaluating market changes",
+              "C) Manufacturing hardware",
+              "D) Establishing new laws"
+            ],
+            "answer": "B",
+            "locator": "第 3 段 \"Experts are currently evaluating how these policy changes will alter the global technology market.\"",
+            "explanation": "第三段說明專家們正在評估政策變化將如何改變全球科技市場，故選 B。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/cwq6e2qgvmlgo",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    }
+  },
   "2026-11-17": {
     "finance": {
       "title": "Nvidia Dismisses Campaign Led by Tech Figures",
