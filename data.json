@@ -1,4 +1,819 @@
 {
+  "2026-11-19": {
+    "finance": {
+      "title": "Anthropic IPO and Market Uncertainty",
+      "summary": "Anthropic的首次公開募股備受期待，預計將使其晉升為美國前十大最有價值的公司之一，然而市場對人工智慧泡沫是否會破裂仍充滿不確定性。",
+      "english": [
+        "Anthropic has prepared a hotly anticipated initial public offering that is expected to rank among the top ten most valuable firms in the United States. Market observers are watching closely to see if this massive public offering can prevent the potential bursting of an artificial intelligence bubble. Financial analysts note that while the company is attracting immense attention, the long-term outlook for its valuation remains uncertain.",
+        "The upcoming listing represents a major milestone for the technology sector, drawing significant interest from institutional investors worldwide. As artificial intelligence technologies rapidly advance, market participants debate whether high valuations are sustainable or if a correction is inevitable. Observers point out that the financial success of this offering could heavily influence broader market sentiment toward technology stocks.",
+        "Despite the high enthusiasm surrounding the launch, experts advise caution regarding future market conditions and potential regulatory pressures. The broader economic environment continues to pose challenges for high-growth enterprises seeking public capital. Investors are therefore carefully evaluating the risks and rewards before committing funds to this landmark market debut."
+      ],
+      "translation": [
+        "Anthropic準備了一場備受期待的首次公開募股，預計將躋身美國最有價值的前十大企業之列。市場觀察家正密切關注這次大規模的公開發行是否能防止人工智慧泡沫的潛在破裂。金融分析師指出，雖然該公司正吸引極大的關注，其估值的長期前景仍然充滿不確定性。",
+        "即將到來的上市代表了科技領域的一個重要里程碑，吸引了全球機構投資者的顯著興趣。隨著人工智慧技術的迅速發展，市場參與者在爭論高估值是否可持續，或者修正是否不可避免。觀察家指出，此次發行的財務成功可能會嚴重影響整體市場對科技股的情緒。",
+        "儘管發表會周圍充滿高度熱情，專家們仍建議對未來的市場狀況和潛在的監管壓力保持謹慎。更廣泛的經濟環境繼續對尋求公開資本的高成長企業構成挑戰。因此，投資者在將資金投入這場具里程碑意義的市場首次亮相之前，正在仔細評估風險與回報。"
+      ],
+      "vocabulary": [
+        {
+          "term": "anticipated",
+          "pos": "adjective",
+          "collocations": "hotly anticipated; highly anticipated",
+          "meaning": "預期的，期待的",
+          "synonyms": [
+            "expected; foreseen",
+            "awaited; predicted"
+          ],
+          "family": "anticipate; anticipation",
+          "sentence": "Anthropic has prepared a hotly anticipated initial public offering that is expected to rank among the top ten most valuable firms in the United States."
+        },
+        {
+          "term": "offering",
+          "pos": "noun",
+          "collocations": "public offering; initial offering",
+          "meaning": "發行，公開募股",
+          "synonyms": [
+            "issue; flotation",
+            "launch; presentation"
+          ],
+          "family": "offer",
+          "sentence": "Market observers are watching closely to see if this massive public offering can prevent the potential bursting of an artificial intelligence bubble."
+        },
+        {
+          "term": "analysts",
+          "pos": "noun",
+          "collocations": "financial analysts; market analysts",
+          "meaning": "分析師",
+          "synonyms": [
+            "experts; researchers",
+            "consultants; strategists"
+          ],
+          "family": "analyze; analysis",
+          "sentence": "Financial analysts note that while the company is attracting immense attention, the long-term outlook for its valuation remains uncertain."
+        },
+        {
+          "term": "attention",
+          "pos": "noun",
+          "collocations": "immense attention; considerable attention",
+          "meaning": "關注，注意力",
+          "synonyms": [
+            "notice; regard",
+            "focus; interest"
+          ],
+          "family": "attentive; attentively",
+          "sentence": "Financial analysts note that while the company is attracting immense attention, the long-term outlook for its valuation remains uncertain."
+        },
+        {
+          "term": "valuation",
+          "pos": "noun",
+          "collocations": "company valuation; market valuation",
+          "meaning": "估值，評價",
+          "synonyms": [
+            "appraisal; assessment",
+            "estimation; rating"
+          ],
+          "family": "value; evaluate",
+          "sentence": "Financial analysts note that while the company is attracting immense attention, the long-term outlook for its valuation remains uncertain."
+        },
+        {
+          "term": "investors",
+          "pos": "noun",
+          "collocations": "institutional investors; retail investors",
+          "meaning": "投資者",
+          "synonyms": [
+            "shareholders; backers",
+            "financiers; capitalists"
+          ],
+          "family": "invest; investment",
+          "sentence": "The upcoming listing represents a major milestone for the technology sector, drawing significant interest from institutional investors worldwide."
+        },
+        {
+          "term": "technologies",
+          "pos": "noun",
+          "collocations": "advanced technologies; emerging technologies",
+          "meaning": "技術",
+          "synonyms": [
+            "systems; machinery",
+            "methods; equipment"
+          ],
+          "family": "technological; technologically",
+          "sentence": "As artificial intelligence technologies rapidly advance, market participants debate whether high valuations are sustainable or if a correction is inevitable."
+        },
+        {
+          "term": "sentiment",
+          "pos": "noun",
+          "collocations": "market sentiment; investor sentiment",
+          "meaning": "市場情緒，觀點",
+          "synonyms": [
+            "attitude; feeling",
+            "mood; opinion"
+          ],
+          "family": "sentimental; sentimentally",
+          "sentence": "Observers point out that the financial success of this offering could heavily influence broader market sentiment toward technology stocks."
+        },
+        {
+          "term": "conditions",
+          "pos": "noun",
+          "collocations": "market conditions; economic conditions",
+          "meaning": "條件，狀況",
+          "synonyms": [
+            "circumstances; situations",
+            "states; environment"
+          ],
+          "family": "conditional; conditionally",
+          "sentence": "Despite the high enthusiasm surrounding the launch, experts advise caution regarding future market conditions and potential regulatory pressures."
+        },
+        {
+          "term": "capital",
+          "pos": "noun",
+          "collocations": "public capital; venture capital",
+          "meaning": "資金，資本",
+          "synonyms": [
+            "funds; finances",
+            "money; assets"
+          ],
+          "family": "capitalize; capitalization",
+          "sentence": "The broader economic environment continues to pose challenges for high-growth enterprises seeking public capital."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "Anthropic has prepared a hotly anticipated initial public offering that is expected to rank ______ the top ten most valuable firms.",
+          "options": [
+            "among",
+            "between",
+            "through",
+            "against"
+          ],
+          "answer": "A",
+          "locator": "介系詞選擇 (Preposition usage)",
+          "explanation": "空格後方為複數名詞群組 the top ten most valuable firms，表示「在...之中」，因此應選擇表示三者或三者以上之中的介系詞 among。"
+        },
+        {
+          "prompt": "Financial analysts note that while the company is attracting immense attention, the long-term outlook for its valuation ______ uncertain.",
+          "options": [
+            "remain",
+            "remains",
+            "remaining",
+            "to remain"
+          ],
+          "answer": "B",
+          "locator": "主謂一致 (Subject-verb agreement)",
+          "explanation": "句子主詞為 the long-term outlook（單數名詞），子句時態為現在式，因此動詞需使用第三人稱單數現在式 remains。"
+        },
+        {
+          "prompt": "Observers point out that the financial success of this offering could heavily influence ______ market sentiment toward technology stocks.",
+          "options": [
+            "broad",
+            "broader",
+            "broadly",
+            "broadness"
+          ],
+          "answer": "B",
+          "locator": "形容詞比較級 (Comparative adjective)",
+          "explanation": "空格用來修飾名詞 market sentiment，且句意表示「更廣泛的市場情緒」，因此需要使用形容詞比較級 broader。"
+        }
+      ],
+      "part6": {
+        "title": "Internal Memo: Preparation for Upcoming Market Events",
+        "passage": "To all department heads,\n\nAs we prepare for the upcoming quarter, our financial team must review all operational expenses. 【1】 recent market developments involving major technology listings, we must remain vigilant regarding our budgeting. 【2】.\n\nFurthermore, all managers are required to submit their expenditure reports by Friday afternoon. 【3】 report should include a detailed breakdown of projected costs for the next fiscal year. We appreciate your prompt cooperation in this matter. 【4】.",
+        "questions": [
+          {
+            "prompt": "Choose the best word for blank 1.",
+            "options": [
+              "Given",
+              "Give",
+              "Gives",
+              "Giving"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"【1】 recent market developments\"",
+            "explanation": "空格處需要介系詞性質的字詞來引導名詞片語 recent market developments，Given 意為「鑑於」，符合句意。"
+          },
+          {
+            "prompt": "Choose the best sentence for blank 2.",
+            "options": [
+              "The marketing campaign was canceled yesterday.",
+              "Market volatility requires us to manage risks carefully.",
+              "All employees received a bonus last month.",
+              "Our office will relocate to a new building."
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"【2】\"",
+            "explanation": "上下文討論財務與市場動態對預算編列的影響，選項B「市場波動要求我們小心管理風險」與上下文主題最為契合。"
+          },
+          {
+            "prompt": "Choose the best word for blank 3.",
+            "options": [
+              "Each",
+              "All",
+              "Much",
+              "Another"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"【3】 report should include\"",
+            "explanation": "空格後方為單數名詞 report，因此應選擇搭配單數可數名詞的形容詞 Each（每份報告）。"
+          },
+          {
+            "prompt": "Choose the best sentence for blank 4.",
+            "options": [
+              "Please contact the human resources department for further details.",
+              "Please reach out to the finance office if you have any questions.",
+              "Please turn off all lights before leaving the building.",
+              "Please submit your travel receipts to the receptionist."
+            ],
+            "answer": "B",
+            "locator": "第 2 段 \"【4】\"",
+            "explanation": "信件結尾通常會提供聯絡窗口，選項B「若您有任何問題，請與財務室聯繫」符合商務信件慣例。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Read the article and answer the reading comprehension questions.",
+        "questions": [
+          {
+            "prompt": "What is expected to happen regarding Anthropic's initial public offering?",
+            "options": [
+              "It will be canceled due to regulatory pressures.",
+              "It is expected to rank among the top ten most valuable US firms.",
+              "It will immediately burst the artificial intelligence bubble.",
+              "It will be postponed until the next economic cycle."
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"rank among the top ten most valuable firms in the United States\"",
+            "explanation": "文章第一段明確指出該首次公開募股預計將名列美國前十大最有價值公司之一，故選B。"
+          },
+          {
+            "prompt": "What are market participants debating regarding artificial intelligence technologies?",
+            "options": [
+              "Whether high valuations are sustainable or if a correction is inevitable",
+              "Whether the company should change its primary business model",
+              "Whether institutional investors should stop buying technology stocks",
+              "Whether the government will ban artificial intelligence research"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"whether high valuations are sustainable or if a correction is inevitable\"",
+            "explanation": "文章第二段指出，隨著AI技術發展，市場參與者在爭論高估值是否可持續或修正是否不可避免，故選A。"
+          },
+          {
+            "prompt": "What do experts advise despite the high enthusiasm surrounding the launch?",
+            "options": [
+              "To invest all available capital immediately",
+              "To ignore future economic conditions",
+              "Caution regarding future market conditions and potential regulatory pressures",
+              "To sell all technology stock holdings right away"
+            ],
+            "answer": "C",
+            "locator": "第 3 段 \"advise caution regarding future market conditions and potential regulatory pressures\"",
+            "explanation": "文章第三段提到，儘管充滿熱情，專家仍建議對未來市場狀況與潛在監管壓力保持謹慎，故選C。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/cj4gnpzll020o",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    },
+    "politics": {
+      "title": "UK Government Requests Removal of Russell Brand's YouTube Account",
+      "summary": "英國政府要求移除羅素·布蘭德的YouTube帳號，此前布蘭德的妻子分享了一則他聲稱自己清白的訊息。",
+      "english": [
+        "The UK government has formally asked for the YouTube account of media figure Russell Brand to be removed following serious developments.",
+        "This official request comes shortly after Brand's wife shared a public message from him.",
+        "In the shared message, Brand firmly claimed his complete innocence regarding the accusations."
+      ],
+      "translation": [
+        "在發生嚴重發展後，英國政府已正式要求移除媒體人物羅素·布蘭德的YouTube帳號。",
+        "這項官方請求是在布蘭德的妻子分享了一則來自他的公開訊息後不久提出的。",
+        "在分享的訊息中，布蘭德堅決聲稱他對這些指控完全清白。"
+      ],
+      "vocabulary": [
+        {
+          "term": "government",
+          "pos": "noun",
+          "collocations": "UK government; government official",
+          "meaning": "政府",
+          "synonyms": [
+            "administration; state",
+            "regime; authority"
+          ],
+          "family": "govern; governmental",
+          "sentence": "The UK government has formally asked for the YouTube account of media figure Russell Brand to be removed following serious developments."
+        },
+        {
+          "term": "account",
+          "pos": "noun",
+          "collocations": "YouTube account; user account",
+          "meaning": "帳號",
+          "synonyms": [
+            "profile; profile page",
+            "login; registration"
+          ],
+          "family": "accountability; accountant",
+          "sentence": "The UK government has formally asked for the YouTube account of media figure Russell Brand to be removed following serious developments."
+        },
+        {
+          "term": "removed",
+          "pos": "verb",
+          "collocations": "be removed; get removed",
+          "meaning": "被移除",
+          "synonyms": [
+            "deleted; taken down",
+            "eliminated; erased"
+          ],
+          "family": "removal",
+          "sentence": "The UK government has formally asked for the YouTube account of media figure Russell Brand to be removed following serious developments."
+        },
+        {
+          "term": "developments",
+          "pos": "noun",
+          "collocations": "serious developments; new developments",
+          "meaning": "發展；進展",
+          "synonyms": [
+            "events; happenings",
+            "progress; changes"
+          ],
+          "family": "develop; developing",
+          "sentence": "The UK government has formally asked for the YouTube account of media figure Russell Brand to be removed following serious developments."
+        },
+        {
+          "term": "official",
+          "pos": "adjective",
+          "collocations": "official request; official statement",
+          "meaning": "官方的",
+          "synonyms": [
+            "formal; authorized",
+            "certified; legal"
+          ],
+          "family": "officially; officer",
+          "sentence": "This official request comes shortly after Brand's wife shared a public message from him."
+        },
+        {
+          "term": "request",
+          "pos": "noun",
+          "collocations": "official request; make a request",
+          "meaning": "請求",
+          "synonyms": [
+            "appeal; petition",
+            "demand; application"
+          ],
+          "family": "request; requesting",
+          "sentence": "This official request comes shortly after Brand's wife shared a public message from him."
+        },
+        {
+          "term": "shared",
+          "pos": "verb",
+          "collocations": "shared a message; shared file",
+          "meaning": "分享",
+          "synonyms": [
+            "distributed; circulated",
+            "posted; disseminated"
+          ],
+          "family": "share; shareable",
+          "sentence": "This official request comes shortly after Brand's wife shared a public message from him."
+        },
+        {
+          "term": "message",
+          "pos": "noun",
+          "collocations": "public message; text message",
+          "meaning": "訊息",
+          "synonyms": [
+            "communication; note",
+            "statement; memo"
+          ],
+          "family": "messenger",
+          "sentence": "This official request comes shortly after Brand's wife shared a public message from him."
+        },
+        {
+          "term": "claimed",
+          "pos": "verb",
+          "collocations": "claimed innocence; claimed responsibility",
+          "meaning": "聲稱",
+          "synonyms": [
+            "asserted; maintained",
+            "declared; professed"
+          ],
+          "family": "claim; claimant",
+          "sentence": "In the shared message, Brand firmly claimed his complete innocence regarding the accusations."
+        },
+        {
+          "term": "innocence",
+          "pos": "noun",
+          "collocations": "complete innocence; prove innocence",
+          "meaning": "清白；無罪",
+          "synonyms": [
+            "guiltlessness; blamelessness",
+            "purity; harmlessness"
+          ],
+          "family": "innocent; innocently",
+          "sentence": "In the shared message, Brand firmly claimed his complete innocence regarding the accusations."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "The UK government has formally asked for the YouTube account of Russell Brand to be removed _____ serious developments.",
+          "options": [
+            "A) following",
+            "B) follow",
+            "C) followed",
+            "D) follows"
+          ],
+          "answer": "A",
+          "locator": "介系詞與分詞構句",
+          "explanation": "空格處需要一個介系詞或連接詞來引導名詞片語 'serious developments'。'following' 在此作為介系詞，意指「在……之後」，符合句意與文法結構。"
+        },
+        {
+          "prompt": "This official request comes shortly after Brand's wife shared a public message _____ him.",
+          "options": [
+            "A) in",
+            "B) from",
+            "C) at",
+            "D) on"
+          ],
+          "answer": "B",
+          "locator": "地方與來源介系詞",
+          "explanation": "句意表示訊息是「來自」布蘭德本人，因此應使用介系詞 'from' 來表達來源。"
+        },
+        {
+          "prompt": "In the shared message, Brand firmly claimed his complete innocence _____ the accusations.",
+          "options": [
+            "A) regarding",
+            "B) regard",
+            "C) regarded",
+            "D) regards"
+          ],
+          "answer": "A",
+          "locator": "介系詞用法",
+          "explanation": "空格後方為名詞片語 'the accusations'，需要介系詞 'regarding'（關於）來連接前後文，構成合法的介系詞片語。"
+        }
+      ],
+      "part6": {
+        "title": "Notice on Digital Platform Guidelines",
+        "passage": "To all staff members, \n\nRecent events involving public figures have highlighted the need for strict compliance with digital platform policies. The administration requires all departments to review their online safety protocols 【1】 ensure full adherence. \n\nAny unauthorized content must be reported immediately to the compliance officer. We appreciate your prompt attention 【2】 this critical matter. \n\nFurthermore, training sessions will be scheduled next week to brief employees on new regulatory standards. Attendance is mandatory for all team members. Please confirm your availability 【3】 replying to this email by Friday. \n\nThank you for your cooperation in maintaining our institutional standards. Should you have any questions, please contact the human resources department 【4】 assistance.",
+        "questions": [
+          {
+            "prompt": "Choose the best word for blank 1.",
+            "options": [
+              "A) to",
+              "B) for",
+              "C) with",
+              "D) by"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"protocols 【1】 ensure\"",
+            "explanation": "空格後接原形動詞 'ensure'，表示目的，因此需使用不定詞 'to'。"
+          },
+          {
+            "prompt": "Choose the best word for blank 2.",
+            "options": [
+              "A) in",
+              "B) to",
+              "C) on",
+              "D) at"
+            ],
+            "answer": "B",
+            "locator": "第 2 段 \"attention 【2】 this\"",
+            "explanation": "名詞 'attention' 通常搭配介系詞 'to'，形成 'attention to'（對……的關注）。"
+          },
+          {
+            "prompt": "Choose the best word for blank 3.",
+            "options": [
+              "A) by",
+              "B) with",
+              "C) for",
+              "D) through"
+            ],
+            "answer": "A",
+            "locator": "第 3 段 \"availability 【3】 replying\"",
+            "explanation": "表達透過某種方式或手段完成動作，常用介系詞 'by' 搭配動名詞 'replying'。"
+          },
+          {
+            "prompt": "Choose the best word for blank 4.",
+            "options": [
+              "A) for",
+              "B) to",
+              "C) with",
+              "D) from"
+            ],
+            "answer": "A",
+            "locator": "第 4 段 \"department 【4】 assistance\"",
+            "explanation": "表達「為了尋求協助」的目的，介系詞 'for' 最為恰當。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Read the news article about the UK government and Russell Brand, then answer the questions.",
+        "questions": [
+          {
+            "prompt": "What did the UK government ask for regarding Russell Brand?",
+            "options": [
+              "A) His YouTube account to be removed",
+              "B) An in-person public apology",
+              "C) A financial compensation package",
+              "D) His immediate arrest by police"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"asked for the YouTube account of media figure Russell Brand to be removed\"",
+            "explanation": "文章第一段明確指出，英國政府已正式要求移除媒體人物羅素·布蘭德的YouTube帳號。"
+          },
+          {
+            "prompt": "Who shared a public message from Russell Brand?",
+            "options": [
+              "A) His business manager",
+              "B) His legal representative",
+              "C) His wife",
+              "D) A government official"
+            ],
+            "answer": "C",
+            "locator": "第 2 段 \"Brand's wife shared a public message from him\"",
+            "explanation": "文章第二段指出，這項請求是在布蘭德的妻子分享了一則來自他的公開訊息後不久提出的。"
+          },
+          {
+            "prompt": "What did Russell Brand claim in the shared message?",
+            "options": [
+              "A) He was launching a new channel",
+              "B) His complete innocence",
+              "C) He was retiring from media",
+              "D) His apology to the government"
+            ],
+            "answer": "B",
+            "locator": "第 3 段 \"Brand firmly claimed his complete innocence\"",
+            "explanation": "文章第三段提到，在分享的訊息中，布蘭德堅決聲稱他對這些指控完全清白。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/cmgrenln8p29o",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    },
+    "techLife": {
+      "title": "Grand Theft Auto 6 Receives Critical Acclaim",
+      "summary": "評論家們對備受期待的電玩遊戲GTA 6是否符合宣傳熱潮發表了看法。",
+      "english": [
+        "Critics have shared their reviews on Grand Theft Auto 6, which is widely considered the most anticipated video game of all time. Experts and reviewers evaluated the new title to determine whether the final product truly lives up to the immense hype surrounding its release.",
+        "The gaming community has eagerly awaited the launch of this major software release. Industry analysts noted that players worldwide have demonstrated incredible enthusiasm for the franchise, keeping expectations exceptionally high for the developers.",
+        "As professional evaluations continue to emerge, early consensus suggests that the game has successfully delivered an extraordinary experience. Observers will continue to monitor sales and player feedback as the title establishes its place in the market."
+      ],
+      "translation": [
+        "評論家們分享了他們對《俠盜獵車手6》的評論，該遊戲被普遍認為是有史以來最受期待的電玩遊戲。專家與評論家們對這款新遊戲進行了評估，以確定最終產品是否真的不負其發布周圍的巨大宣傳熱潮。",
+        "遊戲社群一直熱切期待這款重大軟體發布的推出。產業分析師指出，全球玩家對該系列展現了不可思議的熱情，使開發人員的期望保持在極高的水平。",
+        "隨著專業評價持續出現，早期的共識表明該遊戲已經成功地提供了非凡的體驗。隨著該遊戲在市場上確立其地位，觀察家將繼續監控銷售與玩家回饋。"
+      ],
+      "vocabulary": [
+        {
+          "term": "critics",
+          "pos": "noun",
+          "collocations": "film critics; art critics",
+          "meaning": "評論家",
+          "synonyms": [
+            "reviewers; commentators",
+            "judges; evaluators"
+          ],
+          "family": "critic; critical; criticize",
+          "sentence": "Critics have shared their reviews on Grand Theft Auto 6, which is widely considered the most anticipated video game of all time."
+        },
+        {
+          "term": "anticipated",
+          "pos": "adjective",
+          "collocations": "highly anticipated; eagerly anticipated",
+          "meaning": "預期的；期待的",
+          "synonyms": [
+            "expected; awaited",
+            "predicted; foreseen"
+          ],
+          "family": "anticipate; anticipation",
+          "sentence": "Critics have shared their reviews on Grand Theft Auto 6, which is widely considered the most anticipated video game of all time."
+        },
+        {
+          "term": "experts",
+          "pos": "noun",
+          "collocations": "industry experts; marketing experts",
+          "meaning": "專家",
+          "synonyms": [
+            "specialists; professionals",
+            "authorities; consultants"
+          ],
+          "family": "expert; expertise",
+          "sentence": "Experts and reviewers evaluated the new title to determine whether the final product truly lives up to the immense hype surrounding its release."
+        },
+        {
+          "term": "evaluated",
+          "pos": "verb",
+          "collocations": "carefully evaluated; fully evaluated",
+          "meaning": "評估",
+          "synonyms": [
+            "assessed; reviewed",
+            "analyzed; examined"
+          ],
+          "family": "evaluation; evaluative",
+          "sentence": "Experts and reviewers evaluated the new title to determine whether the final product truly lives up to the immense hype surrounding its release."
+        },
+        {
+          "term": "immense",
+          "pos": "adjective",
+          "collocations": "immense pressure; immense value",
+          "meaning": "極大的；巨大的",
+          "synonyms": [
+            "huge; massive",
+            "tremendous; vast"
+          ],
+          "family": "immensely; immensity",
+          "sentence": "Experts and reviewers evaluated the new title to determine whether the final product truly lives up to the immense hype surrounding its release."
+        },
+        {
+          "term": "enthusiasm",
+          "pos": "noun",
+          "collocations": "great enthusiasm; showroom enthusiasm",
+          "meaning": "熱情",
+          "synonyms": [
+            "passion; excitement",
+            "zeal; eagerness"
+          ],
+          "family": "enthusiastic; enthusiastically",
+          "sentence": "Industry analysts noted that players worldwide have demonstrated incredible enthusiasm for the franchise, keeping expectations exceptionally high for the developers."
+        },
+        {
+          "term": "developers",
+          "pos": "noun",
+          "collocations": "software developers; web developers",
+          "meaning": "開發人員",
+          "synonyms": [
+            "creators; designers",
+            "builders; engineers"
+          ],
+          "family": "develop; development",
+          "sentence": "Industry analysts noted that players worldwide have demonstrated incredible enthusiasm for the franchise, keeping expectations exceptionally high for the developers."
+        },
+        {
+          "term": "consensus",
+          "pos": "noun",
+          "collocations": "general consensus; reach consensus",
+          "meaning": "共識",
+          "synonyms": [
+            "agreement; accord",
+            "harmony; unity"
+          ],
+          "family": "consensus",
+          "sentence": "As professional evaluations continue to emerge, early consensus suggests that the game has successfully delivered an extraordinary experience."
+        },
+        {
+          "term": "extraordinary",
+          "pos": "adjective",
+          "collocations": "extraordinary effort; extraordinary results",
+          "meaning": "非凡的；出色的",
+          "synonyms": [
+            "exceptional; remarkable",
+            "outstanding; incredible"
+          ],
+          "family": "extraordinarily",
+          "sentence": "As professional evaluations continue to emerge, early consensus suggests that the game has successfully delivered an extraordinary experience."
+        },
+        {
+          "term": "establish",
+          "pos": "verb",
+          "collocations": "establish goals; establish standards",
+          "meaning": "建立；確立",
+          "synonyms": [
+            "set up; create",
+            "form; institute"
+          ],
+          "family": "established; establishment",
+          "sentence": "Observers will continue to monitor sales and player feedback as the title establishes its place in the market."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "Experts and reviewers evaluated the new title to determine whether the final product truly lives up to the immense hype surrounding ______ release.",
+          "options": [
+            "it",
+            "its",
+            "itself",
+            "they"
+          ],
+          "answer": "B",
+          "locator": "代名詞所有格 (Possessive Adjective)",
+          "explanation": "空格後面接名詞 release，因此需要所有格形容詞「its」來修飾，故選(B)。"
+        },
+        {
+          "prompt": "Industry analysts noted that players worldwide ______ demonstrated incredible enthusiasm for the franchise.",
+          "options": [
+            "has",
+            "have",
+            "having",
+            "to have"
+          ],
+          "answer": "B",
+          "locator": "主謂一致 (Subject-Verb Agreement)",
+          "explanation": "主詞為複數名詞 players，且句子為現在完成時態，助動詞應使用複數形的 have，故選(B)。"
+        },
+        {
+          "prompt": "As professional evaluations continue to emerge, early consensus suggests that the game has successfully delivered an ______ experience.",
+          "options": [
+            "extraordinary",
+            "extraordinarily",
+            "extraordinariness",
+            "extraordinaries"
+          ],
+          "answer": "A",
+          "locator": "形容詞修飾名詞 (Adjective Modifying Noun)",
+          "explanation": "空格後方為名詞 experience，前面需要形容詞來修飾，選項(A) extraordinary 為形容詞，故選(A)。"
+        }
+      ],
+      "part6": {
+        "title": "Announcement: Upcoming Software Release and Review Schedule",
+        "passage": "To all department members, our studio is preparing for the highly anticipated launch of our latest software project. 【1】 We want to ensure that every team member understands the timeline. 【2】 Reviewers and industry experts have been invited to evaluate the final product next week. 【3】 Management expects high standards, and we are confident in your hard work. 【4】 Thank you for your continued dedication to this project.",
+        "questions": [
+          {
+            "prompt": "Choose the best word for blank 1.",
+            "options": [
+              "Therefore",
+              "However",
+              "Instead",
+              "Otherwise"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"our studio is preparing for the highly anticipated launch\"",
+            "explanation": "前句提及工作室正為備受期待的軟體發布作準備，因此結論是確保團隊了解時間表，使用表因果或承接的 Therefore 最恰當。"
+          },
+          {
+            "prompt": "Choose the best word for blank 2.",
+            "options": [
+              "Unfortunately",
+              "Additionally",
+              "Seldom",
+              "Neither"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"We want to ensure that every team member understands the timeline.\"",
+            "explanation": "此句進一步補充關於時間表的相關資訊，因此使用表示遞進的 Additionally 最合適。"
+          },
+          {
+            "prompt": "Choose the best word for blank 3.",
+            "options": [
+              "evaluating",
+              "evaluate",
+              "evaluated",
+              "evaluation"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"have been invited to evaluate the final product next week.\"",
+            "explanation": "不定詞片語 \"have been invited to [verb]\" 需接原形動詞，故選 evaluate (B)。"
+          },
+          {
+            "prompt": "Choose the best word for blank 4.",
+            "options": [
+              "Management",
+              "Managerial",
+              "Manage",
+              "Manages"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"Management expects high standards, and we are confident\"",
+            "explanation": "空格處位於句首作主詞，需使用名詞 Management，故選(A)。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Read the article and answer the following reading comprehension questions.",
+        "questions": [
+          {
+            "prompt": "According to the first paragraph, what is Grand Theft Auto 6 considered to be?",
+            "options": [
+              "A minor software update",
+              "The most anticipated video game of all time",
+              "An outdated entertainment product",
+              "A failed industry experiment"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"widely considered the most anticipated video game of all time\"",
+            "explanation": "文章第一段明確指出該遊戲被普遍認為是有史以來最受期待的電玩遊戲，故選(B)。"
+          },
+          {
+            "prompt": "What have players worldwide demonstrated according to the second paragraph?",
+            "options": [
+              "Incredible enthusiasm for the franchise",
+              "Total indifference to the release date",
+              "Dissatisfaction with the developers",
+              "A desire to cancel their software orders"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"demonstrated incredible enthusiasm for the franchise\"",
+            "explanation": "第二段提到全球玩家對該系列展現了不可思議的熱情，故選(A)。"
+          },
+          {
+            "prompt": "According to the third paragraph, what do observers plan to monitor?",
+            "options": [
+              "Only employee attendance records",
+              "Sales and player feedback",
+              "Office supply inventory levels",
+              "Historical gaming trends from the past"
+            ],
+            "answer": "B",
+            "locator": "第 3 段 \"monitor sales and player feedback\"",
+            "explanation": "第三段指出觀察家將繼續監控銷售與玩家回饋，故選(B)。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/cw8r75xm8v4po",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    }
+  },
   "2026-11-18": {
     "finance": {
       "title": "Nvidia Posts Strong Financial Results Following Leadership Departure",
