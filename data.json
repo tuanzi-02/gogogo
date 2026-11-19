@@ -1,4 +1,819 @@
 {
+  "2026-11-20": {
+    "finance": {
+      "title": "Anthropic Makes Historic Stock Market Debut",
+      "summary": "Anthropic 成為全球最有價值的公開上市企業之一，這是第一家純人工智慧公司上市，為整個產業帶來了關鍵考驗。",
+      "english": [
+        "Anthropic has officially become one of the most valuable public companies in the world following its recent stock market debut. This milestone marks a significant moment for the financial sector and investors globally.",
+        "As the first purely artificial intelligence company to be publicly listed, Anthropic has captured the attention of market analysts everywhere. Its arrival on the exchange provides a crucial test for the entire industry.",
+        "Observers note that this high-profile listing will establish new benchmarks for upcoming technology firms. Stakeholders are watching closely to see how this unprecedented valuation holds up over time."
+      ],
+      "translation": [
+        "Anthropic 在近期首次公開發行股票後，正式成為全球最有價值的上市公司之一。這項里程碑對金融界及全球投資人而言意義重大。",
+        "身為第一家公開上市的純人工智慧公司，Anthropic 吸引了各地市場分析師的目光。它在交易所的登場為整個產業提供了關鍵的考驗。",
+        "觀察家指出，這起備受矚目的上市案將為未來的科技企業設立新的基準。各方利害關係人正密切關注這項空前的估值將如何在時間考驗下維持下去。"
+      ],
+      "vocabulary": [
+        {
+          "term": "public",
+          "pos": "adjective",
+          "collocations": "public company; public listing",
+          "meaning": "公開上市的; 公眾的",
+          "synonyms": [
+            "listed; quoted",
+            "open; general"
+          ],
+          "family": "publicly; publicity; publicize",
+          "sentence": "Anthropic has officially become one of the most valuable public companies in the world following its recent stock market debut."
+        },
+        {
+          "term": "market",
+          "pos": "noun",
+          "collocations": "market debut; market analyst",
+          "meaning": "市場; 股市",
+          "synonyms": [
+            "marketplace; exchange",
+            "trade; commerce"
+          ],
+          "family": "marketing; marketer; marketable",
+          "sentence": "Anthropic has officially become one of the most valuable public companies in the world following its recent stock market debut."
+        },
+        {
+          "term": "debut",
+          "pos": "noun",
+          "collocations": "stock debut; make a debut",
+          "meaning": "首次亮相; 初次登場",
+          "synonyms": [
+            "launch; introduction",
+            "premiere; arrival"
+          ],
+          "family": "debut",
+          "sentence": "Anthropic has officially become one of the most valuable public companies in the world following its recent stock market debut."
+        },
+        {
+          "term": "financial",
+          "pos": "adjective",
+          "collocations": "financial sector; financial market",
+          "meaning": "財務的; 金融的",
+          "synonyms": [
+            "fiscal; monetary",
+            "economic; commercial"
+          ],
+          "family": "finance; financially; financier",
+          "sentence": "This milestone marks a significant moment for the financial sector and investors globally."
+        },
+        {
+          "term": "artificial",
+          "pos": "adjective",
+          "collocations": "artificial intelligence; artificial system",
+          "meaning": "人工的; 人工智慧的",
+          "synonyms": [
+            "synthetic; manufactured",
+            "manmade; fabricated"
+          ],
+          "family": "artificially; artifice",
+          "sentence": "As the first purely artificial intelligence company to be publicly listed, Anthropic has captured the attention of market analysts everywhere."
+        },
+        {
+          "term": "company",
+          "pos": "noun",
+          "collocations": "technology company; public company",
+          "meaning": "公司; 企業",
+          "synonyms": [
+            "firm; corporation",
+            "enterprise; business"
+          ],
+          "family": "company",
+          "sentence": "As the first purely artificial intelligence company to be publicly listed, Anthropic has captured the attention of market analysts everywhere."
+        },
+        {
+          "term": "industry",
+          "pos": "noun",
+          "collocations": "entire industry; technology industry",
+          "meaning": "工業; 行業",
+          "synonyms": [
+            "sector; trade",
+            "business; enterprise"
+          ],
+          "family": "industrial; industrially; industrious",
+          "sentence": "Its arrival on the exchange provides a crucial test for the entire industry."
+        },
+        {
+          "term": "benchmark",
+          "pos": "noun",
+          "collocations": "new benchmark; set a benchmark",
+          "meaning": "基準; 標準",
+          "synonyms": [
+            "standard; yardstick",
+            "criterion; gauge"
+          ],
+          "family": "benchmark",
+          "sentence": "Observers note that this high-profile listing will establish new benchmarks for upcoming technology firms."
+        },
+        {
+          "term": "valuation",
+          "pos": "noun",
+          "collocations": "unprecedented valuation; company valuation",
+          "meaning": "估值; 評價",
+          "synonyms": [
+            "assessment; appraisal",
+            "estimation; evaluation"
+          ],
+          "family": "value; valuable; evaluate",
+          "sentence": "Stakeholders are watching closely to see how this unprecedented valuation holds up over time."
+        },
+        {
+          "term": "global",
+          "pos": "adjective",
+          "collocations": "globally recognized; global market",
+          "meaning": "全球的; 全面的",
+          "synonyms": [
+            "worldwide; universal",
+            "international; planetary"
+          ],
+          "family": "globally; globalize",
+          "sentence": "This milestone marks a significant moment for the financial sector and investors globally."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "Following its successful stock market debut, Anthropic became one of the most _______ public companies in the world.",
+          "options": [
+            "value",
+            "valuation",
+            "valuable",
+            "valuably"
+          ],
+          "answer": "C",
+          "locator": "形容詞修飾名詞結構",
+          "explanation": "空格前方的最高級與系動詞需要形容詞來修飾名詞 companies，故選形容詞 valuable。"
+        },
+        {
+          "prompt": "Market analysts noted _______ the newly listed artificial intelligence firm performed exceptionally well on the exchange.",
+          "options": [
+            "what",
+            "that",
+            "which",
+            "who"
+          ],
+          "answer": "B",
+          "locator": "名詞子句連接詞結構",
+          "explanation": "動詞 noted 後方接完整的子句作受詞，應用連接詞 that 來引導該名詞子句。"
+        },
+        {
+          "prompt": "Stakeholders are watching the market closely _______ they want to evaluate the long-term trend.",
+          "options": [
+            "because",
+            "despite",
+            "during",
+            "unless"
+          ],
+          "answer": "A",
+          "locator": "副詞子句連接詞結構",
+          "explanation": "後方子句說明關注市場的原因，因此需要表示「因為」的副詞子句連接詞 because。"
+        }
+      ],
+      "part6": {
+        "title": "Internal Memo: Corporate Financial Updates",
+        "passage": "To all staff members,\nWe are pleased to announce that our financial department has finalized the quarterly report. 【1】 of recent market fluctuations, our firm has maintained a stable performance. 【2】 to your hard work, our operating revenue has exceeded expectations.\nGoing forward, we encourage all teams to maintain high standards and continue improving their productivity. Management will provide further details during next week's meeting. 【3】 you have any questions regarding these updates, please reach out to HR. Thank you for your continued dedication. 【4】 best regards,\nThe Management Board",
+        "questions": [
+          {
+            "prompt": "Choose the best word for blank 1.",
+            "options": [
+              "Despite",
+              "Because",
+              "Although",
+              "Unless"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"【1】 of recent market fluctuations\"",
+            "explanation": "空格後方為名词片语 recent market fluctuations，表示轉折語氣，故選介系詞片語 Despite。"
+          },
+          {
+            "prompt": "Choose the best word for blank 2.",
+            "options": [
+              "Thanks",
+              "Praise",
+              "Credit",
+              "Help"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"【2】 to your hard work\"",
+            "explanation": "表「多虧了……」的固定片語為 Thanks to，故選 A。"
+          },
+          {
+            "prompt": "Choose the best word for blank 3.",
+            "options": [
+              "Should",
+              "Do",
+              "Will",
+              "Have"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"【3】 you have any questions\"",
+            "explanation": "此句為條件句的倒裝結構（省略 if），原句為 If you have，因此助動詞應填 Should。"
+          },
+          {
+            "prompt": "Choose the best word for blank 4.",
+            "options": [
+              "With",
+              "For",
+              "By",
+              "At"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"【4】 best regards\"",
+            "explanation": "信件結尾常用語為 With best regards，故選 A。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Read the news excerpt about Anthropic and answer the questions.",
+        "questions": [
+          {
+            "prompt": "What milestone did Anthropic achieve recently according to the article?",
+            "options": [
+              "It became one of the most valuable public companies.",
+              "It acquired a major financial institution.",
+              "It launched a new software product globally.",
+              "It announced a merger with another tech giant."
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"Anthropic has officially become one of the most valuable public companies in the world\"",
+            "explanation": "文章第一段明確指出 Anthropic 成為全球最有價值的上市公司之一。"
+          },
+          {
+            "prompt": "What distinguishes Anthropic from other companies in its market debut?",
+            "options": [
+              "It is the first purely artificial intelligence company to be publicly listed.",
+              "It raised more capital than any other firm in history.",
+              "It bypassed all standard regulatory requirements.",
+              "It operated without any financial backing."
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"As the first purely artificial intelligence company to be publicly listed\"",
+            "explanation": "文章第二段提到它是第一家公開上市的純人工智慧公司。"
+          },
+          {
+            "prompt": "Why are observers and stakeholders watching Anthropic closely?",
+            "options": [
+              "To see how its unprecedented valuation holds up over time.",
+              "To investigate potential regulatory violations.",
+              "To prepare for an upcoming corporate acquisition.",
+              "To decide whether to relocate corporate headquarters."
+            ],
+            "answer": "A",
+            "locator": "第 3 段 \"Stakeholders are watching closely to see how this unprecedented valuation holds up over time.\"",
+            "explanation": "文章第三段指出利害關係人密切關注其空前的估值將如何隨時間維持。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/c3x29ggenz12o",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    },
+    "politics": {
+      "title": "EU and UK Officials Prepare for Critical Summit",
+      "summary": "歐盟與英國官員正準備舉行高峰會，預期將針對食品貿易與青年簽證達成新的協議。",
+      "english": [
+        "Negotiations between the European Union and the United Kingdom are approaching their final stages as officials prepare for an upcoming summit.",
+        "Representatives from both sides are expected to address important matters such as agricultural trade and youth mobility programs.",
+        "The crucial discussions are scheduled to conclude on Friday, when leaders will determine the final outcomes of these diplomatic efforts."
+      ],
+      "translation": [
+        "隨著官員們為即將到來的高峰會做準備，歐盟與英國之間的談判正接近最後階段。",
+        "雙方代表預計將處理農產品貿易與青年流動計畫等重要事項。",
+        "這些至關重要的討論預定於週五結束，屆時領導人將決定這些外交努力的最終結果。"
+      ],
+      "vocabulary": [
+        {
+          "term": "negotiations",
+          "pos": "noun",
+          "collocations": "hold negotiations; resume negotiations",
+          "meaning": "談判；協商",
+          "synonyms": [
+            "talks; discussions",
+            "bargaining; dialogues"
+          ],
+          "family": "negotiate; negotiator",
+          "sentence": "Negotiations between the European Union and the United Kingdom are approaching their final stages as officials prepare for an upcoming summit."
+        },
+        {
+          "term": "officials",
+          "pos": "noun",
+          "collocations": "government officials; senior officials",
+          "meaning": "官員；高級職員",
+          "synonyms": [
+            "administrators; authorities",
+            "executives; directors"
+          ],
+          "family": "official; officially",
+          "sentence": "Negotiations between the European Union and the United Kingdom are approaching their final stages as officials prepare for an upcoming summit."
+        },
+        {
+          "term": "summit",
+          "pos": "noun",
+          "collocations": "attend a summit; hold a summit",
+          "meaning": "高峰會；首腦會議",
+          "synonyms": [
+            "conference; meeting",
+            "assembly; convention"
+          ],
+          "family": "summit",
+          "sentence": "Negotiations between the European Union and the United Kingdom are approaching their final stages as officials prepare for an upcoming summit."
+        },
+        {
+          "term": "representatives",
+          "pos": "noun",
+          "collocations": "sales representatives; official representatives",
+          "meaning": "代表",
+          "synonyms": [
+            "delegates; agents",
+            "spokespersons; deputies"
+          ],
+          "family": "represent; representation",
+          "sentence": "Representatives from both sides are expected to address important matters such as agricultural trade and youth mobility programs."
+        },
+        {
+          "term": "address",
+          "pos": "verb",
+          "collocations": "address an issue; address a problem",
+          "meaning": "處理；解決；向...發表演說",
+          "synonyms": [
+            "handle; tackle",
+            "deal with; resolve"
+          ],
+          "family": "address",
+          "sentence": "Representatives from both sides are expected to address important matters such as agricultural trade and youth mobility programs."
+        },
+        {
+          "term": "matters",
+          "pos": "noun",
+          "collocations": "important matters; financial matters",
+          "meaning": "事情；事件；問題",
+          "synonyms": [
+            "issues; affairs",
+            "subjects; topics"
+          ],
+          "family": "matter",
+          "sentence": "Representatives from both sides are expected to address important matters such as agricultural trade and youth mobility programs."
+        },
+        {
+          "term": "agricultural",
+          "pos": "adjective",
+          "collocations": "agricultural trade; agricultural products",
+          "meaning": "農業的",
+          "synonyms": [
+            "farming; agrarian",
+            "rural; agro-industrial"
+          ],
+          "family": "agriculture; agriculturally",
+          "sentence": "Representatives from both sides are expected to address important matters such as agricultural trade and youth mobility programs."
+        },
+        {
+          "term": "discussions",
+          "pos": "noun",
+          "collocations": "hold discussions; open discussions",
+          "meaning": "討論；商討",
+          "synonyms": [
+            "talks; conversations",
+            "debates; dialogues"
+          ],
+          "family": "discuss",
+          "sentence": "The crucial discussions are scheduled to conclude on Friday, when leaders will determine the final outcomes of these diplomatic efforts."
+        },
+        {
+          "term": "conclude",
+          "pos": "verb",
+          "collocations": "conclude a deal; conclude a meeting",
+          "meaning": "結束；達成；作出結論",
+          "synonyms": [
+            "finish; end",
+            "complete; terminate"
+          ],
+          "family": "conclusion; conclusive",
+          "sentence": "The crucial discussions are scheduled to conclude on Friday, when leaders will determine the final outcomes of these diplomatic efforts."
+        },
+        {
+          "term": "outcomes",
+          "pos": "noun",
+          "collocations": "final outcomes; successful outcomes",
+          "meaning": "結果；成果",
+          "synonyms": [
+            "results; consequences",
+            "effects; conclusions"
+          ],
+          "family": "outcome",
+          "sentence": "The crucial discussions are scheduled to conclude on Friday, when leaders will determine the final outcomes of these diplomatic efforts."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "Representatives from both sides are expected to ______ important matters during the summit.",
+          "options": [
+            "address",
+            "addressing",
+            "addressed",
+            "addressable"
+          ],
+          "answer": "A",
+          "locator": "be expected to + 圓形動詞",
+          "explanation": "句型 'be expected to' 後方需接原形動詞，因此選 (A) address。"
+        },
+        {
+          "prompt": "Negotiations between the two regions are ______ their final stages.",
+          "options": [
+            "approach",
+            "approaches",
+            "approaching",
+            "approached"
+          ],
+          "answer": "C",
+          "locator": "現在進行式 (is/are + V-ing)",
+          "explanation": "句意表示談判『正在接近』最後階段，且主語為複數 negotiations，故用 are approaching，選 (C)。"
+        },
+        {
+          "prompt": "The crucial discussions are scheduled to conclude ______ Friday.",
+          "options": [
+            "in",
+            "at",
+            "on",
+            "to"
+          ],
+          "answer": "C",
+          "locator": "特定星期前的介系詞 on",
+          "explanation": "英文中指特定的某一天或星期幾（如 Friday）時，前面需搭配介系詞 on，故選 (C)。"
+        }
+      ],
+      "part6": {
+        "title": "Notice on Upcoming Policy Seminar",
+        "passage": "Dear Colleagues,【1】 the upcoming diplomatic summit, our department will host a brief internal briefing this Thursday. Officials have noted that several important topics, including agricultural trade and visa regulations, will be discussed. All staff members are encouraged to 【2】 the meeting to stay informed about these developments. Please review the attached documents prior to arrival. If you have any questions, feel free to contact the administrative office. We look forward to your 【3】 participation. Thank you for your continued cooperation and dedication to our team's success, 【4】.",
+        "questions": [
+          {
+            "prompt": "Choose the best word for blank 【1】.",
+            "options": [
+              "Regarding",
+              "Despite",
+              "Unless",
+              "Because"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"【1】 the upcoming diplomatic summit\"",
+            "explanation": "空格處需要一個介系詞片語來引導『關於即將到來的外交高峰會』這項背景，Regarding（關於）符合上下文邏輯，故選 (A)。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【2】.",
+            "options": [
+              "attend",
+              "ignore",
+              "postpone",
+              "cancel"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"encouraged to 【2】 the meeting\"",
+            "explanation": "根據句意，員工被鼓勵『參加』會議以了解最新發展，attend（參加）最為合適，故選 (A)。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【3】.",
+            "options": [
+              "active",
+              "actively",
+              "activity",
+              "activate"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"your 【3】 participation\"",
+            "explanation": "空格前方為所有格 your，後方為名詞 participation，因此需要形容詞來修飾名詞，active（積極的）符合文法與語意，故選 (A)。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【4】.",
+            "options": [
+              "Sincerely",
+              "Loudly",
+              "Quickly",
+              "Roughly"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"success, 【4】.\"",
+            "explanation": "這是商用書信結尾的標準署名前慣用語，Sincerely（誠摯地）最符合書信禮儀，故選 (A)。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Read the article and choose the best answer for each question.",
+        "questions": [
+          {
+            "prompt": "What are officials preparing for according to the first paragraph?",
+            "options": [
+              "An upcoming summit",
+              "A corporate merger",
+              "A sports competition",
+              "A staff election"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"prepare for an upcoming summit\"",
+            "explanation": "文章第一段明確指出官員們正為即將到來的高峰會做準備，故選 (A)。"
+          },
+          {
+            "prompt": "Which topic is mentioned as one of the matters to be addressed?",
+            "options": [
+              "Agricultural trade",
+              "Real estate prices",
+              "Software development",
+              "Medical research"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"agricultural trade and youth mobility programs\"",
+            "explanation": "第二段提到雙方代表預計處理的事項包含農產品貿易（agricultural trade），故選 (A)。"
+          },
+          {
+            "prompt": "When are the crucial discussions scheduled to conclude?",
+            "options": [
+              "On Friday",
+              "On Monday",
+              "Next month",
+              "Yesterday"
+            ],
+            "answer": "A",
+            "locator": "第 3 段 \"conclude on Friday\"",
+            "explanation": "第三段指出這些至關重要的討論預定於週五（on Friday）結束，故選 (A)。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/c623j4kpg94go",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    },
+    "techLife": {
+      "title": "Dutch Watchdog Warns Against AI Smart Glasses",
+      "summary": "荷蘭監管機構警告消費者不要購買人工智慧智慧眼鏡，因為測試發現這些眼鏡會誤讀藥品說明或假裝已呼叫救護車。",
+      "english": [
+        "A Dutch consumer watchdog has issued a warning advising people not to purchase AI smart glasses. The authority tested several popular devices to check their overall safety and operational reliability.",
+        "The testing revealed that these wearable devices presented significant risks to users. Specifically, some models misread critical medicine instructions, while others falsely pretended to have called an ambulance.",
+        "Because of these dangerous operational failures, regulators strongly suggest that consumers avoid buying them. The watchdog continues to monitor the market for further safety violations."
+      ],
+      "translation": [
+        "荷蘭消費者監督機構發布警告，建議人們不要購買人工智慧智慧眼鏡。該權威機構測試了幾款熱門設備，以檢查其整體安全性和運作可靠性。",
+        "測試顯示，這些穿戴式設備對用戶構成了重大風險。具體而言，有些型號誤讀了關鍵的藥品說明，而另一些型號則虛假地假裝已呼叫救護車。",
+        "由於這些危險的運作故障，監管機構強烈建議消費者避免購買。該監督機構將繼續監控市場，以防範進一步的安全違規行為。"
+      ],
+      "vocabulary": [
+        {
+          "term": "watchdog",
+          "pos": "noun",
+          "collocations": "consumer watchdog; regulatory watchdog",
+          "meaning": "監管機構；監督組織",
+          "synonyms": [
+            "monitor; overseer",
+            "inspector; regulator"
+          ],
+          "family": "watchdog",
+          "sentence": "A Dutch consumer watchdog has issued a warning advising people not to purchase AI smart glasses."
+        },
+        {
+          "term": "warning",
+          "pos": "noun",
+          "collocations": "issue a warning; serious warning",
+          "meaning": "警告；警示",
+          "synonyms": [
+            "caution; alert",
+            "notice; advisory"
+          ],
+          "family": "warn; warning",
+          "sentence": "A Dutch consumer watchdog has issued a warning advising people not to purchase AI smart glasses."
+        },
+        {
+          "term": "purchase",
+          "pos": "verb",
+          "collocations": "purchase a product; purchase online",
+          "meaning": "購買",
+          "synonyms": [
+            "buy; acquire",
+            "obtain; procure"
+          ],
+          "family": "purchase; purchaser",
+          "sentence": "A Dutch consumer watchdog has issued a warning advising people not to purchase AI smart glasses."
+        },
+        {
+          "term": "authority",
+          "pos": "noun",
+          "collocations": "local authority; regulatory authority",
+          "meaning": "官方；權威機構",
+          "synonyms": [
+            "agency; administration",
+            "government; official"
+          ],
+          "family": "authoritative; authorize",
+          "sentence": "The authority tested several popular devices to check their overall safety and operational reliability."
+        },
+        {
+          "term": "device",
+          "pos": "noun",
+          "collocations": "electronic device; mobile device",
+          "meaning": "設備；裝置",
+          "synonyms": [
+            "gadget; tool",
+            "instrument; apparatus"
+          ],
+          "family": "devise",
+          "sentence": "The authority tested several popular devices to check their overall safety and operational reliability."
+        },
+        {
+          "term": "safety",
+          "pos": "noun",
+          "collocations": "safety standards; safety guidelines",
+          "meaning": "安全性；安全",
+          "synonyms": [
+            "security; protection",
+            "surety; defense"
+          ],
+          "family": "safe; safely",
+          "sentence": "The authority tested several popular devices to check their overall safety and operational reliability."
+        },
+        {
+          "term": "significant",
+          "pos": "adjective",
+          "collocations": "significant risk; significant impact",
+          "meaning": "重大的；顯著的",
+          "synonyms": [
+            "substantial; considerable",
+            "major; important"
+          ],
+          "family": "significance; signify",
+          "sentence": "The testing revealed that these wearable devices presented significant risks to users."
+        },
+        {
+          "term": "critical",
+          "pos": "adjective",
+          "collocations": "critical information; critical factor",
+          "meaning": "關鍵的；危急的",
+          "synonyms": [
+            "crucial; vital",
+            "essential; important"
+          ],
+          "family": "critic; criticize",
+          "sentence": "Specifically, some models misread critical medicine instructions, while others falsely pretended to have called an ambulance."
+        },
+        {
+          "term": "avoid",
+          "pos": "verb",
+          "collocations": "avoid buying; avoid mistakes",
+          "meaning": "避免；避開",
+          "synonyms": [
+            "prevent; evade",
+            "shun; escape"
+          ],
+          "family": "avoidable; avoidance",
+          "sentence": "Because of these dangerous operational failures, regulators strongly suggest that consumers avoid buying them."
+        },
+        {
+          "term": "market",
+          "pos": "noun",
+          "collocations": "global market; market share",
+          "meaning": "市場",
+          "synonyms": [
+            "marketplace; exchange",
+            "trade; commerce"
+          ],
+          "family": "marketable; marketer",
+          "sentence": "The watchdog continues to monitor the market for further safety violations."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "The Dutch watchdog advised consumers not to _____ AI smart glasses due to safety concerns.",
+          "options": [
+            "purchase",
+            "purchasing",
+            "purchased",
+            "purchases"
+          ],
+          "answer": "A",
+          "locator": "動詞不定式句型 (advise someone not to do something)",
+          "explanation": "句型 advise + 受詞 + to do 表示「建議某人做某事」，因此空格應填入原形動詞 purchase。"
+        },
+        {
+          "prompt": "Testing revealed that some wearable devices _____ critical medicine instructions incorrectly.",
+          "options": [
+            "misread",
+            "misreads",
+            "misreading",
+            "is misread"
+          ],
+          "answer": "A",
+          "locator": "主動語態與過去式動詞 (revealed that...)與過去事實描述",
+          "explanation": "子句敘述過去測試的結果，主詞 some wearable devices 需要過去式動詞 misread 來保持時態一致。"
+        },
+        {
+          "prompt": "Regulators strongly suggest that consumers _____ buying devices with operational failures.",
+          "options": [
+            "avoid",
+            "avoids",
+            "avoided",
+            "avoiding"
+          ],
+          "answer": "A",
+          "locator": "假設語氣/原形動詞要求 (suggest that + 主詞 + 原形動詞)",
+          "explanation": "在 suggest 之後的子句中若表示建議，通常省略 should，動詞需使用原形 avoid。"
+        }
+      ],
+      "part6": {
+        "title": "Memo: New Policy on Smart Devices in the Workplace",
+        "passage": "To all staff members,\n\nFollowing recent safety warnings regarding smart accessories, management has updated our office policy. Effective immediately, employees are asked to 【1】 purchasing unverified smart glasses for office use.\n\nRecent tests show that certain AI devices may 【2】 critical operating data. To ensure workplace safety, we must 【3】 potential risks before they cause problems.\n\nThank you for your cooperation in maintaining a secure environment. Please contact the IT department if you have any questions 【4】 this new policy.",
+        "questions": [
+          {
+            "prompt": "Choose the best word for blank 【1】.",
+            "options": [
+              "avoid",
+              "avoids",
+              "avoided",
+              "avoiding"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"are asked to 【1】 purchasing\"",
+            "explanation": "片語 be asked to 後面必須接原形動詞，因此選 avoid。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【2】.",
+            "options": [
+              "misread",
+              "misreads",
+              "misreading",
+              "misreader"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"devices may 【2】 critical\"",
+            "explanation": "助動詞 may 後面必須接原形動詞，因此選 misread。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【3】.",
+            "options": [
+              "monitor",
+              "monitors",
+              "monitored",
+              "monitoring"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"we must 【3】 potential risks\"",
+            "explanation": "助動詞 must 後面必須接原形動詞，因此選 monitor。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【4】.",
+            "options": [
+              "regarding",
+              "regards",
+              "regarded",
+              "regard"
+            ],
+            "answer": "A",
+            "locator": "第 3 段 \"questions 【4】 this new policy\"",
+            "explanation": "分詞介系詞 regarding 常用來表示「關於」，符合句意。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Read the article about AI smart glasses and answer the questions.",
+        "questions": [
+          {
+            "prompt": "What did the Dutch watchdog advise people to do?",
+            "options": [
+              "Not to buy AI smart glasses",
+              "To test new smart devices",
+              "To call an ambulance immediately",
+              "To read medicine instructions carefully"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"advising people not to purchase AI smart glasses\"",
+            "explanation": "根據文章第一段，荷蘭消費者監督機構發布警告，建議人們不要購買人工智慧智慧眼鏡。"
+          },
+          {
+            "prompt": "What was one of the problems found during the device testing?",
+            "options": [
+              "Misreading medicine instructions",
+              "Breaking computer screens",
+              "Failing to connect to the internet",
+              "Displaying incorrect weather reports"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"some models misread critical medicine instructions\"",
+            "explanation": "根據文章第二段，測試顯示有些型號會誤讀關鍵的藥品說明。"
+          },
+          {
+            "prompt": "Why do regulators suggest consumers avoid these devices?",
+            "options": [
+              "Because of dangerous operational failures",
+              "Because they are too expensive",
+              "Because they require too much power",
+              "Because they are illegal to own"
+            ],
+            "answer": "A",
+            "locator": "第 3 段 \"Because of these dangerous operational failures\"",
+            "explanation": "根據文章第三段，由於這些危險的運作故障，監管機構強烈建議消費者避免購買。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/ckq6eyrzrzy5o",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    }
+  },
   "2026-11-19": {
     "finance": {
       "title": "Anthropic IPO and Market Uncertainty",
