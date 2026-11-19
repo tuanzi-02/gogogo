@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
   <title>TOEIC News Notes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&amp;family=Cinzel:wght@400;600;700&amp;family=Fira+Sans:wght@400;500;600;700&amp;family=Libre+Baskerville:wght@400;700&amp;family=Notable&amp;family=Noto+Sans+TC:wght@400;500;600;700;800&amp;family=Walter+Turncoat&amp;display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.3/html2pdf.bundle.min.js" defer></script>
   <script>
     try {
@@ -60,54 +63,59 @@
     .page{max-width:1120px;margin:20px auto 64px;padding:0 22px}
     .status{min-height:22px;margin:0 0 9px;color:var(--muted);font-size:.79rem}
     .sheet{overflow:hidden;border:1px solid var(--line);border-radius:20px;background:var(--paper);box-shadow:0 16px 42px #35292716}
-    /* PDF 專用的平坦講義；瀏覽頁面的卡片與分割捲動區不參與擷取。 */
-    .pdf-clean{position:fixed;left:-9999px;top:0;width:680px;max-width:680px;margin:0;overflow:visible!important;border:0;border-radius:0;background:var(--paper);color:var(--ink);box-shadow:none;font-size:13px;line-height:1.55;print-color-adjust:exact;-webkit-print-color-adjust:exact}
-    .html2pdf__container .pdf-clean{position:static;left:auto;top:auto;margin:0 auto}
-    .pdf-clean *{box-sizing:border-box;max-height:none!important;overflow:visible!important}
-    .pdf-clean-head{display:block;padding:18px 24px 16px;border-bottom:1px solid var(--line)}
-    .pdf-clean-head h1{margin:8px 0 5px;font-size:25px;line-height:1.28}
-    .pdf-clean-head .summary{font-size:13px}
-    .pdf-clean-section,.pdf-clean .question-list,.pdf-clean .vocab,.pdf-clean .vocab thead,.pdf-clean .vocab tbody,.pdf-clean .article-copy{display:contents}
-    .pdf-clean .section-heading{margin:16px 24px 9px;padding-top:10px;border-top:1px solid var(--line);break-after:avoid;page-break-after:avoid}
-    .pdf-clean .article-copy p{margin:0 24px 9px;font-size:15px;line-height:1.62}
+    /* 六個 A4 專用頁面；瀏覽頁面的捲動容器不參與擷取。 */
+    .pdf-clean{position:fixed;left:-9999px;top:0;width:680px;max-width:680px;margin:0;border:0;border-radius:0;background:var(--paper);color:var(--ink);box-shadow:none;print-color-adjust:exact;-webkit-print-color-adjust:exact}
+    .html2pdf__container .pdf-clean{position:static;left:auto;top:auto;margin:0}
+    .pdf-clean *{box-sizing:border-box;print-color-adjust:exact;-webkit-print-color-adjust:exact}
+    .pdf-page{display:block;width:680px;height:987px;margin:0;padding:18px 24px;background:var(--paper);overflow:visible;break-after:page;page-break-after:always}
+    .pdf-page:last-child{break-after:auto;page-break-after:auto}
+    .pdf-page-inner{width:100%;transform-origin:top left}
+    .pdf-clean .pdf-clean-head{padding:0 0 10px;border-bottom:1px solid var(--line)}
+    .pdf-clean .pdf-clean-head h1{margin:8px 0 5px;font-family:var(--font-heading);font-size:22px;line-height:1.22}
+    .pdf-clean .pdf-clean-head .summary{margin:0;font-size:11px}
+    .pdf-clean .section-heading{margin:11px 0 9px;padding:0;border:0;break-after:avoid}
+    .pdf-clean .section-heading h2{font-size:16px}
+    .pdf-clean .section-en{font-family:var(--font-heading)}
+    .pdf-clean .article-copy{max-width:none;font-family:var(--font-body);font-size:12.5px;line-height:1.45}
+    .pdf-clean .article-copy p{margin:0 0 8px}
     .pdf-clean .read-sentence{background:transparent}
+    .pdf-clean .sentence-play,.pdf-clean .source-row,.pdf-clean .split-label{display:none!important}
     .pdf-clean .vocab-hit::after{display:none!important}
-    .pdf-clean .user-highlight,.pdf-clean .vocab-hit{print-color-adjust:exact;-webkit-print-color-adjust:exact}
-    .pdf-clean .small-heading{margin:10px 24px 5px}
-    .pdf-clean .source-row{margin:8px 24px 0}
-    .pdf-clean-section>.reveal,.pdf-clean-section>.reading-note{margin-left:24px;margin-right:24px}
-    .pdf-clean .reveal{min-height:36px}
-    .pdf-clean .reveal.is-covered{height:36px;min-height:36px}
-    .pdf-clean .reveal.is-covered .reveal-content{display:none}
-    .pdf-clean .reveal:not(.is-covered) .mask{display:none}
-    .pdf-clean .reveal-content{padding:7px 10px}
-    .pdf-clean .mask{font-size:11px}
-    .pdf-clean .vocab{width:100%;min-width:0;border:0;border-collapse:separate;table-layout:auto;font-size:11px}
-    .pdf-clean .vocab tr{display:block;margin:0 24px 10px;border:0;break-inside:avoid;page-break-inside:avoid;font-size:0}
-    .pdf-clean .vocab thead tr{margin-bottom:6px;border-radius:8px;background:var(--vocab-head)}
-    .pdf-clean .vocab th,.pdf-clean .vocab td{display:inline-block;width:auto;padding:8px 6px;border:0;text-align:left;vertical-align:top;font-size:11px;line-height:1.4;overflow-wrap:anywhere}
-    .pdf-clean .vocab th{background:transparent;color:var(--vocab-ink);font-size:10px}
+    .pdf-clean .small-heading{margin:10px 0 5px;font-size:12px}
+    .pdf-clean .reveal{min-height:0;border:0;background:transparent}
+    .pdf-clean .reveal-content{padding:0}
+    .pdf-clean .reveal.is-covered .reveal-content{display:none!important}
+    .pdf-clean .reveal:not(.is-covered) .mask{display:none!important}
+    .pdf-clean .reveal.is-covered{height:26px;min-height:26px;border-radius:5px;background:var(--mask)}
+    .pdf-clean .reveal.is-covered .mask{display:grid;position:absolute;inset:0;min-height:26px;height:26px;border-radius:5px;font-size:10px}
+    .pdf-clean .pdf-translation:not(.is-covered) .reveal-content{font-family:"Noto Sans TC","PingFang TC",sans-serif;font-size:11.5px;line-height:1.48}
+    .pdf-clean .pdf-translation:not(.is-covered) p{margin:0 0 4px}
+    .pdf-clean .vocab{width:100%;border:0;border-collapse:separate;border-spacing:0;table-layout:fixed;font-size:10px}
+    .pdf-clean .vocab thead{background:var(--vocab-head)}
+    .pdf-clean .vocab th{padding:8px 5px;border:0;background:var(--vocab-head);color:var(--vocab-ink);font:700 9px/1.3 "Noto Sans TC","PingFang TC",sans-serif;text-align:left}
+    .pdf-clean .vocab th:first-child{border-radius:7px 0 0 7px}.pdf-clean .vocab th:last-child{border-radius:0 7px 7px 0}
+    .pdf-clean .vocab td{padding:8px 5px;border:0;vertical-align:top;text-align:left;line-height:1.35;overflow-wrap:anywhere}
     .pdf-clean .vocab th:nth-child(1),.pdf-clean .vocab td:nth-child(1){width:22%}
-    .pdf-clean .vocab th:nth-child(2),.pdf-clean .vocab td:nth-child(2){width:16%}
-    .pdf-clean .vocab th:nth-child(3),.pdf-clean .vocab td:nth-child(3){width:17%}
+    .pdf-clean .vocab th:nth-child(2),.pdf-clean .vocab td:nth-child(2){width:130px;white-space:nowrap;overflow-wrap:normal}
+    .pdf-clean .vocab th:nth-child(3),.pdf-clean .vocab td:nth-child(3){width:15%}
     .pdf-clean .vocab th:nth-child(4),.pdf-clean .vocab td:nth-child(4){width:18%}
-    .pdf-clean .vocab th:nth-child(5),.pdf-clean .vocab td:nth-child(5){width:27%}
-    .pdf-clean .vocab tr.is-offpage{display:block}
-    .pdf-clean .vocab .reveal{min-height:36px}
-    .pdf-clean .vocab .reveal:not(.is-covered){min-height:0}
-    .pdf-clean .vocab .mask{font-size:10px}
-    .pdf-clean .pdf-q-card{display:block;margin:0 24px 10px;padding:12px;border:1px solid var(--line);border-radius:8px;background:var(--panel);break-inside:avoid;page-break-inside:avoid}
-    .pdf-clean .question-top{display:block}
-    .pdf-clean .q-number{margin-right:8px}
-    .pdf-clean .prompt{display:inline;font-size:13px}
-    .pdf-clean .options{display:block;margin:7px 0 8px 22px}
-    .pdf-clean .options li{display:inline-block;width:49%;vertical-align:top;font-size:12px}
-    .pdf-clean .answer-reveal{min-height:36px}
-    .pdf-clean .answer-reveal .reveal-content{display:block;padding:7px 9px}
-    .pdf-clean .detail-row{display:block;margin-bottom:4px;font-size:11px}
-    .pdf-clean .detail-row:last-child{margin-bottom:0}
-    .pdf-clean .detail-label{margin-right:6px}
-    .pdf-clean .passage{display:block;margin:0 24px 12px;padding:10px 13px;font-size:13px;line-height:1.6;break-inside:avoid;page-break-inside:avoid}
+    .pdf-clean .vocab th:nth-child(5),.pdf-clean .vocab td:nth-child(5){width:auto}
+    .pdf-clean .vocab tr{break-inside:avoid;page-break-inside:avoid}
+    .pdf-clean .vocab tr.is-offpage{display:table-row}
+    .pdf-clean .vocab .reveal.is-covered{height:26px;min-height:26px;white-space:normal}
+    .pdf-clean .vocab .reveal:not(.is-covered){border:0;background:transparent}
+    .pdf-clean .vocab .reveal:not(.is-covered) .reveal-content{white-space:nowrap;padding:0}
+    .pdf-clean .collocation{font-size:9px}.pdf-clean .example{font-size:9px}
+    .pdf-clean .pdf-q-card{display:block;margin:0 0 10px;padding:12px;border:1px solid var(--line);border-radius:8px;background:var(--panel);break-inside:avoid;page-break-inside:avoid}
+    .pdf-clean .question-top{display:flex;gap:7px;align-items:baseline}
+    .pdf-clean .q-number{font-size:11px}.pdf-clean .prompt{font-size:11.5px;line-height:1.4}
+    .pdf-clean .options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:3px 10px;margin:6px 0 7px 18px}
+    .pdf-clean .options li{font-size:10.5px;line-height:1.35}
+    .pdf-clean .answer-reveal,.pdf-clean .answer-reveal.is-covered{height:26px;min-height:26px}
+    .pdf-clean .answer-reveal .reveal-content{display:none!important}
+    .pdf-clean .passage{margin:0 0 10px;padding:8px 11px;border-left:3px solid var(--vocab-head);border-radius:0 6px 6px 0;background:var(--panel);font:11px/1.43 var(--font-body);white-space:pre-line;break-inside:avoid}
+    .pdf-clean .passage-title{font:700 10px/1.3 "Noto Sans TC","PingFang TC",sans-serif}
+    .pdf-clean .reading-note{margin:0 0 8px;font-size:10px}
     .pdf-modal[hidden]{display:none}
     .pdf-modal{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;padding:16px;background:#1d1b1bcc}
     .pdf-dialog{display:flex;flex-direction:column;width:min(100%,960px);height:min(92vh,1100px);overflow:hidden;border:1px solid var(--line);border-radius:12px;background:var(--paper);box-shadow:0 24px 60px #0005}
@@ -218,6 +226,32 @@
     .selection-tools{position:fixed;z-index:1200;display:flex;gap:4px;padding:4px;border:1px solid var(--line);border-radius:9px;background:var(--paper);box-shadow:0 9px 24px #0003}
     .selection-tools button{padding:4px 8px;border:0;border-radius:6px;background:var(--panel);color:var(--ink);font-size:.73rem;font-weight:800;white-space:nowrap}
     .selection-tools button:hover{background:var(--teal)}
+    :root{--font-heading:"Cinzel",serif;--font-body:"Libre Baskerville",serif}
+    .sheet h1,.sheet .section-en{font-family:var(--font-heading)}
+    .sheet .article-copy,.sheet .passage,.sheet .example,.sheet .term,.sheet .collocation,.sheet .options,.sheet .prompt{font-family:var(--font-body)}
+    .sheet .summary,.sheet .section-heading h2,.sheet .small-heading,.sheet .reveal-content,.sheet .detail-label,.sheet .vocab th{font-family:"Noto Sans TC","PingFang TC",sans-serif}
+    .theme-illustration{display:grid;place-items:center;flex:none;width:20px;color:var(--ink)}
+    .font-picker,.mask-picker{position:relative}
+    .font-toggle,.mask-toggle{display:flex;align-items:center;justify-content:center;gap:2px;width:auto;min-width:37px;padding:0 6px;font-size:.8rem;font-weight:800}
+    .font-toggle span,.mask-toggle span{font-size:.65rem}
+    .font-menu[hidden],.mask-menu[hidden]{display:none}
+    .font-menu,.mask-menu{position:absolute;right:0;top:calc(100% + 8px);z-index:130;min-width:196px;padding:6px;border:1px solid var(--line);border-radius:10px;background:var(--paper);box-shadow:0 14px 30px #0003}
+    .font-menu button,.mask-menu button{display:flex;justify-content:space-between;gap:12px;width:100%;padding:7px 9px;border:0;border-radius:6px;background:transparent;color:var(--ink);text-align:left;font-size:.78rem;white-space:nowrap}
+    .font-menu button:hover,.font-menu button[aria-checked="true"],.mask-menu button:hover{background:var(--panel)}
+    .mask-menu-divider{height:1px;margin:5px 0;background:var(--line)}
+    .quick-nav{position:fixed;right:18px;bottom:18px;z-index:90;display:flex;align-items:center;padding:5px;border:1px solid var(--line);border-radius:999px;background:color-mix(in srgb,var(--paper) 88%,transparent);box-shadow:0 7px 24px #0002;backdrop-filter:blur(10px)}
+    .quick-nav-links{display:flex;gap:2px}
+    .quick-nav button{padding:5px 8px;border:0;border-radius:999px;background:transparent;color:var(--ink);font-size:.72rem;font-weight:800;white-space:nowrap}
+    .quick-nav button:hover{background:var(--teal);color:var(--accent-ink)}
+    .quick-nav-toggle{display:none}
+    .meta-line{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+    .speech-controls{margin-left:auto;justify-content:flex-end}
+    .speech-controls select,.speech-main{height:30px;min-height:30px;padding:3px 6px;border:1px solid var(--line);border-radius:6px;background:var(--panel);color:var(--ink);font-size:.72rem;font-weight:800}
+    #voice-select{max-width:174px}#region-select{max-width:128px}#rate-select{max-width:75px}
+    .speech-main:disabled{opacity:.5;cursor:not-allowed}
+    .pdf-mask-controls{display:flex;gap:12px;flex-wrap:wrap;color:var(--ink);font-size:.78rem;font-weight:700}
+    .pdf-mask-controls label{display:inline-flex;align-items:center;gap:4px;cursor:pointer}
+    .pdf-mask-controls input{accent-color:var(--ink)}
     @media(max-width:760px){
       .topbar{padding:0 10px}.date-select{width:113px}.tab{padding:0 8px;font-size:.77rem}
       .page{padding:0 10px}.sheet-head,.section{padding:24px 18px}
@@ -226,23 +260,27 @@
       .vocab{min-width:780px}.detail-row{grid-template-columns:1fr;gap:0}
       .reading-tools h1{flex-basis:100%;margin-bottom:0}.speech-controls{margin-top:6px}
       .split-layout{min-height:360px}.split-pane{padding:13px 14px}
-      .topbar{height:auto;min-height:56px;flex-wrap:wrap;padding-top:5px;padding-bottom:5px}
-      .section-jump{order:3;width:100%;justify-content:center;overflow-x:auto}
-      .section{scroll-margin-top:108px}
+      .topbar{height:56px;min-height:56px;flex-wrap:nowrap;padding-top:0;padding-bottom:0}
+      .section{scroll-margin-top:68px}
     }
     @media(max-width:600px){
       .topbar{gap:5px;padding:6px 10px}
-      .nav-left{flex:1 1 100%;justify-content:space-between}.nav-right{position:absolute;right:10px;top:6px}
-      .section-jump{justify-content:flex-start}
-      .tab{padding:0 6px;font-size:.72rem}.icon-button{width:31px;height:31px}
-      .nav-left{padding-right:106px}
+      .nav-left{flex:1 1 auto;justify-content:flex-start}.nav-right{position:static;right:auto;top:auto}
+      .tab{padding:0 4px;font-size:.68rem}.icon-button{width:29px;height:29px}
+      .nav-left{padding-right:0}.font-toggle,.mask-toggle{width:auto;min-width:29px}
+      .date-select{width:94px;font-size:.72rem}.topbar{gap:3px;padding:0 4px}
+      .quick-nav{right:12px;bottom:12px}.quick-nav-toggle{display:block}.quick-nav-links{display:none}
+      .quick-nav.is-open{border-radius:16px;align-items:flex-end;flex-direction:column}.quick-nav.is-open .quick-nav-links{display:flex;flex-direction:column;align-items:stretch}
+      .quick-nav.is-open .quick-nav-links button{text-align:right}
+      .speech-controls{width:100%;margin-left:0;justify-content:flex-start}
+      .pdf-dialog-head{align-items:flex-start}.pdf-mask-controls{order:3;width:100%}
       .split-layout{height:min(760px,calc(100dvh - 120px))}
     }
     @page{size:A4;margin:14mm 13mm 15mm}
     @media print{
       :root,html[data-theme]{--canvas:#fff;--paper:#fff;--ink:#111;--muted:#444;--line:#bbb;--panel:#fff;--vocab-head:#fff;--teal:#111}
       html,body{width:auto;background:#fff!important;color:#111;font-size:9.5pt;print-color-adjust:economy;-webkit-print-color-adjust:economy}
-      .topbar,.status,.pdf-modal,.selection-tools,.speech-controls,.speech-status,.sentence-play{display:none!important}
+      .topbar,.quick-nav,.status,.pdf-modal,.selection-tools,.speech-controls,.speech-status,.sentence-play{display:none!important}
       .split-layout{display:block!important;height:auto!important;min-height:0!important;overflow:visible!important}
       .split-pane{height:auto!important;max-height:none!important;overflow:visible!important}
       .vocab-hit::after{display:none!important}
@@ -289,26 +327,42 @@
         <button type="button" class="tab" role="tab" id="tab-techLife" data-category="techLife" aria-controls="lesson" aria-selected="false">Tech &amp; Life</button>
       </div>
     </div>
-    <div class="section-jump" role="group" aria-label="跳至講義章節">
-      <button type="button" data-jump="0">News</button><button type="button" data-jump="1">Vocab</button><button type="button" data-jump="2">Part 5</button><button type="button" data-jump="3">Part 6</button><button type="button" data-jump="4">Part 7</button>
-    </div>
     <div class="nav-right">
+      <div class="font-picker">
+        <button type="button" class="icon-button font-toggle" id="font-toggle" title="切換英文字體" aria-label="切換英文字體" aria-expanded="false" aria-controls="font-menu">Aa <span aria-hidden="true">▾</span></button>
+        <div id="font-menu" class="font-menu" role="radiogroup" aria-label="英文字體組合" hidden></div>
+      </div>
       <div class="theme-picker">
         <button type="button" class="icon-button theme-toggle" id="theme-toggle" title="選擇護眼配色" aria-label="選擇護眼配色" aria-expanded="false" aria-controls="theme-menu">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18h1.2a2 2 0 0 0 1.7-3c-.4-.6-.1-1.4.6-1.4H18a4 4 0 0 0 4-4A9 9 0 0 0 12 3Z"/><circle cx="7.2" cy="11" r=".8"/><circle cx="10" cy="7.5" r=".8"/><circle cx="15" cy="7.8" r=".8"/><circle cx="18" cy="11.5" r=".8"/></svg><span class="current-theme-dot" aria-hidden="true"></span>
         </button>
         <div id="theme-menu" class="theme-menu" role="radiogroup" aria-label="護眼配色主題" hidden></div>
       </div>
-      <button type="button" class="icon-button" id="toggle-all" title="全部顯示" aria-label="全部顯示" aria-pressed="false">
+      <div class="mask-picker">
+      <button type="button" class="icon-button mask-toggle" id="toggle-all" title="分區遮罩設定" aria-label="分區遮罩設定" aria-expanded="false" aria-controls="mask-menu">
         <svg class="eye-closed" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3 21 21M10.6 6.1A11.6 11.6 0 0 1 12 6c6.5 0 10 6 10 6a13.8 13.8 0 0 1-3.1 3.6M6.2 6.8C3.5 8.6 2 12 2 12s3.5 6 10 6c1.4 0 2.7-.3 3.8-.8"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg>
         <svg class="eye-open" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg>
+        <span aria-hidden="true">▾</span>
       </button>
+      <div id="mask-menu" class="mask-menu" hidden>
+        <button type="button" data-mask-group="translation">文章中譯 <span></span></button>
+        <button type="button" data-mask-group="vocab">單字解釋 <span></span></button>
+        <button type="button" data-mask-group="answers">Part 5–7 題目詳解 <span></span></button>
+        <div class="mask-menu-divider"></div>
+        <button type="button" data-mask-action="show">一鍵全開</button>
+        <button type="button" data-mask-action="cover">一鍵全遮</button>
+      </div>
+      </div>
       <button type="button" class="icon-button" id="print-button" title="一鍵匯出彩色 PDF 筆記" aria-label="一鍵匯出彩色 PDF 筆記">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3"/></svg>
         <span class="export-label">匯出中...</span>
       </button>
     </div>
   </nav>
+  <div class="quick-nav" id="quick-nav" aria-label="快速導覽">
+    <button type="button" id="quick-nav-toggle" class="quick-nav-toggle" aria-expanded="false" aria-label="展開快速導覽">☰</button>
+    <div class="quick-nav-links"><button type="button" data-jump="top">↑ Top</button><button type="button" data-jump="0">News</button><button type="button" data-jump="1">Vocab</button><button type="button" data-jump="2">Part 5</button><button type="button" data-jump="3">Part 6</button><button type="button" data-jump="4">Part 7</button></div>
+  </div>
   <main class="page">
     <p id="data-status" class="status" role="status" aria-live="polite">載入今日新聞中...</p>
     <div id="lesson" role="tabpanel" aria-labelledby="tab-finance"></div>
@@ -317,6 +371,7 @@
     <div class="pdf-dialog" role="dialog" aria-modal="true" aria-labelledby="pdf-dialog-title">
       <div class="pdf-dialog-head">
         <h2 id="pdf-dialog-title" class="pdf-dialog-title">PDF 預覽</h2>
+        <div class="pdf-mask-controls"><label><input type="checkbox" id="pdf-mask-translation"> 遮罩文章中譯</label><label><input type="checkbox" id="pdf-mask-vocab"> 遮罩單字解釋</label></div>
         <div class="pdf-dialog-actions">
           <button type="button" id="pdf-confirm" class="pdf-dialog-button" disabled>確認下載 PDF</button>
           <button type="button" id="pdf-close" class="pdf-dialog-button secondary">關閉預覽</button>
@@ -353,12 +408,19 @@
     let activeCategory="finance";
     let vocabPage=0;
     const themes=[
-      {id:"02",name:"02｜秋日郵局",canvas:"#F0F0E7",paper:"#F8F5F0",panel:"#F5ECDE",ink:"#3A1F11",vocabHead:"#FFE488",mask:"#C7E5EE",accent:"#EED1D1",muted:"#6a564c",line:"#d9d0c5"},
-      {id:"03",name:"03｜復古印章",canvas:"#FBE7E0",paper:"#FCF1F1",panel:"#F2F0E9",ink:"#27303A",vocabHead:"#972243",mask:"#D6D2A5",accent:"#AFBE9D",muted:"#59626a",line:"#dfd5cf"},
-      {id:"04",name:"04｜紫藤午茶",canvas:"#E9E7F2",paper:"#EFF4F5",panel:"#E9E7F2",ink:"#4C2148",vocabHead:"#9991CD",mask:"#FFE4A9",accent:"#C2B8D7",muted:"#715c70",line:"#d8d4e1"},
-      {id:"06",name:"06｜月光車票",canvas:"#DAEAEF",paper:"#EFF4F5",panel:"#EAEFF1",ink:"#2A3B4C",vocabHead:"#1D3B64",mask:"#E1C0CD",accent:"#903B3B",muted:"#5b6b78",line:"#d0dfe3"},
-      {id:"08",name:"08｜苔庭花園",canvas:"#E9F3F1",paper:"#EFF4F5",panel:"#D9E6E7",ink:"#2D3B27",vocabHead:"#554F2E",mask:"#F5EBD4",accent:"#D6D2A5",muted:"#596657",line:"#cedbd9"},
-      {id:"new",name:"NEW｜烘焙咖啡",canvas:"#E0CEB4",paper:"#F8F5F0",panel:"#F5ECDE",ink:"#3A1F11",vocabHead:"#613627",mask:"#DAEAEF",accent:"#B78C6E",muted:"#6a564c",line:"#ddcdbb"}
+      {id:"grapefruit",name:"Grapefruit Fizz",canvas:"#EDCFCB",paper:"#F5EAE6",panel:"#DBE5E6",ink:"#27303A",vocabHead:"#CD5C5C",mask:"#BBD4DB",accent:"#A44A4A",icon:'<path d="M5 3h8l-1 13H6L5 3Z"/><path d="M5 6h8M8 11l2-2m4-5 2-1m-1 5 2-1m-9 10v2m-2 0h6"/>'},
+      {id:"yuzu",name:"Yuzu Sea Salt",canvas:"#FAEFCD",paper:"#F9F4E8",panel:"#DEEBF2",ink:"#2A3B4C",vocabHead:"#FFE488",mask:"#BEDFF4",accent:"#5DA0C3",icon:'<path d="M4 7h11l-1 11H6L4 7ZM3 7c2-3 5-1 7-3 2 2 5 0 7 3M12 4l2-2m2 8 2-1"/>'},
+      {id:"azuki",name:"Azuki Espresso",canvas:"#D9BBB6",paper:"#F2EAE5",panel:"#DFD9D3",ink:"#3A1F11",vocabHead:"#903B3B",mask:"#D3B1B1",accent:"#3A1F11",icon:'<path d="M4 8h11v6a5 5 0 0 1-10 0V8Zm11 1h2a2 2 0 1 1-2 4M3 20h15M7 5c-1-1 1-2 0-3m4 3c-1-1 1-2 0-3"/>'},
+      {id:"mint",name:"Mint Choco",canvas:"#C8E2E5",paper:"#F0ECE7",panel:"#D7E8E9",ink:"#3A1F11",vocabHead:"#89C8D7",mask:"#3A1F11",accent:"#60B7CC",icon:'<path d="M4 5h14v13H4V5Zm7 0v13M4 11h14m-9 4h1m5-7h1"/>'},
+      {id:"brulee",name:"Crème Brûlée",canvas:"#FAE8C2",paper:"#F2EDE8",panel:"#E0D6D0",ink:"#613627",vocabHead:"#FED57D",mask:"#613627",accent:"#FFC95C",icon:'<path d="M3 11c2-2 14-2 16 0l-2 7H5l-2-7Zm0 0c2 3 14 3 16 0M7 6l1-2m4 2 1-3m3 4 2-2"/>'},
+      {id:"oat",name:"Oat Milk Latte",canvas:"#DECBBC",paper:"#F8F4ED",panel:"#E6D9CD",ink:"#3A1F11",vocabHead:"#B78C6E",mask:"#F5EBD4",accent:"#896953",icon:'<path d="M3 7h15v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7Zm15 2h2a2 2 0 0 1-2 4M7 12c2-3 4 1 6-2 1 2 0 4-3 5-2-1-3-2-3-3Z"/>'},
+      {id:"earl",name:"Earl Grey Rose",canvas:"#CCD4D8",paper:"#EEEFF0",panel:"#EBE1E1",ink:"#122E3E",vocabHead:"#122E3E",mask:"#E4C1C1",accent:"#C77F7F",icon:'<path d="M4 10h13v7a5 5 0 0 1-10 0v-7Zm13 2h2a2 2 0 0 1-2 4M5 10l-2-2h6m2-3c1-2 3-2 4 0-1 2-3 2-4 0Zm0 0c-2-1-3 0-3 2"/>'},
+      {id:"matcha",name:"Matcha Berry",canvas:"#D9DECD",paper:"#F3F1EA",panel:"#E8D1D3",ink:"#2D3B27",vocabHead:"#972243",mask:"#AFBE9D",accent:"#7E8971",icon:'<path d="M5 9h12l-2 10H7L5 9Zm2-2c1-3 3-3 4-1 1-3 4-2 5 1M4 19h14M11 5c-1-2 0-3 2-3"/>'}
+    ];
+    const fontPairs=[
+      {id:"editorial",name:"Editorial Classic",heading:'"Cinzel",serif',body:'"Libre Baskerville",serif'},
+      {id:"modern",name:"Modern Magazine",heading:'"Notable",sans-serif',body:'"Fira Sans",sans-serif'},
+      {id:"sketch",name:"Sketchbook Notes",heading:'"Caveat Brush",cursive',body:'"Walter Turncoat",cursive'}
     ];
     function contrastText(hex){
       const match=hex.trim().match(/^#([0-9a-f]{6})$/i);
@@ -386,13 +448,31 @@
       const dot=document.createElement("span");dot.className="theme-option-dot";
       dot.style.background=`linear-gradient(135deg,${theme.paper} 0 50%,${theme.vocabHead} 50% 67%,${theme.mask} 67% 83%,${theme.accent} 83%)`;
       const label=document.createElement("span");label.textContent=theme.name;
-      button.append(dot,label);button.addEventListener("click",()=>{applyTheme(theme.id);closeThemeMenu();themeToggle.focus()});
+      const illustration=document.createElement("span");illustration.className="theme-illustration";
+      illustration.innerHTML=`<svg viewBox="0 0 22 22" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${theme.icon}</svg>`;
+      button.append(illustration,dot,label);button.addEventListener("click",()=>{applyTheme(theme.id);closeThemeMenu();themeToggle.focus()});
       themeMenu.append(button);
     }
     themeToggle.addEventListener("click",()=>{themeMenu.hidden=!themeMenu.hidden;themeToggle.setAttribute("aria-expanded",String(!themeMenu.hidden))});
     document.addEventListener("pointerdown",event=>{if(!event.target.closest(".theme-picker"))closeThemeMenu()});
     document.addEventListener("keydown",event=>{if(event.key==="Escape"&&!themeMenu.hidden){closeThemeMenu();themeToggle.focus()}});
-    applyTheme(document.documentElement.dataset.theme||"02");
+    applyTheme(document.documentElement.dataset.theme||themes[0].id);
+    const fontMenu=document.getElementById("font-menu"),fontToggle=document.getElementById("font-toggle");
+    function applyFont(id){
+      const pair=fontPairs.find(item=>item.id===id)||fontPairs[0];
+      document.documentElement.style.setProperty("--font-heading",pair.heading);
+      document.documentElement.style.setProperty("--font-body",pair.body);
+      fontToggle.title=`英文字體：${pair.name}`;
+      fontMenu.querySelectorAll("button").forEach(button=>button.setAttribute("aria-checked",String(button.dataset.font===pair.id)));
+      try{localStorage.setItem("toeic-font-pair",pair.id)}catch(_){}
+    }
+    for(const pair of fontPairs){
+      const option=document.createElement("button");option.type="button";option.role="radio";option.dataset.font=pair.id;option.textContent=pair.name;
+      option.addEventListener("click",()=>{applyFont(pair.id);fontMenu.hidden=true;fontToggle.setAttribute("aria-expanded","false")});fontMenu.append(option);
+    }
+    fontToggle.addEventListener("click",()=>{fontMenu.hidden=!fontMenu.hidden;fontToggle.setAttribute("aria-expanded",String(!fontMenu.hidden))});
+    document.addEventListener("pointerdown",event=>{if(!event.target.closest(".font-picker")){fontMenu.hidden=true;fontToggle.setAttribute("aria-expanded","false")}});
+    try{applyFont(localStorage.getItem("toeic-font-pair"))}catch(_){applyFont(fontPairs[0].id)}
 
     const esc=value=>String(value??"").replace(/[&<>"']/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char]));
     const semicolonBreaks=value=>String(value??"").replace(/([;；])\s*/g,'$1<br>').split("<br>").map(esc).join("<br>");
@@ -425,15 +505,42 @@
         ${optionsHtml(q.options,section,index)}${revealBox(answerId(section,index),details,"答案／詳解","answer-reveal")}</div>`;
     }
     const speakerSvg='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4Zm12-1a5 5 0 0 1 0 8m2-11a9 9 0 0 1 0 14"/></svg>';
-    const accentLang={US:"en-US",UK:"en-GB",AU:"en-AU",CA:"en-CA"};
+    const voiceGroups={
+      US:{label:"🇺🇸 美式",names:["Google US English","Allison","Joelle","Nathan"]},
+      UK:{label:"🇬🇧 英倫三島",names:["Google UK English Female","Google UK English Male","Fiona","Moira"]},
+      WORLD:{label:"🌏 澳・印・南非",names:["Karen","Lee","Sangeeta","Tessa"]}
+    };
     const speechRates=[1,1.2,1.5,1.75];
-    let accent="US",speechRate=1;
+    let accent="US",selectedVoiceName="",speechRate=1;
     try{
       const savedAccent=localStorage.getItem("toeic-accent");
-      if(accentLang[savedAccent])accent=savedAccent;
+      if(voiceGroups[savedAccent])accent=savedAccent;
+      selectedVoiceName=localStorage.getItem("toeic-voice-name")||"";
       const savedRate=Number(localStorage.getItem("toeic-speech-rate"));
       if(speechRates.includes(savedRate))speechRate=savedRate;
     }catch(_){}
+    function getSelectedVoice(voiceKey){
+      const names=voiceGroups[voiceKey]?.names||[voiceKey];
+      const voices=window.speechSynthesis?.getVoices()||[];
+      for(const name of names){
+        const escaped=name.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
+        const enhanced=new RegExp(`^(?:(?:Enhanced|Premium)[\\s:–-]+${escaped}|${escaped}[\\s:–-]+(?:Enhanced|Premium)|${escaped}\\s*\\((?:Enhanced|Premium)\\))$`,"i");
+        const match=voices.find(voice=>enhanced.test(voice.name.trim()));
+        if(match)return match;
+      }
+      for(const name of names){const match=voices.find(voice=>voice.name.trim()===name);if(match)return match}
+      return null;
+    }
+    function refreshVoiceSelect(){
+      const select=document.getElementById("voice-select");if(!select)return;
+      const names=voiceGroups[accent].names;
+      select.innerHTML=names.map(name=>`<option value="${esc(name)}" ${getSelectedVoice(name)?"":"disabled"}>${esc(name)}${getSelectedVoice(name)?"":"（未安裝）"}</option>`).join("");
+      selectedVoiceName=names.includes(selectedVoiceName)&&getSelectedVoice(selectedVoiceName)?selectedVoiceName:(names.find(name=>getSelectedVoice(name))||"");
+      select.value=selectedVoiceName;
+      document.getElementById("read-all").disabled=!selectedVoiceName;
+      const status=document.getElementById("speech-status");if(status)status.textContent=selectedVoiceName?"":"此裝置未提供本組指定聲線。";
+    }
+    if("speechSynthesis" in window)window.speechSynthesis.addEventListener?.("voiceschanged",refreshVoiceSelect);
     const highlightMemory=new Map();
     const questionHighlightMemory=new Map();
     const highlightKey=()=>`toeic-highlights:${activeDate}:${activeCategory}`;
@@ -551,22 +658,16 @@
         return;
       }
       if(speechText===text&&window.speechSynthesis.speaking){stopSpeech();return}
+      const voice=getSelectedVoice(selectedVoiceName);
+      if(!voice){
+        const status=document.getElementById("speech-status");
+        if(status)status.textContent="所選聲線未安裝，請選擇清單中可用的聲線。";
+        return;
+      }
       stopSpeech();
       speechText=text;
       const token=speechToken,utterance=new SpeechSynthesisUtterance(text);
-      utterance.lang=accentLang[accent];utterance.rate=speechRate;
-      const voices=window.speechSynthesis.getVoices();
-      const fallbacks={"en-CA":["en-US","en-GB"],"en-AU":["en-GB","en-US"],"en-GB":["en-AU","en-US"],"en-US":["en-CA","en-GB"]};
-      const preferred=[utterance.lang,...fallbacks[utterance.lang]];
-      const ranked=voices.filter(voice=>voice.lang.toLowerCase().startsWith("en")).sort((a,b)=>{
-        const score=voice=>{
-          const locale=preferred.findIndex(lang=>lang.toLowerCase()===voice.lang.toLowerCase());
-          const name=voice.name||"";
-          return (locale<0?0:100-locale*24)+(/\b(Natural|Enhanced|Premium|Google|Samantha|Daniel|Karen|Moira)\b/i.test(name)?18:0)+(voice.localService?2:0);
-        };
-        return score(b)-score(a);
-      });
-      utterance.voice=ranked[0]||null;
+      utterance.voice=voice;utterance.lang=voice.lang;utterance.rate=speechRate;
       if(sentenceElement)sentenceElement.classList.add("is-active");
       else{
         const main=document.getElementById("read-all");
@@ -585,13 +686,14 @@
       const source=safeUrl(data.sourceUrl);
       lesson.innerHTML=`<article class="sheet">
         <header class="sheet-head">
-          <div class="meta"><span class="badge">${esc(categoryLabels[activeCategory])}</span><span class="dot">•</span><time datetime="${esc(activeDate)}">${esc(activeDate)}</time><span class="dot">•</span><span>今日講義</span></div>
+          <div class="meta-line"><div class="meta"><span class="badge">${esc(categoryLabels[activeCategory])}</span><span class="dot">•</span><time datetime="${esc(activeDate)}">${esc(activeDate)}</time><span class="dot">•</span><span>今日講義</span></div>
+            <div class="speech-controls" role="group" aria-label="新聞朗讀設定">
+              <select id="region-select" aria-label="朗讀地區">${Object.entries(voiceGroups).map(([key,group])=>`<option value="${key}" ${accent===key?"selected":""}>${group.label}</option>`).join("")}</select>
+              <select id="voice-select" aria-label="指定朗讀聲線"></select>
+              <select id="rate-select" aria-label="朗讀語速">${speechRates.map(rate=>`<option value="${rate}" ${speechRate===rate?"selected":""}>${rate.toFixed(rate===1.75?2:1)}x</option>`).join("")}</select>
+              <button type="button" id="read-all" class="speech-main" title="朗讀整篇" aria-label="朗讀整篇" aria-pressed="false">▶</button>
+            </div></div>
           <div class="reading-tools"><h1>${esc(data.title)}</h1>
-            <div class="speech-controls" role="group" aria-label="新聞朗讀口音">
-              ${Object.keys(accentLang).map(code=>`<button type="button" class="accent-button" data-accent="${code}" aria-pressed="${accent===code}">${code}</button>`).join("")}
-              ${speechRates.map(rate=>`<button type="button" class="rate-button" data-rate="${rate}" aria-pressed="${speechRate===rate}">${rate.toFixed(rate===1.75?2:1)}x</button>`).join("")}
-              <button type="button" id="read-all" class="speech-main" title="朗讀整篇" aria-label="朗讀整篇" aria-pressed="false">${speakerSvg}<span>朗讀整篇</span></button>
-            </div>
             <span id="speech-status" class="speech-status" role="status" aria-live="polite"></span>
           </div><p class="summary">${esc(data.summary)}</p>
         </header>
@@ -644,13 +746,13 @@
         </section>
       </article>`;
       updateToggle();
+      refreshVoiceSelect();
     }
     function currentIds(){return [...document.querySelectorAll("#lesson .reveal")].map(el=>el.dataset.answerId)}
     function updateToggle(){
       const ids=currentIds(),allOpen=ids.length>0&&ids.every(id=>visibleAnswers.has(id));
       const button=document.getElementById("toggle-all");
-      const label=allOpen?"全部遮罩":"全部顯示";
-      button.title=label;button.setAttribute("aria-label",label);button.setAttribute("aria-pressed",String(allOpen));
+      button.title="分區遮罩設定";button.setAttribute("aria-label","分區遮罩設定");button.setAttribute("aria-pressed",String(allOpen));
     }
     function showVocabPage(page){
       vocabPage=page;
@@ -658,20 +760,6 @@
       document.querySelectorAll(".vocab-page-button").forEach(button=>button.setAttribute("aria-pressed",String(Number(button.dataset.page)===page)));
     }
     document.getElementById("lesson").addEventListener("click",event=>{
-      const accentButton=event.target.closest(".accent-button");
-      if(accentButton){
-        accent=accentButton.dataset.accent;stopSpeech();
-        document.querySelectorAll(".accent-button").forEach(button=>button.setAttribute("aria-pressed",String(button.dataset.accent===accent)));
-        try{localStorage.setItem("toeic-accent",accent)}catch(_){}
-        return;
-      }
-      const rateButton=event.target.closest(".rate-button");
-      if(rateButton){
-        speechRate=Number(rateButton.dataset.rate);stopSpeech();
-        document.querySelectorAll(".rate-button").forEach(button=>button.setAttribute("aria-pressed",String(Number(button.dataset.rate)===speechRate)));
-        try{localStorage.setItem("toeic-speech-rate",String(speechRate))}catch(_){}
-        return;
-      }
       if(event.target.closest("#read-all")){
         const data=dataByDate[activeDate]?.[activeCategory];
         if(data)speak(data.english.join(" "));
@@ -697,10 +785,42 @@
       updateVocabHints();
       updateToggle();
     });
-    document.getElementById("toggle-all").addEventListener("click",()=>{
-      const ids=currentIds(),allOpen=ids.every(id=>visibleAnswers.has(id));
-      ids.forEach(id=>allOpen?visibleAnswers.delete(id):visibleAnswers.add(id));stopSpeech();render();
+    document.getElementById("lesson").addEventListener("change",event=>{
+      if(event.target.id==="region-select"){
+        accent=event.target.value;selectedVoiceName="";stopSpeech();refreshVoiceSelect();
+        try{localStorage.setItem("toeic-accent",accent)}catch(_){}
+      }else if(event.target.id==="voice-select"){
+        selectedVoiceName=event.target.value;stopSpeech();
+        try{localStorage.setItem("toeic-voice-name",selectedVoiceName)}catch(_){}
+      }else if(event.target.id==="rate-select"){
+        speechRate=Number(event.target.value);stopSpeech();
+        try{localStorage.setItem("toeic-speech-rate",String(speechRate))}catch(_){}
+      }
     });
+    const maskMenu=document.getElementById("mask-menu"),maskToggle=document.getElementById("toggle-all");
+    function maskGroup(id){return id.includes(":translation:")?"translation":id.includes(":vocab:")?"vocab":"answers"}
+    function refreshMaskMenu(){
+      const ids=currentIds();
+      for(const group of ["translation","vocab","answers"]){
+        const relevant=ids.filter(id=>maskGroup(id)===group);
+        const allOpen=relevant.length>0&&relevant.every(id=>visibleAnswers.has(id));
+        maskMenu.querySelector(`[data-mask-group="${group}"] span`).textContent=allOpen?"已顯示":"已遮罩";
+      }
+      const allOpen=ids.length>0&&ids.every(id=>visibleAnswers.has(id));
+      maskToggle.setAttribute("aria-pressed",String(allOpen));
+    }
+    maskToggle.addEventListener("click",()=>{maskMenu.hidden=!maskMenu.hidden;maskToggle.setAttribute("aria-expanded",String(!maskMenu.hidden));refreshMaskMenu()});
+    maskMenu.addEventListener("click",event=>{
+      const button=event.target.closest("button");if(!button)return;
+      const ids=currentIds();
+      if(button.dataset.maskGroup){
+        const groupIds=ids.filter(id=>maskGroup(id)===button.dataset.maskGroup);
+        const allOpen=groupIds.every(id=>visibleAnswers.has(id));
+        groupIds.forEach(id=>allOpen?visibleAnswers.delete(id):visibleAnswers.add(id));
+      }else ids.forEach(id=>button.dataset.maskAction==="show"?visibleAnswers.add(id):visibleAnswers.delete(id));
+      stopSpeech();render();refreshMaskMenu();
+    });
+    document.addEventListener("pointerdown",event=>{if(!event.target.closest(".mask-picker")){maskMenu.hidden=true;maskToggle.setAttribute("aria-expanded","false")}});
     const selectionTools=document.getElementById("selection-tools");
     let selectedText="",selectedSegments=[],selectedQuestionSegments=[];
     function measureOffset(paragraph,container,offset){
@@ -843,139 +963,143 @@
       const sections=[...card.querySelectorAll(":scope > .section")];
       if(sections.length!==5)throw new Error("找不到完整的五個講義區塊。");
       const [news,vocab,part5,part6,part7]=sections;
-      const clean=document.createElement("article");
-      clean.className="pdf-clean";
-      clean.setAttribute("aria-hidden","true");
+      const clean=document.createElement("article");clean.className="pdf-clean";clean.setAttribute("aria-hidden","true");
       const colors=getComputedStyle(document.documentElement);
-      for(const name of ["--paper","--panel","--ink","--vocab-head","--vocab-ink","--mask","--mask-ink","--teal","--navy","--muted","--line"]){
+      for(const name of ["--paper","--panel","--ink","--vocab-head","--vocab-ink","--mask","--mask-ink","--teal","--navy","--muted","--line","--font-heading","--font-body"])
         clean.style.setProperty(name,colors.getPropertyValue(name));
-      }
-      const append=(target,source,selector)=>{
-        const element=source.querySelector(selector);
-        if(!element)throw new Error(`PDF 講義缺少內容：${selector}`);
-        const copy=element.cloneNode(true);
-        target.append(copy);
-        return copy;
+      const copy=(source,selector)=>{
+        const found=source.querySelector(selector);
+        if(!found)throw new Error(`PDF 講義缺少內容：${selector}`);
+        return found.cloneNode(true);
       };
-      const addSection=source=>{
-        const section=document.createElement("section");
-        section.className="pdf-clean-section";
-        append(section,source,".section-heading");
-        clean.append(section);
-        return section;
+      const page=()=>{
+        const outer=document.createElement("section");outer.className="pdf-page";
+        const inner=document.createElement("div");inner.className="pdf-page-inner";
+        outer.append(inner);clean.append(outer);return inner;
       };
-      const addQuestions=(target,source)=>{
-        const list=document.createElement("div");
-        list.className="question-list";
-        for(const question of source.querySelectorAll(".q-card")){
-          const copy=question.cloneNode(true);
-          copy.classList.add("pdf-q-card");
-          list.append(copy);
+      const title=(target,source)=>target.append(copy(source,".section-heading"));
+      const questions=(target,source)=>{
+        for(const item of source.querySelectorAll(".q-card")){
+          const q=item.cloneNode(true);q.classList.add("pdf-q-card");
+          const answer=q.querySelector(".answer-reveal");
+          answer.classList.add("is-covered");answer.querySelector(".reveal-content").replaceChildren();
+          const mask=answer.querySelector(".mask");mask.textContent="點擊顯示答案／詳解";
+          target.append(q);
         }
-        target.append(list);
       };
-      const head=document.createElement("header");
-      head.className="pdf-clean-head";
-      for(const selector of [".meta","h1",".summary"])append(head,card.querySelector(".sheet-head"),selector);
-      clean.append(head);
-      const articleSection=addSection(news);
-      const article=append(articleSection,news,".article-copy");
+      const cover=(element,shouldCover)=>{
+        element.classList.toggle("is-covered",shouldCover);
+        const mask=element.querySelector(".mask");
+        if(mask){mask.setAttribute("aria-expanded",String(!shouldCover));mask.textContent=shouldCover?"點擊顯示答案／翻譯":"重新遮罩"}
+      };
+      const p1=page();
+      const head=document.createElement("header");head.className="pdf-clean-head";
+      const sourceHead=card.querySelector(".sheet-head");
+      for(const selector of [".meta","h1",".summary"])head.append(copy(sourceHead,selector));
+      p1.append(head);title(p1,news);
+      const article=copy(news,".article-copy");
       article.querySelectorAll(".sentence-play").forEach(button=>button.remove());
-      article.querySelectorAll(".read-sentence.is-active").forEach(sentence=>sentence.classList.remove("is-active"));
-      append(articleSection,news,".small-heading");
-      append(articleSection,news,".reveal");
-      append(articleSection,news,".source-row");
-      const vocabSection=addSection(vocab);
-      const table=append(vocabSection,vocab,".vocab");
-      table.querySelectorAll("tr.is-offpage").forEach(row=>row.classList.remove("is-offpage"));
-      const part5Section=addSection(part5);
-      addQuestions(part5Section,part5);
-      const part6Section=addSection(part6);
-      append(part6Section,part6,".passage");
-      addQuestions(part6Section,part6);
-      const part7Section=addSection(part7);
-      const intro=part7.querySelector(".reading-note");
-      if(intro)part7Section.append(intro.cloneNode(true));
-      addQuestions(part7Section,part7);
+      article.querySelectorAll(".read-sentence.is-active").forEach(item=>item.classList.remove("is-active"));
+      p1.append(article,copy(news,".small-heading"));
+      const translation=copy(news,".reveal");translation.classList.add("pdf-translation");
+      cover(translation,document.getElementById("pdf-mask-translation").checked);p1.append(translation);
+      const vocabRows=[...vocab.querySelectorAll(".vocab tbody tr")];
+      for(let index=0;index<2;index++){
+        const target=page();title(target,vocab);
+        const table=copy(vocab,".vocab");const body=table.querySelector("tbody");body.replaceChildren();
+        for(const row of vocabRows.slice(index*5,index*5+5)){
+          const clone=row.cloneNode(true);clone.classList.remove("is-offpage");
+          cover(clone.querySelector(".reveal"),document.getElementById("pdf-mask-vocab").checked);
+          body.append(clone);
+        }
+        target.append(table);
+      }
+      const p4=page();title(p4,part5);questions(p4,part5);
+      const p5=page();title(p5,part6);p5.append(copy(part6,".passage"));questions(p5,part6);
+      const p6=page();title(p6,part7);
+      const fullArticle=copy(news,".article-copy");
+      fullArticle.querySelectorAll(".sentence-play").forEach(button=>button.remove());
+      p6.append(fullArticle);
+      const intro=part7.querySelector(".reading-note");if(intro)p6.append(intro.cloneNode(true));
+      questions(p6,part7);
       document.body.append(clean);
       return clean;
     }
-    async function downloadColorPdf(){
+    function fitPdfPages(clean){
+      for(const page of clean.querySelectorAll(".pdf-page")){
+        const inner=page.querySelector(".pdf-page-inner");
+        inner.style.transform="";
+        const available=page.clientHeight-36;
+        const needed=inner.scrollHeight;
+        if(needed>available){
+          const factor=available/needed;
+          inner.style.transform=`scale(${factor})`;
+          inner.style.width=`${100/factor}%`;
+        }
+      }
+    }
+    async function generatePdfPreview(){
       const button=document.getElementById("print-button");
-      if(button.disabled||!pdfModal.hidden)return;
       const card=document.querySelector("#lesson > .sheet");
       if(!card)return;
-      stopSpeech();hideSelectionTools();
       const generation=++previewGeneration;
-      const exportDate=activeDate;
-      const exportCategory=categoryLabels[activeCategory];
-      const originalTitle=button.title;
-      const originalLabel=button.getAttribute("aria-label");
-      const originalExportLabel=button.querySelector(".export-label").textContent;
       let cleanContainer;
-      pdfModal.hidden=false;
-      pdfStatus.textContent="正在產生 PDF 預覽…";
-      pdfStatus.hidden=false;
-      pdfFrame.hidden=true;
-      pdfConfirm.disabled=true;
-      document.getElementById("pdf-close").focus();
-      button.disabled=true;
-      button.classList.add("is-exporting");
-      button.querySelector(".export-label").textContent="預覽中...";
-      button.title="預覽中...";
-      button.setAttribute("aria-label","預覽中...");
-      button.setAttribute("aria-busy","true");
+      pdfStatus.textContent="正在產生 PDF 預覽…";pdfStatus.hidden=false;
+      pdfFrame.hidden=true;pdfConfirm.disabled=true;
+      button.disabled=true;button.classList.add("is-exporting");button.setAttribute("aria-busy","true");
       try{
         if(typeof window.html2pdf!=="function")throw new Error("html2pdf.js 尚未載入，請確認網路連線。");
         cleanContainer=buildCleanPdf(card);
         if(document.fonts?.ready)await document.fonts.ready;
         await new Promise(resolve=>requestAnimationFrame(resolve));
-        const categoryName=exportCategory.replace(/\s*&\s*/g,"_and_").replace(/\s+/g,"_");
+        fitPdfPages(cleanContainer);
+        const categoryName=categoryLabels[activeCategory].replace(/\s*&\s*/g,"_and_").replace(/\s+/g,"_");
         const options={
-          margin:10,
-          filename:`TOEIC_${exportDate}_${categoryName}.pdf`,
-          image:{type:"jpeg",quality:0.98},
-          html2canvas:{scale:2,useCORS:true,backgroundColor:getComputedStyle(cleanContainer).backgroundColor,onclone:clonedDocument=>{
-            const copy=clonedDocument.querySelector(".html2pdf__container .pdf-clean");
-            if(copy){copy.style.position="static";copy.style.left="auto";copy.style.top="auto"}
+          margin:10,filename:`TOEIC_${activeDate}_${categoryName}.pdf`,
+          image:{type:"jpeg",quality:.98},
+          html2canvas:{scale:2,useCORS:true,backgroundColor:getComputedStyle(cleanContainer).backgroundColor,onclone:doc=>{
+            const target=doc.querySelector(".html2pdf__container .pdf-clean");
+            if(target){target.style.position="static";target.style.left="auto";target.style.top="auto";}
           }},
           jsPDF:{unit:"mm",format:"a4",orientation:"portrait"},
           pagebreak:{mode:["css","legacy"],avoid:[".pdf-q-card","tr"]}
         };
-        const captureSource=cleanContainer.cloneNode(true);
-        captureSource.style.position="static";
-        captureSource.style.left="auto";
-        captureSource.style.top="auto";
-        captureSource.style.margin="0 auto";
-        const url=await window.html2pdf().from(captureSource).set(options).outputPdf("bloburl");
+        const capture=cleanContainer.cloneNode(true);
+        capture.style.position="static";capture.style.left="auto";capture.style.top="auto";capture.style.margin="0";
+        const url=await window.html2pdf().from(capture).set(options).outputPdf("bloburl");
         if(generation!==previewGeneration){URL.revokeObjectURL(url);return}
-        previewPdfUrl=url;
-        previewFilename=options.filename;
-        pdfFrame.src=url;
-        pdfFrame.hidden=false;
-        pdfStatus.hidden=true;
-        pdfConfirm.disabled=false;
+        if(previewPdfUrl)URL.revokeObjectURL(previewPdfUrl);
+        previewPdfUrl=url;previewFilename=options.filename;
+        pdfFrame.src=url;pdfFrame.hidden=false;pdfStatus.hidden=true;pdfConfirm.disabled=false;
       }catch(error){
         console.error("PDF 匯出失敗：",error);
-        if(generation===previewGeneration){
-          pdfStatus.textContent=`PDF 預覽失敗：${error.message||"請稍後再試。"}`;
-          pdfStatus.hidden=false;
-        }
+        if(generation===previewGeneration){pdfStatus.textContent=`PDF 預覽失敗：${error.message||"請稍後再試。"}`;pdfStatus.hidden=false}
       }finally{
-        cleanContainer?.remove();
-        button.disabled=false;
-        button.classList.remove("is-exporting");
-        button.querySelector(".export-label").textContent=originalExportLabel;
-        button.title=originalTitle;
-        button.setAttribute("aria-label",originalLabel);
-        button.removeAttribute("aria-busy");
+        cleanContainer?.remove();button.disabled=false;button.classList.remove("is-exporting");button.removeAttribute("aria-busy");
       }
     }
+    function downloadColorPdf(){
+      if(!pdfModal.hidden)return;
+      if(!document.querySelector("#lesson > .sheet"))return;
+      stopSpeech();hideSelectionTools();
+      document.getElementById("pdf-mask-translation").checked=false;
+      document.getElementById("pdf-mask-vocab").checked=false;
+      pdfModal.hidden=false;document.getElementById("pdf-close").focus();
+      generatePdfPreview();
+    }
+    for(const id of ["pdf-mask-translation","pdf-mask-vocab"])
+      document.getElementById(id).addEventListener("change",()=>{if(!pdfModal.hidden)generatePdfPreview()});
     document.getElementById("print-button").addEventListener("click",downloadColorPdf);
-    document.querySelector(".section-jump").addEventListener("click",event=>{
+    document.querySelector(".quick-nav").addEventListener("click",event=>{
       const button=event.target.closest("button[data-jump]");
       if(!button)return;
-      document.querySelectorAll("#lesson > .sheet > .section")[Number(button.dataset.jump)]?.scrollIntoView({behavior:"smooth",block:"start"});
+      if(button.dataset.jump==="top")window.scrollTo({top:0,behavior:"smooth"});
+      else document.querySelectorAll("#lesson > .sheet > .section")[Number(button.dataset.jump)]?.scrollIntoView({behavior:"smooth",block:"start"});
+      document.getElementById("quick-nav").classList.remove("is-open");
+      document.getElementById("quick-nav-toggle").setAttribute("aria-expanded","false");
+    });
+    document.getElementById("quick-nav-toggle").addEventListener("click",event=>{
+      const open=document.getElementById("quick-nav").classList.toggle("is-open");event.currentTarget.setAttribute("aria-expanded",String(open));
     });
     document.querySelectorAll(".tab").forEach(tab=>tab.addEventListener("click",()=>{stopSpeech();hideSelectionTools();activeCategory=tab.dataset.category;vocabPage=0;render()}));
     document.querySelector(".tabs").addEventListener("keydown",event=>{
