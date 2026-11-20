@@ -1,4 +1,819 @@
 {
+  "2026-11-21": {
+    "finance": {
+      "title": "GTA 6 Sales Reach Record High",
+      "summary": "大盜獵車手6在單日內創下38億美元的銷售額，打破了所有遊戲與電影的票房紀錄。",
+      "english": [
+        "The video game release of GTA 6 generated three point eight billion dollars in a single day. This financial figure surpasses every previous video game launch and single day film box office record in entertainment history.",
+        "Such mammoth earnings highlight the immense popularity of the franchise. Industry experts noted that this milestone represents the biggest entertainment launch ever recorded.",
+        "Analysts continue to review the financial impact of this unprecedented success. Further updates on global sales will be shared as more data becomes available."
+      ],
+      "translation": [
+        "視訊遊戲GTA 6的發行在單日內創造了38億美元。這個財務數字超越了娛樂史上所有先前的遊戲發行以及單日電影票房紀錄。",
+        "如此龐大的收益突顯了該系列的極大受歡迎程度。業界專家指出，這個里程碑代表了有史以來最大規模的娛樂發行。",
+        "分析師持續檢視這項空前成功的財務影響。隨著更多數據的可用，全球銷售的進一步更新將會被分享。"
+      ],
+      "vocabulary": [
+        {
+          "term": "release",
+          "pos": "noun",
+          "collocations": "game release; new release",
+          "meaning": "發行；發表",
+          "synonyms": [
+            "launch; debut",
+            "publication; issue"
+          ],
+          "family": "release; released; releasing",
+          "sentence": "The video game release of GTA 6 generated three point eight billion dollars in a single day."
+        },
+        {
+          "term": "financial",
+          "pos": "adjective",
+          "collocations": "financial figure; financial impact",
+          "meaning": "財務的；金融的",
+          "synonyms": [
+            "fiscal; monetary",
+            "economic; commercial"
+          ],
+          "family": "finance; financial; financially",
+          "sentence": "This financial figure surpasses every previous video game launch and single day film box office record in entertainment history."
+        },
+        {
+          "term": "launch",
+          "pos": "noun",
+          "collocations": "video game launch; entertainment launch",
+          "meaning": "發布；發射",
+          "synonyms": [
+            "release; debut",
+            "introduction; premiere"
+          ],
+          "family": "launch; launched; launching",
+          "sentence": "This financial figure surpasses every previous video game launch and single day film box office record in entertainment history."
+        },
+        {
+          "term": "earnings",
+          "pos": "noun",
+          "collocations": "mammoth earnings; company earnings",
+          "meaning": "收益；收入",
+          "synonyms": [
+            "revenue; income",
+            "profits; proceeds"
+          ],
+          "family": "earn; earnings; earner",
+          "sentence": "Such mammoth earnings highlight the immense popularity of the franchise."
+        },
+        {
+          "term": "popularity",
+          "pos": "noun",
+          "collocations": "immense popularity; growing popularity",
+          "meaning": "普及；聲望",
+          "synonyms": [
+            "appeal; favor",
+            "fame; renown"
+          ],
+          "family": "popular; popularity; popularize",
+          "sentence": "Such mammoth earnings highlight the immense popularity of the franchise."
+        },
+        {
+          "term": "milestone",
+          "pos": "noun",
+          "collocations": "important milestone; major milestone",
+          "meaning": "里程碑",
+          "synonyms": [
+            "landmark; turning point",
+            "achievement; breakthrough"
+          ],
+          "family": "milestone; milestones",
+          "sentence": "Industry experts noted that this milestone represents the biggest entertainment launch ever recorded."
+        },
+        {
+          "term": "impact",
+          "pos": "noun",
+          "collocations": "financial impact; major impact",
+          "meaning": "影響；衝擊",
+          "synonyms": [
+            "effect; influence",
+            "consequence; repercussion"
+          ],
+          "family": "impact; impacted; impacting",
+          "sentence": "Analysts continue to review the financial impact of this unprecedented success."
+        },
+        {
+          "term": "success",
+          "pos": "noun",
+          "collocations": "unprecedented success; huge success",
+          "meaning": "成功",
+          "synonyms": [
+            "triumph; victory",
+            "achievement; prosperity"
+          ],
+          "family": "succeed; success; successful",
+          "sentence": "Analysts continue to review the financial impact of this unprecedented success."
+        },
+        {
+          "term": "global",
+          "pos": "adjective",
+          "collocations": "global sales; global market",
+          "meaning": "全球的",
+          "synonyms": [
+            "worldwide; universal",
+            "international; widespread"
+          ],
+          "family": "globe; global; globally",
+          "sentence": "Further updates on global sales will be shared as more data becomes available."
+        },
+        {
+          "term": "data",
+          "pos": "noun",
+          "collocations": "more data; sales data",
+          "meaning": "數據；資料",
+          "synonyms": [
+            "information; statistics",
+            "figures; details"
+          ],
+          "family": "data; datum",
+          "sentence": "Further updates on global sales will be shared as more data becomes available."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "The video game release of GTA 6 ---------- three point eight billion dollars in a single day.",
+          "options": [
+            "generate",
+            "generates",
+            "generated",
+            "generating"
+          ],
+          "answer": "C",
+          "locator": "Simple past tense verb agreement",
+          "explanation": "句中描述過去單日發生的具體事件，主詞為單數名詞片語，且整篇文章時態偏向敘述過去的紀錄，因此需使用過去式動詞 generated。"
+        },
+        {
+          "prompt": "This financial figure surpasses every previous video game launch and single day film box office record ---------- entertainment history.",
+          "options": [
+            "on",
+            "in",
+            "at",
+            "by"
+          ],
+          "answer": "B",
+          "locator": "Preposition of time and place for history",
+          "explanation": "表達「在……歷史中」這個範圍時，標準的英文介係詞搭配為 in entertainment history，因此正確答案為 (B) in。"
+        },
+        {
+          "prompt": "Analysts continue to review the financial impact of this ---------- success.",
+          "options": [
+            "unprecedented",
+            "unprecedentedly",
+            "unprecedentedness",
+            "unprecedents"
+          ],
+          "answer": "A",
+          "locator": "Adjective modifying a noun",
+          "explanation": "空格後方為名詞 success，因此需要形容詞來修飾名詞。選項 (A) unprecedented 為形容詞，符合句意與文法結構。"
+        }
+      ],
+      "part6": {
+        "title": "Internal Memo on Sales Figures",
+        "passage": "To all staff members, we are pleased to announce that our latest project has achieved historic results. During the first day, sales reached an impressive milestone. 【1】 generated revenue surpassed all previous company expectations. Management believes that this success reflects our dedication to quality. 【2】, we must maintain this momentum moving forward. Please review the attached report for more details regarding 【3】 performance. We appreciate everyone's hard work and look forward to sharing further 【4】 during the upcoming meeting.",
+        "questions": [
+          {
+            "prompt": "Choose the best word for blank 【1】.",
+            "options": [
+              "This",
+              "These",
+              "Those",
+              "Their"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"【1】 generated revenue\"",
+            "explanation": "空格修飾單數不可數名詞 revenue，故需使用單數指示代名詞 This。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【2】.",
+            "options": [
+              "However",
+              "Therefore",
+              "Instead",
+              "Otherwise"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"【2】, we must maintain this momentum\"",
+            "explanation": "前句提及成就，後句指出必須保持動能，兩者為因果關係，故選 Therefore。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【3】.",
+            "options": [
+              "market",
+              "marketed",
+              "marketing",
+              "markets"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"regarding 【3】 performance\"",
+            "explanation": "此處需使用名詞當作複合名詞修飾 performance，故選 market。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【4】.",
+            "options": [
+              "updates",
+              "update",
+              "updating",
+              "updated"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"further 【4】 during\"",
+            "explanation": "形容詞 further 後方通常接複數名詞或不可數名詞，選項中 updates 符合語意與文法。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Read the article and answer the reading comprehension questions.",
+        "questions": [
+          {
+            "prompt": "How much did GTA 6 sales reach in a single day?",
+            "options": [
+              "One point eight billion dollars",
+              "Three point eight billion dollars",
+              "Three point eight million dollars",
+              "Eight point three billion dollars"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"generated three point eight billion dollars in a single day\"",
+            "explanation": "文章第一段明確指出遊戲在單日內創下 3.8 億（three point eight billion）美元的銷售額。"
+          },
+          {
+            "prompt": "What did industry experts note about this milestone?",
+            "options": [
+              "It was a disappointing launch",
+              "It represents the biggest entertainment launch ever recorded",
+              "It matched previous film records",
+              "It required more data collection"
+            ],
+            "answer": "B",
+            "locator": "第 2 段 \"this milestone represents the biggest entertainment launch ever recorded\"",
+            "explanation": "根據文章第二段，產業專家指出這個里程碑是有史以來規模最大的娛樂發行。"
+          },
+          {
+            "prompt": "What do analysts continue to review?",
+            "options": [
+              "The financial impact of this success",
+              "The film box office history",
+              "The global movie tickets",
+              "The franchise popularity decline"
+            ],
+            "answer": "A",
+            "locator": "第 3 段 \"review the financial impact of this unprecedented success\"",
+            "explanation": "文章第三段提到分析師持續檢視這項空前成功的財務影響。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/c9zr5nyv5dj2o",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    },
+    "politics": {
+      "title": "UK-EU Deal and Post-Brexit Relations",
+      "summary": "英國與歐盟的新協議引發了對未來後脫歐關係的分析。",
+      "english": [
+        "Political and Europe editors are currently analysing recent agreements made between the UK and the EU.",
+        "These new deals could shape how future post-Brexit relations develop between both regions.",
+        "Experts will continue to evaluate what these diplomatic discussions mean for upcoming policies."
+      ],
+      "translation": [
+        "政治與歐洲編輯目前正在分析英國與歐盟之間達成的最新協議。",
+        "這些新協議可能會塑造雙方未來後脫歐關係的發展。",
+        "專家將繼續評估這些外交討論對未來政策的意義。"
+      ],
+      "vocabulary": [
+        {
+          "term": "political",
+          "pos": "adjective",
+          "collocations": "political editors; political relations",
+          "meaning": "政治的",
+          "synonyms": [
+            "governmental; civic",
+            "state; public"
+          ],
+          "family": "politics; politician; politically",
+          "sentence": "Political and Europe editors are currently analysing recent agreements made between the UK and the EU."
+        },
+        {
+          "term": "analysing",
+          "pos": "verb",
+          "collocations": "analysing agreements; analysing developments",
+          "meaning": "分析",
+          "synonyms": [
+            "examining; evaluating",
+            "studying; assessing"
+          ],
+          "family": "analysis; analyst; analytical",
+          "sentence": "Political and Europe editors are currently analysing recent agreements made between the UK and the EU."
+        },
+        {
+          "term": "agreements",
+          "pos": "noun",
+          "collocations": "recent agreements; trade agreements",
+          "meaning": "協議",
+          "synonyms": [
+            "accords; deals",
+            "treaties; pacts"
+          ],
+          "family": "agree; agreeable; agreeably",
+          "sentence": "Political and Europe editors are currently analysing recent agreements made between the UK and the EU."
+        },
+        {
+          "term": "recent",
+          "pos": "adjective",
+          "collocations": "recent agreements; recent news",
+          "meaning": "最近的",
+          "synonyms": [
+            "latest; current",
+            "fresh; new"
+          ],
+          "family": "recently",
+          "sentence": "Political and Europe editors are currently analysing recent agreements made between the UK and the EU."
+        },
+        {
+          "term": "deals",
+          "pos": "noun",
+          "collocations": "new deals; business deals",
+          "meaning": "協議; 交易",
+          "synonyms": [
+            "agreements; bargains",
+            "contracts; transactions"
+          ],
+          "family": "deal; dealer",
+          "sentence": "These new deals could shape how future post-Brexit relations develop between both regions."
+        },
+        {
+          "term": "shape",
+          "pos": "verb",
+          "collocations": "shape relations; shape future",
+          "meaning": "塑造; 決定",
+          "synonyms": [
+            "form; determine",
+            "influence; mould"
+          ],
+          "family": "shape; shapely; shapeless",
+          "sentence": "These new deals could shape how future post-Brexit relations develop between both regions."
+        },
+        {
+          "term": "relations",
+          "pos": "noun",
+          "collocations": "post-Brexit relations; diplomatic relations",
+          "meaning": "關係",
+          "synonyms": [
+            "connections; ties",
+            "affairs; associations"
+          ],
+          "family": "relate; relative; relation",
+          "sentence": "These new deals could shape how future post-Brexit relations develop between both regions."
+        },
+        {
+          "term": "develop",
+          "pos": "verb",
+          "collocations": "develop relations; develop policies",
+          "meaning": "發展",
+          "synonyms": [
+            "grow; evolve",
+            "expand; progress"
+          ],
+          "family": "development; developer; developing",
+          "sentence": "These new deals could shape how future post-Brexit relations develop between both regions."
+        },
+        {
+          "term": "diplomatic",
+          "pos": "adjective",
+          "collocations": "diplomatic discussions; diplomatic relations",
+          "meaning": "外交的",
+          "synonyms": [
+            "governmental; state",
+            "tactful; political"
+          ],
+          "family": "diplomacy; diplomat; diplomatically",
+          "sentence": "Experts will continue to evaluate what these diplomatic discussions mean for upcoming policies."
+        },
+        {
+          "term": "policies",
+          "pos": "noun",
+          "collocations": "upcoming policies; company policies",
+          "meaning": "政策",
+          "synonyms": [
+            "guidelines; strategies",
+            "rules; procedures"
+          ],
+          "family": "policy; politician",
+          "sentence": "Experts will continue to evaluate what these diplomatic discussions mean for upcoming policies."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "Political and Europe editors are currently _______ recent agreements made between the UK and the EU.",
+          "options": [
+            "analyse",
+            "analysing",
+            "analysed",
+            "analysis"
+          ],
+          "answer": "B",
+          "locator": "現在進行式結構 (are + V-ing)",
+          "explanation": "句中有be動詞「are」，其後接主要動詞時需使用現在分詞形成現在進行式，因此選現在分詞「analysing」。"
+        },
+        {
+          "prompt": "These new deals could shape _______ future post-Brexit relations develop between both regions.",
+          "options": [
+            "what",
+            "how",
+            "that",
+            "which"
+          ],
+          "answer": "B",
+          "locator": "關係副詞引導名詞子句",
+          "explanation": "空格後方子句表達「如何發展」，表示方式，故使用關係副詞「how」來修飾或引導子句。"
+        },
+        {
+          "prompt": "Experts will continue to evaluate _______ these diplomatic discussions mean for upcoming policies.",
+          "options": [
+            "what",
+            "who",
+            "where",
+            "when"
+          ],
+          "answer": "A",
+          "locator": "連接詞引導受詞子句",
+          "explanation": "evaluate後面接一個受詞子句，而mean需要一個名詞或代名詞做為受詞，指代討論所代表的事物，故選「what」。"
+        }
+      ],
+      "part6": {
+        "title": "Notice on International Relations Seminar",
+        "passage": "Dear Colleagues, We are pleased to invite you to a seminar discussing the recent UK-EU agreement. 【1】 of our political and Europe editors will attend the event. The seminar will explore how future post-Brexit relations 【2】 between the two regions. Please register online by Friday to secure your seat. We look forward to 【3】 your participation. Best regards, The Events Committee. 【4】",
+        "questions": [
+          {
+            "prompt": "Choose the best word for blank 【1】.",
+            "options": [
+              "Many",
+              "Much",
+              "Every",
+              "Another"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"【1】 of our political\"",
+            "explanation": "後面接複數名詞editors與複數動詞will，因此必須選擇可與複數可數名詞搭配的限定詞「Many」。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【2】.",
+            "options": [
+              "develop",
+              "develops",
+              "developed",
+              "developing"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"post-Brexit relations 【2】 between\"",
+            "explanation": "主詞「relations」為複數，且子句描述一般或未來規律發展，使用原形動詞「develop」。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【3】.",
+            "options": [
+              "see",
+              "seeing",
+              "saw",
+              "seen"
+            ],
+            "answer": "B",
+            "locator": "第 3 段 \"look forward to 【3】\"",
+            "explanation": "片語「look forward to」中的to是介系詞，後面必須接動名词（V-ing），故選「seeing」。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【4】.",
+            "options": [
+              "P.S. Refreshments will be served.",
+              "P.S. The invoice is attached.",
+              "P.S. Please update your software.",
+              "P.S. Your shipment has arrived."
+            ],
+            "answer": "A",
+            "locator": "第 4 段 \"【4】\"",
+            "explanation": "這是一封研討會邀請函的結尾補充，提供茶點服務符合研討會通知的常見情境。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Read the news article and answer the following questions.",
+        "questions": [
+          {
+            "prompt": "Who is currently examining the new agreements?",
+            "options": [
+              "Political and Europe editors",
+              "Financial market analysts",
+              "Local business owners",
+              "International students"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"Political and Europe editors are currently analysing\"",
+            "explanation": "文章第一段明確指出政治與歐洲編輯正在分析最近的協議。"
+          },
+          {
+            "prompt": "What might the new deals influence?",
+            "options": [
+              "Future post-Brexit relations",
+              "Weather conditions",
+              "Global sports tournaments",
+              "Local public transportation"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"shape how future post-Brexit relations develop\"",
+            "explanation": "第二段提到這些新協議可能會塑造未來後脫歐關係的發展。"
+          },
+          {
+            "prompt": "What will experts continue to assess?",
+            "options": [
+              "What diplomatic discussions mean for upcoming policies",
+              "The price of real estate",
+              "The schedule of upcoming flights",
+              "Company sales reports"
+            ],
+            "answer": "A",
+            "locator": "第 3 段 \"evaluate what these diplomatic discussions mean for upcoming policies\"",
+            "explanation": "第三段指出專家將繼續評估這些外交討論對未來政策的意義。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/videos/c90k6gl3lyxeo",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    },
+    "techLife": {
+      "title": "Tech Stocks Fall as Anthropic Shares Slide",
+      "summary": "受到 Anthropic 股份下滑影響，美國科技股出現拋售潮，導致標普 500 指數與道瓊工業平均指數陷入修正區間。",
+      "english": [
+        "A major tech stock sell-off has created severe pressures on financial markets across the United States. Investors reacted quickly as Anthropic shares began to slide, prompting widespread concern throughout the technology sector.",
+        "The sustained market pressures eventually dragged key indices down significantly during recent trading sessions. Both the broad S&P 500 and the historic Dow Jones Industrial Average were officially pushed into correction territory.",
+        "Market analysts note that the steep decline in technology valuations has deeply affected overall market sentiment. Many traders remain cautious as major financial benchmarks continue to face volatility following the drop in share prices."
+      ],
+      "translation": [
+        "一場主要的科技股拋售潮對全美的金融市場造成了嚴重的壓力。隨著 Anthropic 股價開始下滑，投資人迅速作出反應，引發了整個科技產業的廣泛擔憂。",
+        "持續的市場壓力最終在最近的交易時段中顯著拉低了關鍵指數。廣泛的標普 500 指數與歷史悠久的道瓊工業平均指數，雙雙被正式推入修正區間。",
+        "市場分析師指出，科技業估值的劇烈下跌已深刻影響了整體市場情緒。在股價下跌之後，隨著主要金融基準持續面臨波動，許多交易員仍保持謹慎。"
+      ],
+      "vocabulary": [
+        {
+          "term": "sell-off",
+          "pos": "n.",
+          "collocations": "stock sell-off; massive sell-off",
+          "meaning": "拋售",
+          "synonyms": [
+            "dumping; liquidation",
+            "market downturn; slump"
+          ],
+          "family": "sell off; selling off",
+          "sentence": "A major tech stock sell-off has created severe pressures on financial markets across the United States."
+        },
+        {
+          "term": "pressures",
+          "pos": "n.",
+          "collocations": "financial pressures; market pressures",
+          "meaning": "壓力",
+          "synonyms": [
+            "strains; burdens",
+            "stresses; demands"
+          ],
+          "family": "press; pressured; pressing",
+          "sentence": "A major tech stock sell-off has created severe pressures on financial markets across the United States."
+        },
+        {
+          "term": "slide",
+          "pos": "v.",
+          "collocations": "begin to slide; slide sharply",
+          "meaning": "下滑；下跌",
+          "synonyms": [
+            "decline; drop",
+            "fall; slump"
+          ],
+          "family": "slide; sliding; slid",
+          "sentence": "Investors reacted quickly as Anthropic shares began to slide, prompting widespread concern throughout the technology sector."
+        },
+        {
+          "term": "concern",
+          "pos": "n.",
+          "collocations": "widespread concern; express concern",
+          "meaning": "擔憂；關注",
+          "synonyms": [
+            "anxiety; worry",
+            "unease; apprehension"
+          ],
+          "family": "concern; concerned; concerning",
+          "sentence": "Investors reacted quickly as Anthropic shares began to slide, prompting widespread concern throughout the technology sector."
+        },
+        {
+          "term": "dragged",
+          "pos": "v.",
+          "collocations": "dragged down; dragged lower",
+          "meaning": "拉低；拖累",
+          "synonyms": [
+            "pulled down; lowered",
+            "depressed; reduced"
+          ],
+          "family": "drag; dragging; drags",
+          "sentence": "The sustained market pressures eventually dragged key indices down significantly during recent trading sessions."
+        },
+        {
+          "term": "indices",
+          "pos": "n.",
+          "collocations": "key indices; market indices",
+          "meaning": "指數（index 的複數）",
+          "synonyms": [
+            "indicators; benchmarks",
+            "measures; gauges"
+          ],
+          "family": "index; indexing; indexed",
+          "sentence": "The sustained market pressures eventually dragged key indices down significantly during recent trading sessions."
+        },
+        {
+          "term": "correction",
+          "pos": "n.",
+          "collocations": "correction territory; market correction",
+          "meaning": "（股市）修正；回檔",
+          "synonyms": [
+            "adjustment; pullback",
+            "rebound; realignment"
+          ],
+          "family": "correct; corrected; corrective",
+          "sentence": "Both the broad S&P 500 and the historic Dow Jones Industrial Average were officially pushed into correction territory."
+        },
+        {
+          "term": "decline",
+          "pos": "n.",
+          "collocations": "steep decline; sharp decline",
+          "meaning": "下跌；衰退",
+          "synonyms": [
+            "drop; fall",
+            "decrease; downturn"
+          ],
+          "family": "decline; declining; declined",
+          "sentence": "Market analysts note that the steep decline in technology valuations has deeply affected overall market sentiment."
+        },
+        {
+          "term": "sentiment",
+          "pos": "n.",
+          "collocations": "market sentiment; investor sentiment",
+          "meaning": "情緒；觀感",
+          "synonyms": [
+            "attitude; mood",
+            "feeling; outlook"
+          ],
+          "family": "sentimental; sentimentality",
+          "sentence": "Market analysts note that the steep decline in technology valuations has deeply affected overall market sentiment."
+        },
+        {
+          "term": "benchmarks",
+          "pos": "n.",
+          "collocations": "financial benchmarks; industry benchmarks",
+          "meaning": "基準；指標",
+          "synonyms": [
+            "standards; yardsticks",
+            "criteria; reference points"
+          ],
+          "family": "benchmark; benchmarking",
+          "sentence": "Many traders remain cautious as major financial benchmarks continue to face volatility following the drop in share prices."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "Investors reacted immediately _______ Anthropic shares began to experience a rapid decline.",
+          "options": [
+            "as",
+            "despite",
+            "during",
+            "unless"
+          ],
+          "answer": "A",
+          "locator": "時間從屬連接詞引導副詞子句 (as + S + V)",
+          "explanation": "選項 (A) as 為連接詞，在此表「當……之時」，後接完整子句「Anthropic shares began...」，符合句意與語法。(B) despite 與 (C) during 皆為介系詞，後接名詞或動名詞；(D) unless 表「除非」，與上下文邏輯不合。"
+        },
+        {
+          "prompt": "The severe pressures in the technology sector eventually _______ key benchmark indices lower.",
+          "options": [
+            "drag",
+            "dragged",
+            "dragging",
+            "drags"
+          ],
+          "answer": "B",
+          "locator": "過去時態主要動詞 (eventually dragged)",
+          "explanation": "句中缺乏主要動詞，且描述已發生的市場狀況，應使用過去式動詞 (B) dragged。(A) drag 與 (D) drags 為現在式；(C) dragging 為分詞，無法單獨作為句子的主要動詞。"
+        },
+        {
+          "prompt": "Market analysts recommend that traders stay cautious until the market _______ stability.",
+          "options": [
+            "reaches",
+            "reaching",
+            "reached",
+            "will reach"
+          ],
+          "answer": "A",
+          "locator": "時間副詞子句以現在代替未來 (until + S + V)",
+          "explanation": "在 until 引導的時間副詞子句中，若表達未來事項，須用「現在式」代替未來式。主要子句為現在式建議，子句主詞為第三人稱單數 the market，故選擇 (A) reaches。(B) 為分詞；(C) 為過去式；(D) 為未來式，皆不符合時間子句語法。"
+        }
+      ],
+      "part6": {
+        "title": "Internal Memo: Financial Market Updates",
+        "passage": "To: All Portfolio Managers\nFrom: Executive Investment Committee\nDate: November 21, 2026\nSubject: Market Downturn Advisory\n\nRecent volatility in the technology sector has led to significant shifts across global equity markets. Earlier today, a massive sell-off in major tech holdings 【1】 heavy pressures on several core trading accounts.\n\nAs share prices for firm like Anthropic began to slide, indices such as the S&P 500 and the Dow Jones Industrial Average dropped into correction territory. 【2】. Therefore, we advise all team members to review client portfolios and limit high-risk exposure.\n\nOur risk management team is 【3】 monitoring the situation to protect long-term investments. 【4】 you require additional analytical reports regarding these market conditions, please contact the research division directly.",
+        "questions": [
+          {
+            "prompt": "Choose the correct option to fill in blank 【1】.",
+            "options": [
+              "created",
+              "creating",
+              "creation",
+              "creates"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"a massive sell-off in major tech holdings 【1】 heavy pressures\"",
+            "explanation": "句子需要一個過去時態的主要動詞，以對應時間副詞「Earlier today」。因此選擇過去式動詞 (A) created。(B) 是分詞，(C) 是名詞，(D) 是現在式動詞，皆不符語法。"
+          },
+          {
+            "prompt": "Choose the correct option to fill in blank 【2】.",
+            "options": [
+              "This trend has caused widespread concern among market participants.",
+              "Our firm recently opened two new international branch offices.",
+              "We expect complete recovery in all product sectors tomorrow morning.",
+              "Employees are reminded to submit their holiday requests early."
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"As share prices for firm like Anthropic began to slide... dropped into correction territory. 【2】.\"",
+            "explanation": "承接前文提到的「股價下滑與主要指數陷入修正區間」，(A) 選項「此趨勢已在市場參與者之間引發廣泛擔憂」最符邏輯與上下文銜接。(B)、(C)、(D) 與市場下滑及風險防範之主題無關。"
+          },
+          {
+            "prompt": "Choose the correct option to fill in blank 【3】.",
+            "options": [
+              "closely",
+              "close",
+              "closeness",
+              "closer"
+            ],
+            "answer": "A",
+            "locator": "第 3 段 \"Our risk management team is 【3】 monitoring the situation\"",
+            "explanation": "空格處位於進行式動詞 is monitoring 之間，需填入副詞修飾動詞 monitoring。(A) closely（密切地）符合語義與語法。(B) 為形容詞，(C) 為名詞，(D) 為比較級形容詞/副詞，此處無比較對象。"
+          },
+          {
+            "prompt": "Choose the correct option to fill in blank 【4】.",
+            "options": [
+              "Should",
+              "Although",
+              "Unless",
+              "Despite"
+            ],
+            "answer": "A",
+            "locator": "第 3 段 \"【4】 you require additional analytical reports regarding these market conditions\"",
+            "explanation": "此處為條件句「If you require...」省略 If 的倒裝句型「Should you require...」。因此選 (A) Should。(B) 表讓步（雖然）；(C) 表條件（除非）；(D) 為介系詞（儘管），後不接完整子句。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Based on the news article provided above, choose the best answer for each of the following reading comprehension questions.",
+        "questions": [
+          {
+            "prompt": "What triggered the recent sell-off in the technology sector?",
+            "options": [
+              "A decline in Anthropic share prices",
+              "New financial regulation policies",
+              "A major system outage across the US",
+              "Unexpected dividend announcements"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"Investors reacted quickly as Anthropic shares began to slide\"",
+            "explanation": "根據文章第 1 段「Investors reacted quickly as Anthropic shares began to slide」，指出投資人是因為 Anthropic 股價開始下滑而做出反應，進而引發拋售。因此答案為 (A)。"
+          },
+          {
+            "prompt": "Which major stock market benchmarks were pushed into correction territory?",
+            "options": [
+              "Only tech-focused local exchanges",
+              "Both the S&P 500 and the Dow Jones Industrial Average",
+              "International real estate investment funds",
+              "Government bond yield indices"
+            ],
+            "answer": "B",
+            "locator": "第 2 段 \"Both the broad S&P 500 and the historic Dow Jones Industrial Average were officially pushed into correction territory.\"",
+            "explanation": "文章第 2 段明確提到「Both the broad S&P 500 and the historic Dow Jones Industrial Average were officially pushed into correction territory」，因此正確答案是 (B)。"
+          },
+          {
+            "prompt": "How are traders responding to current market conditions according to the text?",
+            "options": [
+              "They are ignoring the recent price drops entirely.",
+              "They are remaining cautious amid market volatility.",
+              "They are withdrawing all funds from US banks.",
+              "They are rapidly purchasing high-risk equity assets."
+            ],
+            "answer": "B",
+            "locator": "第 3 段 \"Many traders remain cautious as major financial benchmarks continue to face volatility\"",
+            "explanation": "根據第 3 段「Many traders remain cautious as major financial benchmarks continue to face volatility」，許多交易員在面對市場波動時保持謹慎態度，因此 (B) 為正確答案。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/c6808ym10vzgo",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    }
+  },
   "2026-11-20": {
     "finance": {
       "title": "Anthropic Makes Historic Stock Market Debut",
