@@ -7,7 +7,7 @@
   <title>TOEIC News Notes</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;500;600;700&amp;family=Caveat+Brush&amp;family=Cinzel+Decorative:wght@400;700&amp;family=Fira+Sans:wght@400;500;600;700&amp;family=Libre+Baskerville:wght@400;700&amp;family=Noto+Sans+TC:wght@400;500;600;700;800&amp;family=Walter+Turncoat&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;500;600;700&amp;family=Caveat+Brush&amp;family=Cinzel+Decorative:wght@400;700&amp;family=Fira+Sans:wght@400;500;600;700&amp;family=Libre+Baskerville:wght@400;700&amp;family=Luckiest+Guy&amp;family=Noto+Sans+TC:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.3/html2pdf.bundle.min.js" defer></script>
   <script>
     try {
@@ -18,7 +18,7 @@
   <style>
     :root{--canvas:#EDCFCB;--paper:#F5EAE6;--panel:#DBE5E6;--ink:#27303A;--vocab-head:#B54848;--mask:#BBD4DB;--teal:#A44A4A;--navy:#A44A4A;--vocab-ink:#fff;--mask-ink:#1d1d1d;--accent-ink:#fff;--muted:#59626a;--line:#d9d0c5;--nav-control:var(--panel);--nav-text:var(--ink)}
     *{box-sizing:border-box}
-    body{margin:0;background:var(--canvas);color:var(--ink);font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;line-height:1.7}
+    body{margin:0;background:var(--canvas);color:var(--ink);font-family:"Noto Sans TC",sans-serif;line-height:1.7}
     button,select{font:inherit}
     button{cursor:pointer}
     :focus-visible{outline:3px solid #d9a54d;outline-offset:2px}
@@ -62,18 +62,18 @@
     .pdf-clean{position:fixed;left:-9999px;top:0;width:680px;max-width:680px;margin:0;border:0;border-radius:0;background:var(--paper);color:var(--ink);box-shadow:none;print-color-adjust:exact;-webkit-print-color-adjust:exact}
     .html2pdf__container .pdf-clean{position:static;left:auto;top:auto;margin:0}
     .pdf-clean *{box-sizing:border-box;print-color-adjust:exact;-webkit-print-color-adjust:exact}
-    .pdf-page{display:flex;flex-direction:column;justify-content:space-between;box-sizing:border-box;width:680px;height:1015px;margin:0;padding:18px 24px;background:var(--paper);overflow:visible;break-after:page;page-break-after:always}
+    .pdf-page{display:block;box-sizing:border-box;width:680px;height:auto;margin:0;padding:18px 24px;background:var(--paper);overflow:visible;break-after:page;page-break-after:always}
     .pdf-page:last-child{break-after:auto;page-break-after:auto}
-    .pdf-page-inner{display:flex;flex-direction:column;justify-content:space-between;width:100%;height:100%;transform-origin:top left}
+    .pdf-page-inner{display:flex;flex-direction:column;gap:var(--pdf-block-gap,0px);width:100%}
     .pdf-clean .pdf-clean-head{padding:0 0 10px;border-bottom:1px solid var(--line)}
     .pdf-clean .pdf-clean-head h1{margin:8px 0 5px;font-family:var(--font-heading);font-size:22px;line-height:1.22}
     .pdf-clean .pdf-clean-head .summary{margin:0;font-size:11px}
-    .pdf-clean .section-heading{margin:11px 0 9px;padding:0;border:0;break-after:avoid}
+    .pdf-clean .section-heading{display:grid;grid-template-columns:70% 30%;margin:11px 0 9px;padding:0;border:0;break-after:avoid}
     .pdf-clean .section-heading h2{font-size:16px}
-    .pdf-clean .section-en{font-family:var(--font-heading)}
-    .pdf-clean .article-copy{max-width:none;font-family:var(--font-body);font-size:12.5px;line-height:1.45}
+    .pdf-clean .section-en{display:block;font-family:var(--font-heading);text-align:right}
+    .pdf-clean .article-copy{max-width:none;font-family:var(--font-body);font-size:var(--pdf-english-size);line-height:1.52}
     .pdf-clean .article-copy p{margin:0 0 8px}
-    .pdf-clean .pdf-article-paragraph{margin:0 0 8px;font:12.5px/1.45 var(--font-body)}
+    .pdf-clean .pdf-article-paragraph{margin:0 0 8px;font:var(--pdf-english-size)/1.52 var(--font-body)}
     .pdf-clean .read-sentence{background:transparent}
     .pdf-clean .sentence-play,.pdf-clean .source-row,.pdf-clean .split-label{display:none!important}
     .pdf-clean .vocab-hit::after{display:none!important}
@@ -84,35 +84,32 @@
     .pdf-clean .reveal:not(.is-covered) .mask{display:none!important}
     .pdf-clean .reveal.is-covered{height:26px;min-height:26px;border:none;border-radius:0;background-color:var(--paper)}
     .pdf-clean .reveal.is-covered .mask{display:none!important}
-    .pdf-clean .pdf-translation:not(.is-covered) .reveal-content{font-family:"Noto Sans TC","PingFang TC",sans-serif;font-size:11.5px;line-height:1.48}
+    .pdf-clean .pdf-translation:not(.is-covered) .reveal-content{font-family:"Noto Sans TC",sans-serif;font-size:11.5px;line-height:1.55}
     .pdf-clean .pdf-translation:not(.is-covered) p{margin:0 0 4px}
-    .pdf-clean .vocab{display:flex;flex:1;flex-direction:column;min-height:0;width:100%;border:0;border-spacing:0;font-size:10px}
-    .pdf-clean .vocab thead{display:block;background:var(--vocab-head)}
-    .pdf-clean .vocab tbody{display:flex;flex:1;flex-direction:column;justify-content:space-between;min-height:0}
-    .pdf-clean .vocab tr,.pdf-clean .vocab tr.is-offpage{display:grid;grid-template-columns:22% 130px 15% 18% minmax(0,1fr);width:100%}
-    .pdf-clean .vocab th{display:block;width:auto!important;padding:8px 5px;border:0;background:var(--vocab-head);color:var(--vocab-ink);font:700 9px/1.3 var(--font-body),"Noto Sans TC","PingFang TC",sans-serif;text-align:left}
+    .pdf-clean .vocab{width:100%;border:0;border-spacing:0;table-layout:fixed;font-size:10px}
+    .pdf-clean .vocab thead,.pdf-clean .vocab tbody{display:block;width:100%}
+    .pdf-clean .vocab tr,.pdf-clean .vocab tr.is-offpage{display:flex;width:100%;margin:0 0 var(--pdf-vocab-gap,10px);break-inside:avoid;page-break-inside:avoid}
+    .pdf-clean .vocab th{display:block;flex:none;padding:8px 5px;border:0;background:var(--vocab-head);color:var(--vocab-ink);font:700 9px/1.3 var(--font-body);text-align:left}
     .pdf-clean .vocab th:first-child{border-radius:7px 0 0 7px}.pdf-clean .vocab th:last-child{border-radius:0 7px 7px 0}
-    .pdf-clean .vocab td{display:block;width:auto!important;padding:8px 5px;border:0;vertical-align:top;text-align:left;font-family:var(--font-body),"Noto Sans TC","PingFang TC",sans-serif;line-height:1.35;overflow-wrap:anywhere}
+    .pdf-clean .vocab td{display:block;flex:none;padding:var(--pdf-vocab-pad,8px) 5px;border:0;vertical-align:top;text-align:left;font-family:var(--font-body);line-height:1.45;overflow-wrap:anywhere}
     .pdf-clean .vocab th:nth-child(1),.pdf-clean .vocab td:nth-child(1){width:22%}
     .pdf-clean .vocab th:nth-child(2),.pdf-clean .vocab td:nth-child(2){width:130px;white-space:nowrap;overflow-wrap:normal}
     .pdf-clean .vocab th:nth-child(3),.pdf-clean .vocab td:nth-child(3){width:15%}
-    .pdf-clean .vocab th:nth-child(4),.pdf-clean .vocab td:nth-child(4){width:18%}
-    .pdf-clean .vocab th:nth-child(5),.pdf-clean .vocab td:nth-child(5){width:auto}
-    .pdf-clean .vocab tr{break-inside:avoid;page-break-inside:avoid}
-    .pdf-clean .vocab tr.is-offpage{display:grid}
+    .pdf-clean .vocab th:nth-child(4),.pdf-clean .vocab td:nth-child(4){width:17%}
+    .pdf-clean .vocab th:nth-child(5),.pdf-clean .vocab td:nth-child(5){flex:1;min-width:0}
     .pdf-clean .vocab .reveal.is-covered{height:26px;min-height:26px;white-space:normal}
     .pdf-clean .vocab .reveal:not(.is-covered){border:0;background:transparent}
     .pdf-clean .vocab .reveal:not(.is-covered) .reveal-content{white-space:nowrap;padding:0}
-    .pdf-clean .collocation{font-size:9px}.pdf-clean .example{font-family:var(--font-body),"Noto Sans TC","PingFang TC",sans-serif;font-size:9px}
-    .pdf-clean .pdf-q-card{display:block;margin:0 0 10px;padding:12px;border:1px solid var(--line);border-radius:8px;background:var(--panel);break-inside:avoid;page-break-inside:avoid}
+    .pdf-clean .collocation{font-size:9px}.pdf-clean .example{font-family:var(--font-body);font-size:9px}
+    .pdf-clean .pdf-q-card{display:block;margin:0 0 var(--pdf-question-gap,10px);padding:var(--pdf-question-pad,12px);border:1px solid var(--line);border-radius:8px;background:var(--panel);break-inside:avoid;page-break-inside:avoid}
     .pdf-clean .question-top{display:flex;gap:7px;align-items:baseline}
-    .pdf-clean .q-number{font-size:11px}.pdf-clean .prompt{font-size:11.5px;line-height:1.4}
-    .pdf-clean .options{display:flex;flex-direction:column;gap:2px;margin:6px 0 7px 18px}
-    .pdf-clean .options li{font-size:10.5px;line-height:1.35}
-    .pdf-clean .answer-reveal,.pdf-clean .answer-reveal.is-covered{height:26px;min-height:26px;background-color:var(--paper);border:none}
+    .pdf-clean .q-number{font-size:11px}.pdf-clean .prompt{font-size:11.5px;line-height:1.5}
+    .pdf-clean .options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px 10px;margin:8px 0 10px 18px}
+    .pdf-clean .options li{font-size:10.5px;line-height:1.45}
+    .pdf-clean .answer-reveal,.pdf-clean .answer-reveal.is-covered{height:var(--pdf-answer-height,26px);min-height:var(--pdf-answer-height,26px);background-color:var(--panel);border:none}
     .pdf-clean .answer-reveal .reveal-content{display:none!important}
-    .pdf-clean .passage{margin:0 0 10px;padding:8px 11px;border-left:3px solid var(--vocab-head);border-radius:0 6px 6px 0;background:var(--panel);font:11px/1.43 var(--font-body);white-space:pre-line;break-inside:avoid}
-    .pdf-clean .passage-title{font:700 10px/1.3 "Noto Sans TC","PingFang TC",sans-serif}
+    .pdf-clean .passage{margin:0 0 10px;padding:10px 13px;border-left:3px solid var(--vocab-head);border-radius:0 6px 6px 0;background:var(--panel);font:11px/1.5 var(--font-body);white-space:pre-line;break-inside:avoid}
+    .pdf-clean .passage-title{font:700 10px/1.3 "Noto Sans TC",sans-serif}
     .pdf-clean .reading-note{margin:0 0 8px;font-size:10px}
     .pdf-modal[hidden]{display:none}
     .pdf-modal{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;padding:16px;background:#1d1b1bcc}
@@ -137,11 +134,12 @@
     .summary{max-width:780px;margin:0;color:var(--muted);font-size:.95rem}
     .section{padding:30px 38px 34px;border-bottom:1px solid var(--line);scroll-margin-top:72px}
     .section:last-child{border:0}
-    .section-heading{display:flex;align-items:baseline;gap:12px;margin-bottom:17px}
-    .section-number{border-bottom:3px solid var(--teal);color:var(--ink);font-family:Georgia,serif;font-size:1.35rem;font-weight:700}
+    .section-heading{display:grid;grid-template-columns:70% 30%;align-items:baseline;gap:0;margin-bottom:17px}
+    .section-title-main{display:flex;align-items:baseline;gap:12px;min-width:0}
+    .section-number{border-bottom:3px solid var(--teal);color:var(--ink);font-family:var(--font-heading);font-size:1.35rem;font-weight:700}
     h2{margin:0;font-size:1.2rem;line-height:1.35}
-    .section-en{margin-left:auto;color:#8a989b;font-family:Georgia,serif;font-size:.85rem;font-style:italic}
-    .article-copy{max-width:78ch;color:var(--ink);font-family:Georgia,"Times New Roman",serif;font-size:1.1rem;line-height:1.88}
+    .section-en{margin-left:0;color:#8a989b;font-family:var(--font-heading);font-size:.85rem;font-style:italic;text-align:right}
+    .article-copy{max-width:78ch;color:var(--ink);font-family:var(--font-body);font-size:var(--font-body-size);line-height:1.88}
     .article-copy p{margin:0 0 15px}
     .article-copy p:last-child{margin:0}
     .small-heading{margin:20px 0 8px;color:var(--ink);font-size:.86rem;font-weight:800}
@@ -181,12 +179,12 @@
     .vocab .reveal:not(.is-covered) .reveal-content{padding:0}
     .vocab .reveal:not(.is-covered) .mask{display:inline;width:auto;min-height:0;margin-top:3px;padding:0;border:none;border-radius:0;background:transparent;color:var(--ink);text-align:left;font-size:.66rem}
     .vocab .reveal:not(.is-covered) .mask:hover{background:transparent;color:var(--ink);text-decoration:underline}
-    .example{color:var(--ink);font-family:Georgia,serif;line-height:1.58}
+    .example{color:var(--ink);font-family:var(--font-body);line-height:1.58}
     .question-list{display:grid;gap:13px}
     .question{padding:18px 19px;border:1px solid var(--line);border-radius:11px;background:var(--panel)}
     .question-top{display:flex;gap:11px;align-items:baseline}
-    .q-number{flex:none;color:var(--ink);font-family:Georgia,serif;font-size:1rem;font-weight:700}
-    .prompt{margin:0;font-size:1rem;font-weight:650}
+    .q-number{flex:none;color:var(--ink);font-family:var(--font-heading);font-size:1rem;font-weight:700}
+    .prompt{margin:0;font-size:var(--font-body-size);font-weight:650}
     .options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px 16px;margin:11px 0 13px 26px;padding:0;list-style:none}
     .options li{color:var(--ink);font-size:.9rem}
     .option-letter{display:inline-block;min-width:25px;color:var(--ink);font-weight:800}
@@ -194,8 +192,8 @@
     .answer-reveal .reveal-content{display:grid;gap:8px;font-size:.86rem}
     .detail-row{display:grid;grid-template-columns:125px 1fr;gap:8px}
     .detail-label{color:var(--ink);font-weight:850}
-    .passage{padding:18px 22px;border-left:4px solid var(--vocab-head);border-radius:0 9px 9px 0;background:var(--panel);font-family:Georgia,"Times New Roman",serif;font-size:1rem;line-height:1.8;white-space:pre-line}
-    .passage-title{margin:0 0 9px;color:var(--ink);font-family:system-ui,sans-serif;font-size:.8rem;font-weight:800}
+    .passage{padding:18px 22px;border-left:4px solid var(--vocab-head);border-radius:0 9px 9px 0;background:var(--panel);font-family:var(--font-body);font-size:var(--font-body-size);line-height:1.8;white-space:pre-line}
+    .passage-title{margin:0 0 9px;color:var(--ink);font-family:"Noto Sans TC",sans-serif;font-size:.8rem;font-weight:800}
     .passage p{margin:0}
     .reading-note{margin:0 0 13px;color:var(--muted);font-size:.84rem}
     .reading-tools{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
@@ -212,7 +210,7 @@
     .sentence-play{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;margin-left:3px;padding:0;border:0;border-radius:50%;background:var(--teal);color:var(--accent-ink);opacity:.78;vertical-align:middle;transition:opacity .16s,transform .1s}
     .sentence-play:hover,.sentence-play:focus-visible{opacity:1;transform:scale(1.08)}
     .vocab-hit{position:relative;border-bottom:1.5px dashed var(--teal);cursor:help}
-    .vocab-hit:hover::after,.vocab-hit:focus::after,.vocab-hit.is-tapped::after{content:attr(data-tooltip);position:absolute;left:0;bottom:calc(100% + 5px);z-index:20;width:max-content;max-width:min(230px,80vw);padding:3px 7px;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--ink);font:600 .72rem/1.45 system-ui,sans-serif;white-space:normal;box-shadow:0 5px 14px #0002}
+    .vocab-hit:hover::after,.vocab-hit:focus::after,.vocab-hit.is-tapped::after{content:attr(data-tooltip);position:absolute;left:0;bottom:calc(100% + 5px);z-index:20;width:max-content;max-width:min(230px,80vw);padding:3px 7px;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--ink);font:600 .72rem/1.45 "Noto Sans TC",sans-serif;white-space:normal;box-shadow:0 5px 14px #0002}
     .user-highlight{padding:0;background:var(--mask);color:inherit;box-decoration-break:clone;-webkit-box-decoration-break:clone;print-color-adjust:exact;-webkit-print-color-adjust:exact}
     .split-layout{display:grid;grid-template-rows:minmax(0,42fr) minmax(0,58fr);height:min(900px,calc(100dvh - 80px));min-height:440px;overflow:hidden;border:1px solid var(--line);border-radius:11px;background:var(--paper)}
     .split-pane{min-height:0;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;padding:18px 22px}
@@ -224,11 +222,13 @@
     .selection-tools{position:fixed;z-index:1200;display:flex;gap:4px;padding:4px;border:1px solid var(--line);border-radius:9px;background:var(--paper);box-shadow:0 9px 24px #0003}
     .selection-tools button{padding:4px 8px;border:0;border-radius:6px;background:var(--panel);color:var(--ink);font-size:.73rem;font-weight:800;white-space:nowrap}
     .selection-tools button:hover{background:var(--teal)}
-    :root{--font-heading:"Cinzel Decorative",serif;--font-body:"Libre Baskerville",serif}
+    :root{--font-heading:"Cinzel Decorative","Noto Sans TC",sans-serif;--font-body:"Libre Baskerville","Noto Sans TC",sans-serif;--font-body-size:16px;--pdf-english-size:12.5px}
     .sheet h1,.sheet .section-en{font-family:var(--font-heading)}
     .sheet .article-copy,.sheet .passage,.sheet .example,.sheet .term,.sheet .collocation,.sheet .options,.sheet .prompt{font-family:var(--font-body)}
-    .sheet .summary,.sheet .section-heading h2,.sheet .small-heading,.sheet .reveal-content,.sheet .detail-label,.sheet .vocab th{font-family:"Noto Sans TC","PingFang TC",sans-serif}
-    .sheet .vocab th,.sheet .vocab td,.sheet .vocab .term,.sheet .vocab .pos,.sheet .vocab .collocation,.sheet .vocab .example{font-family:var(--font-body),"Noto Sans TC","PingFang TC",sans-serif}
+    .sheet .summary,.sheet .section-heading h2,.sheet .small-heading,.sheet .reveal-content,.sheet .detail-label,.sheet .vocab th{font-family:"Noto Sans TC",sans-serif}
+    .sheet .vocab th,.sheet .vocab td,.sheet .vocab .term,.sheet .vocab .pos,.sheet .vocab .collocation,.sheet .vocab .example{font-family:var(--font-body)}
+    .sheet .vocab{font-size:calc(var(--font-body-size) * .84)}
+    .sheet .options li{font-size:calc(var(--font-body-size) * .9)}
     .theme-illustration{display:grid;place-items:center;flex:none;width:20px;color:var(--ink)}
     .font-picker,.mask-picker{position:relative}
     .font-toggle,.mask-toggle{display:flex;align-items:center;justify-content:center;gap:2px;width:auto;min-width:37px;padding:0 6px;font-size:.8rem;font-weight:800}
@@ -255,7 +255,7 @@
       .topbar{padding:0 10px}.date-select{width:113px}.tab{padding:0 8px;font-size:.77rem}
       .page{padding:0 10px}.sheet-head,.section{padding:24px 18px}
       .vocab-toolbar{align-items:flex-start}.vocab-toolbar .section-heading{min-width:0}
-      .section-en{display:none}.options{grid-template-columns:1fr}
+      .section-heading{grid-template-columns:1fr}.section-en{display:none}.options{grid-template-columns:1fr}
       .vocab{min-width:780px}.detail-row{grid-template-columns:1fr;gap:0}
       .reading-tools h1{flex-basis:100%;margin-bottom:0}.speech-controls{margin-top:6px}
       .split-layout{min-height:360px}.split-pane{padding:13px 14px}
@@ -417,9 +417,9 @@
       {id:"matcha",name:"Matcha Berry",canvas:"#D9DECD",paper:"#F3F1EA",panel:"#E8D1D3",ink:"#2D3B27",vocabHead:"#972243",mask:"#AFBE9D",accent:"#7E8971",icon:'<path d="M5 9h12l-2 10H7L5 9Zm2-2c1-3 3-3 4-1 1-3 4-2 5 1M4 19h14M11 5c-1-2 0-3 2-3"/>'}
     ];
     const fontPairs=[
-      {id:"editorial",name:"Editorial Classic",heading:'"Cinzel Decorative",serif',body:'"Libre Baskerville",serif'},
-      {id:"modern",name:"Modern Magazine",heading:'"Alegreya Sans SC",sans-serif',body:'"Fira Sans",sans-serif'},
-      {id:"sketch",name:"Sketchbook Notes",heading:'"Walter Turncoat",cursive',body:'"Caveat Brush",cursive'}
+      {id:"editorial",name:"Editorial Classic",heading:'"Cinzel Decorative","Noto Sans TC",sans-serif',body:'"Libre Baskerville","Noto Sans TC",sans-serif',size:"16px",pdfSize:"12.5px"},
+      {id:"modern",name:"Modern Magazine",heading:'"Alegreya Sans SC","Noto Sans TC",sans-serif',body:'"Fira Sans","Noto Sans TC",sans-serif',size:"16px",pdfSize:"12.5px"},
+      {id:"sketch",name:"Sketchbook Notes",heading:'"Luckiest Guy","Noto Sans TC",sans-serif',body:'"Caveat Brush","Noto Sans TC",sans-serif',size:"19.5px",pdfSize:"15px"}
     ];
     function contrastText(hex){
       const match=hex.trim().match(/^#([0-9a-f]{6})$/i);
@@ -461,6 +461,8 @@
       const pair=fontPairs.find(item=>item.id===id)||fontPairs[0];
       document.documentElement.style.setProperty("--font-heading",pair.heading);
       document.documentElement.style.setProperty("--font-body",pair.body);
+      document.documentElement.style.setProperty("--font-body-size",pair.size);
+      document.documentElement.style.setProperty("--pdf-english-size",pair.pdfSize);
       fontToggle.title=`英文字體：${pair.name}`;
       fontMenu.querySelectorAll("button").forEach(button=>button.setAttribute("aria-checked",String(button.dataset.font===pair.id)));
       try{localStorage.setItem("toeic-font-pair",pair.id)}catch(_){}
@@ -484,7 +486,7 @@
         <button type="button" class="mask" aria-expanded="${open}" aria-label="${open?"重新遮罩":"點擊顯示"+kind}">${open?"重新遮罩":"點擊顯示"+kind}</button>
       </div>`;
     }
-    const sectionHeading=(number,zh,en)=>`<div class="section-heading"><span class="section-number">${number}</span><h2>${zh}</h2><span class="section-en">${en}</span></div>`;
+    const sectionHeading=(number,zh,en)=>`<div class="section-heading"><div class="section-title-main"><span class="section-number">${number}</span><h2>${zh}</h2></div><span class="section-en">${en}</span></div>`;
     function highlightedQuestionText(text,id){
       const marks=questionHighlights().filter(item=>item[0]===id);
       const cuts=new Set([0,text.length]);
@@ -505,17 +507,21 @@
     }
     const speakerSvg='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4Zm12-1a5 5 0 0 1 0 8m2-11a9 9 0 0 1 0 14"/></svg>';
     const voiceGroups={
-      US:{label:"🇺🇸 美式",names:["Google US English","Allison","Joelle","Nathan"]},
-      UK:{label:"🇬🇧 英倫",names:["Google UK English Female","Google UK English Male","Fiona","Moira"]},
-      WORLD:{label:"🌏 澳印南非",names:["Karen","Lee","Sangeeta","Tessa"]}
+      "en-US":{label:"🇺🇸 美國 (en-US)",lang:"en-US",names:["Google US English","Allison","Joelle","Nathan"]},
+      "en-GB-female":{label:"🇬🇧 英國女聲 (en-GB)",lang:"en-GB",names:["Google UK English Female","Fiona"]},
+      "en-GB-male":{label:"🇬🇧 英國男聲 (en-GB)",lang:"en-GB",names:["Google UK English Male","Daniel"]},
+      "en-IE":{label:"🇮🇪 愛爾蘭 (en-IE)",lang:"en-IE",names:["Moira"]},
+      "en-AU":{label:"🇦🇺 澳洲 (en-AU)",lang:"en-AU",names:["Karen","Lee"]},
+      "en-IN":{label:"🇮🇳 印度 (en-IN)",lang:"en-IN",names:["Sangeeta"]},
+      "en-ZA":{label:"🇿🇦 南非 (en-ZA)",lang:"en-ZA",names:["Tessa"]}
     };
     const excludedVoices=/\b(?:Albert|Fred|Zarvox|Boing|Grandma|Bells|Bubbles|Samantha)\b/i;
     const speechRates=[1,1.2,1.5,1.75];
-    let accent="US",selectedVoiceName="",speechRate=1;
+    let accent="en-US",selectedVoiceName="auto",speechRate=1;
     try{
       const savedAccent=localStorage.getItem("toeic-accent");
       if(voiceGroups[savedAccent])accent=savedAccent;
-      selectedVoiceName=localStorage.getItem("toeic-voice-name")||"";
+      selectedVoiceName=localStorage.getItem("toeic-voice-name")||"auto";
       const savedRate=Number(localStorage.getItem("toeic-speech-rate"));
       if(speechRates.includes(savedRate))speechRate=savedRate;
     }catch(_){}
@@ -528,9 +534,12 @@
       for(const [key,group] of Object.entries(voiceGroups))if(group.names.includes(base))return key;
       if(!/^Google\b.*\bEnglish\b/i.test(base))return null;
       const lang=String(voice.lang||"").replace("_","-").toLowerCase();
-      if(lang.startsWith("en-us"))return "US";
-      if(lang.startsWith("en-gb"))return "UK";
-      if(/^(en-au|en-in|en-za)/.test(lang))return "WORLD";
+      if(lang.startsWith("en-us"))return "en-US";
+      if(lang.startsWith("en-gb"))return /\bMale\b/i.test(base)?"en-GB-male":"en-GB-female";
+      if(lang.startsWith("en-ie"))return "en-IE";
+      if(lang.startsWith("en-au"))return "en-AU";
+      if(lang.startsWith("en-in"))return "en-IN";
+      if(lang.startsWith("en-za"))return "en-ZA";
       return null;
     }
     function availableVoices(region){
@@ -549,19 +558,15 @@
         return (ai<0?99:ai)-(bi<0?99:bi)||a.localeCompare(b);
       });
     }
-    function getSelectedVoice(voiceKey){
-      for(const region of Object.keys(voiceGroups)){
-        const match=availableVoices(region).find(([base])=>base===voiceKey);
-        if(match)return match[1];
-      }
-      return null;
+    function getSelectedVoice(){
+      const choices=availableVoices(accent);
+      return (selectedVoiceName==="auto"?choices[0]:choices.find(([base])=>base===selectedVoiceName))?.[1]||null;
     }
     function refreshVoiceSelect(){
       const select=document.getElementById("voice-select");if(!select)return;
       const choices=availableVoices(accent);
-      select.innerHTML=choices.length?choices.map(([base,voice])=>`<option value="${esc(base)}">${esc(voice.name)}</option>`).join("")
-        :`<option value="">${window.speechSynthesis?.getVoices().length?"此地區暫無自然聲線":"正在讀取聲線…"}</option>`;
-      selectedVoiceName=choices.some(([base])=>base===selectedVoiceName)?selectedVoiceName:(choices[0]?.[0]||"");
+      select.innerHTML=`<option value="auto">${choices.length?"自動優選聲線":"系統地區語音"}</option>`+choices.map(([base,voice])=>`<option value="${esc(base)}">${esc(voice.name)}</option>`).join("");
+      selectedVoiceName=choices.some(([base])=>base===selectedVoiceName)?selectedVoiceName:"auto";
       select.value=selectedVoiceName;
       const status=document.getElementById("speech-status");if(status)status.textContent="";
     }
@@ -688,17 +693,13 @@
       }
       refreshVoiceSelect(); // Safari 可能直到使用者點擊時才完成聲線載入。
       if(speechText===text&&window.speechSynthesis.speaking){stopSpeech();return}
-      const voice=getSelectedVoice(selectedVoiceName);
-      if(!voice){
-        const status=document.getElementById("speech-status");
-        if(status)status.textContent="自然聲線尚未就緒，請稍後再點一次播放。";
-        return;
-      }
+      const voice=getSelectedVoice();
       stopSpeech();
       speechText=text;
       const token=speechToken,utterance=new SpeechSynthesisUtterance(text);
       activeUtterance=utterance;
-      utterance.voice=voice;utterance.lang=voice.lang;utterance.rate=speechRate;
+      utterance.lang=voiceGroups[accent].lang;utterance.rate=speechRate;
+      if(voice)utterance.voice=voice;
       if(sentenceElement)sentenceElement.classList.add("is-active");
       else{
         const main=document.getElementById("read-all");
@@ -819,7 +820,7 @@
     });
     document.getElementById("lesson").addEventListener("change",event=>{
       if(event.target.id==="region-select"){
-        accent=event.target.value;selectedVoiceName="";stopSpeech();refreshVoiceSelect();
+        accent=event.target.value;selectedVoiceName="auto";stopSpeech();refreshVoiceSelect();
         try{localStorage.setItem("toeic-accent",accent)}catch(_){}
       }else if(event.target.id==="voice-select"){
         selectedVoiceName=event.target.value;stopSpeech();
@@ -997,15 +998,16 @@
       const [news,vocab,part5,part6,part7]=sections;
       const clean=document.createElement("article");clean.className="pdf-clean";clean.setAttribute("aria-hidden","true");
       const colors=getComputedStyle(document.documentElement);
-      for(const name of ["--paper","--panel","--ink","--vocab-head","--vocab-ink","--mask","--mask-ink","--teal","--navy","--muted","--line","--font-heading","--font-body"])
+      for(const name of ["--paper","--panel","--ink","--vocab-head","--vocab-ink","--mask","--mask-ink","--teal","--navy","--muted","--line","--font-heading","--font-body","--pdf-english-size"])
         clean.style.setProperty(name,colors.getPropertyValue(name));
       const copy=(source,selector)=>{
         const found=source.querySelector(selector);
         if(!found)throw new Error(`PDF 講義缺少內容：${selector}`);
         return found.cloneNode(true);
       };
-      const page=()=>{
+      const page=kind=>{
         const outer=document.createElement("section");outer.className="pdf-page";
+        outer.dataset.pdfKind=kind;
         const inner=document.createElement("div");inner.className="pdf-page-inner";
         outer.append(inner);clean.append(outer);return inner;
       };
@@ -1024,7 +1026,7 @@
         if(shouldCover)element.querySelector(".reveal-content")?.replaceChildren();
         element.querySelector(".mask")?.remove();
       };
-      const p1=page();
+      const p1=page("news");
       const head=document.createElement("header");head.className="pdf-clean-head";
       const sourceHead=card.querySelector(".sheet-head");
       for(const selector of [".meta","h1",".summary"])head.append(copy(sourceHead,selector));
@@ -1040,7 +1042,7 @@
       cover(translation,document.getElementById("pdf-mask-translation").checked);p1.append(translation);
       const vocabRows=[...vocab.querySelectorAll(".vocab tbody tr")];
       for(let index=0;index<2;index++){
-        const target=page();title(target,vocab);
+        const target=page("vocab");title(target,vocab);
         const table=copy(vocab,".vocab");const body=table.querySelector("tbody");body.replaceChildren();
         for(const row of vocabRows.slice(index*5,index*5+5)){
           const clone=row.cloneNode(true);clone.classList.remove("is-offpage");
@@ -1049,9 +1051,9 @@
         }
         target.append(table);
       }
-      const p4=page();title(p4,part5);questions(p4,part5);
-      const p5=page();title(p5,part6);p5.append(copy(part6,".passage"));questions(p5,part6);
-      const p6=page();title(p6,part7);
+      const p4=page("questions");title(p4,part5);questions(p4,part5);
+      const p5=page("questions");title(p5,part6);p5.append(copy(part6,".passage"));questions(p5,part6);
+      const p6=page("questions");title(p6,part7);
       const fullArticle=copy(news,".article-copy");
       fullArticle.querySelectorAll(".sentence-play").forEach(button=>button.remove());
       for(const paragraph of [...fullArticle.children]){
@@ -1061,19 +1063,29 @@
       document.body.append(clean);
       return clean;
     }
-    function fitPdfPages(clean){
+    function balancePdfPages(clean){
+      // A4 的可印高度依 680px 卡片寬度與 10mm 四邊留白換算；頁面本身不設固定高度。
+      const printableHeight=680*(297-20)/(210-20);
+      const target=printableHeight*.86;
+      const left=page=>Math.max(0,target-page.scrollHeight);
       for(const page of clean.querySelectorAll(".pdf-page")){
         const inner=page.querySelector(".pdf-page-inner");
-        inner.style.transform="";
-        inner.style.width="100%";
-        inner.style.height="100%";
-        const available=page.clientHeight-36;
-        const needed=inner.scrollHeight;
-        if(needed>available){
-          const factor=available/needed;
-          inner.style.transform=`scale(${factor})`;
-          inner.style.width=`${100/factor}%`;
-          inner.style.height=`${available/factor}px`;
+        if(page.dataset.pdfKind==="vocab"){
+          page.style.setProperty("--pdf-vocab-pad",`${8+Math.min(38,left(page)/10)}px`);
+          page.style.setProperty("--pdf-vocab-gap",`${10+left(page)/5}px`);
+        }else if(page.dataset.pdfKind==="news"){
+          const gaps=Math.max(1,inner.children.length-1);
+          page.style.setProperty("--pdf-block-gap",`${Math.min(42,left(page)/gaps)}px`);
+          const translation=page.querySelector(".pdf-translation.is-covered");
+          if(translation)translation.style.height=`${26+left(page)}px`;
+          else page.style.setProperty("--pdf-block-gap",`${Math.min(70,parseFloat(page.style.getPropertyValue("--pdf-block-gap"))+left(page)/gaps)}px`);
+        }else{
+          const count=Math.max(1,page.querySelectorAll(".pdf-q-card").length);
+          page.style.setProperty("--pdf-question-pad",`${12+Math.min(24,left(page)/(count*4))}px`);
+          page.style.setProperty("--pdf-answer-height",`${26+Math.min(70,left(page)/count)}px`);
+          const gaps=Math.max(1,inner.children.length-1);
+          page.style.setProperty("--pdf-block-gap",`${Math.min(42,left(page)/gaps)}px`);
+          page.style.setProperty("--pdf-question-gap",`${10+Math.min(24,left(page)/count)}px`);
         }
       }
     }
@@ -1091,10 +1103,10 @@
         cleanContainer=buildCleanPdf(card);
         if(document.fonts?.ready)await document.fonts.ready;
         await new Promise(resolve=>requestAnimationFrame(resolve));
-        fitPdfPages(cleanContainer);
+        balancePdfPages(cleanContainer);
         const categoryName=categoryLabels[activeCategory].replace(/\s*&\s*/g,"_and_").replace(/\s+/g,"_");
         const options={
-          margin:[6,10,6,10],filename:`TOEIC_${activeDate}_${categoryName}.pdf`,
+          margin:10,filename:`TOEIC_${activeDate}_${categoryName}.pdf`,
           image:{type:"jpeg",quality:.98},
           html2canvas:{scale:2,useCORS:true,backgroundColor:getComputedStyle(cleanContainer).backgroundColor,onclone:doc=>{
             const target=doc.querySelector(".html2pdf__container .pdf-clean");
