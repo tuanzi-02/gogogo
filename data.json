@@ -1,4 +1,819 @@
 {
+  "2026-11-22": {
+    "finance": {
+      "title": "Sessions Offer Advice on Rising Energy Costs",
+      "summary": "某地方議會敦促民眾在這個冬天尋求支援，以應對不斷上漲的取暖能源成本。",
+      "english": [
+        "A local council has launched informational sessions to help residents deal with increasing energy expenses during the winter months. These meetings aim to provide practical guidance for individuals struggling to pay for their heating. Officials emphasize that nobody should face financial pressure regarding their utility bills alone.",
+        "The council urges community members to seek professional support early before debts accumulate. Advisers will be available at these gatherings to discuss budgeting strategies and available welfare options. Residents can learn how to manage their household budgets more effectively during the cold season.",
+        "Local authorities believe that proactive communication will help vulnerable households maintain proper heating. Further announcements regarding schedule details and venue locations will be published online. Citizens are encouraged to review these notices regularly to secure necessary assistance."
+      ],
+      "translation": [
+        "某地方議會已發起資訊說明會，以幫助居民應對冬季期間不斷增加的能源開銷。這些會議旨在為難以支付取暖費用的個人提供實用指導。官員們強調，不應該有人獨自面對水電費的財務壓力。",
+        "議會敦促社區成員在債務累積之前儘早尋求專業支援。顧問將在這些聚會中提供諮詢，討論預算編列策略與可用的福利方案。居民可以學習如何在寒冷季節更有效地管理他們的家庭預算。",
+        "地方當局相信，主動溝通將有助於弱勢家庭維持適當的取暖。關於時間表細節與場地位置的進一步公告將線上發布。鼓勵市民定期查閱這些通知以獲得必要的協助。"
+      ],
+      "vocabulary": [
+        {
+          "term": "council",
+          "pos": "noun",
+          "collocations": "local council; city council",
+          "meaning": "議會；地方委員會",
+          "synonyms": [
+            "board; committee",
+            "assembly; authority"
+          ],
+          "family": "councillor",
+          "sentence": "A local council has launched informational sessions to help residents deal with increasing energy expenses during the winter months."
+        },
+        {
+          "term": "expenses",
+          "pos": "noun",
+          "collocations": "energy expenses; household expenses",
+          "meaning": "費用；開銷",
+          "synonyms": [
+            "costs; expenditures",
+            "charges; outlays"
+          ],
+          "family": "expense; expensive; expensively",
+          "sentence": "A local council has launched informational sessions to help residents deal with increasing energy expenses during the winter months."
+        },
+        {
+          "term": "guidance",
+          "pos": "noun",
+          "collocations": "practical guidance; expert guidance",
+          "meaning": "指導；引導",
+          "synonyms": [
+            "advice; direction",
+            "counsel; instruction"
+          ],
+          "family": "guide; guided; guiding",
+          "sentence": "These meetings aim to provide practical guidance for individuals struggling to pay for their heating."
+        },
+        {
+          "term": "financial",
+          "pos": "adjective",
+          "collocations": "financial pressure; financial support",
+          "meaning": "財務的；金融的",
+          "synonyms": [
+            "monetary; fiscal",
+            "economic; pecuniary"
+          ],
+          "family": "finance; finances; financially",
+          "sentence": "Officials emphasize that nobody should face financial pressure regarding their utility bills alone."
+        },
+        {
+          "term": "community",
+          "pos": "noun",
+          "collocations": "community members; local community",
+          "meaning": "社區；社會群體",
+          "synonyms": [
+            "neighborhood; society",
+            "public; population"
+          ],
+          "family": "communal; commune",
+          "sentence": "The council urges community members to seek professional support early before debts accumulate."
+        },
+        {
+          "term": "professional",
+          "pos": "adjective",
+          "collocations": "professional support; professional advice",
+          "meaning": "專業的",
+          "synonyms": [
+            "expert; qualified",
+            "skilled; competent"
+          ],
+          "family": "profession; professionally",
+          "sentence": "The council urges community members to seek professional support early before debts accumulate."
+        },
+        {
+          "term": "strategies",
+          "pos": "noun",
+          "collocations": "budgeting strategies; business strategies",
+          "meaning": "策略；規劃",
+          "synonyms": [
+            "plans; tactics",
+            "approaches; methods"
+          ],
+          "family": "strategic; strategist; strategically",
+          "sentence": "Advisers will be available at these gatherings to discuss budgeting strategies and available welfare options."
+        },
+        {
+          "term": "authorities",
+          "pos": "noun",
+          "collocations": "local authorities; government authorities",
+          "meaning": "當局；官方",
+          "synonyms": [
+            "officials; administrators",
+            "government; rulers"
+          ],
+          "family": "authority; authoritative; authorize",
+          "sentence": "Local authorities believe that proactive communication will help vulnerable households maintain proper heating."
+        },
+        {
+          "term": "communication",
+          "pos": "noun",
+          "collocations": "proactive communication; effective communication",
+          "meaning": "溝通；交流",
+          "synonyms": [
+            "correspondence; contact",
+            "interaction; transmission"
+          ],
+          "family": "communicate; communicative",
+          "sentence": "Local authorities believe that proactive communication will help vulnerable households maintain proper heating."
+        },
+        {
+          "term": "assistance",
+          "pos": "noun",
+          "collocations": "necessary assistance; financial assistance",
+          "meaning": "協助；援助",
+          "synonyms": [
+            "help; aid",
+            "support; relief"
+          ],
+          "family": "assist; assistant",
+          "sentence": "Citizens are encouraged to review these notices regularly to secure necessary assistance."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "The local council ------- residents to seek support early before debts accumulate.",
+          "options": [
+            "urgings",
+            "urge",
+            "urges",
+            "urged"
+          ],
+          "answer": "C",
+          "locator": "主詞與動詞的一致性 (Subject-Verb Agreement)",
+          "explanation": "句中主詞 \"The council\" 為第三人稱單數，且整篇文章採用現在式描述現狀，因此動詞需使用現在式單數形 \"urges\"。"
+        },
+        {
+          "prompt": "Advisers will be available at these gatherings ------- budgeting strategies.",
+          "options": [
+            "discuss",
+            "to discuss",
+            "discussed",
+            "discussion"
+          ],
+          "answer": "B",
+          "locator": "不定詞表示目的 (Infinitive of Purpose)",
+          "explanation": "空格處用來補充說明顧問出席聚會的目的，表「為了討論」，故需使用不定詞 \"to discuss\"。"
+        },
+        {
+          "prompt": "Citizens are encouraged ------- these notices regularly to secure assistance.",
+          "options": [
+            "review",
+            "reviewing",
+            "to review",
+            "reviewed"
+          ],
+          "answer": "C",
+          "locator": "被動語態後的受詞補語 (Object Complement after Passive)",
+          "explanation": "片語 encourage sb to do sth 改為被動語態 \"be encouraged to do sth\" 時，後面應接不定詞 \"to review\"。"
+        }
+      ],
+      "part6": {
+        "title": "Notice to Residents Regarding Heating Support",
+        "passage": "Dear Residents, The local administration is pleased to announce a series of advisory sessions aimed at addressing rising energy costs. These meetings will 【1】 practical guidance on how to manage household expenses this winter. Officials understand that many families are facing severe financial pressure regarding utility bills. Therefore, we strongly urge everyone to attend and explore available support options. Advisers will be present to share budgeting strategies and welfare details. Further announcements regarding dates and venues will be published 【2】 on our official portal. Please review these updates regularly to ensure you do not miss important deadlines. Maintaining proper home heating is essential for community health and safety. We remain committed to helping every household through this challenging period. Do not hesitate to contact our office if you have any questions. We look forward to seeing you at the upcoming gatherings. Sincerely, 【3】 Services Department 【4】",
+        "questions": [
+          {
+            "prompt": "Choose the best word for blank 【1】.",
+            "options": [
+              "provide",
+              "provides",
+              "providing",
+              "provided"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"These meetings will 【1】 practical guidance\"",
+            "explanation": "助動詞 \"will\" 後面必須接原形動詞，因此選擇 \"provide\"。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【2】.",
+            "options": [
+              "online",
+              "onlined",
+              "onlines",
+              "onliner"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"will be published 【2】 on our official portal\"",
+            "explanation": "句意表示公告將在線上發布，需使用副詞 \"online\"。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【3】.",
+            "options": [
+              "Community",
+              "Communities",
+              "Communal",
+              "Commune"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"Sincerely, 【1】 Services Department\"",
+            "explanation": "此處為部門名稱的專有名詞修飾，應使用名詞單數形 \"Community\"。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【4】.",
+            "options": [
+              "Local",
+              "Locals",
+              "Locally",
+              "Location"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"Services Department 【4】\"",
+            "explanation": "文章結尾處通常需填入具體組織名稱的限定詞或專有名詞，選項中 \"Local\" 符合信件署名慣例。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Read the news article and answer the questions.",
+        "questions": [
+          {
+            "prompt": "What is the main purpose of the informational sessions?",
+            "options": [
+              "To sell new heating equipment",
+              "To help residents deal with increasing energy expenses",
+              "To collect taxes from local households",
+              "To hire professional debt collectors"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"A local council has launched informational sessions to help residents deal with increasing energy expenses\"",
+            "explanation": "文章第一段明確指出，說明會的目的是為了幫助居民應對不斷上升的能源開銷。"
+          },
+          {
+            "prompt": "What does the council advise community members to do before debts accumulate?",
+            "options": [
+              "Seek professional support early",
+              "Move to a different city",
+              "Turn off their heating completely",
+              "Ignore their utility bills"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"The council urges community members to seek professional support early before debts accumulate.\"",
+            "explanation": "根據第二段內容，議會敦促社區成員在債務累積之前，及早尋求專業支援。"
+          },
+          {
+            "prompt": "Where will further announcements about schedule details and venues be published?",
+            "options": [
+              "In local newspapers only",
+              "On television broadcasts",
+              "Online",
+              "Through postal mail"
+            ],
+            "answer": "C",
+            "locator": "第 3 段 \"Further announcements regarding schedule details and venue locations will be published online.\"",
+            "explanation": "第三段提到，關於時間表與場地細節的進一步公告將會發布在網路上。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/cmy49l3x893jo",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    },
+    "politics": {
+      "title": "UK Tech Innovation and EU Rejoining Debate",
+      "summary": "前英國首相布萊爾警告，除非英國能在科技創新方面取得突破，否則不應該重新加入歐盟。他認為歐盟在科技創新領域可能走在了錯誤的方向上。",
+      "english": [
+        "Former British Prime Minister Tony Blair has issued a warning regarding the nation's future relationship with the European Union. He stated that the UK should only consider rejoining the bloc if it actively innovates on technology. According to his recent statements, technological progress must be the primary condition for any future integration.",
+        "The former leader argued that the European Union is currently moving in the wrong direction concerning technology innovation. Without significant changes in how the bloc handles modern technology, rejoining would not serve Britain's best interests. This perspective highlights the critical role of technology policy in international political discussions.",
+        "Political analysts continue to evaluate these remarks as part of broader debates on foreign policy and economic strategy. The ongoing discussions show that technological competitiveness remains a central theme for national leaders. Observers will closely monitor how policymakers respond to this warning in upcoming months."
+      ],
+      "translation": [
+        "前英國首相東尼·布萊爾針對該國與歐盟的未來關係發出了警告。他表示，唯有英國在科技方面進行創新，才應該考慮重新加入該經濟體。根據他最近的發言，技術進步必須是未來任何整合的首要條件。",
+        "這位前領導人主張，歐盟目前在科技創新方面正朝著錯誤的方向前進。如果該經濟體處理現代科技的方式沒有重大改變，重新加入將無法符合英國的最佳利益。這個觀點突顯了科技政策在國際政治討論中的關鍵角色。",
+        "政治分析家持續評估這些言論，將其視為更廣泛的外交政策與經濟戰略辯論的一部分。持續中的討論顯示，技術競爭力仍然是國家領導人的核心主題。觀察家將密切關注政策制定者在未來幾個月內如何回應這項警告。"
+      ],
+      "vocabulary": [
+        {
+          "term": "warning",
+          "pos": "noun",
+          "collocations": "issue a warning; serious warning",
+          "meaning": "警告",
+          "synonyms": [
+            "caution; alert",
+            "admonition; notice"
+          ],
+          "family": "warn; warningly",
+          "sentence": "Former British Prime Minister Tony Blair has issued a warning regarding the nation's future relationship with the European Union."
+        },
+        {
+          "term": "relationship",
+          "pos": "noun",
+          "collocations": "future relationship; close relationship",
+          "meaning": "關係",
+          "synonyms": [
+            "connection; bond",
+            "association; tie"
+          ],
+          "family": "relate; relative",
+          "sentence": "Former British Prime Minister Tony Blair has issued a warning regarding the nation's future relationship with the European Union."
+        },
+        {
+          "term": "condition",
+          "pos": "noun",
+          "collocations": "primary condition; strict condition",
+          "meaning": "條件",
+          "synonyms": [
+            "requirement; term",
+            "prerequisite; specification"
+          ],
+          "family": "conditional; conditionally",
+          "sentence": "According to his recent statements, technological progress must be the primary condition for any future integration."
+        },
+        {
+          "term": "progress",
+          "pos": "noun",
+          "collocations": "technological progress; make progress",
+          "meaning": "進步",
+          "synonyms": [
+            "advancement; development",
+            "improvement; growth"
+          ],
+          "family": "progressive; progressively",
+          "sentence": "According to his recent statements, technological progress must be the primary condition for any future integration."
+        },
+        {
+          "term": "integration",
+          "pos": "noun",
+          "collocations": "future integration; economic integration",
+          "meaning": "整合",
+          "synonyms": [
+            "incorporation; unification",
+            "combination; amalgamation"
+          ],
+          "family": "integrate; integrated",
+          "sentence": "According to his recent statements, technological progress must be the primary condition for any future integration."
+        },
+        {
+          "term": "direction",
+          "pos": "noun",
+          "collocations": "wrong direction; right direction",
+          "meaning": "方向",
+          "synonyms": [
+            "course; path",
+            "orientation; way"
+          ],
+          "family": "direct; directly",
+          "sentence": "The former leader argued that the European Union is currently moving in the wrong direction concerning technology innovation."
+        },
+        {
+          "term": "policy",
+          "pos": "noun",
+          "collocations": "technology policy; foreign policy",
+          "meaning": "政策",
+          "synonyms": [
+            "strategy; guideline",
+            "approach; protocol"
+          ],
+          "family": "policymaker; policing",
+          "sentence": "This perspective highlights the critical role of technology policy in international political discussions."
+        },
+        {
+          "term": "strategy",
+          "pos": "noun",
+          "collocations": "economic strategy; business strategy",
+          "meaning": "策略",
+          "synonyms": [
+            "plan; tactic",
+            "approach; scheme"
+          ],
+          "family": "strategic; strategically",
+          "sentence": "Political analysts continue to evaluate these remarks as part of broader debates on foreign policy and economic strategy."
+        },
+        {
+          "term": "competitiveness",
+          "pos": "noun",
+          "collocations": "technological competitiveness; market competitiveness",
+          "meaning": "競爭力",
+          "synonyms": [
+            "competence; rivalry",
+            "efficiency; capability"
+          ],
+          "family": "compete; competitive",
+          "sentence": "The ongoing discussions show that technological competitiveness remains a central theme for national leaders."
+        },
+        {
+          "term": "leader",
+          "pos": "noun",
+          "collocations": "national leader; business leader",
+          "meaning": "領導者",
+          "synonyms": [
+            "head; chief",
+            "commander; director"
+          ],
+          "family": "lead; leadership",
+          "sentence": "The ongoing discussions show that technological competitiveness remains a central theme for national leaders."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "Former British Prime Minister Tony Blair has issued a warning regarding the nation's future relationship with the European Union, ------ that specific conditions must be met.",
+          "options": [
+            "state",
+            "stated",
+            "stating",
+            "to state"
+          ],
+          "answer": "C",
+          "locator": "分詞構句 (Participle Clause)",
+          "explanation": "空格處需要一個分詞構句來補充說明主句的動作，主詞 Blair 與 state 是主動關係，因此使用現在分詞 stating。"
+        },
+        {
+          "prompt": "According to his recent statements, technological progress must be the primary condition ------ any future integration.",
+          "options": [
+            "for",
+            "with",
+            "at",
+            "on"
+          ],
+          "answer": "A",
+          "locator": "介系詞搭配 (Preposition Collocation)",
+          "explanation": "名詞 condition 通常搭配介系詞 for，表示「……的條件」，因此選 (A) for。"
+        },
+        {
+          "prompt": "Political analysts continue to evaluate these remarks as part of broader debates on foreign policy and economic strategy, ------ they find significant.",
+          "options": [
+            "who",
+            "which",
+            "where",
+            "whose"
+          ],
+          "answer": "B",
+          "locator": "關係代名詞 (Relative Pronoun)",
+          "explanation": "空格前為逗號，且先行詞為前面整個子句或 debates，關係代名詞作受詞時應用 which。"
+        }
+      ],
+      "part6": {
+        "title": "Memo on Technology Innovation Initiative",
+        "passage": "To all department heads, \nAs we review our upcoming technology initiatives, we must consider recent political discussions surrounding regional integration and innovation. 【1】 As former leaders have pointed out, technological progress is vital for maintaining global competitiveness. Therefore, our organization is launching a new task force to evaluate our current digital strategies. \nEmployees are encouraged to submit their proposals for new software tools by next Friday. 【2】 Management will review each submission carefully to ensure alignment with our core objectives. 【3】 We believe that modernizing our technical infrastructure will position us favorably in the market. \nThank you for your continued cooperation and dedication to excellence. 【4】 Please contact the human resources department if you have any questions.",
+        "questions": [
+          {
+            "prompt": "Choose the best word for blank 【1】.",
+            "options": [
+              "However",
+              "Therefore",
+              "Instead",
+              "Meanwhile"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"As former leaders have pointed out\"",
+            "explanation": "前文提到必須考慮政治討論與創新，因此「因此 (Therefore)」帶出後續結論。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【2】.",
+            "options": [
+              "However",
+              "Additionally",
+              "Otherwise",
+              "Instead"
+            ],
+            "answer": "B",
+            "locator": "第 2 段 \"Management will review each submission\"",
+            "explanation": "此句延續前句鼓勵員工提交提案，並進一步說明管理層將會審查，故用「此外 (Additionally)」。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【3】.",
+            "options": [
+              "We believe",
+              "They doubt",
+              "He complained",
+              "She refused"
+            ],
+            "answer": "A",
+            "locator": "第 3 段 \"We believe that modernizing\"",
+            "explanation": "上下文在說明公司內部對於推動現代化基礎設施的信心，故用「我們相信 (We believe)」。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【4】.",
+            "options": [
+              "Please contact",
+              "Do not reply",
+              "Ignore this",
+              "Delete the message"
+            ],
+            "answer": "A",
+            "locator": "第 4 段 \"Please contact the human resources\"",
+            "explanation": "信件結尾通常提供諮詢管道，故選「請聯繫 (Please contact)」。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Read the article about UK and EU relations and answer the questions.",
+        "questions": [
+          {
+            "prompt": "What did Tony Blair state about the UK rejoining the EU?",
+            "options": [
+              "It should happen immediately without conditions.",
+              "It should only happen if the UK innovates on technology.",
+              "It is already guaranteed to happen next year.",
+              "It should be avoided under any circumstances."
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"the UK should only consider rejoining the bloc if it actively innovates on technology\"",
+            "explanation": "文章明確指出，布萊爾認為英國唯有在科技創新方面採取行動時，才應該考慮重新加入該經濟體。"
+          },
+          {
+            "prompt": "According to the former leader, what direction is the European Union currently taking regarding technology?",
+            "options": [
+              "Moving in the right direction",
+              "Moving in the wrong direction",
+              "Staying completely neutral",
+              "Stopping all technology programs"
+            ],
+            "answer": "B",
+            "locator": "第 2 段 \"moving in the wrong direction concerning technology innovation\"",
+            "explanation": "文章第二段指出，這位前領導人認為歐盟在科技創新方面目前正朝著錯誤的方向前進。"
+          },
+          {
+            "prompt": "What do political analysts continue to evaluate?",
+            "options": [
+              "Weather patterns and climate change",
+              "These remarks as part of broader debates on foreign policy and economic strategy",
+              "New sports league schedules",
+              "Local transportation timetables"
+            ],
+            "answer": "B",
+            "locator": "第 3 段 \"evaluate these remarks as part of broader debates on foreign policy and economic strategy\"",
+            "explanation": "文章第三段提到，政治分析家持續將這些言論評估為外政策與經濟戰略更廣泛辯論的一部分。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/c893r4923wngo",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    },
+    "techLife": {
+      "title": "Can AI Help Spot Black Friday Deals?",
+      "summary": "我們測試了四個AI模型，看看它們是否能在購買新電視時幫我們省錢。",
+      "english": [
+        "We recently put four AI models to the test to see if they could save us money on a new TV during Black Friday. Artificial intelligence tools are increasingly used by shoppers to find discounts and compare prices across multiple online retailers. Our experiment aimed to discover whether these digital assistants can truly spot the best shopping deals available.",
+        "During the evaluation, each AI model was asked to search for specific television offers and provide recommendations. We wanted to determine if the technology could effectively navigate complex retail websites and promotional pricing. Shoppers often rely on automated helpers to simplify their seasonal purchasing decisions and avoid paying full price.",
+        "The results of our test offer valuable insights into the current capabilities of consumer AI technology. While automated systems show potential for gathering product information, consumers should still exercise caution when evaluating online bargains. Further analysis is required to understand how reliably these tools perform under high-demand shopping conditions."
+      ],
+      "translation": [
+        "我們最近測試了四個AI模型，看看它們是否能在黑色星期五期間購買新電視時幫我們省錢。人工智慧工具正越來越多地被消費者用於尋找折扣並比較多家線上零售商的價格。我們的實驗旨在發現這些數位助理是否能真正找出最佳的購物優惠。",
+        "在評估過程中，每個AI模型都被要求搜尋特定的電視優惠並提供建議。我們想要確定這項技術是否能有效地瀏覽複雜的零售網站和促銷定價。消費者經常依賴自動化助手來簡化他們的季節性購買決定並避免支付全價。",
+        "我們的測試結果為消費者AI技術的當前能力提供了寶貴的見解。雖然自動化系統在收集產品資訊方面展現出潛力，但消費者在評估線上特價商品時仍應保持謹慎。需要進一步分析以了解這些工具在需求高漲的購物條件下表現如何可靠。"
+      ],
+      "vocabulary": [
+        {
+          "term": "test",
+          "pos": "noun",
+          "collocations": "put to the test; conduct a test",
+          "meaning": "測試",
+          "synonyms": [
+            "trial; experiment",
+            "examination; evaluation"
+          ],
+          "family": "test; testing",
+          "sentence": "We recently put four AI models to the test to see if they could save us money on a new TV during Black Friday."
+        },
+        {
+          "term": "save",
+          "pos": "verb",
+          "collocations": "save money; save time",
+          "meaning": "節省",
+          "synonyms": [
+            "accumulate; reserve",
+            "economize; preserve"
+          ],
+          "family": "save; saving; savings",
+          "sentence": "We recently put four AI models to the test to see if they could save us money on a new TV during Black Friday."
+        },
+        {
+          "term": "retailer",
+          "pos": "noun",
+          "collocations": "online retailer; retail store",
+          "meaning": "零售商",
+          "synonyms": [
+            "merchant; vendor",
+            "dealer; seller"
+          ],
+          "family": "retail; retailer",
+          "sentence": "Artificial intelligence tools are increasingly used by shoppers to find discounts and compare prices across multiple online retailers."
+        },
+        {
+          "term": "discover",
+          "pos": "verb",
+          "collocations": "discover whether; discover truth",
+          "meaning": "發現",
+          "synonyms": [
+            "find; uncover",
+            "detect; reveal"
+          ],
+          "family": "discover; discovery; discoverer",
+          "sentence": "Our experiment aimed to discover whether these digital assistants can truly spot the best shopping deals available."
+        },
+        {
+          "term": "evaluation",
+          "pos": "noun",
+          "collocations": "during the evaluation; careful evaluation",
+          "meaning": "評估",
+          "synonyms": [
+            "assessment; appraisal",
+            "review; analysis"
+          ],
+          "family": "evaluate; evaluation",
+          "sentence": "During the evaluation, each AI model was asked to search for specific television offers and provide recommendations."
+        },
+        {
+          "term": "recommendation",
+          "pos": "noun",
+          "collocations": "provide recommendations; follow recommendation",
+          "meaning": "建議",
+          "synonyms": [
+            "suggestion; advice",
+            "endorsement; proposal"
+          ],
+          "family": "recommend; recommendation",
+          "sentence": "During the evaluation, each AI model was asked to search for specific television offers and provide recommendations."
+        },
+        {
+          "term": "simplify",
+          "pos": "verb",
+          "collocations": "simplify decisions; simplify process",
+          "meaning": "簡化",
+          "synonyms": [
+            "streamline; ease",
+            "clarify; reduce"
+          ],
+          "family": "simple; simplify; simplification",
+          "sentence": "Shoppers often rely on automated helpers to simplify their seasonal purchasing decisions and avoid paying full price."
+        },
+        {
+          "term": "insight",
+          "pos": "noun",
+          "collocations": "valuable insights; gain insight",
+          "meaning": "見解",
+          "synonyms": [
+            "understanding; perspective",
+            "awareness; perception"
+          ],
+          "family": "insight; insightful",
+          "sentence": "The results of our test offer valuable insights into the current capabilities of consumer AI technology."
+        },
+        {
+          "term": "caution",
+          "pos": "noun",
+          "collocations": "exercise caution; with caution",
+          "meaning": "謹慎",
+          "synonyms": [
+            "care; prudence",
+            "vigilance; attention"
+          ],
+          "family": "caution; cautious; cautiously",
+          "sentence": "While automated systems show potential for gathering product information, consumers should still exercise caution when evaluating online bargains."
+        },
+        {
+          "term": "perform",
+          "pos": "verb",
+          "collocations": "perform reliably; perform well",
+          "meaning": "表現",
+          "synonyms": [
+            "function; execute",
+            "operate; act"
+          ],
+          "family": "perform; performance",
+          "sentence": "Further analysis is required to understand how reliably these tools perform under high-demand shopping conditions."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "We recently put four AI models to the test to see if they could save ________ money on a new TV.",
+          "options": [
+            "we",
+            "us",
+            "our",
+            "ourselves"
+          ],
+          "answer": "B",
+          "locator": "代名詞格位與受格 (Objective Pronoun)",
+          "explanation": "空格前方的動詞 save 需要受格來接受動作，選項中只有 us 是受格代名詞，故選 B。"
+        },
+        {
+          "prompt": "Artificial intelligence tools are increasingly ________ by shoppers to find discounts.",
+          "options": [
+            "use",
+            "using",
+            "used",
+            "uses"
+          ],
+          "answer": "C",
+          "locator": "被動語態 (Passive Voice)",
+          "explanation": "句型結構為主詞 are increasingly [be動詞] + 過去分詞，構成被動語態，因此須填入 used，故選 C。"
+        },
+        {
+          "prompt": "Shoppers often rely on automated helpers ________ simplify their seasonal purchasing decisions.",
+          "options": [
+            "to",
+            "for",
+            "with",
+            "by"
+          ],
+          "answer": "A",
+          "locator": "不定詞表目的 (Infinitive of Purpose)",
+          "explanation": "此處使用「rely on sth. to do sth.」結構，用不定詞 to simplify 表目的，故選 A。"
+        }
+      ],
+      "part6": {
+        "title": "Tech Shopping Announcement",
+        "passage": "To all staff members, as the holiday shopping season approaches, many consumers are turning to digital tools to find bargains. We want to remind everyone that 【1】 utilizing artificial intelligence for shopping requires careful thought. Although AI models can assist in locating discounts, they may not always guarantee the best price. Therefore, employees should exercise caution and 【2】 verify product details before making major purchases. Our department will continue to 【3】 monitor new retail trends and share valuable updates with the team. Please contact the IT support desk if you have any questions regarding online shopping safety. Thank you for your continued cooperation and 【4】 support.",
+        "questions": [
+          {
+            "prompt": "Choose the best word for blank 【1】.",
+            "options": [
+              "utilize",
+              "utilizing",
+              "utilizes",
+              "utilized"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"utilizing artificial intelligence\"",
+            "explanation": "動名詞片語在此處作為主詞，因此需要使用動名詞 utilizing，故選 B。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【2】.",
+            "options": [
+              "careful",
+              "carefully",
+              "care",
+              "cared"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"exercise caution and 【2】 verify\"",
+            "explanation": "空格處需要修飾動詞 verify，因此必須使用副詞 carefully，故選 B。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【3】.",
+            "options": [
+              "monitor",
+              "monitored",
+              "monitoring",
+              "monitors"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"continue to 【3】 monitor\"",
+            "explanation": "片語 continue to 後方須接原形動詞，因此選 A。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【4】.",
+            "options": [
+              "support",
+              "supported",
+              "supporter",
+              "supports"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"cooperation and 【4】 support\"",
+            "explanation": "名詞 cooperation 與 and 連接，需要對等的名詞 support，故選 A。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Read the article and answer the reading comprehension questions.",
+        "questions": [
+          {
+            "prompt": "How many AI models were tested in the experiment?",
+            "options": [
+              "Two",
+              "Three",
+              "Four",
+              "Five"
+            ],
+            "answer": "C",
+            "locator": "第 1 段 \"put four AI models to the test\"",
+            "explanation": "文章第一段明確指出測試了四個AI模型，因此正確答案為 C。"
+          },
+          {
+            "prompt": "What specific item were the AI models asked to help find?",
+            "options": [
+              "A new smartphone",
+              "A new TV",
+              "A laptop computer",
+              "A digital camera"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"money on a new TV\"",
+            "explanation": "文章提到測試是為了看AI是否能在購買新電視時幫忙省錢，故選 B。"
+          },
+          {
+            "prompt": "What should consumers still do despite AI tools showing potential?",
+            "options": [
+              "Exercise caution",
+              "Pay full price",
+              "Avoid online shopping",
+              "Stop using computers"
+            ],
+            "answer": "A",
+            "locator": "第 3 段 \"consumers should still exercise caution\"",
+            "explanation": "文章第三段指出，儘管自動化系統展現潛力，消費者在評估線上特價時仍應保持謹慎，故選 A。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/cw8dv4jmnle2o",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    }
+  },
   "2026-11-21": {
     "finance": {
       "title": "GTA 6 Sales Reach Record High",
