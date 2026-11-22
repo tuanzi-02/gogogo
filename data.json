@@ -1,4 +1,819 @@
 {
+  "2026-11-23": {
+    "finance": {
+      "title": "Centrica Chief Expresses Worry Over Rising Energy Bills",
+      "summary": "森特里卡公司總裁克里斯·奥謝表示，隨著新年初能源價格上漲，無力或不願支付帳單的人數將會增加，這讓他感到非常擔憂。",
+      "english": [
+        "Centrica chief executive Chris O'Shea has stated that he is deeply concerned about the rising cost of energy bills. He noted that households across the region face severe financial pressure as prices continue to climb.",
+        "During a recent discussion, O'Shea explained that more customers will likely struggle to pay their monthly statements. He warned that the number of people unable or unwilling to settle their accounts will increase when prices jump in the new year.",
+        "Energy companies are currently monitoring the situation very closely as consumers demand relief. Industry leaders hope to find practical solutions to help vulnerable individuals manage these escalating utility expenses."
+      ],
+      "translation": [
+        "森特里卡執行長克里斯·奥謝表示，他對能源帳單成本不斷上升感到深深擔憂。他指出，隨著價格持續攀升，全區的家庭都面臨著嚴重的財務壓力。",
+        "在最近的一次討論中，奥謝解釋說，更多的客戶可能很難支付他們的月度帳單。他警告說，當價格在新年跳漲時，無法或不願結清帳戶的人數將會增加。",
+        "由於消費者要求紓困，能源公司目前正密切關注局勢。業界領袖希望找到切實可行的解決方案，以幫助弱勢群體應對這些不斷升級的公用事業開支。"
+      ],
+      "vocabulary": [
+        {
+          "term": "concerned",
+          "pos": "adjective",
+          "collocations": "deeply concerned; highly concerned",
+          "meaning": "擔憂的",
+          "synonyms": [
+            "worried; troubled",
+            "anxious; apprehensive"
+          ],
+          "family": "concern; concerning; concernedly",
+          "sentence": "Centrica chief executive Chris O'Shea has stated that he is deeply concerned about the rising cost of energy bills."
+        },
+        {
+          "term": "rising",
+          "pos": "adjective",
+          "collocations": "rising cost; rising prices",
+          "meaning": "上升的",
+          "synonyms": [
+            "increasing; growing",
+            "escalating; mounting"
+          ],
+          "family": "rise; risen",
+          "sentence": "Centrica chief executive Chris O'Shea has stated that he is deeply concerned about the rising cost of energy bills."
+        },
+        {
+          "term": "pressure",
+          "pos": "noun",
+          "collocations": "financial pressure; economic pressure",
+          "meaning": "壓力",
+          "synonyms": [
+            "strain; stress",
+            "burden; tension"
+          ],
+          "family": "press; pressing; pressured",
+          "sentence": "He noted that households across the region face severe financial pressure as prices continue to climb."
+        },
+        {
+          "term": "customer",
+          "pos": "noun",
+          "collocations": "more customers; loyal customers",
+          "meaning": "客戶",
+          "synonyms": [
+            "client; consumer",
+            "buyer; patron"
+          ],
+          "family": "customize; customary; custom",
+          "sentence": "During a recent discussion, O'Shea explained that more customers will likely struggle to pay their monthly statements."
+        },
+        {
+          "term": "struggle",
+          "pos": "verb",
+          "collocations": "struggle to pay; struggle to survive",
+          "meaning": "掙扎；奮力",
+          "synonyms": [
+            "strive; fight",
+            "labor; contend"
+          ],
+          "family": "struggler; struggling",
+          "sentence": "During a recent discussion, O'Shea explained that more customers will likely struggle to pay their monthly statements."
+        },
+        {
+          "term": "account",
+          "pos": "noun",
+          "collocations": "settle their accounts; open an account",
+          "meaning": "帳戶；帳單",
+          "synonyms": [
+            "bill; invoice",
+            "ledger; record"
+          ],
+          "family": "accounting; accountant; accountable",
+          "sentence": "He warned that the number of people unable or unwilling to settle their accounts will increase when prices jump in the new year."
+        },
+        {
+          "term": "increase",
+          "pos": "verb",
+          "collocations": "will increase; sharply increase",
+          "meaning": "增加",
+          "synonyms": [
+            "rise; grow",
+            "expand; augment"
+          ],
+          "family": "increasing; increasingly",
+          "sentence": "He warned that the number of people unable or unwilling to settle their accounts will increase when prices jump in the new year."
+        },
+        {
+          "term": "situation",
+          "pos": "noun",
+          "collocations": "monitor the situation; difficult situation",
+          "meaning": "情況；局勢",
+          "synonyms": [
+            "condition; state",
+            "circumstances; predicament"
+          ],
+          "family": "situate; situated",
+          "sentence": "Energy companies are currently monitoring the situation very closely as consumers demand relief."
+        },
+        {
+          "term": "demand",
+          "pos": "verb",
+          "collocations": "consumers demand; demand answers",
+          "meaning": "要求；需求",
+          "synonyms": [
+            "request; require",
+            "claim; ask"
+          ],
+          "family": "demanding; demand",
+          "sentence": "Energy companies are currently monitoring the situation very closely as consumers demand relief."
+        },
+        {
+          "term": "expense",
+          "pos": "noun",
+          "collocations": "utility expenses; business expenses",
+          "meaning": "費用；支出",
+          "synonyms": [
+            "cost; expenditure",
+            "outlay; spending"
+          ],
+          "family": "expensive; expensively",
+          "sentence": "Industry leaders hope to find practical solutions to help vulnerable individuals manage these escalating utility expenses."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "Centrica chief executive Chris O'Shea stated that he is deeply concerned _______ the rising cost of energy bills.",
+          "options": [
+            "for",
+            "about",
+            "with",
+            "at"
+          ],
+          "answer": "B",
+          "locator": "介系詞搭配 (Preposition collocation)",
+          "explanation": "形容詞 concerned 通常與介系詞 about 搭配，表示「對……感到擔憂」。"
+        },
+        {
+          "prompt": "During a recent discussion, O'Shea explained that more customers will likely struggle _______ their monthly statements.",
+          "options": [
+            "pay",
+            "paying",
+            "to pay",
+            "paid"
+          ],
+          "answer": "C",
+          "locator": "動詞片語結構 (Verb phrase structure)",
+          "explanation": "動詞 struggle 後方若接另一個動作，通常接不定詞 to do（struggle to do something），表示「艱難地做某事」。"
+        },
+        {
+          "prompt": "Energy companies are currently monitoring the situation very _______ as consumers demand financial relief.",
+          "options": [
+            "close",
+            "closer",
+            "closely",
+            "closed"
+          ],
+          "answer": "C",
+          "locator": "副詞修飾動詞 (Adverb modifying verb)",
+          "explanation": "空格處需要副詞來修飾動詞 monitoring，closely（密切地）為正確選項。"
+        }
+      ],
+      "part6": {
+        "title": "Customer Notice on Utility Billing",
+        "passage": "Dear Valued Customer, We are writing to inform you about important updates regarding your utility billing. As market prices fluctuate, utility companies must adjust their rates to reflect current expenses. We understand that rising costs can create challenges, and we are committed to helping you manage your monthly statements. Please review your account details 【1】 our online customer portal. If you experience financial difficulties, our support team is available to discuss payment options. We encourage you to contact us early 【2】 you need assistance. Our goal is to ensure that every household receives the support required during this period. Furthermore, we will continue to monitor the market 【3】 order to provide stable services. Thank you for your continued patience and cooperation as we navigate these changes together. Sincerely, Customer Service Department 【4】",
+        "questions": [
+          {
+            "prompt": "Choose the best word for blank 1.",
+            "options": [
+              "at",
+              "in",
+              "on",
+              "to"
+            ],
+            "answer": "C",
+            "locator": "第 1 段 \"on our online customer portal\"",
+            "explanation": "表達在某個線上網站或入口網站時，介系詞應使用 on。"
+          },
+          {
+            "prompt": "Choose the best word for blank 2.",
+            "options": [
+              "if",
+              "unless",
+              "although",
+              "while"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"early if you need assistance\"",
+            "explanation": "語意上表示「如果您需要協助，建議您及早聯絡我們」，故填入表示假設條件的 if。"
+          },
+          {
+            "prompt": "Choose the best word for blank 3.",
+            "options": [
+              "by",
+              "in",
+              "with",
+              "for"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"in order to provide\"",
+            "explanation": "固定片語 in order to 表示「為了……」，用以說明目的。"
+          },
+          {
+            "prompt": "Choose the best word for blank 4.",
+            "options": [
+              "Manager",
+              "Department",
+              "Director",
+              "Consultant"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"Customer Service Department\"",
+            "explanation": "信件結尾署名通常為部門名稱或職稱，此處前文已出現 Customer Service Department，故選 Department 最為合理。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Read the news article and answer the reading comprehension questions.",
+        "questions": [
+          {
+            "prompt": "According to the article, how does Chris O'Shea feel about the cost of energy bills?",
+            "options": [
+              "He is completely indifferent.",
+              "He is hugely concerned.",
+              "He is optimistic about rapid drops.",
+              "He is angry at consumers."
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"deeply concerned about the rising cost\"",
+            "explanation": "文章第一段指出執行長 Chris O'Shea 對於能源帳單成本上升感到深深擔憂，對應標題中的 hugely concerned。"
+          },
+          {
+            "prompt": "When does O'Shea predict that the number of people unable to pay will increase?",
+            "options": [
+              "In the summer",
+              "In the new year",
+              "Next autumn",
+              "Immediately today"
+            ],
+            "answer": "B",
+            "locator": "第 2 段 \"when prices jump in the new year\"",
+            "explanation": "第二段明確指出，當價格在新年跳漲時，無法支付帳單的人數將會增加。"
+          },
+          {
+            "prompt": "What are industry leaders hoping to find?",
+            "options": [
+              "New oil reserves",
+              "Practical solutions",
+              "Foreign investors",
+              "Government penalties"
+            ],
+            "answer": "B",
+            "locator": "第 3 段 \"find practical solutions\"",
+            "explanation": "第三段提到，業界領袖希望找到切實可行的解決方案（practical solutions）來幫助弱勢群體。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/c6jre7gpdw13o",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    },
+    "politics": {
+      "title": "UK Opposition Deputy Leader Criticizes Regional Trade Agreement with the EU",
+      "summary": "英國保守黨副黨魁表示，若未來執政將廢除地方政府與歐盟達成的合作協議，並主張該協議無法降低商店內的商品價格。",
+      "english": [
+        "A senior opposition political party official recently announced that his party would abolish an agreement recently made between a regional leader and European representatives. The deputy leader raised strong objections during a recent news interview, arguing that the arrangement fails to deliver practical economic benefits for local residents.",
+        "According to the official, the existing deal will not lead to lower prices in the shops. Critics within the opposition party contend that the policy offers unnecessary concessions while failing to relieve financial pressure on everyday consumers who are struggling with retail costs.",
+        "The regional political agreement has sparked intense national debate regarding local authority powers and international cooperation. While supporters argue that regional arrangements encourage direct economic investment, opponents maintain that national policies should govern external trade matters to protect market pricing."
+      ],
+      "translation": [
+        "一名資深反對黨官員最近宣布，若該黨執政將廢除地方領袖與歐洲代表近期達成的協議。該名副黨魁在接受新聞專訪時提出強烈異議，主張該項安排無法為當地居民帶來實際的經濟效益。",
+        "根據該官員的說法，現行的協議將不會使商店內的商品價格降低。反對黨內部的批評者認為，這項政策提供了不必要的讓步，卻未能減輕正與零售成本奮鬥的日常消費者之財務壓力。",
+        "這項地方政治協議引發了關於地方政府權限與國際合作的全國性熱烈討論。雖然支持者主張地方層級的安排能鼓勵直接經濟投資，但反對者堅持應由國家政策統籌對外貿易事務，以保護市場定價。"
+      ],
+      "vocabulary": [
+        {
+          "term": "official",
+          "pos": "noun",
+          "collocations": "party official; elected official",
+          "meaning": "官員；幹部",
+          "synonyms": [
+            "representative; officer",
+            "administrator; delegate"
+          ],
+          "family": "officiate; official; officially",
+          "sentence": "A senior opposition political party official recently announced that his party would abolish an agreement recently made between a regional leader and European representatives."
+        },
+        {
+          "term": "abolish",
+          "pos": "verb",
+          "collocations": "abolish an agreement; abolish regulations",
+          "meaning": "廢除；取消",
+          "synonyms": [
+            "cancel; revoke",
+            "eliminate; nullify"
+          ],
+          "family": "abolish; abolition; abolishment",
+          "sentence": "A senior opposition political party official recently announced that his party would abolish an agreement recently made between a regional leader and European representatives."
+        },
+        {
+          "term": "arrangement",
+          "pos": "noun",
+          "collocations": "practical arrangement; formal arrangement",
+          "meaning": "安排；協議",
+          "synonyms": [
+            "agreement; deal",
+            "settlement; system"
+          ],
+          "family": "arrange; arrangement; arranged",
+          "sentence": "The deputy leader raised strong objections during a recent news interview, arguing that the arrangement fails to deliver practical economic benefits for local residents."
+        },
+        {
+          "term": "practical",
+          "pos": "adjective",
+          "collocations": "practical benefit; practical solution",
+          "meaning": "實際的；實用的",
+          "synonyms": [
+            "useful; pragmatic",
+            "effective; realistic"
+          ],
+          "family": "practice; practical; practically",
+          "sentence": "The deputy leader raised strong objections during a recent news interview, arguing that the arrangement fails to deliver practical economic benefits for local residents."
+        },
+        {
+          "term": "lower",
+          "pos": "verb",
+          "collocations": "lower prices; lower costs",
+          "meaning": "降低；減少",
+          "synonyms": [
+            "reduce; decrease",
+            "cut; lessen"
+          ],
+          "family": "low; lower; lowering",
+          "sentence": "According to the official, the existing deal will not lead to lower prices in the shops."
+        },
+        {
+          "term": "concessions",
+          "pos": "noun",
+          "collocations": "make concessions; grant concessions",
+          "meaning": "讓步；妥協",
+          "synonyms": [
+            "compromises; allowances",
+            "yieldings; adjustments"
+          ],
+          "family": "concede; concession; concessional",
+          "sentence": "Critics within the opposition party contend that the policy offers unnecessary concessions while failing to relieve financial pressure on everyday consumers who are struggling with retail costs."
+        },
+        {
+          "term": "relieve",
+          "pos": "verb",
+          "collocations": "relieve pressure; relieve burden",
+          "meaning": "減輕；緩和",
+          "synonyms": [
+            "ease; reduce",
+            "alleviate; lessen"
+          ],
+          "family": "relieve; relief; relieved",
+          "sentence": "Critics within the opposition party contend that the policy offers unnecessary concessions while failing to relieve financial pressure on everyday consumers who are struggling with retail costs."
+        },
+        {
+          "term": "debate",
+          "pos": "noun",
+          "collocations": "national debate; spark debate",
+          "meaning": "討論；辯論",
+          "synonyms": [
+            "discussion; dispute",
+            "argument; deliberation"
+          ],
+          "family": "debate; debatable; debater",
+          "sentence": "The regional political agreement has sparked intense national debate regarding local authority powers and international cooperation."
+        },
+        {
+          "term": "authority",
+          "pos": "noun",
+          "collocations": "local authority; governing authority",
+          "meaning": "權力；當局",
+          "synonyms": [
+            "power; jurisdiction",
+            "administration; leadership"
+          ],
+          "family": "authorize; authority; authoritative",
+          "sentence": "The regional political agreement has sparked intense national debate regarding local authority powers and international cooperation."
+        },
+        {
+          "term": "govern",
+          "pos": "verb",
+          "collocations": "govern trade; govern relations",
+          "meaning": "管理；統治",
+          "synonyms": [
+            "regulate; direct",
+            "control; manage"
+          ],
+          "family": "govern; government; governance",
+          "sentence": "While supporters argue that regional arrangements encourage direct economic investment, opponents maintain that national policies should govern external trade matters to protect market pricing."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "The legal department confirmed that the opposition party would _______ the contract if they won the upcoming parliamentary election.",
+          "options": [
+            "abolish",
+            "abolition",
+            "abolished",
+            "abolishing"
+          ],
+          "answer": "A",
+          "locator": "Modal auxiliary verb 'would' requiring a base form verb",
+          "explanation": "助動詞 'would' 後面必須接動詞原形。選項 (A) abolish 為動詞原形，符合句法結構。其他選項 (B) 名詞, (C) 過去式/過去分詞, (D) 現在分詞 均不符合需求。"
+        },
+        {
+          "prompt": "Economic advisers warned that regional trade agreements do not always lead _______ cheaper consumer products in local stores.",
+          "options": [
+            "at",
+            "to",
+            "on",
+            "for"
+          ],
+          "answer": "B",
+          "locator": "Verb collocation 'lead to'",
+          "explanation": "動詞片語 'lead to' 表示「導致、引致」。因此介系詞應填入 (B) to。"
+        },
+        {
+          "prompt": "While some regional representatives favored the proposal, opponents maintained that national regulations should _______ foreign trade policy.",
+          "options": [
+            "governed",
+            "govern",
+            "governance",
+            "governing"
+          ],
+          "answer": "B",
+          "locator": "Modal auxiliary verb 'should' requiring a base form verb",
+          "explanation": "助動詞 'should' 後面須接原形動詞。(B) govern 是原形動詞，為正確答案。(A) 過去式, (C) 名詞, (D) 分詞 均不正確。"
+        }
+      ],
+      "part6": {
+        "title": "Public Policy Analysis Briefing",
+        "passage": "To: All Department Researchers\nFrom: Economic Policy Unit\nDate: November 23, 2026\nSubject: Assessment of Regional Political Agreements\n\nOur team has completed a review of recent political statements concerning regional trade accords with overseas partners. The deputy opposition leader recently indicated that his party intends to 【1】 any non-standard agreements if elected. He argued that current deals fail to offer tangible relief to consumers.\n\nSpecifically, analysts observed that the regional accord has not led to lower prices in retail 【2】. Critics argue that local leadership made major concessions without securing price stability for everyday goods. 【3】. Therefore, our unit recommends that policy analysts continue tracking legislative updates. National policies may soon be proposed to 【4】 how local authorities handle external economic relations.",
+        "questions": [
+          {
+            "prompt": "Choose the correct word to fill in blank 【1】.",
+            "options": [
+              "abolish",
+              "abolition",
+              "abolishing",
+              "abolished"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"intends to 【1】 any non-standard agreements\"",
+            "explanation": "不定詞符號 'to' 後面須接原形動詞。故選 (A) abolish（廢除）。"
+          },
+          {
+            "prompt": "Choose the correct word to fill in blank 【2】.",
+            "options": [
+              "shops",
+              "shoppers",
+              "shopping",
+              "shopped"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"lower prices in retail 【2】\"",
+            "explanation": "搭配詞為 'retail shops'（零售商店），用來描述商品銷售的地點。故選 (A) shops。"
+          },
+          {
+            "prompt": "Choose the correct sentence to fill in blank 【3】.",
+            "options": [
+              "Instead, retail costs remain high for local residents.",
+              "Consequently, international flights have been reduced.",
+              "In contrast, the opposition party praised the accord.",
+              "Furthermore, voters unanimously supported the new deal."
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"without securing price stability for everyday goods. 【3】.\"",
+            "explanation": "前句指出該協議並未確保日常商品的價格穩定，(A) 選項「相反地，當地居民的零售成本依然居高不下」在語意上完全承接前文。其他選項與本文討論的商品價格無關或矛盾。"
+          },
+          {
+            "prompt": "Choose the correct word to fill in blank 【4】.",
+            "options": [
+              "govern",
+              "governed",
+              "governance",
+              "governing"
+            ],
+            "answer": "D",
+            "locator": "第 2 段 \"proposed to 【4】 how local authorities handle\"",
+            "explanation": "不定詞 'to' 後面需接原形動詞 'govern'，表示「規範/管理」。故選 (A) govern。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Refer to the English news article published above.",
+        "questions": [
+          {
+            "prompt": "What did the opposition party official announce regarding the regional deal?",
+            "options": [
+              "His party plans to cancel the agreement if they take power.",
+              "His party will expand the deal to cover more overseas cities.",
+              "His party intends to lower taxes on imported European goods.",
+              "His party has already signed a replacement agreement with the EU."
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"announced that his party would abolish an agreement recently made between a regional leader and European representatives.\"",
+            "explanation": "文中第一段提及該名反對黨官員宣布，其政黨將廢除（abolish）地方領袖與歐盟代表簽署的協議。因此選項 (A) 正確。"
+          },
+          {
+            "prompt": "According to the official, what is the main drawback of the current arrangement?",
+            "options": [
+              "It causes severe delay in transportation networks.",
+              "It fails to decrease retail prices in local stores.",
+              "It forces regional authorities to increase council taxes.",
+              "It prohibits local companies from exporting products."
+            ],
+            "answer": "B",
+            "locator": "第 2 段 \"the existing deal will not lead to lower prices in the shops.\"",
+            "explanation": "第二段明確指出，根據該官員的說法，現有協議不會促成商店內價格下降（will not lead to lower prices in the shops），即無法降低零售價格。因此選 (B)。"
+          },
+          {
+            "prompt": "What do opponents of the deal believe should regulate external trade?",
+            "options": [
+              "Independent European trade commissions.",
+              "Local regional councils and authorities.",
+              "National policies.",
+              "Private retail business managers."
+            ],
+            "answer": "C",
+            "locator": "第 3 段 \"opponents maintain that national policies should govern external trade matters\"",
+            "explanation": "第三段指出，反對者堅持應該由國家政策（national policies）來管理對外貿易事務。故選 (C)。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/cr868jnlllpgo",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    },
+    "techLife": {
+      "title": "Anthropic Mathematician Reports AI Proof of Riemann Hypothesis",
+      "summary": "Anthropic的一位數學家表示，他利用人工智慧證明了著名的黎曼猜想，儘管驗證工作仍需耗費一些時間。",
+      "english": [
+        "During a notable year when artificial intelligence frequently addressed complex mathematical problems, an employee at Anthropic stated that he might have solved one of the most famous challenges in the field.",
+        "The mathematician reported that he successfully used an advanced system to prove the renowned Riemann hypothesis, a long-standing puzzle in mathematics.",
+        "Although this announcement has generated considerable interest within the scientific community, experts noted that the complete verification process will take a significant amount of time."
+      ],
+      "translation": [
+        "在人工智慧頻繁解決複雜數學問題的這一年中，Anthropic的一位員工表示他可能已經解決了該領域中最著名的挑戰之一。",
+        "該數學家報告稱，他成功利用一個先進系統證明了著名的黎曼猜想，這是一個長久以來的數學謎題。",
+        "儘管這項宣佈在科學界引發了相當大的興趣，專家們指出完整的驗證過程將需要相當長的時間。"
+      ],
+      "vocabulary": [
+        {
+          "term": "artificial",
+          "pos": "adjective",
+          "collocations": "artificial intelligence; artificial system",
+          "meaning": "人工的；人造的",
+          "synonyms": [
+            "synthetic; man-made",
+            "fake; simulated"
+          ],
+          "family": "artificially",
+          "sentence": "During a notable year when artificial intelligence frequently addressed complex mathematical problems, an employee at Anthropic stated that he might have solved one of the most famous challenges in the field."
+        },
+        {
+          "term": "frequently",
+          "pos": "adverb",
+          "collocations": "frequently addressed; frequently used",
+          "meaning": "頻繁地；經常",
+          "synonyms": [
+            "often; regularly",
+            "repeatedly; constantly"
+          ],
+          "family": "frequency; frequent",
+          "sentence": "During a notable year when artificial intelligence frequently addressed complex mathematical problems, an employee at Anthropic stated that he might have solved one of the most famous challenges in the field."
+        },
+        {
+          "term": "employee",
+          "pos": "noun",
+          "collocations": "company employee; staff employee",
+          "meaning": "員工；受雇者",
+          "synonyms": [
+            "worker; staff member",
+            "colleague; personnel"
+          ],
+          "family": "employ; employer; employment",
+          "sentence": "During a notable year when artificial intelligence frequently addressed complex mathematical problems, an employee at Anthropic stated that he might have solved one of the most famous challenges in the field."
+        },
+        {
+          "term": "stated",
+          "pos": "verb",
+          "collocations": "stated that; clearly stated",
+          "meaning": "聲明；說明",
+          "synonyms": [
+            "declared; announced",
+            "expressed; mentioned"
+          ],
+          "family": "statement",
+          "sentence": "During a notable year when artificial intelligence frequently addressed complex mathematical problems, an employee at Anthropic stated that he might have solved one of the most famous challenges in the field."
+        },
+        {
+          "term": "mathematical",
+          "pos": "adjective",
+          "collocations": "mathematical problems; mathematical formula",
+          "meaning": "數學的",
+          "synonyms": [
+            "numeric; algebraic",
+            "arithmetic; calculation-based"
+          ],
+          "family": "mathematician; mathematics; math",
+          "sentence": "During a notable year when artificial intelligence frequently addressed complex mathematical problems, an employee at Anthropic stated that he might have solved one of the most famous challenges in the field."
+        },
+        {
+          "term": "successfully",
+          "pos": "adverb",
+          "collocations": "successfully used; successfully proved",
+          "meaning": "成功地",
+          "synonyms": [
+            "victoriously; triumphantly",
+            "effectively; proficiently"
+          ],
+          "family": "success; successful; succeed",
+          "sentence": "The mathematician reported that he successfully used an advanced system to prove the renowned Riemann hypothesis, a long-standing puzzle in mathematics."
+        },
+        {
+          "term": "advanced",
+          "pos": "adjective",
+          "collocations": "advanced system; advanced technology",
+          "meaning": "先進的；高級的",
+          "synonyms": [
+            "developed; sophisticated",
+            "modern; cutting-edge"
+          ],
+          "family": "advance; advancement",
+          "sentence": "The mathematician reported that he successfully used an advanced system to prove the renowned Riemann hypothesis, a long-standing puzzle in mathematics."
+        },
+        {
+          "term": "announcement",
+          "pos": "noun",
+          "collocations": "official announcement; public announcement",
+          "meaning": "公告；宣佈",
+          "synonyms": [
+            "declaration; proclamation",
+            "statement; bulletin"
+          ],
+          "family": "announce; announver",
+          "sentence": "Although this announcement has generated considerable interest within the scientific community, experts noted that the complete verification process will take a significant amount of time."
+        },
+        {
+          "term": "interest",
+          "pos": "noun",
+          "collocations": "considerable interest; public interest",
+          "meaning": "興趣；關注",
+          "synonyms": [
+            "curiosity; attention",
+            "concern; enthusiasm"
+          ],
+          "family": "interested; interesting",
+          "sentence": "Although this announcement has generated considerable interest within the scientific community, experts noted that the complete verification process will take a significant amount of time."
+        },
+        {
+          "term": "complete",
+          "pos": "adjective",
+          "collocations": "complete verification; complete process",
+          "meaning": "完整的；徹底的",
+          "synonyms": [
+            "total; entire",
+            "thorough; full"
+          ],
+          "family": "completely; completion",
+          "sentence": "Although this announcement has generated considerable interest within the scientific community, experts noted that the complete verification process will take a significant amount of time."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "During a notable year when artificial intelligence frequently addressed complex mathematical problems, an employee at Anthropic stated that he ________ have solved one of the most famous challenges.",
+          "options": [
+            "may",
+            "may be",
+            "might has",
+            "might having"
+          ],
+          "answer": "A",
+          "locator": "助動詞 may 後接原形動詞 have",
+          "explanation": "空格處需要與後面動詞 have 構成表可能性的助動詞結構，選項 A 的 may 是正確的助動詞，後方接原形動詞 have。"
+        },
+        {
+          "prompt": "The mathematician reported that he successfully used an advanced system ________ the renowned Riemann hypothesis.",
+          "options": [
+            "prove",
+            "proved",
+            "to prove",
+            "proving"
+          ],
+          "answer": "C",
+          "locator": "不定詞表示目的 (used something to do)",
+          "explanation": "句型用來表示使用某系統「來」證明，因此需要用不定詞 to prove 作為副詞用法表達目的。"
+        },
+        {
+          "prompt": "Although this announcement has generated considerable interest within the scientific community, experts noted that the complete verification process will ________ take a significant amount of time.",
+          "options": [
+            "takes",
+            "took",
+            "taking",
+            "take"
+          ],
+          "answer": "D",
+          "locator": "助動詞 will 後方接原形動詞",
+          "explanation": "句子中的子句時態雖然為過去式 (noted)，但在間接敘述中未來式助動詞 will 後方必須接原形動詞 take。"
+        }
+      ],
+      "part6": {
+        "title": "Internal Memo on AI Verification Project",
+        "passage": "To all research staff, we are pleased to announce that our department will evaluate the recent AI tool. 【1】 recent developments in automated problem-solving, our team must review its capabilities. Please ensure that 【2】 submitted reports are thoroughly checked. We expect that this review 【3】 take several weeks. If you have any questions, feel free to 【4】 the project manager.",
+        "questions": [
+          {
+            "prompt": "Choose the correct word for blank 【1】.",
+            "options": [
+              "Given",
+              "Give",
+              "Gives",
+              "Giving"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"【1】 recent developments\"",
+            "explanation": "這裡需要介係詞性質的片語來表達「鑑於」最近的發展，選項 A 的 Given 是正確的分詞轉介係詞用法。"
+          },
+          {
+            "prompt": "Choose the correct word for blank 【2】.",
+            "options": [
+              "all",
+              "every",
+              "much",
+              "each of"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"ensure that 【2】 submitted reports\"",
+            "explanation": "修飾複數名詞 reports 表示「所有的」報告，應該使用複數限定詞 all。"
+          },
+          {
+            "prompt": "Choose the correct word for blank 【3】.",
+            "options": [
+              "will",
+              "has",
+              "is",
+              "was"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"this review 【3】 take several weeks\"",
+            "explanation": "表示未來預期的動作，助動詞用 will 後接原形動詞 take。"
+          },
+          {
+            "prompt": "Choose the correct word for blank 【4】.",
+            "options": [
+              "contact",
+              "contacts",
+              "contacted",
+              "contacting"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"feel free to 【4】 the project manager\"",
+            "explanation": "片語 feel free to 後方必須接原形動詞，因此選擇 contact。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Read the article and answer the reading comprehension questions.",
+        "questions": [
+          {
+            "prompt": "What did the Anthropic employee state regarding his recent work?",
+            "options": [
+              "He solved a famous mathematical challenge using AI.",
+              "He created a new software company.",
+              "He won a global teaching award.",
+              "He resigned from his position."
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"he might have solved one of the most famous challenges\"",
+            "explanation": "文章第一段指出該員工表示他可能已經解決了該領域中最著名的挑戰之一。"
+          },
+          {
+            "prompt": "What did the mathematician use to prove the Riemann hypothesis?",
+            "options": [
+              "An advanced system",
+              "A manual calculator",
+              "A printed textbook",
+              "A public survey"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"used an advanced system to prove\"",
+            "explanation": "文章第二段提到他成功使用了一個先進系統來證明黎曼猜想。"
+          },
+          {
+            "prompt": "According to experts, what will the verification process require?",
+            "options": [
+              "A significant amount of time",
+              "Immediate financial funding",
+              "Additional government approval",
+              "An international conference"
+            ],
+            "answer": "A",
+            "locator": "第 3 段 \"take a significant amount of time\"",
+            "explanation": "文章第三段指出專家們表示完整的驗證過程需要花費相當多的時間。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/c6pqr2g7w059o",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    }
+  },
   "2026-11-22": {
     "finance": {
       "title": "Sessions Offer Advice on Rising Energy Costs",
