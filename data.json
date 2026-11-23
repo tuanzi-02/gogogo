@@ -1,4 +1,819 @@
 {
+  "2026-11-24": {
+    "finance": {
+      "title": "Trump's Support and Huang's Remarkable Comeback at Nvidia",
+      "summary": "這篇報導探討了美國前總統川普的支持，如何在輝達執行長黃仁勳的大膽回歸中發揮關鍵作用，並說明了政界領袖與科技巨頭之間的相互影響。",
+      "english": [
+        "A remarkable corporate comeback has captured the attention of business observers worldwide as Nvidia continues to strengthen its market position. Media reports indicate that former President Donald Trump provided significant support that helped pave the way for Jen-Hsun Huang's high-profile return to the spotlight. This political backing has sparked widespread discussion among industry analysts regarding the intersection of government influence and technology leadership.",
+        "According to BBC business correspondent Michelle Fleury, political endorsement played a strategic role in shaping public perception during this pivotal transition. Analysts note that executive leadership often relies on external advocacy to maintain investor confidence during turbulent market cycles. Consequently, the relationship between influential political figures and executive leadership remains a crucial topic for global financial markets.",
+        "As technology firms navigate complex regulatory landscapes, the alliance between political figures and corporate executives can alter strategic outcomes. The recent developments surrounding Nvidia demonstrate how external support can reinforce a chief executive's market strategy. Moving forward, financial experts will closely monitor how these political dynamics influence future corporate investments and investor Sentiment."
+      ],
+      "translation": [
+        "隨著輝達繼續鞏固其市場地位，一場非凡的企業回歸吸引了全球商業觀察家的高度關注。媒體報導指出，美國前總統唐納·川普提供了重大支持，為黃仁勳高調重返聚光燈鋪平了道路。這項政治支持引發了業界分析師對於政府影響力與科技領導力交集的廣泛討論。",
+        "根據英國廣播公司（BBC）商業記者米歇爾·弗萊里（Michelle Fleury）的說法，政治背書在這次關鍵轉型期間對塑造公眾感知發揮了戰略作用。分析師指出，在動盪的市場週期中，高階領導層往往依賴外部支持來維持投資人信心。因此，有影響力的政治人物與高階領導層之間的關係，仍然是全球金融市場的重要課題。",
+        "隨著科技公司應對複雜的監管環境，政治人物與企業高層之間的盟友關係可能會改變戰略結果。近期圍繞輝達的發展表明了外部支持如何能強化執行長的市場戰略。展望未來，金融專家將密切關注這些政治動態如何影響未來的企業投資與投資人情緒。"
+      ],
+      "vocabulary": [
+        {
+          "term": "remarkable",
+          "pos": "adjective",
+          "collocations": "remarkable comeback; remarkable achievement",
+          "meaning": "非凡的；顯著的",
+          "synonyms": [
+            "extraordinary; exceptional",
+            "outstanding; notable"
+          ],
+          "family": "remark; remarkably",
+          "sentence": "A remarkable corporate comeback has captured the attention of business observers worldwide as Nvidia continues to strengthen its market position."
+        },
+        {
+          "term": "support",
+          "pos": "noun",
+          "collocations": "significant support; political support",
+          "meaning": "支持；贊助",
+          "synonyms": [
+            "backing; assistance",
+            "endorsement; aid"
+          ],
+          "family": "support; supportive; supporter",
+          "sentence": "Media reports indicate that former President Donald Trump provided significant support that helped pave the way for Jen-Hsun Huang's high-profile return to the spotlight."
+        },
+        {
+          "term": "intersection",
+          "pos": "noun",
+          "collocations": "strategic intersection; complex intersection",
+          "meaning": "交集；交叉點",
+          "synonyms": [
+            "overlap; junction",
+            "convergence; meeting point"
+          ],
+          "family": "intersect; intersessional",
+          "sentence": "This political backing has sparked widespread discussion among industry analysts regarding the intersection of government influence and technology leadership."
+        },
+        {
+          "term": "endorsement",
+          "pos": "noun",
+          "collocations": "political endorsement; official endorsement",
+          "meaning": "背書；支持",
+          "synonyms": [
+            "approval; advocacy",
+            "sanction; recommendation"
+          ],
+          "family": "endorse; endorser",
+          "sentence": "According to BBC business correspondent Michelle Fleury, political endorsement played a strategic role in shaping public perception during this pivotal transition."
+        },
+        {
+          "term": "pivotal",
+          "pos": "adjective",
+          "collocations": "pivotal transition; pivotal role",
+          "meaning": "關鍵的；樞紐的",
+          "synonyms": [
+            "crucial; vital",
+            "critical; decisive"
+          ],
+          "family": "pivot; pivotally",
+          "sentence": "According to BBC business correspondent Michelle Fleury, political endorsement played a strategic role in shaping public perception during this pivotal transition."
+        },
+        {
+          "term": "confidence",
+          "pos": "noun",
+          "collocations": "investor confidence; market confidence",
+          "meaning": "信心；信任",
+          "synonyms": [
+            "trust; assurance",
+            "certainty; faith"
+          ],
+          "family": "confident; confidently",
+          "sentence": "Analysts note that executive leadership often relies on external advocacy to maintain investor confidence during turbulent market cycles."
+        },
+        {
+          "term": "turbulent",
+          "pos": "adjective",
+          "collocations": "turbulent market; turbulent period",
+          "meaning": "動盪的；混亂的",
+          "synonyms": [
+            "unstable; volatile",
+            "stormy; chaotic"
+          ],
+          "family": "turbulence; turbulently",
+          "sentence": "Analysts note that executive leadership often relies on external advocacy to maintain investor confidence during turbulent market cycles."
+        },
+        {
+          "term": "regulatory",
+          "pos": "adjective",
+          "collocations": "regulatory landscape; regulatory framework",
+          "meaning": "監管的；管理的",
+          "synonyms": [
+            "supervisory; administrative",
+            "statutory; governable"
+          ],
+          "family": "regulate; regulation; regulator",
+          "sentence": "As technology firms navigate complex regulatory landscapes, the alliance between political figures and corporate executives can alter strategic outcomes."
+        },
+        {
+          "term": "alliance",
+          "pos": "noun",
+          "collocations": "strategic alliance; strong alliance",
+          "meaning": "盟友關係；聯盟",
+          "synonyms": [
+            "partnership; coalition",
+            "union; affiliation"
+          ],
+          "family": "ally; allied",
+          "sentence": "As technology firms navigate complex regulatory landscapes, the alliance between political figures and corporate executives can alter strategic outcomes."
+        },
+        {
+          "term": "reinforce",
+          "pos": "verb",
+          "collocations": "reinforce strategy; reinforce confidence",
+          "meaning": "強化；鞏固",
+          "synonyms": [
+            "strengthen; bolster",
+            "fortify; consolidate"
+          ],
+          "family": "reinforcement; reinforcing",
+          "sentence": "The recent developments surrounding Nvidia demonstrate how external support can reinforce a chief executive's market strategy."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "The financial analysts present at yesterday's conference ________ that political stability directly affects long-term investment strategies.",
+          "options": [
+            "emphasized",
+            "emphasizing",
+            "emphasis",
+            "emphatic"
+          ],
+          "answer": "A",
+          "locator": "主詞 (financial analysts) 後缺少過去時態的主要動詞 (emphasized)。",
+          "explanation": "空格處需要一個限定動詞來擔任全句的謂語動詞。選項 (A) emphasized 為過去式動詞，符合文法結構。選項 (B) 為分詞，(C) 為名詞，(D) 為形容詞，均無法獨立作主要動詞。"
+        },
+        {
+          "prompt": "Company executives must adapt quickly ________ navigate unpredictable changes in international trade policies.",
+          "options": [
+            "in order to",
+            "so that",
+            "because of",
+            "in spite of"
+          ],
+          "answer": "A",
+          "locator": "不定詞片語 (navigate) 前需要表目的的連接介詞片語 (in order to)。",
+          "explanation": "空格後接原形動詞 navigate，表示「為了要……」，應選擇 (A) in order to。選項 (B) so that 後面須接完整子句；(C) because of 和 (D) in spite of 後面須接名詞或動名詞。"
+        },
+        {
+          "prompt": "The Chief Financial Officer approved the revised budget plan after it was ________ reviewed by the internal auditing team.",
+          "options": [
+            "thorough",
+            "thoroughly",
+            "thoroughness",
+            "more thorough"
+          ],
+          "answer": "B",
+          "locator": "被動態動詞 (was reviewed) 中間需要副詞 (thoroughly) 來修飾過去分詞。",
+          "explanation": "空格位於助動詞 was 與過去分詞 reviewed 之間，應用副詞修飾動詞。選項 (B) thoroughly（徹底地）為副詞，符合語法與語意。選項 (A) 為形容詞，(C) 為名詞，(D) 為比較級形容詞。"
+        }
+      ],
+      "part6": {
+        "title": "Corporate Executive Announcement",
+        "passage": "To All Shareholders and Financial Partners,\n\nWe are writing to address recent media reports regarding our corporate leadership strategy. During the recent fiscal quarter, our executive board has worked diligently to 【1】 our position as a global leader in technology. External advocacy and high-level political dialogue have played an influential role during this period.\n\nBBC business correspondent Michelle Fleury recently highlighted the factors behind executive strategy and market stability. Her analysis 【2】 that external support can indeed boost investor confidence during critical transitions. 【3】. We remain committed to maintaining full transparency with all our stakeholders.\n\nLooking forward, our board will continue to focus on sustainable growth and strategic partnership. We encourage all investors to review our upcoming financial reports for 【4】 updates on our corporate governance.\n\nSincerely,\nExecutive Management Board",
+        "questions": [
+          {
+            "prompt": "Choose the best word to fill in blank 【1】.",
+            "options": [
+              "reinforce",
+              "reinforces",
+              "reinforcing",
+              "reinforcement"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"worked diligently to 【1】 our position\"",
+            "explanation": "不定詞符號 \"to\" 後面必須接原形動詞 (reinforce)，表示「強化/鞏固」我們的市場地位。"
+          },
+          {
+            "prompt": "Choose the best word to fill in blank 【2】.",
+            "options": [
+              "demonstrates",
+              "demonstrated",
+              "demonstrating",
+              "demonstration"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"Her analysis 【3】 that external support can indeed boost\"",
+            "explanation": "主詞為第三人稱單數名詞 \"Her analysis\"，敘述客觀事實或當前分析，動詞應使用單數現在式 \"demonstrates\"。"
+          },
+          {
+            "prompt": "Choose the best sentence to fill in blank 【3】.",
+            "options": [
+              "Therefore, our firm is well-prepared to execute its long-term strategic plans.",
+              "However, the legal department requested an immediate cessation of all trading activities.",
+              "Furthermore, the factory was shut down permanently due to unexpected power failures.",
+              "In addition, employees are advised to submit their travel expense claims by Friday."
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"external support can indeed boost investor confidence during critical transitions.\"",
+            "explanation": "前一句提到外部支持能提升投資人信心，選項 (A)「因此，本公司已做好充分準備執行其長期戰略計劃」最符合上下文邏輯連貫性。"
+          },
+          {
+            "prompt": "Choose the best word to fill in blank 【4】.",
+            "options": [
+              "further",
+              "furthermore",
+              "farthermost",
+              "farthest"
+            ],
+            "answer": "A",
+            "locator": "第 3 段 \"review our upcoming financial reports for 【4】 updates\"",
+            "explanation": "空格處需要修飾名詞 \"updates\" 的形容詞，\"further\" 在商務英文中常用於表達「進一步的/更多的（更新）」。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Questions 1-3 refer to the following news article.",
+        "questions": [
+          {
+            "prompt": "What factor contributed to Jen-Hsun Huang's prominent return to public attention?",
+            "options": [
+              "Significant support from former President Donald Trump.",
+              "A major decrease in technology market competition.",
+              "Direct financial funding provided by global banking institutions.",
+              "An immediate approval of new government subsidies for Nvidia."
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"Donald Trump provided significant support that helped pave the way for Jen-Hsun Huang's high-profile return\"",
+            "explanation": "文章第一段明確提到，前總統唐納·川普提供了重大支持，協助黃仁勳高調回歸。"
+          },
+          {
+            "prompt": "Who provided executive analysis regarding Huang's comeback according to the report?",
+            "options": [
+              "Michelle Fleury",
+              "Donald Trump",
+              "Jen-Hsun Huang",
+              "An unnamed banking expert"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"According to BBC business correspondent Michelle Fleury, political endorsement played a strategic role\"",
+            "explanation": "文章第二段指出，該商業分析與觀察是由 BBC 商業記者 Michelle Fleury 所提供的。"
+          },
+          {
+            "prompt": "What are financial experts expected to monitor closely in the future?",
+            "options": [
+              "How political dynamics influence future corporate investments.",
+              "The daily changes in technology retail product prices.",
+              "The retirement plans of chief financial officers.",
+              "Recent modifications in workplace safety regulations."
+            ],
+            "answer": "A",
+            "locator": "第 3 段 \"financial experts will closely monitor how these political dynamics influence future corporate investments\"",
+            "explanation": "文章第三段最後一句指出，金融專家未來將密切關注政治動態如何影響未來的企業投資與投資人情緒。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/videos/ckp80d5nl586o",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    },
+    "politics": {
+      "title": "Political Dispute Between Regional Leaders",
+      "summary": "貝爾漢姆拒絕賦予加地夫更多權力，促使首席部長要求召開緊急會議，並指責其未將威爾斯視為平等國家。",
+      "english": [
+        "The first minister has requested an urgent meeting following comments made by Andy Burnham. According to reports, Mr Burnham rejected recent calls for additional powers in Cardiff. This refusal prompted the regional leader to take immediate political action.",
+        "During the discussion, the first minister claimed that the rejection demonstrates a serious issue. Specifically, the regional leader argued that Mr Burnham does not view Wales as an equal nation within the current political framework.",
+        "Political analysts note that negotiations between regional authorities often face significant obstacles. Both sides are expected to address these governance concerns during the upcoming talks to determine the future distribution of regional authority."
+      ],
+      "translation": [
+        "在貝爾漢姆發表評論後，首席部長已要求召開緊急會議。據報導，貝爾漢姆先生拒絕了近期關於在加地夫賦予更多權力的呼籲。這項拒絕促使該地區領導人採取了立即的政治行動。",
+        "在討論期間，首席部長聲稱這種拒絕證明了一個嚴重的問題。具體而言，該地區領導人主張貝爾漢姆先生並未將威爾斯視為當前政治框架內的平等國家。",
+        "政治分析人士指出，地區當局之間的談判經常面臨重大阻礙。預計雙方將在即將到來的會談中解決這些治理問題，以決定地區權力的未來分配。"
+      ],
+      "vocabulary": [
+        {
+          "term": "urgent",
+          "pos": "adjective",
+          "collocations": "urgent meeting; urgent action",
+          "meaning": "緊急的",
+          "synonyms": [
+            "pressing; critical",
+            "immediate; crucial"
+          ],
+          "family": "urgency; urgently",
+          "sentence": "The first minister has requested an urgent meeting following comments made by Andy Burnham."
+        },
+        {
+          "term": "meeting",
+          "pos": "noun",
+          "collocations": "urgent meeting; upcoming meeting",
+          "meaning": "會議",
+          "synonyms": [
+            "gathering; conference",
+            "assembly; session"
+          ],
+          "family": "meet",
+          "sentence": "The first minister has requested an urgent meeting following comments made by Andy Burnham."
+        },
+        {
+          "term": "powers",
+          "pos": "noun",
+          "collocations": "additional powers; political powers",
+          "meaning": "權力",
+          "synonyms": [
+            "authority; control",
+            "influence; jurisdiction"
+          ],
+          "family": "powerful; powerfully",
+          "sentence": "According to reports, Mr Burnham rejected recent calls for additional powers in Cardiff."
+        },
+        {
+          "term": "refusal",
+          "pos": "noun",
+          "collocations": "flat refusal; public refusal",
+          "meaning": "拒絕",
+          "synonyms": [
+            "rejection; denial",
+            "declination; repudiation"
+          ],
+          "family": "refuse",
+          "sentence": "This refusal prompted the regional leader to take immediate political action."
+        },
+        {
+          "term": "action",
+          "pos": "noun",
+          "collocations": "political action; immediate action",
+          "meaning": "行動",
+          "synonyms": [
+            "measure; step",
+            "activity; deed"
+          ],
+          "family": "act; active; actively",
+          "sentence": "This refusal prompted the regional leader to take immediate political action."
+        },
+        {
+          "term": "rejection",
+          "pos": "noun",
+          "collocations": "firm rejection; public rejection",
+          "meaning": "拒絕",
+          "synonyms": [
+            "refusal; denial",
+            "dismissal; repudiation"
+          ],
+          "family": "reject",
+          "sentence": "During the discussion, the first minister claimed that the rejection demonstrates a serious issue."
+        },
+        {
+          "term": "issue",
+          "pos": "noun",
+          "collocations": "serious issue; key issue",
+          "meaning": "議題；問題",
+          "synonyms": [
+            "problem; matter",
+            "concern; topic"
+          ],
+          "family": "issue",
+          "sentence": "During the discussion, the first minister claimed that the rejection demonstrates a serious issue."
+        },
+        {
+          "term": "nation",
+          "pos": "noun",
+          "collocations": "equal nation; sovereign nation",
+          "meaning": "國家",
+          "synonyms": [
+            "country; state",
+            "commonwealth; realm"
+          ],
+          "family": "national; nationality",
+          "sentence": "Specifically, the regional leader argued that Mr Burnham does not view Wales as an equal nation within the current political framework."
+        },
+        {
+          "term": "negotiations",
+          "pos": "noun",
+          "collocations": "peace negotiations; formal negotiations",
+          "meaning": "談判",
+          "synonyms": [
+            "talks; discussions",
+            "bargaining; consultations"
+          ],
+          "family": "negotiate; negotiator",
+          "sentence": "Political analysts note that negotiations between regional authorities often face significant obstacles."
+        },
+        {
+          "term": "authorities",
+          "pos": "noun",
+          "collocations": "regional authorities; local authorities",
+          "meaning": "當局；官方",
+          "synonyms": [
+            "officials; administration",
+            "government; management"
+          ],
+          "family": "authority; authoritative",
+          "sentence": "Political analysts note that negotiations between regional authorities often face significant obstacles."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "The first minister requested an urgent meeting _____ Andy Burnham rejected calls for more powers.",
+          "options": [
+            "after",
+            "during",
+            "while",
+            "before"
+          ],
+          "answer": "A",
+          "locator": "連接詞與子句時態搭配",
+          "explanation": "空格後方接完整的子句「Andy Burnham rejected...」，用以表示事件發生的先後順序（在...之後），因此應選連接詞 after。"
+        },
+        {
+          "prompt": "Mr Burnham rejected recent calls _____ additional powers in Cardiff.",
+          "options": [
+            "in",
+            "for",
+            "at",
+            "on"
+          ],
+          "answer": "B",
+          "locator": "名詞與介系詞搭配",
+          "explanation": "英文中表達「對...的要求」或「索求...的呼籲」時，名詞 calls 後方通常搭配介系詞 for。"
+        },
+        {
+          "prompt": "Negotiations between regional authorities often face significant _____.",
+          "options": [
+            "obstacle",
+            "obstacles",
+            "obstruct",
+            "obstructing"
+          ],
+          "answer": "B",
+          "locator": "名詞複數與動詞受詞",
+          "explanation": "句中的動詞 face 需要一個名詞作為受詞。obstacle 為可數名詞，在此泛指多個阻礙，且沒有冠詞修飾，故需使用複數形 obstacles。"
+        }
+      ],
+      "part6": {
+        "title": "Internal Memo on Regional Policy Updates",
+        "passage": "To all staff members, please be advised that our regional office will host an important briefing session next week. We will discuss various governance issues and upcoming policy changes. 【1】 of you are encouraged to submit your feedback before Friday. Your opinions will help us prepare for the 【2】 negotiations with regional authorities. Furthermore, please ensure that all reports are submitted on time. Managers have noted that 【3】 delays can negatively impact our overall workflow. Thank you for your continued cooperation and dedication to 【4】 professional standards.",
+        "questions": [
+          {
+            "prompt": "Choose the best word for blank 【1】.",
+            "options": [
+              "All",
+              "Each",
+              "Much",
+              "Little"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"【1】 of you are encouraged\"",
+            "explanation": "後方動詞為複數 are，且代名詞為 you，因此需選擇可搭配複數代名詞的量詞 All。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【2】.",
+            "options": [
+              "upcoming",
+              "upkeep",
+              "upward",
+              "update"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"prepare for the 【2】 negotiations\"",
+            "explanation": "空格用來形容即將到來的談判，upcoming（即將到來的）符合上下文語意。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【3】.",
+            "options": [
+              "unnecessary",
+              "unnecessarily",
+              "necessity",
+              "necessitate"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"that 【4】 delays can\"",
+            "explanation": "空格位於名詞 delays 前方，需要形容詞來修飾，unnecessary（不必要的）為正確詞性與語意。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【4】.",
+            "options": [
+              "maintain",
+              "maintaining",
+              "maintained",
+              "maintenance"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"dedication to 【4】 professional\"",
+            "explanation": "片語 dedication to 中的 to 為介系詞，後方接動名詞 maintaining 作為受詞。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Read the news article and answer the reading comprehension questions.",
+        "questions": [
+          {
+            "prompt": "What prompted the first minister to ask for an urgent meeting?",
+            "options": [
+              "A refusal from Andy Burnham regarding additional powers",
+              "A sudden change in regional weather conditions",
+              "An invitation from national economic analysts",
+              "The completion of upcoming negotiations"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"Mr Burnham rejected recent calls for additional powers in Cardiff.\"",
+            "explanation": "文章第一段指出，貝爾漢姆拒絕了在加地夫獲得更多權力的呼籲，這促使首席部長要求召開緊急會議。"
+          },
+          {
+            "prompt": "What did the first minister claim about Mr Burnham's view?",
+            "options": [
+              "He does not view Wales as an equal nation",
+              "He wants to relocate the regional capital",
+              "He plans to resign from his position",
+              "He supports all current governance policies"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"Mr Burnham does not view Wales as an equal nation\"",
+            "explanation": "文章第二段明確提到，首席部長聲稱貝爾漢姆先生並未將威爾斯視為一個平等的國家。"
+          },
+          {
+            "prompt": "What do political analysts say about negotiations between regional authorities?",
+            "options": [
+              "They often face significant obstacles",
+              "They have been successfully concluded",
+              "They are permanently cancelled",
+              "They require no further discussion"
+            ],
+            "answer": "A",
+            "locator": "第 3 段 \"negotiations between regional authorities often face significant obstacles.\"",
+            "explanation": "文章第三段提到，政治分析人士指出地區當局之間的談判經常面臨重大的阻礙。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/cqr7gzmgm33ko",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    },
+    "techLife": {
+      "title": "US Prepares Tech Blacklist Following AI Chip Controversy",
+      "summary": "美國計劃將亞洲人工智慧企業 Megaspeed 列入黑名單。此前在一項公開事件中，該公司遭檢舉涉嫌將微晶片違規轉運至中國。",
+      "english": [
+        "The US government is preparing to place the Asian artificial intelligence firm Megaspeed on an official trade blacklist. This regulatory decision follows serious allegations that the enterprise participated in illegal transactions to supply advanced technology to China. Trade officials are currently reviewing the corporate structure and distribution networks of the company to determine the full extent of these supply chain activities.",
+        "The ongoing scandal surfaced after personal relationships involving a former executive became public, drawing widespread attention to the firm's operations. Subsequent investigations suggested that Megaspeed may have acted as a channel to funnel restricted AI chips into the Chinese market. Observers note that these developments have raised significant security concerns among international trade authorities regarding compliance mechanisms.",
+        "If the sanctions are fully implemented, Megaspeed will face severe restrictions on importing critical hardware components and accessing international software tools. Major global technology suppliers, including leading semiconductor developers like Nvidia, are closely monitoring the situation. Industry experts expect that this enforcement action will prompt tech firms across Asia to strengthen their internal auditing procedures."
+      ],
+      "translation": [
+        "美國政府正準備將亞洲人工智慧公司 Megaspeed 列入官方貿易黑名單。這項監管決定是在該企業遭指控參與非法交易、向中國供應先進技術之後做出的。貿易官員目前正在審查該公司的企業結構和分銷網路，以確定這些供應鏈活動的完整影響範圍。",
+        "在一名前高管的個人關係被公開後，這起持續進行的醜聞浮出水面，引發了外界對該公司營運的廣泛關注。隨後的調查表明，Megaspeed 可能發揮了渠道作用，將受限制的人工智慧晶片偷運至中國市場。觀察家指出，這些發展引發了國際貿易管理機關對合規機制的高度安全疑慮。",
+        "如果制裁全面實施，Megaspeed 將在進口關鍵硬體零件和使用國際軟體工具方面面臨嚴格限制。包括輝達等頂尖半導體開發商在內的全球主要科技供應商，都在密切關注形勢發展。產業專家預計，這項執法行動將促使全亞洲的科技公司加強其內部審計流程。"
+      ],
+      "vocabulary": [
+        {
+          "term": "blacklist",
+          "pos": "noun",
+          "collocations": "trade blacklist; official blacklist",
+          "meaning": "黑名單",
+          "synonyms": [
+            "exclusion list; ban list",
+            "prohibition list; shadow list"
+          ],
+          "family": "blacklist; blacklisted; blacklisting",
+          "sentence": "The US government is preparing to place the Asian artificial intelligence firm Megaspeed on an official trade blacklist."
+        },
+        {
+          "term": "allegations",
+          "pos": "noun",
+          "collocations": "serious allegations; face allegations",
+          "meaning": "指控；聲稱",
+          "synonyms": [
+            "accusations; claims",
+            "charges; assertions"
+          ],
+          "family": "allege; alleged; allegedly; allegation",
+          "sentence": "This regulatory decision follows serious allegations that the enterprise participated in illegal transactions to supply advanced technology to China."
+        },
+        {
+          "term": "scandal",
+          "pos": "noun",
+          "collocations": "ongoing scandal; public scandal",
+          "meaning": "醜聞",
+          "synonyms": [
+            "disgrace; controversy",
+            "misconduct; dishonor"
+          ],
+          "family": "scandal; scandalous; scandalize",
+          "sentence": "The ongoing scandal surfaced after personal relationships involving a former executive became public, drawing widespread attention to the firm's operations."
+        },
+        {
+          "term": "executive",
+          "pos": "noun",
+          "collocations": "former executive; corporate executive",
+          "meaning": "高階主管",
+          "synonyms": [
+            "manager; director",
+            "administrator; officer"
+          ],
+          "family": "execute; executive; execution",
+          "sentence": "The ongoing scandal surfaced after personal relationships involving a former executive became public, drawing widespread attention to the firm's operations."
+        },
+        {
+          "term": "funnel",
+          "pos": "verb",
+          "collocations": "funnel chips; funnel resources",
+          "meaning": "輸送；轉移",
+          "synonyms": [
+            "channel; divert",
+            "route; transfer"
+          ],
+          "family": "funnel; funneled; funneling",
+          "sentence": "Subsequent investigations suggested that Megaspeed may have acted as a channel to funnel restricted AI chips into the Chinese market."
+        },
+        {
+          "term": "compliance",
+          "pos": "noun",
+          "collocations": "compliance mechanisms; regulatory compliance",
+          "meaning": "合規；順從",
+          "synonyms": [
+            "conformity; adherence",
+            "observance; agreement"
+          ],
+          "family": "comply; compliant; compliance",
+          "sentence": "Observers note that these developments have raised significant security concerns among international trade authorities regarding compliance mechanisms."
+        },
+        {
+          "term": "sanctions",
+          "pos": "noun",
+          "collocations": "trade sanctions; implement sanctions",
+          "meaning": "制裁",
+          "synonyms": [
+            "penalties; restrictions",
+            "embargoes; measures"
+          ],
+          "family": "sanction; sanctioned; sanctioning",
+          "sentence": "If the sanctions are fully implemented, Megaspeed will face severe restrictions on importing critical hardware components and accessing international software tools."
+        },
+        {
+          "term": "semiconductor",
+          "pos": "noun",
+          "collocations": "semiconductor developers; semiconductor industry",
+          "meaning": "半導體",
+          "synonyms": [
+            "microchip; integrated circuit",
+            "processor; silicon chip"
+          ],
+          "family": "semiconductor; semiconducting",
+          "sentence": "Major global technology suppliers, including leading semiconductor developers like Nvidia, are closely monitoring the situation."
+        },
+        {
+          "term": "auditing",
+          "pos": "noun",
+          "collocations": "auditing procedures; internal auditing",
+          "meaning": "審計；查帳",
+          "synonyms": [
+            "inspection; examination",
+            "review; scrutiny"
+          ],
+          "family": "audit; auditor; auditing",
+          "sentence": "Industry experts expect that this enforcement action will prompt tech firms across Asia to strengthen their internal auditing procedures."
+        },
+        {
+          "term": "monitoring",
+          "pos": "verb",
+          "collocations": "closely monitoring; monitoring progress",
+          "meaning": "監控；密切關注",
+          "synonyms": [
+            "tracking; observing",
+            "supervising; watching"
+          ],
+          "family": "monitor; monitored; monitoring",
+          "sentence": "Major global technology suppliers, including leading semiconductor developers like Nvidia, are closely monitoring the situation."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "Trade regulators are currently reviewing the firm's export practices _______ prevent the unlawful transfer of restricted hardware.",
+          "options": [
+            "in order to",
+            "because of",
+            "owing to",
+            "as long as"
+          ],
+          "answer": "A",
+          "locator": "Infinitive purpose clause marker (in order to + verb)",
+          "explanation": "選項 (A) in order to 接原形動詞 prevent，表示「為了……目的」。選項 (B) 和 (C) 為介系詞短語，後接名詞；(D) 為連接詞，表條件「只要」，在此語意不符。"
+        },
+        {
+          "prompt": "The corporate audit revealed that several shipments _______ rerouted before reaching their final declared destination.",
+          "options": [
+            "was",
+            "were",
+            "is",
+            "has been"
+          ],
+          "answer": "B",
+          "locator": "Past tense passive voice agreement with plural subject (several shipments were)",
+          "explanation": "主詞為複數名詞 several shipments，且全句為過去時態（audit revealed），故需填入複數過去式動詞 (B) were。"
+        },
+        {
+          "prompt": "Tech manufacturers must remain extremely _______ when establishing partnerships with foreign distribution agents.",
+          "options": [
+            "cautious",
+            "cautiously",
+            "caution",
+            "cautioned"
+          ],
+          "answer": "A",
+          "locator": "Predicate adjective after linking verb (remain + adjective)",
+          "explanation": "連綴動詞 remain 後面需要接形容詞作補語，修飾主詞 Tech manufacturers，因此選 (A) cautious（謹慎的）。(B) 為副詞，(C) 為名詞，(D) 為動詞過去式。"
+        }
+      ],
+      "part6": {
+        "title": "Internal Compliance Reminder: Export Controls",
+        "passage": "To all departmental managers:\n\nRecent international trade investigations have highlighted the critical necessity of adhering strictly to global regulations. As trade agencies increase scrutiny on technical shipments, our company must ensure that all distribution networks 【1】 compliant with international security laws.\n\n Effective immediately, all export requests involving restricted computer processors must undergo a secondary review by our legal compliance team. Managers are required to submit comprehensive records of client verification before any order can be approved. 【2】. If any suspicious transaction is identified, staff members should report it 【3】 to the internal compliance hotline.\n\nWe recognize that these additional steps may slightly delay shipping schedules. 【4】, maintaining our reputation for legal integrity and corporate safety is our highest priority.",
+        "questions": [
+          {
+            "prompt": "Choose the best word or phrase to fill in blank 【1】.",
+            "options": [
+              "remain",
+              "remained",
+              "remains",
+              "remaining"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"our company must ensure that all distribution networks 【1】 compliant\"",
+            "explanation": "that 子句中的主詞為複數名詞 all distribution networks，此處需要原型或複數現在式動詞作為謂語，因此選擇 (A) remain。"
+          },
+          {
+            "prompt": "Choose the best sentence to fill in blank 【2】.",
+            "options": [
+              "No exceptions to this documentation policy will be permitted.",
+              "Our software subscription will expire at the end of this month.",
+              "We plan to open a new sales office in North America next year.",
+              "The annual holiday party has been rescheduled for next Friday."
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"Managers are required to submit comprehensive records of client verification before any order can be approved. 【2】.\"",
+            "explanation": "前一句提到經理必須在訂單核准前提交完整的客戶核實記錄，(A)「這項文件政策絕不允許任何例外」語意銜接最流暢。其他選項皆與出口合規規定無關。"
+          },
+          {
+            "prompt": "Choose the best word to fill in blank 【3】.",
+            "options": [
+              "promptly",
+              "prompt",
+              "promptness",
+              "prompted"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"staff members should report it 【3】 to the internal compliance hotline.\"",
+            "explanation": "此處需要一個副詞來修飾動詞 report，表達「迅速地」舉報，因此選擇副詞 (A) promptly。(B) 為形容詞/動詞，(C) 為名詞，(D) 為過去分詞。"
+          },
+          {
+            "prompt": "Choose the best transitional word to fill in blank 【4】.",
+            "options": [
+              "However",
+              "Furthermore",
+              "Otherwise",
+              "Therefore"
+            ],
+            "answer": "A",
+            "locator": "第 3 段 \"We recognize that these additional steps may slightly delay shipping schedules. 【4】,\"",
+            "explanation": "前句提到「額外步驟可能會稍微延誤出貨時程」，後句強調「維持法律誠信與企業安全是最高優先事項」，兩句為轉折關係，故選 (A) However（然而）。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Answer the following questions based on the provided news article regarding US regulatory actions and Asian AI firms.",
+        "questions": [
+          {
+            "prompt": "Why is the US government preparing to blacklist the AI firm Megaspeed?",
+            "options": [
+              "Because it failed to pay standard corporate taxes.",
+              "Because it was accused of illegally transferring advanced technology to China.",
+              "Because it suffered a major financial loss in hardware manufacturing.",
+              "Because its software products caused severe operational system failures."
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"allegations that the enterprise participated in illegal transactions to supply advanced technology to China.\"",
+            "explanation": "文章第一段明確指出，美方準備將 Megaspeed 列入黑名單，是因為該企業遭到涉嫌參與非法交易向中國供應先進技術的嚴重指控。"
+          },
+          {
+            "prompt": "What event initially brought public attention to Megaspeed's corporate activities?",
+            "options": [
+              "A announcement of a new microchip architecture.",
+              "A public controversy involving personal relationships of a former executive.",
+              "A official trade agreement signed between US and Asian regulators.",
+              "A product safety recall published by international hardware suppliers."
+            ],
+            "answer": "B",
+            "locator": "第 2 段 \"surfaced after personal relationships involving a former executive became public\"",
+            "explanation": "文章第二段指出，該醜聞是在一名前高管的個人關係被公開後浮出水面，從而引起了公眾對該公司營運的關注。"
+          },
+          {
+            "prompt": "According to the article, what impact is expected on Asian technology companies?",
+            "options": [
+              "They will stop purchasing microchips from American businesses.",
+              "They will decrease their investment in artificial intelligence research.",
+              "They are expected to reinforce their internal auditing processes.",
+              "They will merge their regulatory offices with trade officials."
+            ],
+            "answer": "C",
+            "locator": "第 3 段 \"prompt tech firms across Asia to strengthen their internal auditing procedures.\"",
+            "explanation": "文章第三段最後提到，產業專家預計這次的執法行動將促使全亞洲的科技公司加強其內部審計流程（strengthen their internal auditing procedures）。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/cv98xpg5dg5zo",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    }
+  },
   "2026-11-23": {
     "finance": {
       "title": "Centrica Chief Expresses Worry Over Rising Energy Bills",
