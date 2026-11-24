@@ -1,4 +1,819 @@
 {
+  "2026-11-25": {
+    "finance": {
+      "title": "Huawei Verdict in Trade Secrets Trial",
+      "summary": "根據華為紐約審判的最新報導，華為被裁定竊取商業秘密罪名成立，但勒索罪名不成立。",
+      "english": [
+        "A New York court has reached a verdict following a months-long trial involving Huawei. The judicial proceeding examined allegations regarding proprietary corporate data and intellectual property.",
+        "The jury found the company guilty of stealing trade secrets during the legal process. However, the same judicial body acquitted the organization of racketeering charges.",
+        "Legal analysts noted that the conclusion of this lengthy trial marks a significant development in the ongoing corporate dispute. Further details regarding potential penalties or subsequent legal actions remain forthcoming as the case progresses."
+      ],
+      "translation": [
+        "紐約法院在歷時數月的華為審判後做出了裁決。這起司法程序審視了關於專有企業數據和智慧財產權的指控。",
+        "陪審團在審判過程中裁定該公司竊取商業秘密罪名成立。然而，同一個司法機構宣告該組織的勒索指控無罪。",
+        "法律分析人士指出，這場漫長審判的結束標誌著持續中的企業爭端有了重大進展。隨著案件的進展，關於潛在懲罰或後續法律行動的更多細節仍有待公布。"
+      ],
+      "vocabulary": [
+        {
+          "term": "court",
+          "pos": "noun",
+          "collocations": "New York court; judicial court",
+          "meaning": "法院",
+          "synonyms": [
+            "tribunal; bench",
+            "judiciary; tribunal"
+          ],
+          "family": "courtroom; courthouses",
+          "sentence": "A New York court has reached a verdict following a months-long trial involving Huawei."
+        },
+        {
+          "term": "trial",
+          "pos": "noun",
+          "collocations": "months-long trial; lengthy trial",
+          "meaning": "審判",
+          "synonyms": [
+            "hearing; proceeding",
+            "litigation; tribunal"
+          ],
+          "family": "trials",
+          "sentence": "A New York court has reached a verdict following a months-long trial involving Huawei."
+        },
+        {
+          "term": "proceeding",
+          "pos": "noun",
+          "collocations": "judicial proceeding; legal proceeding",
+          "meaning": "訴訟程序",
+          "synonyms": [
+            "action; procedure",
+            "process; suit"
+          ],
+          "family": "proceed; proceedings",
+          "sentence": "The judicial proceeding examined allegations regarding proprietary corporate data and intellectual property."
+        },
+        {
+          "term": "data",
+          "pos": "noun",
+          "collocations": "corporate data; proprietary data",
+          "meaning": "數據",
+          "synonyms": [
+            "information; figures",
+            "records; statistics"
+          ],
+          "family": "database",
+          "sentence": "The judicial proceeding examined allegations regarding proprietary corporate data and intellectual property."
+        },
+        {
+          "term": "company",
+          "pos": "noun",
+          "collocations": "the company; corporate company",
+          "meaning": "公司",
+          "synonyms": [
+            "firm; corporation",
+            "enterprise; business"
+          ],
+          "family": "companies",
+          "sentence": "The jury found the company guilty of stealing trade secrets during the legal process."
+        },
+        {
+          "term": "process",
+          "pos": "noun",
+          "collocations": "legal process; ongoing process",
+          "meaning": "過程",
+          "synonyms": [
+            "procedure; method",
+            "operation; system"
+          ],
+          "family": "processes; processed",
+          "sentence": "The jury found the company guilty of stealing trade secrets during the legal process."
+        },
+        {
+          "term": "organization",
+          "pos": "noun",
+          "collocations": "the organization; business organization",
+          "meaning": "組織",
+          "synonyms": [
+            "entity; institution",
+            "body; association"
+          ],
+          "family": "organize; organized",
+          "sentence": "However, the same judicial body acquitted the organization of racketeering charges."
+        },
+        {
+          "term": "conclusion",
+          "pos": "noun",
+          "collocations": "conclusion of this trial; final conclusion",
+          "meaning": "結論",
+          "synonyms": [
+            "end; finish",
+            "close; termination"
+          ],
+          "family": "conclude; conclusive",
+          "sentence": "Legal analysts noted that the conclusion of this lengthy trial marks a significant development in the ongoing corporate dispute."
+        },
+        {
+          "term": "development",
+          "pos": "noun",
+          "collocations": "significant development; new development",
+          "meaning": "發展",
+          "synonyms": [
+            "progress; evolution",
+            "advancement; growth"
+          ],
+          "family": "develop; developed",
+          "sentence": "Legal analysts noted that the conclusion of this lengthy trial marks a significant development in the ongoing corporate dispute."
+        },
+        {
+          "term": "dispute",
+          "pos": "noun",
+          "collocations": "corporate dispute; legal dispute",
+          "meaning": "爭端",
+          "synonyms": [
+            "conflict; disagreement",
+            "controversy; argument"
+          ],
+          "family": "disputes; disputed",
+          "sentence": "Legal analysts noted that the conclusion of this lengthy trial marks a significant development in the ongoing corporate dispute."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "A New York court has reached a verdict following a months-long trial involving Huawei, _____ examined allegations regarding proprietary corporate data.",
+          "options": [
+            "which",
+            "what",
+            "where",
+            "who"
+          ],
+          "answer": "A",
+          "locator": "關代修飾先行詞",
+          "explanation": "空格前先行詞為物（trial），且引導子句中缺少主詞，故應使用關係代名詞 which。"
+        },
+        {
+          "prompt": "The jury found the company guilty of stealing trade secrets _____ the legal process.",
+          "options": [
+            "during",
+            "while",
+            "when",
+            "for"
+          ],
+          "answer": "A",
+          "locator": "介系詞與連接詞區分",
+          "explanation": "the legal process 為名詞片語，前面需要接介系詞 during 表示在……期間，而 while 和 when 通常引導子句。"
+        },
+        {
+          "prompt": "Legal analysts noted that the conclusion of this lengthy trial _____ a significant development.",
+          "options": [
+            "mark",
+            "marks",
+            "marked",
+            "marking"
+          ],
+          "answer": "C",
+          "locator": "時態一致",
+          "explanation": "句子敘述過去發生的事實（noted），子句動詞也應配合使用過去式 marked。"
+        }
+      ],
+      "part6": {
+        "title": "Internal Memo: Corporate Compliance Training",
+        "passage": "To all staff members, \n\nAs we navigate recent industry updates, our management team reminds everyone of our strict compliance policies. It is essential that all employees protect proprietary information and avoid any unauthorized use of trade secrets. \n\n【1】 safeguarding sensitive data, we ensure our company remains competitive and lawful. \n\n【2】 all workers are required to complete the updated training module by the end of next week. Please review your schedules accordingly. \n\nShould you have any questions regarding these guidelines, feel free to contact the human resources department. \n\n【3】 assistance is always available for anyone needing clarification. \n\n【4】 you for your continued dedication and cooperation in this matter. \n\nBest regards, \n\nManagement Team",
+        "questions": [
+          {
+            "prompt": "選擇最適當的字填入 【1】。",
+            "options": [
+              "By",
+              "To",
+              "From",
+              "At"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 【1】 safeguarding",
+            "explanation": "表示「透過……方式來保護機敏資料」，需使用介系詞 By。"
+          },
+          {
+            "prompt": "選擇最適當的字填入 【2】。",
+            "options": [
+              "Therefore",
+              "However",
+              "Instead",
+              "Unless"
+            ],
+            "answer": "A",
+            "locator": "第 3 段 【2】 all workers",
+            "explanation": "基於前段保護資料的理由，得出員工必須完成訓練的結論，因此選表示因果關係的 Therefore。"
+          },
+          {
+            "prompt": "選擇最適當的字填入 【3】。",
+            "options": [
+              "Technical",
+              "Additional",
+              "Temporary",
+              "Frequent"
+            ],
+            "answer": "B",
+            "locator": "第 5 段 【3】 assistance",
+            "explanation": "意指「額外的協助隨時提供給需要釐清的人」，故選 Additional（額外的）。"
+          },
+          {
+            "prompt": "選擇最適當的字填入 【4】。",
+            "options": [
+              "Thank",
+              "Thanks",
+              "Thanking",
+              "Thankful"
+            ],
+            "answer": "A",
+            "locator": "第 6 段 【4】 you for",
+            "explanation": "信件結尾表達感謝之意的慣用語為 Thank you for..."
+          }
+        ]
+      },
+      "part7": {
+        "intro": "根據新聞內容，回答下列關於華為審判案件的問題。",
+        "questions": [
+          {
+            "prompt": "Where did the trial take place?",
+            "options": [
+              "London",
+              "New York",
+              "Beijing",
+              "Tokyo"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"A New York court\"",
+            "explanation": "文章第一段明確指出審判是在紐約法院（A New York court）進行的。"
+          },
+          {
+            "prompt": "What was Huawei found guilty of?",
+            "options": [
+              "Racketeering",
+              "Stealing trade secrets",
+              "Tax evasion",
+              "Bribery"
+            ],
+            "answer": "B",
+            "locator": "第 2 段 \"stealing trade secrets\"",
+            "explanation": "第二段提到陪審團裁定該公司竊取商業秘密罪名成立（guilty of stealing trade secrets）。"
+          },
+          {
+            "prompt": "What charge was Huawei acquitted of?",
+            "options": [
+              "Trade secret theft",
+              "Fraud",
+              "Racketeering",
+              "Data breaches"
+            ],
+            "answer": "C",
+            "locator": "第 2 段 \"acquitted of racketeering charges\"",
+            "explanation": "第二段指出該組織被宣告勒索指控無罪（acquitted of racketeering charges）。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/cmy49ngydqzpo",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    },
+    "politics": {
+      "title": "Ministers Seek Public Opinion on Age of Consent",
+      "summary": "英國部長們正就修改合法性交年齡徵求公眾意見，部分活動人士認為年齡差距應納入考量。",
+      "english": [
+        "Government ministers have recently invited the public to share their views regarding potential adjustments to the age of consent. This official request aims to gather diverse perspectives on whether existing laws require modification.",
+        "Several advocacy groups have actively argued that different legal limits should apply. These campaigners suggest that the specific age gap between the individuals involved should be taken into account rather than applying a single strict standard.",
+        "As discussions continue, officials will review the feedback provided by citizens and organizations. Further developments will depend heavily on the public response and the ongoing evaluation of current legal frameworks."
+      ],
+      "translation": [
+        "政府部長最近邀請公眾就調整合法性交年齡分享他們的看法。這項官方請求旨在收集關於現行法律是否需要修改的多樣化觀點。",
+        "幾個倡導團體積極主張應該適用不同的法律限制。這些活動人士建議，應考慮相關人員之間具體的年齡差距，而不是實施單一的嚴格標準。",
+        "隨著討論的繼續，官員們將審查公民和組織提供的回饋。進一步的發展將很大程度上取決於公眾的反應以及對現行法律框架的持續評估。"
+      ],
+      "vocabulary": [
+        {
+          "term": "ministers",
+          "pos": "noun",
+          "collocations": "government ministers; cabinet ministers",
+          "meaning": "部長；大臣",
+          "synonyms": [
+            "officials; authorities",
+            "politicians; leaders"
+          ],
+          "family": "minister; ministerial",
+          "sentence": "Government ministers have recently invited the public to share their views regarding potential adjustments to the age of consent."
+        },
+        {
+          "term": "public",
+          "pos": "noun",
+          "collocations": "general public; members of the public",
+          "meaning": "公眾；大眾",
+          "synonyms": [
+            "citizens; society",
+            "population; community"
+          ],
+          "family": "publicly; public",
+          "sentence": "Government ministers have recently invited the public to share their views regarding potential adjustments to the age of consent."
+        },
+        {
+          "term": "views",
+          "pos": "noun",
+          "collocations": "express views; share views",
+          "meaning": "看法；意見",
+          "synonyms": [
+            "opinions; perspectives",
+            "beliefs; thoughts"
+          ],
+          "family": "view; viewer",
+          "sentence": "Government ministers have recently invited the public to share their views regarding potential adjustments to the age of consent."
+        },
+        {
+          "term": "request",
+          "pos": "noun",
+          "collocations": "official request; formal request",
+          "meaning": "請求；要求",
+          "synonyms": [
+            "appeal; petition",
+            "application; demand"
+          ],
+          "family": "request; requested",
+          "sentence": "This official request aims to gather diverse perspectives on whether existing laws require modification."
+        },
+        {
+          "term": "perspectives",
+          "pos": "noun",
+          "collocations": "diverse perspectives; multiple perspectives",
+          "meaning": "觀點；視角",
+          "synonyms": [
+            "viewpoints; angles",
+            "outlook; standpoints"
+          ],
+          "family": "perspective",
+          "sentence": "This official request aims to gather diverse perspectives on whether existing laws require modification."
+        },
+        {
+          "term": "groups",
+          "pos": "noun",
+          "collocations": "advocacy groups; community groups",
+          "meaning": "團體；群體",
+          "synonyms": [
+            "organizations; associations",
+            "coalitions; societies"
+          ],
+          "family": "group; grouping",
+          "sentence": "Several advocacy groups have actively argued that different legal limits should apply."
+        },
+        {
+          "term": "limits",
+          "pos": "noun",
+          "collocations": "legal limits; age limits",
+          "meaning": "限制；界限",
+          "synonyms": [
+            "restrictions; boundaries",
+            "thresholds; caps"
+          ],
+          "family": "limit; limitation",
+          "sentence": "Several advocacy groups have actively argued that different legal limits should apply."
+        },
+        {
+          "term": "standard",
+          "pos": "noun",
+          "collocations": "strict standard; high standard",
+          "meaning": "標準；水準",
+          "synonyms": [
+            "criterion; benchmark",
+            "rule; guideline"
+          ],
+          "family": "standardize; standardized",
+          "sentence": "These campaigners suggest that the specific age gap between the individuals involved should be taken into account rather than applying a single strict standard."
+        },
+        {
+          "term": "feedback",
+          "pos": "noun",
+          "collocations": "public feedback; customer feedback",
+          "meaning": "回饋；反應",
+          "synonyms": [
+            "responses; comments",
+            "evaluations; input"
+          ],
+          "family": "feedback",
+          "sentence": "As discussions continue, officials will review the feedback provided by citizens and organizations."
+        },
+        {
+          "term": "response",
+          "pos": "noun",
+          "collocations": "public response; prompt response",
+          "meaning": "回應；反應",
+          "synonyms": [
+            "reaction; reply",
+            "answer; feedback"
+          ],
+          "family": "respond; responsive",
+          "sentence": "Further developments will depend heavily on the public response and the ongoing evaluation of current legal frameworks."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "Government ministers have recently invited the public ________ their views regarding potential adjustments.",
+          "options": [
+            "share",
+            "to share",
+            "sharing",
+            "shared"
+          ],
+          "answer": "B",
+          "locator": "不定詞作受詞補語 (invite sb. to do sth.)",
+          "explanation": "句型 invite sb. to do sth.（邀請某人做某事）中，受詞後方需接不定詞（to V）。因此正確答案為 (B) to share。"
+        },
+        {
+          "prompt": "Several advocacy groups have actively argued that different legal limits should ________.",
+          "options": [
+            "apply",
+            "applying",
+            "applied",
+            "applies"
+          ],
+          "answer": "A",
+          "locator": "助動詞後方接原形動詞 (should + V)",
+          "explanation": "句中的情態助動詞 should 後方必須接原形動詞，因此正確答案為 (A) apply。"
+        },
+        {
+          "prompt": "As discussions continue, officials will review the feedback ________ by citizens and organizations.",
+          "options": [
+            "provide",
+            "providing",
+            "provided",
+            "provides"
+          ],
+          "answer": "C",
+          "locator": "過去分詞片語作後置修飾 (Passive Participle Phrase)",
+          "explanation": "空格處需要一個過去分詞片語來修飾前面的名詞 the feedback，表被動關係（由公民所提供的回饋），因此正確答案為 (C) provided。"
+        }
+      ],
+      "part6": {
+        "title": "Internal Memo on Public Policy Consultation",
+        "passage": "Dear Team, We are pleased to announce an upcoming internal seminar focusing on public policy consultation. As public officials continue to seek views on changing legal standards, our department must stay informed. 【1】 Please review the attached briefing materials prior to the session. 【2】 The workshop will take place in the main conference room this Thursday. All staff members are encouraged to attend. 【3】 Your active participation will help us understand the broader context of these discussions. 【4】 Should you have any questions, please contact the human resources department.",
+        "questions": [
+          {
+            "prompt": "What is the best word for blank 【1】?",
+            "options": [
+              "Therefore",
+              "However",
+              "Instead",
+              "Meanwhile"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"Please review the attached briefing materials\"",
+            "explanation": "前句提及部門必須隨時了解情況，因此「因此（Therefore）」請審閱附加的簡報資料最符合邏輯。"
+          },
+          {
+            "prompt": "What is the best word for blank 【2】?",
+            "options": [
+              "Cancel",
+              "Schedule",
+              "Postpone",
+              "Delay"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"The workshop will take place\"",
+            "explanation": "句子接著說明工作坊舉辦的時間與地點，表示該活動已「排定（Schedule）」舉行。"
+          },
+          {
+            "prompt": "What is the best word for blank 【3】?",
+            "options": [
+              "Value",
+              "Valueless",
+              "Valuable",
+              "Valued"
+            ],
+            "answer": "C",
+            "locator": "第 1 段 \"Your active participation will help\"",
+            "explanation": "空格修飾名詞 participation，需要形容詞「有價值的（Valuable）」，故選 (C)。"
+          },
+          {
+            "prompt": "What is the best word for blank 【4】?",
+            "options": [
+              "who",
+              "which",
+              "any",
+              "some"
+            ],
+            "answer": "C",
+            "locator": "第 1 段 \"Should you have any questions\"",
+            "explanation": "句型「Should you have...」為條件句的倒裝用法，慣用語中通常搭配 any questions（若有任何疑問），故選 (C)。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Read the news article and answer the following reading comprehension questions.",
+        "questions": [
+          {
+            "prompt": "According to the article, what have government ministers recently done?",
+            "options": [
+              "They changed the law without warning.",
+              "They invited the public to share views.",
+              "They canceled all advocacy meetings.",
+              "They rejected all public feedback."
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"Government ministers have recently invited the public to share their views\"",
+            "explanation": "文章第一段明確指出政府部長最近邀請公眾分享他們對年齡限制調整的看法。"
+          },
+          {
+            "prompt": "What do several advocacy groups suggest should be taken into account?",
+            "options": [
+              "The economic status of individuals",
+              "The specific age gap between people",
+              "The geographical location of citizens",
+              "The political party affiliations"
+            ],
+            "answer": "B",
+            "locator": "第 2 段 \"the specific age gap between the individuals involved should be taken into account\"",
+            "explanation": "文章第二段指出，活動人士認為應將相關人員之間的具體年齡差距納入考量。"
+          },
+          {
+            "prompt": "What will officials do with the feedback provided by citizens?",
+            "options": [
+              "Ignore it completely",
+              "Destroy the documents",
+              "Review the feedback",
+              "Publish every name"
+            ],
+            "answer": "C",
+            "locator": "第 3 段 \"officials will review the feedback provided by citizens and organizations\"",
+            "explanation": "文章第三段提到，官員們將會審查由公民和組織所提供的回饋意見。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/cwgkl31kmnddo",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    },
+    "techLife": {
+      "title": "US Attorney General Avoids Questions Regarding Nvidia Inquiry",
+      "summary": "美國司法部長迴避了有關輝達調查案的提問。在立法者要求釐清唐納·川普總統是否參與協助黃仁勳恢復職務後，輝達的股價大幅下跌了百分之七。",
+      "english": [
+        "The US attorney general recently avoided answering questions about an ongoing investigation into Nvidia. This development has increased public interest in how government officials handle inquiries about major technology companies.",
+        "The situation unfolded as lawmakers demanded clear answers concerning President Donald Trump and his alleged involvement in Huang's reinstatement. Political figures are seeking clarification on whether executive influence played a role in the decisions made.",
+        "Following these political events and market uncertainties, Nvidia's share price fell by seven percent. Investors remain cautious as they monitor how government oversight might affect the company's future operations."
+      ],
+      "translation": [
+        "美國司法部長最近迴避了回答有關針對輝達正在進行的調查提問。這一事件增加了公眾對政府官員如何處理大型科技公司調查案的關注。",
+        "隨著立法者要求就唐納·川普總統及其涉嫌參與黃仁勳恢復職務一事提供明確答案，局勢進一步發展。政治人物正尋求釐清行政影響力是否在所作出的決定中發揮了作用。",
+        "在這些政治事件和市場不確定性發生後，輝達的股價下跌了百分之七。隨著投資人持續觀察政府監督可能如何影響該公司的未來營運，市場態度維持審慎。"
+      ],
+      "vocabulary": [
+        {
+          "term": "investigation",
+          "pos": "noun",
+          "collocations": "ongoing investigation; conduct an investigation",
+          "meaning": "調查",
+          "synonyms": [
+            "inquiry; examination",
+            "probe; scrutiny"
+          ],
+          "family": "investigate; investigative; investigator",
+          "sentence": "The US attorney general recently avoided answering questions about an ongoing investigation into Nvidia."
+        },
+        {
+          "term": "inquiries",
+          "pos": "noun",
+          "collocations": "handle inquiries; respond to inquiries",
+          "meaning": "詢問；調查",
+          "synonyms": [
+            "questions; queries",
+            "investigations; probes"
+          ],
+          "family": "inquire; inquiringly",
+          "sentence": "This development has increased public interest in how government officials handle inquiries about major technology companies."
+        },
+        {
+          "term": "demanded",
+          "pos": "verb",
+          "collocations": "demanded answers; demanded explanation",
+          "meaning": "要求",
+          "synonyms": [
+            "required; requested",
+            "insisted on; called for"
+          ],
+          "family": "demand; demanding",
+          "sentence": "The situation unfolded as lawmakers demanded clear answers concerning President Donald Trump and his alleged involvement in Huang's reinstatement."
+        },
+        {
+          "term": "involvement",
+          "pos": "noun",
+          "collocations": "alleged involvement; direct involvement",
+          "meaning": "參與；干預",
+          "synonyms": [
+            "participation; engagement",
+            "implication; inclusion"
+          ],
+          "family": "involve; involved",
+          "sentence": "The situation unfolded as lawmakers demanded clear answers concerning President Donald Trump and his alleged involvement in Huang's reinstatement."
+        },
+        {
+          "term": "reinstatement",
+          "pos": "noun",
+          "collocations": "Huang's reinstatement; official reinstatement",
+          "meaning": "復職；恢復",
+          "synonyms": [
+            "restoration; return",
+            "reappointment; re-establishment"
+          ],
+          "family": "reinstate; reinstated",
+          "sentence": "The situation unfolded as lawmakers demanded clear answers concerning President Donald Trump and his alleged involvement in Huang's reinstatement."
+        },
+        {
+          "term": "seeking",
+          "pos": "verb",
+          "collocations": "seeking clarification; seeking approval",
+          "meaning": "尋求",
+          "synonyms": [
+            "requesting; searching for",
+            "pursuing; striving for"
+          ],
+          "family": "seek; seeker",
+          "sentence": "Political figures are seeking clarification on whether executive influence played a role in the decisions made."
+        },
+        {
+          "term": "clarification",
+          "pos": "noun",
+          "collocations": "seeking clarification; provide clarification",
+          "meaning": "澄清；說明",
+          "synonyms": [
+            "explanation; elucidation",
+            "clearing up; confirmation"
+          ],
+          "family": "clarify; clarifying",
+          "sentence": "Political figures are seeking clarification on whether executive influence played a role in the decisions made."
+        },
+        {
+          "term": "uncertainties",
+          "pos": "noun",
+          "collocations": "market uncertainties; economic uncertainties",
+          "meaning": "不確定性",
+          "synonyms": [
+            "doubts; ambiguities",
+            "instabilities; risks"
+          ],
+          "family": "uncertain; uncertainly",
+          "sentence": "Following these political events and market uncertainties, Nvidia's share price fell by seven percent."
+        },
+        {
+          "term": "cautious",
+          "pos": "adjective",
+          "collocations": "remain cautious; highly cautious",
+          "meaning": "謹慎的",
+          "synonyms": [
+            "careful; prudent",
+            "guarded; watchful"
+          ],
+          "family": "caution; cautiously",
+          "sentence": "Investors remain cautious as they monitor how government oversight might affect the company's future operations."
+        },
+        {
+          "term": "oversight",
+          "pos": "noun",
+          "collocations": "government oversight; regulatory oversight",
+          "meaning": "監督",
+          "synonyms": [
+            "supervision; surveillance",
+            "management; monitoring"
+          ],
+          "family": "oversee; overseer",
+          "sentence": "Investors remain cautious as they monitor how government oversight might affect the company's future operations."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "The US attorney general ------- answering direct questions during yesterday's press conference.",
+          "options": [
+            "avoided",
+            "avoidable",
+            "avoidance",
+            "avoiding"
+          ],
+          "answer": "A",
+          "locator": "Simple past tense verb requirement following the subject 'The US attorney general'",
+          "explanation": "句子主詞為『The US attorney general』，後面需要一個過去式主要動詞來完整句意，故正確選項為 (A) avoided（迴避）。(B) 為形容詞，(C) 為名詞，(D) 為現在分詞/動名詞。"
+        },
+        {
+          "prompt": "Lawmakers are seeking clarification concerning the executive branch's ------- in the corporate decisions.",
+          "options": [
+            "involve",
+            "involved",
+            "involvement",
+            "involving"
+          ],
+          "answer": "C",
+          "locator": "Noun object requirement following the possessive noun 'branch's'",
+          "explanation": "所有格『executive branch's』後面需要接名詞作為介系詞『in』的前置詞，故應選擇名詞 (C) involvement（參與）。(A) 為動詞原形，(B) 為過去分詞/形容詞，(D) 為現在分詞。"
+        },
+        {
+          "prompt": "Investors remain cautious ------- political inquiries could impact tech sector share prices.",
+          "options": [
+            "because of",
+            "because",
+            "despite",
+            "due to"
+          ],
+          "answer": "B",
+          "locator": "Subordinating conjunction introducing a full clause ('political inquiries could impact...')",
+          "explanation": "空格後面跟著一個完整的附屬子句（主詞為『political inquiries』，動詞為『could impact』），因此需要能引導子句的連接詞 (B) because。(A) because of、(C) despite 和 (D) due to 後面皆只能接名詞或名詞片語。"
+        }
+      ],
+      "part6": {
+        "title": "Corporate Compliance Update",
+        "passage": "To All Department Heads,\n\nPlease be advised that our legal team is closely monitoring recent regulatory updates concerning government inquiries into technology companies. The attorney general has recently declined to comment on several ongoing cases. 【1】\n\nIn light of these events, all senior managers must ensure that their team's record-keeping fully complies with regulatory standards. 【2】 We must remain prepare for any formal requests for information. It is crucial that we maintain transparent procedures, especially when 【3】 clarification from government oversight bodies.\n\nThank you for your attention to this matter. 【4】 Your full cooperation is essential to maintaining our regulatory integrity.\n\nSincerely,\nLegal Compliance Department",
+        "questions": [
+          {
+            "prompt": "Which option best fits blank 【1】?",
+            "options": [
+              "This situation has prompted increased scrutiny across the entire sector.",
+              "Our share price has risen to an all-time high this morning.",
+              "The legal team will take a vacation starting next Monday.",
+              "We have decided to launch a new consumer smartphone next month."
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"The attorney general has recently declined to comment on several ongoing cases.\"",
+            "explanation": "前句提到司法部長拒絕就多起案件發表評論，後續句子 (A)「這種情況引發了整個產業受到更嚴格的審查」在語意上最銜接合適。"
+          },
+          {
+            "prompt": "Which option best fits blank 【2】?",
+            "options": [
+              "Investors have already sold all their company shares.",
+              "Such diligence will help prevent potential legal complications.",
+              "The executive chief has signed a new marketing contract.",
+              "Lawmakers have completed all planned investigations."
+            ],
+            "answer": "B",
+            "locator": "第 2 段 \"all senior managers must ensure that their team's record-keeping fully complies with regulatory standards.\"",
+            "explanation": "前句要求高級經理確保紀錄保存合乎監管標準，選項 (B)「這樣的勤勉將有助於防止潛在的法律糾紛」承接該要求的目的與好處，極為連貫。"
+          },
+          {
+            "prompt": "Which option best fits blank 【3】?",
+            "options": [
+              "seeking",
+              "seek",
+              "sought",
+              "seeker"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"when 【3】 clarification from government oversight bodies.\"",
+            "explanation": "『when』引導分詞構句，動作的主體為句子主詞『we』，『we』與『seek』之間為主動關係，故應選現在分詞 (A) seeking。"
+          },
+          {
+            "prompt": "Which option best fits blank 【4】?",
+            "options": [
+              "Please submit your updated compliance checklist by Friday afternoon.",
+              "The office cafeteria will be closed for holiday cleaning today.",
+              "The president has canceled all upcoming parliamentary hearings.",
+              "Nvidia has purchased new real estate in the city center."
+            ],
+            "answer": "A",
+            "locator": "第 3 段 \"Thank you for your attention to this matter.\"",
+            "explanation": "在致謝之後，選項 (A)「請在週五下午前提交您最新的合規檢查表」是合乎商業公告結尾的具體行動指令。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Refer to the following news report about legal and political developments.",
+        "questions": [
+          {
+            "prompt": "What did the US attorney general refrain from doing?",
+            "options": [
+              "Answering questions about an inquiry into Nvidia",
+              "Attending a scheduled congressional meeting",
+              "Reinstating Donald Trump as president",
+              "Selling government-owned technology stock"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"The US attorney general recently avoided answering questions about an ongoing investigation into Nvidia.\"",
+            "explanation": "文章第一段明確指出美國司法部長最近迴避了回答有關針對輝達正在進行的調查之提問，故選 (A)。"
+          },
+          {
+            "prompt": "Why are political figures asking for clarification?",
+            "options": [
+              "To understand President Donald Trump's potential role in Huang's reinstatement",
+              "To check if Nvidia's share price increased significantly",
+              "To stop the attorney general from filing new charges",
+              "To announce a new regulatory policy for technology stocks"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"The situation unfolded as lawmakers demanded clear answers concerning President Donald Trump and his alleged involvement in Huang's reinstatement.\"",
+            "explanation": "第二段提到立法者要求提供明確答案，以了解唐納·川普總統及其涉嫌參與黃仁勳恢復職務一事，因此選 (A)。"
+          },
+          {
+            "prompt": "What happened to Nvidia's stock after these developments?",
+            "options": [
+              "It dropped by 7 percent.",
+              "It gained 7 percent.",
+              "It was suspended from trading.",
+              "It reached a record high."
+            ],
+            "answer": "A",
+            "locator": "第 3 段 \"Following these political events and market uncertainties, Nvidia's share price fell by seven percent.\"",
+            "explanation": "第三段第一句明示，在這些政治事件與市場不確定性發生後，輝達的股價下跌了百分之七 (fell by seven percent)，故選 (A)。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/crpdw1qx7jgxo",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    }
+  },
   "2026-11-24": {
     "finance": {
       "title": "Trump's Support and Huang's Remarkable Comeback at Nvidia",
