@@ -1,4 +1,819 @@
 {
+  "2026-11-26": {
+    "finance": {
+      "title": "US Stocks Fall Amid AI Concerns",
+      "summary": "美國股市受人工智慧相關擔憂影響而進一步下跌，三大主要指數在早盤交易中均呈現下跌趨勢，其中以科技股為主的那斯達克指數跌幅接近百分之四。",
+      "english": [
+        "US stocks fell further as fears over artificial intelligence intensified in the market.",
+        "During early trading sessions, all three main US indexes experienced downward trends.",
+        "The tech-dominated Nasdaq index suffered a significant blow, dropping almost 4%."
+      ],
+      "translation": [
+        "由於市場對人工智慧的擔憂加劇，美國股市進一步下跌。",
+        "在早盤交易時段中，美國三大主要指數皆經歷了下跌趨勢。",
+        "以科技股為主的那斯達克指數遭受重創，跌幅接近百分之四。"
+      ],
+      "vocabulary": [
+        {
+          "term": "stocks",
+          "pos": "noun",
+          "collocations": "fall further; US stocks",
+          "meaning": "股票",
+          "synonyms": [
+            "shares; equities",
+            "securities; holdings"
+          ],
+          "family": "stock; stockbroker",
+          "sentence": "US stocks fell further as fears over artificial intelligence intensified in the market."
+        },
+        {
+          "term": "fears",
+          "pos": "noun",
+          "collocations": "fears over; market fears",
+          "meaning": "擔憂",
+          "synonyms": [
+            "concerns; worries",
+            "anxieties; apprehensions"
+          ],
+          "family": "fear; fearful",
+          "sentence": "US stocks fell further as fears over artificial intelligence intensified in the market."
+        },
+        {
+          "term": "artificial",
+          "pos": "adjective",
+          "collocations": "artificial intelligence; artificial design",
+          "meaning": "人工的",
+          "synonyms": [
+            "synthetic; man-made",
+            "fake; imitated"
+          ],
+          "family": "artifice; artificially",
+          "sentence": "US stocks fell further as fears over artificial intelligence intensified in the market."
+        },
+        {
+          "term": "intelligence",
+          "pos": "noun",
+          "collocations": "artificial intelligence; market intelligence",
+          "meaning": "智能",
+          "synonyms": [
+            "intellect; brilliance",
+            "sagacity; cleverness"
+          ],
+          "family": "intelligent; intelligently",
+          "sentence": "US stocks fell further as fears over artificial intelligence intensified in the market."
+        },
+        {
+          "term": "market",
+          "pos": "noun",
+          "collocations": "in the market; stock market",
+          "meaning": "市場",
+          "synonyms": [
+            "marketplace; exchange",
+            "trading floor; bazaar"
+          ],
+          "family": "marketable; marketing",
+          "sentence": "US stocks fell further as fears over artificial intelligence intensified in the market."
+        },
+        {
+          "term": "early",
+          "pos": "adjective",
+          "collocations": "early trading; early session",
+          "meaning": "早期的",
+          "synonyms": [
+            "initial; prompt",
+            "former; premature"
+          ],
+          "family": "earlier; earliest",
+          "sentence": "During early trading sessions, all three main US indexes experienced downward trends."
+        },
+        {
+          "term": "trading",
+          "pos": "noun",
+          "collocations": "early trading; trading session",
+          "meaning": "交易",
+          "synonyms": [
+            "exchange; dealing",
+            "commerce; business"
+          ],
+          "family": "trade; trader",
+          "sentence": "During early trading sessions, all three main US indexes experienced downward trends."
+        },
+        {
+          "term": "indexes",
+          "pos": "noun",
+          "collocations": "main US indexes; stock indexes",
+          "meaning": "指數",
+          "synonyms": [
+            "indicators; measures",
+            "guides; pointers"
+          ],
+          "family": "index; indexing",
+          "sentence": "During early trading sessions, all three main US indexes experienced downward trends."
+        },
+        {
+          "term": "tech-dominated",
+          "pos": "adjective",
+          "collocations": "tech-dominated Nasdaq; tech-dominated market",
+          "meaning": "科技主導的",
+          "synonyms": [
+            "technology-focused; tech-heavy",
+            "software-driven; digital-led"
+          ],
+          "family": "technology; technical",
+          "sentence": "The tech-dominated Nasdaq index suffered a significant blow, dropping almost 4%."
+        },
+        {
+          "term": "index",
+          "pos": "noun",
+          "collocations": "Nasdaq index; stock index",
+          "meaning": "指數",
+          "synonyms": [
+            "measure; indicator",
+            "gauge; benchmark"
+          ],
+          "family": "indexes; indexing",
+          "sentence": "The tech-dominated Nasdaq index suffered a significant blow, dropping almost 4%."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "US stocks fell further ______ fears over artificial intelligence intensified in the market.",
+          "options": [
+            "because",
+            "despite",
+            "although",
+            "unless"
+          ],
+          "answer": "A",
+          "locator": "連接詞與副詞子句引導詞",
+          "explanation": "空格後方的子句 \"fears over artificial intelligence intensified...\" 是前句跌幅的原因，因此應選擇表「因為」的連接詞 because。"
+        },
+        {
+          "prompt": "During early trading sessions, all three main US indexes ______ downward trends.",
+          "options": [
+            "experience",
+            "experiencing",
+            "experienced",
+            "have experience"
+          ],
+          "answer": "C",
+          "locator": "動詞時態與主謂一致",
+          "explanation": "句首有時間副詞片語 \"During early trading sessions\" 指過去發生的情況，且主語為複數名詞 indexes，故應使用過去式動詞 experienced。"
+        },
+        {
+          "prompt": "The tech-dominated Nasdaq index suffered a significant blow, ______ almost 4%.",
+          "options": [
+            "drop",
+            "dropped",
+            "dropping",
+            "is dropping"
+          ],
+          "answer": "C",
+          "locator": "分詞構句表示結果或伴隨狀態",
+          "explanation": "主句已有動詞 suffered，後半部補充說明下跌的結果，應用現在分詞 dropping 構成分詞構句，表主動與伴隨。"
+        }
+      ],
+      "part6": {
+        "title": "Internal Memo on Market Volatility",
+        "passage": "To all staff members: Recent reports indicate that US stocks fell further as fears over artificial intelligence intensified. During early trading, all three main US indexes experienced significant downward movements. Employees 【1】 advised to remain calm regarding their retirement portfolios. The tech-dominated Nasdaq index suffered a drop of almost 4%, 【2】 prompted discussions among financial analysts. Management will continue to monitor market conditions 【3】 provide updates as necessary. Please direct any questions to the human resources department 【4】 you require further clarification.",
+        "questions": [
+          {
+            "prompt": "Choose the best word for 【1】.",
+            "options": [
+              "are",
+              "is",
+              "be",
+              "been"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"Employees 【1】 advised\"",
+            "explanation": "主語 Employees 為複數，且為被動語態，應使用複數be動詞 are。"
+          },
+          {
+            "prompt": "Choose the best word for 【2】.",
+            "options": [
+              "who",
+              "which",
+              "what",
+              "where"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"almost 4%, 【2】 prompted\"",
+            "explanation": "此處為非限定關係代名詞子句，用 which 代替前文整句 Nasdaq 下跌近4%的事實。"
+          },
+          {
+            "prompt": "Choose the best word for 【3】.",
+            "options": [
+              "or",
+              "and",
+              "but",
+              "so"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"monitor market conditions 【3】 provide\"",
+            "explanation": "前後兩者為並列動作（監控市場與提供更新），故用對等連接詞 and。"
+          },
+          {
+            "prompt": "Choose the best word for 【4】.",
+            "options": [
+              "unless",
+              "if",
+              "although",
+              "while"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"department 【4】 you require\"",
+            "explanation": "表假設條件「如果你需要進一步釐清」，應填入 if。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Read the news article and answer the following reading comprehension questions.",
+        "questions": [
+          {
+            "prompt": "What happened to US stocks according to the text?",
+            "options": [
+              "They rose significantly.",
+              "They remained stable.",
+              "They fell further.",
+              "They doubled in value."
+            ],
+            "answer": "C",
+            "locator": "第 1 段 \"US stocks fell further\"",
+            "explanation": "文章第一句明確指出美國股市進一步下跌，故選 C。"
+          },
+          {
+            "prompt": "Which index dropped almost 4%?",
+            "options": [
+              "The Dow Jones",
+              "The S&P 500",
+              "The Nasdaq",
+              "The Russell 2000"
+            ],
+            "answer": "C",
+            "locator": "第 3 段 \"The tech-dominated Nasdaq index\"",
+            "explanation": "文章指出科技主導的那斯達克指數跌幅接近百分之四，故選 C。"
+          },
+          {
+            "prompt": "What caused the market fears to intensify?",
+            "options": [
+              "Artificial intelligence",
+              "New tax policies",
+              "Oil price surges",
+              "Real estate crashes"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"fears over artificial intelligence intensified\"",
+            "explanation": "根據文章，是由於對人工智慧的擔憂加劇，導致市場恐慌與股市下跌，故選 A。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/cq0md8g14zryo",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    },
+    "politics": {
+      "title": "Sark Holds General Election with Record Turnout",
+      "summary": "薩克島舉行大選，投票率創下二十年來的新高，其中有六名成員再次當選進入其最高議會。",
+      "english": [
+        "Recent political developments in Sark show significant voter engagement during the general election. Local election officials reported that the voting process recorded the highest voter turnout in twenty years.",
+        "Following the conclusion of the polls, the final count confirmed the successful outcomes for several participating candidates. Specifically, six members were re-elected to serve on Sark's Chief Pleas.",
+        "This notable increase in civic participation highlights the growing public interest in local governance. Observers are currently reviewing these election results to understand the future direction of the island's legislative body."
+      ],
+      "translation": [
+        "薩克島最近的政治發展顯示，在普選期間選民的參與度非常高。當地選務官員報告稱，這次投票過程創下了二十年來最高的投票率。",
+        "在投票結束後，最終計票結果確認了幾位參政候選人的成功結果。具體而言，有六名成員再次當選，進入薩克島的最高議會服務。",
+        "公民參與度的顯著提升凸顯了公眾對地方治理日益增長的興趣。觀察家目前正在檢視這些選舉結果，以了解該島立法機構的未來走向。"
+      ],
+      "vocabulary": [
+        {
+          "term": "election",
+          "pos": "noun",
+          "collocations": "general election; election results",
+          "meaning": "選舉",
+          "synonyms": [
+            "poll; vote",
+            "ballot; selection"
+          ],
+          "family": "elect; elective; elector",
+          "sentence": "Local election officials reported that the voting process recorded the highest voter turnout in twenty years."
+        },
+        {
+          "term": "voter",
+          "pos": "noun",
+          "collocations": "voter turnout; eligible voter",
+          "meaning": "選民",
+          "synonyms": [
+            "elector; balloter",
+            "citizen; constituent"
+          ],
+          "family": "vote; voting",
+          "sentence": "Local election officials reported that the voting process recorded the highest voter turnout in twenty years."
+        },
+        {
+          "term": "turnout",
+          "pos": "noun",
+          "collocations": "high turnout; voter turnout",
+          "meaning": "投票率；出席人數",
+          "synonyms": [
+            "attendance; participation",
+            "presence; gathering"
+          ],
+          "family": "turn out",
+          "sentence": "Local election officials reported that the voting process recorded the highest voter turnout in twenty years."
+        },
+        {
+          "term": "conclusion",
+          "pos": "noun",
+          "collocations": "successful conclusion; bring to a conclusion",
+          "meaning": "結束；結論",
+          "synonyms": [
+            "end; finish",
+            "close; termination"
+          ],
+          "family": "conclude; conclusive",
+          "sentence": "Following the conclusion of the polls, the final count confirmed the successful outcomes for several participating candidates."
+        },
+        {
+          "term": "count",
+          "pos": "noun",
+          "collocations": "final count; vote count",
+          "meaning": "計票；總數",
+          "synonyms": [
+            "tally; total",
+            "calculation; number"
+          ],
+          "family": "count; countable; counter",
+          "sentence": "Following the conclusion of the polls, the final count confirmed the successful outcomes for several participating candidates."
+        },
+        {
+          "term": "outcome",
+          "pos": "noun",
+          "collocations": "successful outcome; electoral outcome",
+          "meaning": "結果",
+          "synonyms": [
+            "result; consequence",
+            "effect; aftermath"
+          ],
+          "family": "outcomes",
+          "sentence": "Following the conclusion of the polls, the final count confirmed the successful outcomes for several participating candidates."
+        },
+        {
+          "term": "member",
+          "pos": "noun",
+          "collocations": "council member; board member",
+          "meaning": "成員；議員",
+          "synonyms": [
+            "participant; associate",
+            "fellow; representative"
+          ],
+          "family": "membership",
+          "sentence": "Specifically, six members were re-elected to serve on Sark's Chief Pleas."
+        },
+        {
+          "term": "increase",
+          "pos": "noun",
+          "collocations": "notable increase; significant increase",
+          "meaning": "增加；增長",
+          "synonyms": [
+            "rise; growth",
+            "expansion; boost"
+          ],
+          "family": "increase; increasingly",
+          "sentence": "This notable increase in civic participation highlights the growing public interest in local governance."
+        },
+        {
+          "term": "interest",
+          "pos": "noun",
+          "collocations": "public interest; general interest",
+          "meaning": "興趣；利益",
+          "synonyms": [
+            "attention; concern",
+            "curiosity; regard"
+          ],
+          "family": "interested; interesting",
+          "sentence": "This notable increase in civic participation highlights the growing public interest in local governance."
+        },
+        {
+          "term": "body",
+          "pos": "noun",
+          "collocations": "legislative body; governing body",
+          "meaning": "機構；團體",
+          "synonyms": [
+            "organization; institution",
+            "agency; authority"
+          ],
+          "family": "bodily",
+          "sentence": "Observers are currently reviewing these election results to understand the future direction of the island's legislative body."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "Local election officials reported that the voting process _____ the highest voter turnout in twenty years.",
+          "options": [
+            "record",
+            "recording",
+            "recorded",
+            "recommends"
+          ],
+          "answer": "C",
+          "locator": "動詞時態一致 (Past Tense)",
+          "explanation": "句意表示過去發生的事件，且主語為「the voting process」，空格處需要填入過去式動詞，因此選 (C) recorded。"
+        },
+        {
+          "prompt": "Following the conclusion of the polls, the final count confirmed the successful outcomes for _____ participating candidates.",
+          "options": [
+            "several",
+            "much",
+            "little",
+            "every"
+          ],
+          "answer": "A",
+          "locator": "數量詞與可數名詞複數搭配 (Quantifiers)",
+          "explanation": "空格後方為可數名詞複數「participating candidates」，在選項中僅有 \"several\" 可修飾可數複數名詞，故選 (A)。"
+        },
+        {
+          "prompt": "Observers are currently reviewing these election results _____ understand the future direction of the island's legislative body.",
+          "options": [
+            "for",
+            "to",
+            "at",
+            "on"
+          ],
+          "answer": "B",
+          "locator": "不定詞表達目的 (Infinitive of Purpose)",
+          "explanation": "空格後方接原形動詞 \"understand\"，用來表達檢視選舉結果的目的，故需使用不定詞 \"to\"，答案為 (B)。"
+        }
+      ],
+      "part6": {
+        "title": "Notice on Election Results and Chief Pleas Update",
+        "passage": "Dear Residents, We are pleased to announce that the recent local election has concluded with great success. 【1】 of the community, we want to thank everyone who participated. According to official figures, this year marked the highest voter turnout in twenty years. 【2】 six members were successfully re-elected to Sark's Chief Pleas. These individuals will continue to serve on the legislative body for the upcoming term. Please note that detailed reports will be published online this week. 【3】 you wish to review the complete vote count, you may visit our municipal portal. We encourage all citizens to stay informed about local governance. 【4】 further questions regarding municipal duties, please contact the administrative office.",
+        "questions": [
+          {
+            "prompt": "Choose the best word for blank 【1】.",
+            "options": [
+              "On behalf",
+              "In addition",
+              "As a result",
+              "For instance"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"【1】 of the community\"",
+            "explanation": "此處表達「代表社區」，固定片語為 \"On behalf of\"，故選 (A)。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【2】.",
+            "options": [
+              "Specifically",
+              "However",
+              "Otherwise",
+              "Therefore"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"【2】 six members were successfully\"",
+            "explanation": "句意為具體說明當選情形，副詞 \"Specifically\"（具體而言）最符合上下文邏輯，故選 (A)。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【3】.",
+            "options": [
+              "Should",
+              "Will",
+              "Had",
+              "Do"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"【3】 you wish to review\"",
+            "explanation": "此處為條件句的倒裝結構（省略 if），原句為 \"If you wish\"，倒裝後使用助動詞 \"Should\"，故選 (A)。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【4】.",
+            "options": [
+              "For",
+              "With",
+              "By",
+              "At"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"【4】 further questions regarding\"",
+            "explanation": "表達「如有關於...的進一步問題」，介系詞 \"For\" 用於此處表示「對於、關於」，故選 (A)。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Read the news article and answer the questions.",
+        "questions": [
+          {
+            "prompt": "What did local election officials report about the voting process?",
+            "options": [
+              "It recorded the lowest turnout in history.",
+              "It recorded the highest voter turnout in twenty years.",
+              "It was postponed due to weather conditions.",
+              "It had fewer candidates than previous years."
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"recorded the highest voter turnout in twenty years\"",
+            "explanation": "文章第一段明確指出，選務官員報告投票過程創下了二十年來最高的投票率，故選 (B)。"
+          },
+          {
+            "prompt": "How many members were re-elected to Sark's Chief Pleas?",
+            "options": [
+              "Two members",
+              "Four members",
+              "Six members",
+              "Twenty members"
+            ],
+            "answer": "C",
+            "locator": "第 2 段 \"six members were re-elected to serve on Sark's Chief Pleas\"",
+            "explanation": "文章第二段指出有六名成員再次當選進入薩克島的最高議會，故選 (C)。"
+          },
+          {
+            "prompt": "What are observers currently doing with the election results?",
+            "options": [
+              "Discarding them",
+              "Reviewing them to understand future direction",
+              "Rejecting them entirely",
+              "Rewriting the island's constitution"
+            ],
+            "answer": "B",
+            "locator": "第 3 段 \"reviewing these election results to understand the future direction\"",
+            "explanation": "文章第三段提到觀察家正在檢視選舉結果以了解島上立法機構的未來方向，故選 (B)。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/cm1dvnp55xryo",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    },
+    "techLife": {
+      "title": "EA Introduces AI Commentary in Upcoming Video Game",
+      "summary": "美商藝電（EA）宣布將於2026年11月26日推出人工智慧生成的主播語音機能。這項新功能已取得家屬同意，將注入《FC 27》遊戲中。",
+      "english": [
+        "Video game publisher Electronic Arts has announced an innovative feature for its upcoming release, FC 27. The company plans to include an artificial intelligence representation of the legendary football commentator John Motson within the title. Players will be able to experience AI-generated match commentary starting on 26 November 2026.",
+        "The decision to recreate the iconic voice through artificial intelligence was made with the full consent of the late broadcaster's wife and son. By securing permission from his family, the development team aims to honor his broadcasting legacy while introducing advanced digital audio technology to modern sports simulation games.",
+        "This initiative highlights the growing integration of synthetic voice technology in the digital gaming sector. As publishers continue to explore new features, industry analysts will observe how fans respond to the virtual integration of famous audio personalities in interactive entertainment products."
+      ],
+      "translation": [
+        "電子遊戲出版商美商藝電（EA）宣布了即將推出的《FC 27》遊戲中的一項創新功能。該公司計劃在遊戲中加入傳奇足球解說員約翰·莫特森的人工智慧語音。玩家將能從2026年11月26日開始體驗由人工智慧生成的比賽解說。",
+        "利用人工智慧重現這位著名廣播員聲音的決定已獲得其妻子與兒子完全同意。透過取得家屬的許可，開發團隊旨在致敬其廣播遺產，同時將先進的數位音訊技術引入現代體育模擬遊戲中。",
+        "這項舉措突顯了合成語音技術在數位遊戲領域日益增加的整合應用。隨著出版商持續探索新功能，業界分析師將觀察粉絲對互動娛樂產品中整合虛擬名人聲音的反應。"
+      ],
+      "vocabulary": [
+        {
+          "term": "publisher",
+          "pos": "n.",
+          "collocations": "game publisher; regional publisher",
+          "meaning": "出版商；發行商",
+          "synonyms": [
+            "distributor; issuing company",
+            "content provider; media house"
+          ],
+          "family": "publish; published; publishing",
+          "sentence": "Video game publisher Electronic Arts has announced an innovative feature for its upcoming release, FC 27."
+        },
+        {
+          "term": "innovative",
+          "pos": "adj.",
+          "collocations": "innovative feature; innovative solution",
+          "meaning": "創新的；革新的",
+          "synonyms": [
+            "inventive; groundbreaking",
+            "novel; cutting-edge"
+          ],
+          "family": "innovate; innovation; innovatively",
+          "sentence": "Video game publisher Electronic Arts has announced an innovative feature for its upcoming release, FC 27."
+        },
+        {
+          "term": "representation",
+          "pos": "n.",
+          "collocations": "digital representation; visual representation",
+          "meaning": "呈現；代表",
+          "synonyms": [
+            "depiction; portrayal",
+            "embodiment; illustration"
+          ],
+          "family": "represent; representative; representational",
+          "sentence": "The company plans to include an artificial intelligence representation of the legendary football commentator John Motson within the title."
+        },
+        {
+          "term": "commentator",
+          "pos": "n.",
+          "collocations": "sports commentator; broadcast commentator",
+          "meaning": "解說員；評論員",
+          "synonyms": [
+            "announcer; broadcaster",
+            "analyst; reporter"
+          ],
+          "family": "comment; commentary; commentate",
+          "sentence": "The company plans to include an artificial intelligence representation of the legendary football commentator John Motson within the title."
+        },
+        {
+          "term": "consent",
+          "pos": "n.",
+          "collocations": "full consent; written consent",
+          "meaning": "同意；許可",
+          "synonyms": [
+            "permission; agreement",
+            "approval; authorization"
+          ],
+          "family": "consent; consensual; consensually",
+          "sentence": "The decision to recreate the iconic voice through artificial intelligence was made with the full consent of the late broadcaster's wife and son."
+        },
+        {
+          "term": "securing",
+          "pos": "v.",
+          "collocations": "securing permission; securing approval",
+          "meaning": "取得；獲得",
+          "synonyms": [
+            "obtaining; acquiring",
+            "gaining; procuring"
+          ],
+          "family": "secure; security; securely",
+          "sentence": "By securing permission from his family, the development team aims to honor his broadcasting legacy while introducing advanced digital audio technology to modern sports simulation games."
+        },
+        {
+          "term": "broadcasting",
+          "pos": "n.",
+          "collocations": "broadcasting legacy; broadcasting industry",
+          "meaning": "廣播；播送",
+          "synonyms": [
+            "transmitting; televising",
+            "media production; airing"
+          ],
+          "family": "broadcast; broadcaster; broadcasted",
+          "sentence": "By securing permission from his family, the development team aims to honor his broadcasting legacy while introducing advanced digital audio technology to modern sports simulation games."
+        },
+        {
+          "term": "initiative",
+          "pos": "n.",
+          "collocations": "new initiative; strategic initiative",
+          "meaning": "舉措；新方案",
+          "synonyms": [
+            "scheme; program",
+            "project; enterprise"
+          ],
+          "family": "initiate; initiation; initiator",
+          "sentence": "This initiative highlights the growing integration of synthetic voice technology in the digital gaming sector."
+        },
+        {
+          "term": "integration",
+          "pos": "n.",
+          "collocations": "growing integration; seamless integration",
+          "meaning": "整合；融合",
+          "synonyms": [
+            "incorporation; combination",
+            "assimilation; inclusion"
+          ],
+          "family": "integrate; integrated; integrative",
+          "sentence": "This initiative highlights the growing integration of synthetic voice technology in the digital gaming sector."
+        },
+        {
+          "term": "virtual",
+          "pos": "adj.",
+          "collocations": "virtual integration; virtual reality",
+          "meaning": "虛擬的；模擬的",
+          "synonyms": [
+            "simulated; digital",
+            "cybernetic; artificial"
+          ],
+          "family": "virtually; virtualize; virtualization",
+          "sentence": "As publishers continue to explore new features, industry analysts will observe how fans respond to the virtual integration of famous audio personalities in interactive entertainment products."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "The development team successfully secured the family's consent before _______ the voice synthesis software into the game engine.",
+          "options": [
+            "integrate",
+            "integrating",
+            "integration",
+            "integrated"
+          ],
+          "answer": "B",
+          "locator": "Preposition 'before' requiring a gerund complement",
+          "explanation": "介系詞「before」後面若接動詞，必須使用動名詞型態（V-ing）。因此正確選項為 (B) integrating。"
+        },
+        {
+          "prompt": "Game publishers must obtain proper authorization _______ using a person's digital voice rights in entertainment media.",
+          "options": [
+            "prior to",
+            "accordingly",
+            "in spite",
+            "whereas"
+          ],
+          "answer": "A",
+          "locator": "Prepositional phrase 'prior to' indicating time before an action",
+          "explanation": "空格後面接動名詞「using...」，需要填入表示「在...之前」的介系詞短語。「prior to」符合語意與文法需求。選項 (B) 為副詞，(C) 缺少 of，(D) 為連接詞。"
+        },
+        {
+          "prompt": "The official release date for the upcoming title _______ announced by the media company early yesterday morning.",
+          "options": [
+            "was",
+            "were",
+            "are",
+            "have been"
+          ],
+          "answer": "A",
+          "locator": "Passive voice with singular subject 'The official release date'",
+          "explanation": "主詞為單數名詞「The official release date」，且有過去時間副詞「yesterday morning」，因此需選擇單數過去式被動態助動詞 (A) was。"
+        }
+      ],
+      "part6": {
+        "title": "Product Update Announcement",
+        "passage": "To All Media Partners,\n\nWe are pleased to announce an exciting addition to our software portfolio. Our engineering group has finalized the incorporation of advanced artificial intelligence features for our forthcoming title. 【1】 This update will allow users to experience interactive commentary generated in real time.\n\nRespecting intellectual property rights remains our primary objective. 【2】 Before implementing these audio features, our legal team worked closely with the commentator's estate to gain full consent. 【3】 This approach ensures that all historical broadcasts are honored appropriately while protecting digital rights.\n\n【4】 We look forward to launching this innovative functionality on 26 November 2026. Detailed media kits will be distributed next week.\n\nSincerely,\nProduct Operations Team",
+        "questions": [
+          {
+            "prompt": "Choose the best sentence to fill in blank 【1】.",
+            "options": [
+              "The game relies exclusively on traditional pre-recorded tracks.",
+              "Players will notice enhanced audio realism during matches.",
+              "All software licenses were canceled last month.",
+              "Our servers will undergo routine maintanence tomorrow."
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"Our engineering group has finalized the incorporation of advanced artificial intelligence features for our forthcoming title.\"",
+            "explanation": "空格前提及將先進AI功能融入新作品，後面又提到使用者可體驗即時解說，因此 (B)「玩家將在比賽期間注意到增強的音效真實感」最符合上下文承接關係。"
+          },
+          {
+            "prompt": "Choose the best word to fill in blank 【2】.",
+            "options": [
+              "However",
+              "Furthermore",
+              "Otherwise",
+              "Instead"
+            ],
+            "answer": "B",
+            "locator": "第 2 段 \"Respecting intellectual property rights remains our primary objective.\"",
+            "explanation": "前面提到尊重智慧財產權是首要目標，後面接著說明團隊與家屬合作取得同意，兩句為遞進補充關係，故選擇轉接詞 (B) Furthermore（此外）。"
+          },
+          {
+            "prompt": "Choose the best word to fill in blank 【3】.",
+            "options": [
+              "collaboration",
+              "collaborate",
+              "collaborative",
+              "collaborator"
+            ],
+            "answer": "C",
+            "locator": "第 2 段 \"This approach ensures that all historical broadcasts are honored appropriately...\"",
+            "explanation": "指示代名詞「This」後方需要修飾名詞「approach」（方法），故應填入形容詞 (C) collaborative（合作的）。全句隱含「This [collaborative] approach...」。"
+          },
+          {
+            "prompt": "Choose the best sentence to fill in blank 【4】.",
+            "options": [
+              "Audio files will no longer be supported after the update.",
+              "The legal team will challenge the family's decisions.",
+              "Development work has been suspended indefinitely.",
+              "The official launch schedule remains on track."
+            ],
+            "answer": "D",
+            "locator": "第 3 段 \"We look forward to launching this innovative functionality on 26 November 2026.\"",
+            "explanation": "後句提到「期待於2026年11月26日推出這項創新功能」，前句應表示發行進度正常，因此 (D)「官方發行時程維持正常進行」最為恰當。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Answer the questions based on the English news article above.",
+        "questions": [
+          {
+            "prompt": "When will players be able to experience the new AI commentary feature in the video game?",
+            "options": [
+              "On 26 November 2026",
+              "On 26 October 2026",
+              "On 26 December 2026",
+              "On 26 November 2027"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"Players will be able to experience AI-generated match commentary starting on 26 November 2026.\"",
+            "explanation": "第一段明確提到玩家將能從 2026 年 11 月 26 日開始體驗 AI 生成的比賽解說，故選 (A)。"
+          },
+          {
+            "prompt": "Who provided authorization to recreate John Motson's voice using AI technology?",
+            "options": [
+              "His former commentary colleagues",
+              "His wife and son",
+              "Industry software regulators",
+              "The gaming community"
+            ],
+            "answer": "B",
+            "locator": "第 2 段 \"...was made with the full consent of the late broadcaster's wife and son.\"",
+            "explanation": "第二段指出，利用 AI 重建聲音的決定是在取得該已故廣播員的「妻子與兒子（wife and son）」完全同意下進行的，故選 (B)。"
+          },
+          {
+            "prompt": "What is one objective of the development team mentioned in the text?",
+            "options": [
+              "To completely replace living commentators in future games",
+              "To honor John Motson's broadcasting legacy",
+              "To reduce the production costs of game audio design",
+              "To restrict digital commentary features to offline modes"
+            ],
+            "answer": "B",
+            "locator": "第 2 段 \"...the development team aims to honor his broadcasting legacy...\"",
+            "explanation": "第二段中提到開發團隊的目的包含「致敬其廣播遺產（honor his broadcasting legacy）」，因此選項 (B) 為正確答案。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/c65y10j841jpo",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    }
+  },
   "2026-11-25": {
     "finance": {
       "title": "Huawei Verdict in Trade Secrets Trial",
