@@ -1,4 +1,819 @@
 {
+  "2026-11-27": {
+    "finance": {
+      "title": "Faisal Islam: Why Trump's new tariffs are less of a threat",
+      "summary": "根據報導，其他國家已經透過重新調整貿易路線來應對川普的第一波關稅，如今他們更將目光放得更遠，開始思考川普任期結束之後的局勢。",
+      "english": [
+        "Faisal Islam examines why the new tariffs proposed by Trump might pose less of a threat than previously thought. Analysts note that global markets and nations have already learned to adapt to his economic policies.",
+        "During his first round of trade measures, international partners responded proactively by rerouted trade flows to minimize damage. These strategic shifts allowed global supply chains to become far more resilient against external shocks.",
+        "At present, foreign governments and market leaders are looking beyond Trump's current tenure in office. By focusing on long-term horizons rather than short-term disruptions, economies are better prepared for future shifts."
+      ],
+      "translation": [
+        "費薩爾·伊斯蘭探討了為什麼川普所提出的新關稅造成的威脅可能比先前想像的要小。分析人士指出，全球市場與各國已經學會適應他的經濟政策。",
+        "在他的第一輪貿易措施期間，國際合作夥伴透過重新繞道貿易流向來積極應對，以將損害降至最低。這些策略轉變讓全球供應鏈對外部衝擊變得更具韌性。",
+        "目前，外國政府與市場領導者正將目光放遠至川普目前的任期之外。透過專注於長期視野而非短期混亂，各經濟體能更好地為未來的轉變做好準備。"
+      ],
+      "vocabulary": [
+        {
+          "term": "threat",
+          "pos": "noun",
+          "collocations": "pose a threat; less of a threat",
+          "meaning": "威脅",
+          "synonyms": [
+            "danger; risk",
+            "menace; hazard"
+          ],
+          "family": "threaten; threatening",
+          "sentence": "Faisal Islam examines why the new tariffs proposed by Trump might pose less of a threat than previously thought."
+        },
+        {
+          "term": "tariffs",
+          "pos": "noun",
+          "collocations": "new tariffs; tariff salvo",
+          "meaning": "關稅",
+          "synonyms": [
+            "taxes; duties",
+            "levies; customs"
+          ],
+          "family": "tariff; tariffed",
+          "sentence": "Faisal Islam examines why the new tariffs proposed by Trump might pose less of a threat than previously thought."
+        },
+        {
+          "term": "economic",
+          "pos": "adjective",
+          "collocations": "economic policies; economic growth",
+          "meaning": "經濟的",
+          "synonyms": [
+            "financial; fiscal",
+            "monetary; commercial"
+          ],
+          "family": "economy; economize; economically",
+          "sentence": "Analysts note that global markets and nations have already learned to adapt to his economic policies."
+        },
+        {
+          "term": "measures",
+          "pos": "noun",
+          "collocations": "trade measures; security measures",
+          "meaning": "措施",
+          "synonyms": [
+            "actions; steps",
+            "policies; initiatives"
+          ],
+          "family": "measure; measured",
+          "sentence": "During his first round of trade measures, international partners responded proactively by rerouted trade flows to minimize damage."
+        },
+        {
+          "term": "minimize",
+          "pos": "verb",
+          "collocations": "minimize damage; minimize risk",
+          "meaning": "使減到最低",
+          "synonyms": [
+            "reduce; decrease",
+            "lower; mitigate"
+          ],
+          "family": "minimum; minimal; minimally",
+          "sentence": "During his first round of trade measures, international partners responded proactively by rerouted trade flows to minimize damage."
+        },
+        {
+          "term": "resilient",
+          "pos": "adjective",
+          "collocations": "more resilient; highly resilient",
+          "meaning": "有彈性的；有復原力的",
+          "synonyms": [
+            "flexible; adaptable",
+            "tough; durable"
+          ],
+          "family": "resilience; resiliency",
+          "sentence": "These strategic shifts allowed global supply chains to become far more resilient against external shocks."
+        },
+        {
+          "term": "shocks",
+          "pos": "noun",
+          "collocations": "external shocks; market shocks",
+          "meaning": "衝擊；震盪",
+          "synonyms": [
+            "impacts; blows",
+            "disruptions; disturbances"
+          ],
+          "family": "shock; shocking; shocked",
+          "sentence": "These strategic shifts allowed global supply chains to become far more resilient against external shocks."
+        },
+        {
+          "term": "governments",
+          "pos": "noun",
+          "collocations": "foreign governments; local governments",
+          "meaning": "政府",
+          "synonyms": [
+            "administrations; authorities",
+            "regimes; states"
+          ],
+          "family": "govern; governmental; governor",
+          "sentence": "At present, foreign governments and market leaders are looking beyond Trump's current tenure in office."
+        },
+        {
+          "term": "horizons",
+          "pos": "noun",
+          "collocations": "long-term horizons; broad horizons",
+          "meaning": "眼界；範圍；前景",
+          "synonyms": [
+            "prospects; outlooks",
+            "perspectives; vistas"
+          ],
+          "family": "horizontal; horizontally",
+          "sentence": "By focusing on long-term horizons rather than short-term disruptions, economies are better prepared for future shifts."
+        },
+        {
+          "term": "disruptions",
+          "pos": "noun",
+          "collocations": "short-term disruptions; market disruptions",
+          "meaning": "中斷；擾亂",
+          "synonyms": [
+            "interruptions; disturbances",
+            "turmoils; disorder"
+          ],
+          "family": "disrupt; disruptive",
+          "sentence": "By focusing on long-term horizons rather than short-term disruptions, economies are better prepared for future shifts."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "Faisal Islam examines why the new tariffs proposed by Trump might pose less of a threat ______ previously thought.",
+          "options": [
+            "than",
+            "that",
+            "as",
+            "more"
+          ],
+          "answer": "A",
+          "locator": "比較級結構 (less ... than)",
+          "explanation": "本題測試比較級的固定搭配。句型中使用了 \"less of a threat\"，其後應用 \"than\" 來連接比較的對象（previously thought），因此選項 (A) 為正確答案。"
+        },
+        {
+          "prompt": "During his first round of trade measures, international partners responded proactively ______ minimizing damage.",
+          "options": [
+            "by",
+            "with",
+            "at",
+            "on"
+          ],
+          "answer": "A",
+          "locator": "介系詞表方法與手段 (by + V-ing)",
+          "explanation": "空格後接動名詞 \"minimizing\"，表示達成前面動作的方法或手段，英文中通常使用介系詞 \"by\" 來表達「透過……方式」，因此選項 (A) 正確。"
+        },
+        {
+          "prompt": "By focusing on long-term horizons rather than short-term disruptions, economies ______ better prepared for future shifts.",
+          "options": [
+            "are",
+            "is",
+            "be",
+            "being"
+          ],
+          "answer": "A",
+          "locator": "主謂一致與動詞時態",
+          "explanation": "句首為 \"By focusing...\" 的副詞片語，主句的主語為複數名詞 \"economies\"，因此動詞必須使用複數現在式 \"are\" 來保持主謂一致，選項 (A) 為正確答案。"
+        }
+      ],
+      "part6": {
+        "title": "Global Trade Strategy Memo",
+        "passage": "To: All Department Heads\nFrom: Logistics Strategy Committee\nSubject: Recent Tariff Developments\n\nAs global markets continue to react to new international trade policies, our organization must adjust its operational strategies. In response to recent policy announcements, we need to ensure that our supply chain remains flexible. 【1】 of past trade measures indicates that rerouting supply routes is an effective countermeasure. \n\n【2】, regional managers should review current supplier agreements to identify potential vulnerabilities. By doing so, we can minimize unexpected disruptions and protect profit margins. Please submit your preliminary assessments by Friday. \n\nWe appreciate your cooperation as we navigate these changing circumstances. Management believes that focusing on long-term horizons will allow us to stay competitive. 【3】 future updates will be shared via email as soon as new information becomes available. \n\nThank you for your continued dedication. Please contact the committee office 【4】 you have any questions regarding these new guidelines.",
+        "questions": [
+          {
+            "prompt": "Choose the best word for blank 【1】.",
+            "options": [
+              "Analysis",
+              "Analyze",
+              "Analytical",
+              "Analytically"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"Analysis of past trade measures\"",
+            "explanation": "空格處位於句首作主語，需要一個名詞。選項 (A) \"Analysis\"（分析）為名詞，符合文法與句意需求。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【2】.",
+            "options": [
+              "Therefore",
+              "However",
+              "Otherwise",
+              "Instead"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"Therefore, regional managers should review\"",
+            "explanation": "前文提到重新規畫供應路線是有效的對策，因此「因此」區域經理應該檢視現有的供應商合約。選項 (A) \"Therefore\" 表示因果關係，最為合適。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【3】.",
+            "options": [
+              "Any",
+              "Much",
+              "Little",
+              "Every"
+            ],
+            "answer": "A",
+            "locator": "第 3 段 \"Any future updates will be shared\"",
+            "explanation": "空格後方為不可數名詞複數概念或泛指任何未來的更新，\"Any\" 可用於肯定句中表示「任何的」，符合「任何未來的更新將透過電子郵件分享」的語意。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【4】.",
+            "options": [
+              "should",
+              "do",
+              "have",
+              "will"
+            ],
+            "answer": "A",
+            "locator": "第 4 段 \"if you have any questions\"",
+            "explanation": "此處為條件句的倒裝省略句型（原句為 if you should have any questions），使用 \"should\" 來表示假設語氣的可能性，選項 (A) 正確。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Read the news article and answer the following questions based on the text.",
+        "questions": [
+          {
+            "prompt": "According to the article, what have other countries done in response to Trump's first tariff salvo?",
+            "options": [
+              "They have rerouted trade flows.",
+              "They have completely stopped trading.",
+              "They have increased their own tariffs.",
+              "They have ignored the economic policies."
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"rerouted trade flows to minimize damage\"",
+            "explanation": "根據文章第二段指出，國際合作夥伴為了將損害降到最低，採取了主動應對措施並「重新繞道貿易流向 (rerouted trade flows)」，因此選項 (A) 正確。"
+          },
+          {
+            "prompt": "What are foreign governments and market leaders currently focusing on?",
+            "options": [
+              "Trump's current tenure in office",
+              "Short-term market disruptions",
+              "The immediate collapse of supply chains",
+              "Canceling all international agreements"
+            ],
+            "answer": "A",
+            "locator": "第 3 段 \"looking beyond Trump's current tenure in office\"",
+            "explanation": "文章第三段明確指出，外國政府與市場領導者目前正將目光放遠至川普目前的任期之外（looking beyond Trump's current tenure in office），故選項 (A) 符合文意。"
+          },
+          {
+            "prompt": "According to the analysis, why might the new tariffs pose less of a threat?",
+            "options": [
+              "Nations have already learned to adapt to his economic policies.",
+              "The tariffs have been completely cancelled by courts.",
+              "Global markets have stopped interacting with the US.",
+              "The new tariffs are lower than previous ones."
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"learned to adapt to his economic policies\"",
+            "explanation": "第一段提到，分析人士指出全球市場與各國已經學會適應他的經濟政策（learned to adapt to his economic policies），這解釋了新關稅造成的威脅可能比想像中小的原因。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/c6r7g4e3yep1o",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    },
+    "politics": {
+      "title": "UK Net Migration Declines",
+      "summary": "貝爾漢姆表示，英國的淨移民人數目前已受到充分控制，年度淨移民人數降至七萬七千人，為本世紀（除新冠疫情外）的最低水準。",
+      "english": [
+        "Burnham recently stated that UK net migration is now under sufficient control. This development follows a period where annual figures dropped significantly.",
+        "Data indicates that annual net migration fell to 77,000. Such a decline marks the lowest level seen this century.",
+        "Observers note that this drop excludes the coronavirus pandemic period. The current numbers reflect a notable shift in population movement."
+      ],
+      "translation": [
+        "貝爾漢姆最近表示，英國的淨移民人數目前已受到充分控制。這項發展發生在年度數據顯著下降的一段時期之後。",
+        "數據顯示，年度淨移民人數降至七萬七千人。這種下降標誌著本世紀以來的最低水準。",
+        "觀察家指出，這項降幅不包含新冠疫情期間。目前的數字反映出人口移動的顯著轉變。"
+      ],
+      "vocabulary": [
+        {
+          "term": "control",
+          "pos": "noun",
+          "collocations": "under control; sufficient control",
+          "meaning": "控制",
+          "synonyms": [
+            "management; regulation",
+            "supervision; restraint"
+          ],
+          "family": "control; controller; controlling",
+          "sentence": "Burnham recently stated that UK net migration is now under sufficient control."
+        },
+        {
+          "term": "annual",
+          "pos": "adjective",
+          "collocations": "annual figures; annual report",
+          "meaning": "年度的",
+          "synonyms": [
+            "yearly; periodic",
+            "recurring; annual"
+          ],
+          "family": "annual; annually",
+          "sentence": "This development follows a period where annual figures dropped significantly."
+        },
+        {
+          "term": "data",
+          "pos": "noun",
+          "collocations": "data indicates; collect data",
+          "meaning": "數據",
+          "synonyms": [
+            "information; figures",
+            "statistics; details"
+          ],
+          "family": "data; database",
+          "sentence": "Data indicates that annual net migration fell to 77,000."
+        },
+        {
+          "term": "level",
+          "pos": "noun",
+          "collocations": "lowest level; high level",
+          "meaning": "水準",
+          "synonyms": [
+            "standard; degree",
+            "extent; grade"
+          ],
+          "family": "level; levelly",
+          "sentence": "Such a decline marks the lowest level seen this century."
+        },
+        {
+          "term": "period",
+          "pos": "noun",
+          "collocations": "pandemic period; time period",
+          "meaning": "期間",
+          "synonyms": [
+            "duration; phase",
+            "term; epoch"
+          ],
+          "family": "period; periodic; periodical",
+          "sentence": "Observers note that this drop excludes the coronavirus pandemic period."
+        },
+        {
+          "term": "current",
+          "pos": "adjective",
+          "collocations": "current numbers; current status",
+          "meaning": "目前的",
+          "synonyms": [
+            "present; ongoing",
+            "existing; contemporary"
+          ],
+          "family": "current; currently",
+          "sentence": "The current numbers reflect a notable shift in population movement."
+        },
+        {
+          "term": "shift",
+          "pos": "noun",
+          "collocations": "notable shift; policy shift",
+          "meaning": "轉變",
+          "synonyms": [
+            "change; transition",
+            "transfer; movement"
+          ],
+          "family": "shift; shifting",
+          "sentence": "The current numbers reflect a notable shift in population movement."
+        },
+        {
+          "term": "movement",
+          "pos": "noun",
+          "collocations": "population movement; social movement",
+          "meaning": "移動",
+          "synonyms": [
+            "motion; migration",
+            "activity; circulation"
+          ],
+          "family": "move; movement; movable",
+          "sentence": "The current numbers reflect a notable shift in population movement."
+        },
+        {
+          "term": "decline",
+          "pos": "noun",
+          "collocations": "such a decline; economic decline",
+          "meaning": "下降",
+          "synonyms": [
+            "drop; decrease",
+            "reduction; fall"
+          ],
+          "family": "decline; declining",
+          "sentence": "Such a decline marks the lowest level seen this century."
+        },
+        {
+          "term": "significant",
+          "pos": "adjective",
+          "collocations": "dropped significantly; significant change",
+          "meaning": "顯著的",
+          "synonyms": [
+            "considerable; notable",
+            "substantial; important"
+          ],
+          "family": "significance; significantly; significant",
+          "sentence": "This development follows a period where annual figures dropped significantly."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "Burnham recently stated that UK net migration is now _________ sufficient control.",
+          "options": [
+            "in",
+            "on",
+            "under",
+            "at"
+          ],
+          "answer": "C",
+          "locator": "介系詞固定搭配 (under control)",
+          "explanation": "句意為「貝爾漢姆最近表示，英國的淨移民人數目前已受到充分控制。」英文中表示「在控制之下」的固定片語為 under control，因此正確答案為 (C)。"
+        },
+        {
+          "prompt": "Data indicates that annual net migration _________ to 77,000.",
+          "options": [
+            "fall",
+            "falls",
+            "fell",
+            "falling"
+          ],
+          "answer": "C",
+          "locator": "過去簡單式動詞 (fell)",
+          "explanation": "本句描述過去發生的事件，主語 annual net migration 為單數，動詞需使用過去式 fell。因此正確答案為 (C)。"
+        },
+        {
+          "prompt": "Observers note that this drop excludes the coronavirus pandemic _________.",
+          "options": [
+            "period",
+            "periods",
+            "periodic",
+            "periodically"
+          ],
+          "answer": "A",
+          "locator": "名詞單數形 (pandemic period)",
+          "explanation": "空格前有冠詞與形容詞修飾，需要填入單數名詞作為受詞。period 表示「期間」，符合文法與語意，因此正確答案為 (A)。"
+        }
+      ],
+      "part6": {
+        "title": "Internal Memo on Policy Updates",
+        "passage": "To all staff members, \n\nWe are writing to inform you about recent updates regarding our company guidelines. Management has evaluated current statistics and decided that our operational methods are now under 【1】 control. \n\nData indicates that last year's figures dropped significantly, marking the lowest level 【2】 this century. Observers within the office note that this drop excludes special pandemic periods. \n\nTherefore, we expect a notable 【3】 in our workflow and internal movement. Please review the attached document to understand these changes. If you have any questions, contact human resources. \n\nBest regards, \n【4】 Team",
+        "questions": [
+          {
+            "prompt": "選擇最適當的選項填入 【1】。",
+            "options": [
+              "sufficient",
+              "sufficiently",
+              "sufficiency",
+              "suffice"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"under 【1】 control\"",
+            "explanation": "空格後方有名詞 control，因此需要形容詞來修飾。sufficient 為形容詞，意為「充分的」，故選 (A)。"
+          },
+          {
+            "prompt": "選擇最適當的選項填入 【2】。",
+            "options": [
+              "see",
+              "sees",
+              "saw",
+              "seen"
+            ],
+            "answer": "D",
+            "locator": "第 2 段 \"lowest level 【2】 this century\"",
+            "explanation": "此處為過去分詞片語當後置定規，修飾前面的 lowest level（被看見的水準），因此使用被動意義的 seen，故選 (D)。"
+          },
+          {
+            "prompt": "選擇最適當的選項填入 【3】。",
+            "options": [
+              "shift",
+              "shift to",
+              "shifted",
+              "shifting"
+            ],
+            "answer": "A",
+            "locator": "第 3 段 \"notable 【3】 in our workflow\"",
+            "explanation": "空格前方有形容詞 notable，因此需要名詞。shift 在此作為名詞表示「轉變」，故選 (A)。"
+          },
+          {
+            "prompt": "選擇最適當的選項填入 【4】。",
+            "options": [
+              "Administration",
+              "Administrative",
+              "Administrate",
+              "Administratively"
+            ],
+            "answer": "A",
+            "locator": "第 4 段 \"【4】 Team\"",
+            "explanation": "空格處需要名詞來組成複合名詞（管理團隊），Administration Team 符合商業習慣用法，故選 (A)。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "根據生成的英文新聞文章，回答以下三題閱讀理解問題。",
+        "questions": [
+          {
+            "prompt": "According to the article, what did Burnham say about UK net migration?",
+            "options": [
+              "It is now under sufficient control.",
+              "It will increase significantly next year.",
+              "It is managed by coronavirus experts.",
+              "It has completely stopped moving."
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"UK net migration is now under sufficient control\"",
+            "explanation": "文章第一段明確指出 Burnham 認為英國淨移民目前已受到充分控制，因此選項 (A) 正確。"
+          },
+          {
+            "prompt": "What does the data indicate about the annual net migration figure?",
+            "options": [
+              "It rose to 77,000.",
+              "It fell to 77,000.",
+              "It remained unchanged.",
+              "It reached a record high."
+            ],
+            "answer": "B",
+            "locator": "第 2 段 \"annual net migration fell to 77,000\"",
+            "explanation": "文章第二段指出年度淨移民人數下降至 77,000，故選項 (B) 「下降至 77,000」正確。"
+          },
+          {
+            "prompt": "What period is excluded from this demographic drop?",
+            "options": [
+              "The current year",
+              "The twenty-first century",
+              "The coronavirus pandemic",
+              "The population movement"
+            ],
+            "answer": "C",
+            "locator": "第 3 段 \"excludes the coronavirus pandemic period\"",
+            "explanation": "文章第三段提到這項降幅不包含新冠疫情期間，因此選項 (C) 正確。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/ck792l8ndqyqo",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    },
+    "techLife": {
+      "title": "Asia Made a Big AI Bet on Nvidia",
+      "summary": "亞洲股市在輝達執行長黃仁勳震撼回歸後經歷了劇烈震盪，凸顯出亞洲市場對人工智慧投資的高度關注與依賴。",
+      "english": [
+        "Asian stocks have recently experienced significant volatility after Jensen Huang made a shocking return as Nvidia CEO. This unexpected leadership shift sent waves through regional markets that heavily invested in artificial intelligence technology.",
+        "Investors across the continent are now carefully evaluating what the future holds for their portfolios. Many financial analysts are closely monitoring how market dynamics will shift following this major corporate development.",
+        "The ongoing situation demonstrates how deeply interconnected global financial markets are with technological advancements. Stakeholders continue to watch closely as the situation unfolds across international exchanges."
+      ],
+      "translation": [
+        "在黃仁勳震盪回歸擔任輝達執行長後，亞洲股市近期經歷了顯著的波動。這項未預期的領導層變動在重金投資人工智慧技術的區域市場中掀起了波瀾。",
+        "該大洲的投資人現在正審慎評估其投資組合的未來走向。許多金融分析師正密切監控市場動態將在此重大企業發展後如何轉變。",
+        "持續中的情勢展現出全球金融市場與技術進步之間的關聯有多麼深厚。隨著情勢在國際交易所展開，利害關係人持續密切關注。"
+      ],
+      "vocabulary": [
+        {
+          "term": "market",
+          "pos": "noun",
+          "collocations": "market dynamics; regional market",
+          "meaning": "市場",
+          "synonyms": [
+            "exchange; marketplace",
+            "stockpile; venue"
+          ],
+          "family": "marketing; marketer",
+          "sentence": "This unexpected leadership shift sent waves through regional markets that heavily invested in artificial intelligence technology."
+        },
+        {
+          "term": "invest",
+          "pos": "verb",
+          "collocations": "invest heavily; invest capital",
+          "meaning": "投資",
+          "synonyms": [
+            "fund; finance",
+            "back; commit"
+          ],
+          "family": "investment; investor",
+          "sentence": "This unexpected leadership shift sent waves through regional markets that heavily invested in artificial intelligence technology."
+        },
+        {
+          "term": "future",
+          "pos": "noun",
+          "collocations": "future holds; near future",
+          "meaning": "未來",
+          "synonyms": [
+            "tomorrow; time ahead",
+            "prospect; destiny"
+          ],
+          "family": "futuristic; -",
+          "sentence": "Investors across the continent are now carefully evaluating what the future holds for their portfolios."
+        },
+        {
+          "term": "monitor",
+          "pos": "verb",
+          "collocations": "monitor closely; monitor progress",
+          "meaning": "監控",
+          "synonyms": [
+            "observe; track",
+            "watch; supervise"
+          ],
+          "family": "monitoring; monitor",
+          "sentence": "Many financial analysts are closely monitoring how market dynamics will shift following this major corporate development."
+        },
+        {
+          "term": "development",
+          "pos": "noun",
+          "collocations": "major development; new development",
+          "meaning": "發展",
+          "synonyms": [
+            "progress; growth",
+            "advancement; evolution"
+          ],
+          "family": "develop; developing",
+          "sentence": "Many financial analysts are closely monitoring how market dynamics will shift following this major corporate development."
+        },
+        {
+          "term": "situation",
+          "pos": "noun",
+          "collocations": "ongoing situation; difficult situation",
+          "meaning": "情況",
+          "synonyms": [
+            "circumstance; condition",
+            "state; predicament"
+          ],
+          "family": "situational; -",
+          "sentence": "The ongoing situation demonstrates how deeply interconnected global financial markets are with technological advancements."
+        },
+        {
+          "term": "demonstrate",
+          "pos": "verb",
+          "collocations": "demonstrate clearly; demonstrate ability",
+          "meaning": "證明",
+          "synonyms": [
+            "show; exhibit",
+            "display; prove"
+          ],
+          "family": "demonstration; demonstrator",
+          "sentence": "The ongoing situation demonstrates how deeply interconnected global financial markets are with technological advancements."
+        },
+        {
+          "term": "global",
+          "pos": "adjective",
+          "collocations": "global financial; global market",
+          "meaning": "全球的",
+          "synonyms": [
+            "international; worldwide",
+            "universal; planetary"
+          ],
+          "family": "globally; globe",
+          "sentence": "The ongoing situation demonstrates how deeply interconnected global financial markets are with technological advancements."
+        },
+        {
+          "term": "continue",
+          "pos": "verb",
+          "collocations": "continue to; continue working",
+          "meaning": "持續",
+          "synonyms": [
+            "persist; maintain",
+            "proceed; carry on"
+          ],
+          "family": "continuous; continually",
+          "sentence": "Stakeholders continue to watch closely as the situation unfolds across international exchanges."
+        },
+        {
+          "term": "exchange",
+          "pos": "noun",
+          "collocations": "international exchange; stock exchange",
+          "meaning": "交易所",
+          "synonyms": [
+            "market; trade",
+            "swap; interchange"
+          ],
+          "family": "exchanger; exchanging",
+          "sentence": "Stakeholders continue to watch closely as the situation unfolds across international exchanges."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "Asian stocks have recently experienced significant volatility _______ Jensen Huang made a shocking return.",
+          "options": [
+            "after",
+            "during",
+            "while",
+            "until"
+          ],
+          "answer": "A",
+          "locator": "連接詞與時間子句",
+          "explanation": "句意為「在黃仁勳震撼回歸後，亞洲股市近期經歷了顯著的波動」。空格後接完整的子句「Jensen Huang made a shocking return」，故應使用連接詞 after 引導時間副詞子句。"
+        },
+        {
+          "prompt": "Many financial analysts are closely monitoring _______ market dynamics will shift following this corporate development.",
+          "options": [
+            "what",
+            "how",
+            "that",
+            "which"
+          ],
+          "answer": "B",
+          "locator": "名詞子句與副詞疑問詞",
+          "explanation": "動詞 monitoring 後面需要接一個名詞子句當作受詞。句意表示分析師在觀察市場動態「將會如何」轉變，因此填入表示方式的疑問副詞 how 最符合語意。"
+        },
+        {
+          "prompt": "Investors across the continent are now carefully evaluating what the future _______ for their portfolios.",
+          "options": [
+            "hold",
+            "holds",
+            "holding",
+            "held"
+          ],
+          "answer": "B",
+          "locator": "主動詞一致性",
+          "explanation": "子句中的主語為 what（在此作為單數代名詞指代未來的情勢），因此其動詞必須採用第三人稱單數現在式 holds。"
+        }
+      ],
+      "part6": {
+        "title": "Memo on Technology Investment Strategy",
+        "passage": "To: All Investment Staff\nFrom: Research Department\nDate: November 27, 2026\nSubject: Technology Portfolio Review\n\nFollowing recent market events involving Nvidia and regional technology sectors, our team must 【1】 our investment strategies. Asian markets have experienced considerable volatility recently, requiring us to be more cautious. Please review your portfolios and 【2】 any high-risk assets before the end of the week. Our primary goal is to ensure stability while maintaining growth potential. Further updates will be provided as the situation 【3】. Thank you for your cooperation and dedication during this dynamic 【4】.",
+        "questions": [
+          {
+            "prompt": "Choose the best word for blank 1.",
+            "options": [
+              "reassess",
+              "ignore",
+              "create",
+              "delete"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"must 【1】 our investment strategies\"",
+            "explanation": "根據前文提到的市場事件與波動，團隊必須「重新評估（reassess）」投資策略，故選 A。"
+          },
+          {
+            "prompt": "Choose the best word for blank 2.",
+            "options": [
+              "evaluate",
+              "expand",
+              "increase",
+              "borrow"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"review your portfolios and 【2】 any high-risk assets\"",
+            "explanation": "面對波動與風險，員工需要審查投資組合並「評估（evaluate）」任何高風險資產，故選 A。"
+          },
+          {
+            "prompt": "Choose the best word for blank 3.",
+            "options": [
+              "unfolds",
+              "freezes",
+              "closes",
+              "ends"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"as the situation 【3】\"",
+            "explanation": "隨著情況「展開（unfolds）」或發展，將會提供進一步的更新資訊，故選 A。"
+          },
+          {
+            "prompt": "Choose the best word for blank 4.",
+            "options": [
+              "period",
+              "machine",
+              "product",
+              "ticket"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"during this dynamic 【4】\"",
+            "explanation": "句意為感謝大家在此充滿變動的「時期（period）」之合作與奉獻，故選 A。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Read the article and answer the reading comprehension questions.",
+        "questions": [
+          {
+            "prompt": "What event caused significant volatility in Asian stocks?",
+            "options": [
+              "Jensen Huang's return as Nvidia CEO",
+              "A major new technology policy in Asia",
+              "The closure of international exchanges",
+              "A sudden drop in global interest rates"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"after Jensen Huang made a shocking return as Nvidia CEO\"",
+            "explanation": "文章第一段明確指出，亞洲股市在黃仁勳震撼回歸擔任輝達執行長後經歷了顯著的波動。"
+          },
+          {
+            "prompt": "What are investors across the continent currently doing?",
+            "options": [
+              "Evaluating what the future holds for their portfolios",
+              "Selling all of their artificial intelligence stocks",
+              "Moving their headquarters to international exchanges",
+              "Stopping all financial market activities"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"are now carefully evaluating what the future holds for their portfolios\"",
+            "explanation": "文章第二段指出，各地的投資人現在正審慎評估其投資組合的未來走向。"
+          },
+          {
+            "prompt": "What do financial analysts continue to monitor?",
+            "options": [
+              "How market dynamics will shift",
+              "The exact salary of corporate executives",
+              "The creation of new computer hardware",
+              "Local weather patterns in Asia"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"monitoring how market dynamics will shift following this major corporate development\"",
+            "explanation": "文章第二段提到，許多金融分析師正密切監控市場動態將在此重大企業發展後如何轉變。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/cqevr4lnd1nxo",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    }
+  },
   "2026-11-26": {
     "finance": {
       "title": "US Stocks Fall Amid AI Concerns",
