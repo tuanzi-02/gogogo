@@ -1,4 +1,819 @@
 {
+  "2026-11-28": {
+    "finance": {
+      "title": "Energy Bills Projected to Rise in January",
+      "summary": "根據報導，受伊朗戰爭引起的天然氣價格飆升影響，數百萬家庭的能源帳單將在一月份飆升百分之二十六。",
+      "english": [
+        "Financial analysts are questioning whether new energy fixes will cost more in January for millions of households across the region. Recent market reports indicate that energy bills will soar by 26% for many consumers at the beginning of the year. This anticipated increase follows a significant surge in gas prices driven by ongoing tensions related to the Iran war.",
+        "Households are now preparing for higher utility expenses as energy providers adjust their pricing structures. Industry experts note that geopolitical conflicts often destabilize global commodity markets, directly affecting domestic heating and electricity costs. Consumers are advised to monitor their monthly consumption closely while policymakers review potential financial relief measures to assist affected families.",
+        "The upcoming price adjustments highlight the vulnerability of household budgets to international crises and fuel supply disruptions. Economists suggest that sustained high gas prices could influence broader inflation trends throughout the first quarter. Market observers will continue to track wholesale energy rates closely as the implementation date for the new fixes approaches."
+      ],
+      "translation": [
+        "金融分析師正在質疑，在該地區數百萬家庭中，新的能源方案是否會在的一月份花費更多。最新的市場報告指出，在今年初，許多消費者的能源帳單將飆升百分之二十六。這項預期的增加是在伊朗戰爭相關持續緊張局勢所驅動的天然氣價格顯著飆升之後發生的。",
+        "隨著能源供應商調整其定價結構，各家庭現在正為更高的公用事業費用做準備。業界專家指出，地緣政治衝突經常破壞全球大宗商品市場的穩定，直接影響國內供暖和電力成本。建議消費者密切監控其每月消耗量，同時政策制定者審查潛在的財務救濟措施以協助受影響的家庭。",
+        "即將到來的價格調整凸顯了家庭預算對國際危機和燃料供應中斷的脆弱性。經濟學家建議，持續的高天然氣價格可能會影響整個第一季度的更廣泛通貨膨脹趨勢。隨著新方案實施日期的臨近，市場觀察人士將繼續密切追蹤批發能源費率。"
+      ],
+      "vocabulary": [
+        {
+          "term": "financial",
+          "pos": "adjective",
+          "collocations": "financial analyst; financial relief",
+          "meaning": "財務的；金融的",
+          "synonyms": [
+            "monetary; fiscal",
+            "economic; pecuniary"
+          ],
+          "family": "finance; financially; financier",
+          "sentence": "Financial analysts are questioning whether new energy fixes will cost more in January for millions of households across the region."
+        },
+        {
+          "term": "market",
+          "pos": "noun",
+          "collocations": "market report; market observer",
+          "meaning": "市場",
+          "synonyms": [
+            "marketplace; exchange",
+            "trade center; bazaar"
+          ],
+          "family": "marketing; marketer",
+          "sentence": "Recent market reports indicate that energy bills will soar by 26% for many consumers at the beginning of the year."
+        },
+        {
+          "term": "surge",
+          "pos": "noun",
+          "collocations": "price surge; sudden surge",
+          "meaning": "急增；激增",
+          "synonyms": [
+            "spike; jump",
+            "increase; rise"
+          ],
+          "family": "surging; surged",
+          "sentence": "This anticipated increase follows a significant surge in gas prices driven by ongoing tensions related to the Iran war."
+        },
+        {
+          "term": "utility",
+          "pos": "noun",
+          "collocations": "utility expense; utility bill",
+          "meaning": "公用事業；公用事業費用",
+          "synonyms": [
+            "public service; service",
+            "amenity; facility"
+          ],
+          "family": "utilize; utilization; utilitarian",
+          "sentence": "Households are now preparing for higher utility expenses as energy providers adjust their pricing structures."
+        },
+        {
+          "term": "global",
+          "pos": "adjective",
+          "collocations": "global market; global economy",
+          "meaning": "全球的",
+          "synonyms": [
+            "worldwide; international",
+            "universal; planetary"
+          ],
+          "family": "globally; globe",
+          "sentence": "Industry experts note that geopolitical conflicts often destabilize global commodity markets, directly affecting domestic heating and electricity costs."
+        },
+        {
+          "term": "consumption",
+          "pos": "noun",
+          "collocations": "monthly consumption; energy consumption",
+          "meaning": "消耗；消費量",
+          "synonyms": [
+            "use; utilization",
+            "spending; expenditure"
+          ],
+          "family": "consume; consumer; consuming",
+          "sentence": "Consumers are advised to monitor their monthly consumption closely while policymakers review potential financial relief measures to assist affected families."
+        },
+        {
+          "term": "vulnerability",
+          "pos": "noun",
+          "collocations": "economic vulnerability; high vulnerability",
+          "meaning": "脆弱性",
+          "synonyms": [
+            "susceptibility; weakness",
+            "fragility; exposure"
+          ],
+          "family": "vulnerable; vulnerably",
+          "sentence": "The upcoming price adjustments highlight the vulnerability of household budgets to international crises and fuel supply disruptions."
+        },
+        {
+          "term": "inflation",
+          "pos": "noun",
+          "collocations": "inflation trend; price inflation",
+          "meaning": "通貨膨脹",
+          "synonyms": [
+            "price rise; escalation",
+            "expansion; markup"
+          ],
+          "family": "inflate; inflationary; inflated",
+          "sentence": "Economists suggest that sustained high gas prices could influence broader inflation trends throughout the first quarter."
+        },
+        {
+          "term": "wholesale",
+          "pos": "adjective",
+          "collocations": "wholesale energy; wholesale price",
+          "meaning": "批發的",
+          "synonyms": [
+            "bulk; mass",
+            "distributive; commercial"
+          ],
+          "family": "wholesaler",
+          "sentence": "Market observers will continue to track wholesale energy rates closely as the implementation date for the new fixes approaches."
+        },
+        {
+          "term": "implementation",
+          "pos": "noun",
+          "collocations": "implementation date; policy implementation",
+          "meaning": "實施；執行",
+          "synonyms": [
+            "execution; application",
+            "enactment; realization"
+          ],
+          "family": "implement; implemented",
+          "sentence": "Market observers will continue to track wholesale energy rates closely as the implementation date for the new fixes approaches."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "Financial analysts are questioning whether new energy fixes will cost more in January for millions of households across the region.",
+          "options": [
+            "whether",
+            "what",
+            "which",
+            "that"
+          ],
+          "answer": "A",
+          "locator": "名詞子句連接詞",
+          "explanation": "句意為分析師正在質疑『是否』新的能源方案會花費更多，表達不確定性應使用 whether。"
+        },
+        {
+          "prompt": "Recent market reports indicate that energy bills will soar ________ 26% for many consumers at the beginning of the year.",
+          "options": [
+            "at",
+            "by",
+            "in",
+            "on"
+          ],
+          "answer": "B",
+          "locator": "表幅度變化的介系詞",
+          "explanation": "表示漲跌幅度的差異時，英文習慣使用介系詞 by，因此 soar by 26% 為正確用法。"
+        },
+        {
+          "prompt": "Consumers are advised to monitor their monthly consumption closely while policymakers review potential financial relief measures to assist ________ families.",
+          "options": [
+            "affect",
+            "effects",
+            "affected",
+            "affecting"
+          ],
+          "answer": "C",
+          "locator": "分詞當形容詞使用",
+          "explanation": "空格後方為名詞 families，需要形容詞來修飾。『受影響的』家庭必須使用過去分詞轉化而來的形容詞 affected。"
+        }
+      ],
+      "part6": {
+        "title": "Notice on Utility Rate Adjustments",
+        "passage": "To all valued customers, please be advised that our utility rates will undergo a change next month. As recent geopolitical conflicts have caused a surge in gas prices, energy providers must adjust their pricing structures. 【1】 This means that average household utility bills will increase significantly starting in January. We understand that this development may pose challenges to your monthly budgeting. 【2】 Therefore, our management team is currently reviewing potential financial relief measures to support our community. Customers are encouraged to monitor their monthly consumption and adopt energy-saving habits. 【3】 Additional details regarding the new billing rates will be provided in the upcoming customer newsletter. Should you have any questions, please contact our customer support center. 【4】 Thank you for your continued cooperation and understanding during this period.",
+        "questions": [
+          {
+            "prompt": "Choose the best word for blank 1.",
+            "options": [
+              "However",
+              "Therefore",
+              "Instead",
+              "Otherwise"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"This means that average household utility bills will increase significantly starting in January.\"",
+            "explanation": "前句提到天然氣價格飆升，這裡推論出帳單將會增加的結果，因此使用表因果關係的 Therefore 最為合適。"
+          },
+          {
+            "prompt": "Choose the best word for blank 2.",
+            "options": [
+              "Therefore",
+              "Moreover",
+              "Otherwise",
+              "Instead"
+            ],
+            "answer": "A",
+            "locator": "第 2 段 \"Therefore, our management team is currently reviewing potential financial relief measures to support our community.\"",
+            "explanation": "前句提及這項發展可能會對預算造成挑戰，因此管理團隊正在審查救濟措施，前後具備因果承接關係。"
+          },
+          {
+            "prompt": "Choose the best word for blank 3.",
+            "options": [
+              "Additionally",
+              "However",
+              "Instead",
+              "Otherwise"
+            ],
+            "answer": "A",
+            "locator": "第 3 段 \"Additional details regarding the new billing rates will be provided in the upcoming customer newsletter.\"",
+            "explanation": "後方句子提到將提供額外細節，與前句鼓勵節約並行，語意上呈現遞進補充，故選 Additionally。"
+          },
+          {
+            "prompt": "Choose the best word for blank 4.",
+            "options": [
+              "Thank you",
+              "Good luck",
+              "Welcome",
+              "Goodbye"
+            ],
+            "answer": "A",
+            "locator": "第 4 段 \"Thank you for your continued cooperation and understanding during this period.\"",
+            "explanation": "商務通知的結尾通常會感謝客戶的合作與理解，因此 Thank you 為標準搭配。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Read the news article and answer the reading comprehension questions.",
+        "questions": [
+          {
+            "prompt": "What percentage will energy bills increase by in January?",
+            "options": [
+              "16%",
+              "20%",
+              "26%",
+              "30%"
+            ],
+            "answer": "C",
+            "locator": "第 1 段 \"energy bills will soar by 26% for many consumers\"",
+            "explanation": "文章第一段明確指出，許多消費者的能源帳單將飆升百分之二十六（26%）。"
+          },
+          {
+            "prompt": "What primary event caused the surge in gas prices according to the text?",
+            "options": [
+              "A severe winter storm",
+              "Tensions related to the Iran war",
+              "New domestic tax policies",
+              "A sudden drop in consumer demand"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"driven by ongoing tensions related to the Iran war.\"",
+            "explanation": "文章第一段指出天然氣價格飆升是由與伊朗戰爭相關的持續緊張局勢所驅動的。"
+          },
+          {
+            "prompt": "What are policymakers and relief measures expected to assist?",
+            "options": [
+              "Energy providers",
+              "Affected families",
+              "Financial analysts",
+              "Wholesale merchants"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"assist affected families.\"",
+            "explanation": "文章第一段提到政策制定者正在審查潛以協助受影響家庭（affected families）的財務救濟措施。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/videos/cwjd7y4jk581o",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    },
+    "politics": {
+      "title": "Millions Face Service Disruption Following Cyber Incident",
+      "summary": "英國就業與退休金部因遭遇網路攻擊事件，使部分福利與退休金服務作為預防措施而被迫暫時離線，導致數百萬人暫時無法使用相關服務。",
+      "english": [
+        "Millions of citizens recently lost access to vital benefits and pensions services due to an unexpected cyber incident. The Department for Work and Pensions reported that the technical disturbance required immediate action to protect sensitive data and user accounts.",
+        "As a direct precaution against further risks, officials decided to take several key online platforms completely offline. This temporary suspension affected numerous individuals who regularly depend on these public administration systems for their daily financial support.",
+        "The government agency is currently working to resolve the underlying technical issues as quickly as possible. Authorities have promised to provide further updates once the affected digital services are fully restored and verified as completely secure."
+      ],
+      "translation": [
+        "數百萬公民最近因一起未預料的網路攻擊事件，而失去使用重要福利與退休金服務的管道。就業與退休金部報告指出，該技術干擾需要採取立即行動以保護敏感資料與用戶帳戶。",
+        "作為防範進一步風險的直接預防措施，官方決定將幾個關鍵的線上平台完全離線。這項暫時停擺影響了許多經常依賴這些公共行政系統來獲得日常經濟支持的個人。",
+        "該政府機構目前正致力於盡快解決根本的技術問題。當受影響的數位服務完全恢復並被驗證為絕對安全後，當局已承諾提供進一步的最新消息。"
+      ],
+      "vocabulary": [
+        {
+          "term": "access",
+          "pos": "noun",
+          "collocations": "gain access; lose access",
+          "meaning": "進入；取得管道",
+          "synonyms": [
+            "entry; admission",
+            "admittance; entrance"
+          ],
+          "family": "accessible; accessibility",
+          "sentence": "Millions of citizens recently lost access to vital benefits and pensions services due to an unexpected cyber incident."
+        },
+        {
+          "term": "incident",
+          "pos": "noun",
+          "collocations": "cyber incident; unexpected incident",
+          "meaning": "事件；事故",
+          "synonyms": [
+            "event; occurrence",
+            "episode; affair"
+          ],
+          "family": "incidental",
+          "sentence": "Millions of citizens recently lost access to vital benefits and pensions services due to an unexpected cyber incident."
+        },
+        {
+          "term": "department",
+          "pos": "noun",
+          "collocations": "government department; official department",
+          "meaning": "部門；部",
+          "synonyms": [
+            "ministry; division",
+            "section; bureau"
+          ],
+          "family": "departmental",
+          "sentence": "The Department for Work and Pensions reported that the technical disturbance required immediate action to protect sensitive data and user accounts."
+        },
+        {
+          "term": "action",
+          "pos": "noun",
+          "collocations": "immediate action; take action",
+          "meaning": "行動；措施",
+          "synonyms": [
+            "measure; step",
+            "activity; deed"
+          ],
+          "family": "act; active",
+          "sentence": "The Department for Work and Pensions reported that the technical disturbance required immediate action to protect sensitive data and user accounts."
+        },
+        {
+          "term": "precaution",
+          "pos": "noun",
+          "collocations": "safety precaution; direct precaution",
+          "meaning": "預防措施；防範",
+          "synonyms": [
+            "safeguard; preventive measure",
+            "provision; preparation"
+          ],
+          "family": "precautious; precautionary",
+          "sentence": "As a direct precaution against further risks, officials decided to take several key online platforms completely offline."
+        },
+        {
+          "term": "offline",
+          "pos": "adjective",
+          "collocations": "go offline; take offline",
+          "meaning": "離線的；未連線的",
+          "synonyms": [
+            "disconnected; unlinked",
+            "unconnected; inactive"
+          ],
+          "family": "off-line",
+          "sentence": "As a direct precaution against further risks, officials decided to take several key online platforms completely offline."
+        },
+        {
+          "term": "support",
+          "pos": "noun",
+          "collocations": "financial support; technical support",
+          "meaning": "支援；支持",
+          "synonyms": [
+            "assistance; backing",
+            "aid; help"
+          ],
+          "family": "supportive; supporter",
+          "sentence": "This temporary suspension affected numerous individuals who regularly depend on these public administration systems for their daily financial support."
+        },
+        {
+          "term": "agency",
+          "pos": "noun",
+          "collocations": "government agency; official agency",
+          "meaning": "機構；署",
+          "synonyms": [
+            "organization; bureau",
+            "body; institution"
+          ],
+          "family": "agent",
+          "sentence": "The government agency is currently working to resolve the underlying technical issues as quickly as possible."
+        },
+        {
+          "term": "issues",
+          "pos": "noun",
+          "collocations": "technical issues; complex issues",
+          "meaning": "問題；議題",
+          "synonyms": [
+            "problems; matters",
+            "difficulties; concerns"
+          ],
+          "family": "issue",
+          "sentence": "The government agency is currently working to resolve the underlying technical issues as quickly as possible."
+        },
+        {
+          "term": "services",
+          "pos": "noun",
+          "collocations": "digital services; public services",
+          "meaning": "服務",
+          "synonyms": [
+            "utilities; provisions",
+            "facilities; assistance"
+          ],
+          "family": "service; serve",
+          "sentence": "Authorities have promised to provide further updates once the affected digital services are fully restored and verified as completely secure."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "Millions of citizens recently lost access to vital benefits and pensions services _____ an unexpected cyber incident.",
+          "options": [
+            "because",
+            "due to",
+            "although",
+            "while"
+          ],
+          "answer": "B",
+          "locator": "介系詞片語表達原因",
+          "explanation": "空格後面接的是名詞片語 an unexpected cyber incident，因此需要使用表示原因的介系詞片語 due to。because 是連接詞，後面需接子句，故不選。"
+        },
+        {
+          "prompt": "As a direct precaution against further risks, officials decided _____ several key online platforms completely offline.",
+          "options": [
+            "take",
+            "taking",
+            "to take",
+            "took"
+          ],
+          "answer": "C",
+          "locator": "動詞不定詞做受詞",
+          "explanation": "decide 後面通常接不定詞（to V）作受詞，因此選 to take。"
+        },
+        {
+          "prompt": "The government agency is currently working to resolve the underlying technical issues as _____ as possible.",
+          "options": [
+            "quick",
+            "quickly",
+            "quicker",
+            "quickest"
+          ],
+          "answer": "B",
+          "locator": "副詞修飾動詞片語",
+          "explanation": "空格用來修飾動詞片語 resolve the underlying technical issues，因此需要使用副詞 quickly，形成 as quickly as possible 的固定用法。"
+        }
+      ],
+      "part6": {
+        "title": "Notice on Temporary System Maintenance",
+        "passage": "To all staff members, Please be advised that our internal management network will undergo scheduled maintenance this weekend. 【1】 of this maintenance, several digital tools will be temporarily taken offline. We apologize for any inconvenience this may cause and appreciate your 【2】 during this period. Department heads will ensure that 【3】 employees are notified in advance. If you have any questions, please contact the IT help desk for 【4】 assistance.",
+        "questions": [
+          {
+            "prompt": "Choose the best word for blank 【1】.",
+            "options": [
+              "Because",
+              "As a result",
+              "Despite",
+              "Instead of"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"【1】 of this maintenance\"",
+            "explanation": "空格後接名詞片語 of this maintenance，表示「由於這項維護」，As a result of 符合語意與文法。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【2】.",
+            "options": [
+              "patience",
+              "patient",
+              "patiently",
+              "patiences"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"appreciate your 【2】 during\"",
+            "explanation": "形容詞所有格 your 後面需要接名詞，patience 是不可數名詞，適合放在此處表達「感謝您的耐心」。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【3】.",
+            "options": [
+              "affect",
+              "affected",
+              "affecting",
+              "affects"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"ensure that 【3】 employees\"",
+            "explanation": "空格需要分詞作為形容詞修飾 employees，表示「受影響的員工」，因此使用過去分詞 affected。"
+          },
+          {
+            "prompt": "Choose the best word for blank 【4】.",
+            "options": [
+              "further",
+              "furthest",
+              "far",
+              "farthest"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"for 【4】 assistance\"",
+            "explanation": "assistance 是不可數名詞，需要形容詞修飾。「進一步的協助」習慣使用 further assistance。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Read the news article and answer the reading comprehension questions.",
+        "questions": [
+          {
+            "prompt": "Why did millions of citizens lose access to services?",
+            "options": [
+              "Because of a scheduled system update",
+              "Due to an unexpected cyber incident",
+              "Because of severe weather conditions",
+              "Due to a government budget cut"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"due to an unexpected cyber incident\"",
+            "explanation": "文章第一段明確指出，數百萬公民失去服務管道是因為發生了非預期的網路攻擊事件（cyber incident）。"
+          },
+          {
+            "prompt": "What action did officials take as a precaution against further risks?",
+            "options": [
+              "They closed physical offices permanently.",
+              "They took several key online platforms completely offline.",
+              "They replaced all user accounts.",
+              "They suspended public funding."
+            ],
+            "answer": "B",
+            "locator": "第 2 段 \"take several key online platforms completely offline\"",
+            "explanation": "第二段提到，作為預防風險的措施，官方決定將幾個關鍵的線上平台完全離線。"
+          },
+          {
+            "prompt": "What have authorities promised to do once services are restored?",
+            "options": [
+              "Provide financial compensation",
+              "Issue new identification cards",
+              "Provide further updates",
+              "Conduct a public election"
+            ],
+            "answer": "C",
+            "locator": "第 3 段 \"provide further updates\"",
+            "explanation": "第三段指出，當局承諾在數位服務完全恢復並確認安全後，會提供進一步的最新消息（further updates）。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/c8wy5p6pv2e2o",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    },
+    "techLife": {
+      "title": "Shortage of Elevator Mechanics",
+      "summary": "雖然薪資優渥且工作機會充足，但電梯技師仍然出現短缺現象。本文探討造成此現象背後的原因。",
+      "english": [
+        "Modern buildings rely heavily on efficient vertical transportation systems, yet the industry faces a surprising labor shortage. Experts report that there is an abundance of work available for skilled technicians in this field. Furthermore, companies are offering attractive compensation packages to draw new workers.",
+        "Despite these appealing financial incentives, many positions remain unfilled for extended periods. Industry observers are currently investigating why qualified candidates are not entering this profession. The lack of available workforce creates significant delays in installation and maintenance schedules.",
+        "Addressing this growing gap requires a better understanding of the barriers that deter applicants. Stakeholders must examine whether training programs or certification requirements contribute to the issue. Resolving this shortage is essential for the smooth operation of commercial and residential towers."
+      ],
+      "translation": [
+        "現代建築高度依賴高效的垂直運輸系統，然而該行業卻面臨令人驚訝的勞動力短缺。專家指出，該領域有大量可供技術人員從事的工作。此外，公司正提供吸引人的薪酬方案以吸引新員工。",
+        "儘管有這些吸引人的財務誘因，許多職位仍然長期懸缺。產業觀察家目前正在調查為什麼合格的候選人沒有進入這個行業。可用勞動力的缺乏導致安裝和維護時程出現重大延誤。",
+        "解決這個不斷擴大的差距需要更好地理解阻礙申請者的障礙。利益相關者必須檢查培訓計畫或認證要求是否造成了這個問題。解決這種短缺對於商業和住宅大樓的順利營運至關重要。"
+      ],
+      "vocabulary": [
+        {
+          "term": "shortage",
+          "pos": "noun",
+          "collocations": "labor shortage; acute shortage",
+          "meaning": "短缺",
+          "synonyms": [
+            "deficiency; deficit",
+            "scarcity; shortfall"
+          ],
+          "family": "short; shorten; shortly",
+          "sentence": "Modern buildings rely heavily on efficient vertical transportation systems, yet the industry faces a surprising labor shortage."
+        },
+        {
+          "term": "abundance",
+          "pos": "noun",
+          "collocations": "abundance of work; in abundance",
+          "meaning": "豐富；大量",
+          "synonyms": [
+            "profusion; wealth",
+            "plenty; surplus"
+          ],
+          "family": "abundant; abundantly",
+          "sentence": "Experts report that there is an abundance of work available for skilled technicians in this field."
+        },
+        {
+          "term": "compensation",
+          "pos": "noun",
+          "collocations": "compensation package; financial compensation",
+          "meaning": "補償；薪酬",
+          "synonyms": [
+            "remuneration; pay",
+            "salary; wage"
+          ],
+          "family": "compensate; compensatory",
+          "sentence": "Furthermore, companies are offering attractive compensation packages to draw new workers."
+        },
+        {
+          "term": "incentive",
+          "pos": "noun",
+          "collocations": "financial incentive; economic incentive",
+          "meaning": "誘因；鼓勵",
+          "synonyms": [
+            "motivation; stimulus",
+            "spur; encouragement"
+          ],
+          "family": "incentivize",
+          "sentence": "Despite these appealing financial incentives, many positions remain unfilled for extended periods."
+        },
+        {
+          "term": "profession",
+          "pos": "noun",
+          "collocations": "enter this profession; chosen profession",
+          "meaning": "職業",
+          "synonyms": [
+            "occupation; career",
+            "job; calling"
+          ],
+          "family": "professional; professionally",
+          "sentence": "Industry observers are currently investigating why qualified candidates are not entering this profession."
+        },
+        {
+          "term": "significant",
+          "pos": "adj.",
+          "collocations": "significant delays; significant impact",
+          "meaning": "顯著的；重大的",
+          "synonyms": [
+            "considerable; substantial",
+            "notable; important"
+          ],
+          "family": "significance; signify; significantly",
+          "sentence": "The lack of available workforce creates significant delays in installation and maintenance schedules."
+        },
+        {
+          "term": "barrier",
+          "pos": "noun",
+          "collocations": "trade barrier; potential barrier",
+          "meaning": "障礙；屏障",
+          "synonyms": [
+            "obstacle; hurdle",
+            "impediment; obstruction"
+          ],
+          "family": "bar",
+          "sentence": "Addressing this growing gap requires a better understanding of the barriers that deter applicants."
+        },
+        {
+          "term": "applicant",
+          "pos": "noun",
+          "collocations": "qualified applicant; job applicant",
+          "meaning": "申請人",
+          "synonyms": [
+            "candidate; contender",
+            "job-seeker; petitioner"
+          ],
+          "family": "apply; application; applicable",
+          "sentence": "Addressing this growing gap requires a better understanding of the barriers that deter applicants."
+        },
+        {
+          "term": "essential",
+          "pos": "adj.",
+          "collocations": "essential for; essential part",
+          "meaning": "必要的；不可或缺的",
+          "synonyms": [
+            "crucial; vital",
+            "indispensable; necessary"
+          ],
+          "family": "essentially; essence",
+          "sentence": "Resolving this shortage is essential for the smooth operation of commercial and residential towers."
+        },
+        {
+          "term": "operation",
+          "pos": "noun",
+          "collocations": "smooth operation; business operation",
+          "meaning": "營運；運作",
+          "synonyms": [
+            "functioning; management",
+            "running; execution"
+          ],
+          "family": "operate; operational; operator",
+          "sentence": "Resolving this shortage is essential for the smooth operation of commercial and residential towers."
+        }
+      ],
+      "part5": [
+        {
+          "prompt": "Modern buildings rely heavily on efficient vertical transportation systems, yet the industry faces a surprising labor ______.",
+          "options": [
+            "shortage",
+            "shorten",
+            "shortly",
+            "short"
+          ],
+          "answer": "A",
+          "locator": "名詞位置與詞性選擇",
+          "explanation": "句中空格位於冠詞 a 和形容詞 surprising 之後、句尾之前，需要填入一個單數可數名詞作受詞。選項 (A) shortage 是名詞（短缺），為正確答案；(B) 是動詞，(C) 是副詞，(D) 是形容詞。"
+        },
+        {
+          "prompt": "Experts report that there is an abundance of work available for skilled technicians ______ this field.",
+          "options": [
+            "at",
+            "in",
+            "on",
+            "to"
+          ],
+          "answer": "B",
+          "locator": "地方介詞搭配",
+          "explanation": "表達在某個「領域」或「範圍」之內時，慣常使用的介詞為 in。因此選項 (B) in 為正確答案。"
+        },
+        {
+          "prompt": "Industry observers are currently investigating why qualified candidates are not ______ this profession.",
+          "options": [
+            "enter",
+            "entered",
+            "entering",
+            "entrance"
+          ],
+          "answer": "C",
+          "locator": "現在進行式動詞結構",
+          "explanation": "句中有助動詞 are，構成現在進行式（are not + V-ing），因此空格處須填入現在分詞 entering。選項 (C) 為正確答案。"
+        }
+      ],
+      "part6": {
+        "title": "Notice on Elevator Maintenance",
+        "passage": "To all staff members, please be advised that routine elevator maintenance will take place this weekend. The building management team has scheduled these repairs to ensure the safety of all occupants. 【1】 of the elevators will be temporarily out of service during this period. We kindly ask everyone to use the stairs or alternative routes. 【2】 you have any questions or require special assistance, please contact the front desk. We appreciate your patience and cooperation as we complete this 【3】 work. Normal service will resume immediately 【4】 Monday morning.",
+        "questions": [
+          {
+            "prompt": "Choose the best word for blank 1.",
+            "options": [
+              "Some",
+              "Much",
+              "Any",
+              "Little"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"【1】 of the elevators\"",
+            "explanation": "空格後接複數名詞 elevators 與定冠詞 the，表示電梯中的「一部分」。Some 可與 of the 複數名詞連用，表「部分電梯」。Much 和 Little 修飾不可數名詞，Any 通常用於否定句或疑問句，故選 (A)。"
+          },
+          {
+            "prompt": "Choose the best word for blank 2.",
+            "options": [
+              "Should",
+              "Do",
+              "Have",
+              "Will"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"【2】 you have any questions\"",
+            "explanation": "此句為條件句的倒裝句型（省略 if），還原後為「If you have any questions...」。適用於假設語態倒裝句首的助動詞為 Should，故選 (A)。"
+          },
+          {
+            "prompt": "Choose the best word for blank 3.",
+            "options": [
+              "essential",
+              "essence",
+              "essentially",
+              "necessity"
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"complete this 【3】 work\"",
+            "explanation": "空格位於指示代名詞 this 與名詞 work 之間，需要形容詞來修飾名詞。選項 (A) essential 是形容詞（必要的），為正確答案；(B) 與 (D) 是名詞，(C) 是副詞。"
+          },
+          {
+            "prompt": "Choose the best word for blank 4.",
+            "options": [
+              "on",
+              "by",
+              "at",
+              "in"
+            ],
+            "answer": "B",
+            "locator": "第 1 段 \"immediately 【4】 Monday morning\"",
+            "explanation": "表示「在某個期限之前或不遲於某個時間點完成」，常搭配介詞 by（不遲於、在...之前）。故選 (B)。"
+          }
+        ]
+      },
+      "part7": {
+        "intro": "Read the article and answer the reading comprehension questions.",
+        "questions": [
+          {
+            "prompt": "What do experts report about the situation in the vertical transportation industry?",
+            "options": [
+              "There is plenty of work available for skilled technicians.",
+              "Most buildings are replacing their elevators with stairs.",
+              "The pay for technicians has decreased significantly.",
+              "Companies are struggling to find any buildings to service."
+            ],
+            "answer": "A",
+            "locator": "第 1 段 \"an abundance of work available\"",
+            "explanation": "根據第一段所述「Experts report that there is an abundance of work available for skilled technicians in this field.」，專家指出該領域有大量工作機會，因此選項 (A) 與文章相符。"
+          },
+          {
+            "prompt": "Why are many positions remaining unfilled according to the second paragraph?",
+            "options": [
+              "Companies refuse to offer financial incentives.",
+              "Industry observers are still investigating the reasons.",
+              "There are no buildings that require maintenance.",
+              "The training programs are too short."
+            ],
+            "answer": "B",
+            "locator": "第 2 段 \"investigating why qualified candidates are not entering this profession\"",
+            "explanation": "根據第二段「Industry observers are currently investigating why qualified candidates are not entering this profession.」，觀察家正在調查合格候選人不願進入該行業的原因，因此選項 (B) 正確。"
+          },
+          {
+            "prompt": "What is described as essential for commercial and residential towers in the final paragraph?",
+            "options": [
+              "Resolving the current technician shortage",
+              "Lowering the compensation packages",
+              "Eliminating all certification requirements",
+              "Building more stairs in tall structures"
+            ],
+            "answer": "A",
+            "locator": "第 3 段 \"Resolving this shortage is essential\"",
+            "explanation": "根據第三段「Resolving this shortage is essential for the smooth operation of commercial and residential towers.」，解決技師短缺問題對於大樓的順利營運至關重要，故選 (A)。"
+          }
+        ]
+      },
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/c52e8k19y94mo",
+      "sourceLabel": "閱讀 BBC 原文報導"
+    }
+  },
   "2026-11-27": {
     "finance": {
       "title": "Faisal Islam: Why Trump's new tariffs are less of a threat",
